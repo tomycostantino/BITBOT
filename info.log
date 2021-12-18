@@ -1,0 +1,154 @@
+2021-12-09 14:23:07,063 INFO :: Binance Futures Client successfully initialized
+2021-12-09 14:23:08,210 ERROR :: Binance connection error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1123)
+2021-12-09 14:23:08,212 ERROR :: error from callback <bound method BinanceFuturesClient.on_close of <binance_futures.BinanceFuturesClient object at 0x102d8d2b0>>: on_close() takes 2 positional arguments but 4 were given
+2021-12-09 14:23:08,212 ERROR :: Binance connection error: on_close() takes 2 positional arguments but 4 were given
+2021-12-09 14:24:19,699 INFO :: Binance Futures Client successfully initialized
+2021-12-09 14:24:20,597 ERROR :: Binance connection error: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1123)
+2021-12-09 14:24:20,598 ERROR :: error from callback <bound method BinanceFuturesClient.on_close of <binance_futures.BinanceFuturesClient object at 0x1029c92b0>>: on_close() takes 2 positional arguments but 4 were given
+2021-12-09 14:24:20,599 ERROR :: Binance connection error: on_close() takes 2 positional arguments but 4 were given
+2021-12-09 14:24:46,300 INFO :: Binance Futures Client successfully initialized
+2021-12-09 14:24:46,848 ERROR :: error from callback <bound method BinanceFuturesClient.on_error of <binance_futures.BinanceFuturesClient object at 0x104fed280>>: on_error() takes 2 positional arguments but 3 were given
+2021-12-09 14:26:00,116 INFO :: Binance Futures Client successfully initialized
+2021-12-09 14:26:00,846 ERROR :: error from callback <bound method BinanceFuturesClient.on_error of <binance_futures.BinanceFuturesClient object at 0x100a9d280>>: on_error() takes 2 positional arguments but 3 were given
+2021-12-09 14:29:06,054 INFO :: Binance Futures Client successfully initialized
+2021-12-09 14:29:07,722 ERROR :: error from callback <bound method BinanceFuturesClient.on_open of <binance_futures.BinanceFuturesClient object at 0x104f10c70>>: on_open() takes 1 positional argument but 2 were given
+2021-12-09 14:29:07,723 ERROR :: error from callback <bound method BinanceFuturesClient.on_error of <binance_futures.BinanceFuturesClient object at 0x104f10c70>>: on_error() takes 2 positional arguments but 3 were given
+2021-12-09 14:32:20,086 INFO :: Binance Futures Client successfully initialized
+2021-12-09 14:32:21,032 ERROR :: error from callback <bound method BinanceFuturesClient.on_open of <binance_futures.BinanceFuturesClient object at 0x104d49280>>: on_open() takes 1 positional argument but 2 were given
+2021-12-09 14:32:21,033 ERROR :: error from callback <bound method BinanceFuturesClient.on_error of <binance_futures.BinanceFuturesClient object at 0x104d49280>>: on_error() takes 2 positional arguments but 3 were given
+2021-12-09 14:34:52,597 INFO :: Binance Futures Client successfully initialized
+2021-12-09 14:34:56,921 INFO :: Binance connection opened
+2021-12-09 14:42:51,244 INFO :: Binance Futures Client successfully initialized
+2021-12-09 14:42:52,575 INFO :: Binance connection opened
+2021-12-09 14:43:49,369 INFO :: Binance Futures Client successfully initialized
+2021-12-09 14:43:50,848 INFO :: Binance connection opened
+2021-12-09 14:46:43,636 INFO :: Binance Futures Client successfully initialized
+2021-12-09 14:46:44,720 INFO :: Binance connection opened
+2021-12-09 14:51:28,625 INFO :: Binance Futures Client successfully initialized
+2021-12-09 14:51:29,989 INFO :: Binance connection opened
+2021-12-09 14:51:49,027 INFO :: Binance Futures Client successfully initialized
+2021-12-09 14:51:50,696 INFO :: Binance connection opened
+2021-12-09 19:25:49,901 INFO :: Binance Futures Client successfully initialized
+2021-12-09 19:25:51,302 INFO :: Binance connection opened
+2021-12-09 19:27:02,576 INFO :: Binance Futures Client successfully initialized
+2021-12-09 19:27:03,752 INFO :: Binance connection opened
+2021-12-09 19:47:09,580 INFO :: Binance Futures Client successfully initialized
+2021-12-09 19:47:11,030 INFO :: Binance connection opened
+2021-12-09 19:47:31,095 INFO :: Binance Futures Client successfully initialized
+2021-12-09 19:47:32,425 INFO :: Binance connection opened
+2021-12-09 19:48:30,521 INFO :: Binance Futures Client successfully initialized
+2021-12-09 19:48:31,905 INFO :: Binance connection opened
+2021-12-09 19:49:03,552 INFO :: Binance Futures Client successfully initialized
+2021-12-09 19:49:04,957 INFO :: Binance connection opened
+2021-12-09 19:50:49,623 INFO :: Binance Futures Client successfully initialized
+2021-12-09 19:50:50,678 INFO :: Binance connection opened
+2021-12-09 19:55:06,330 INFO :: Binance Futures Client successfully initialized
+2021-12-09 19:55:07,612 INFO :: Binance connection opened
+2021-12-09 20:12:06,470 INFO :: Binance Futures Client successfully initialized
+2021-12-09 20:12:08,051 INFO :: Binance connection opened
+2021-12-09 20:17:02,329 INFO :: Binance Futures Client successfully initialized
+2021-12-09 20:17:03,569 INFO :: Binance connection opened
+2021-12-09 20:52:37,082 INFO :: Binance Futures Client successfully initialized
+2021-12-09 20:52:38,613 INFO :: Binance connection opened
+2021-12-09 20:52:47,570 ERROR :: error from callback <bound method BinanceFuturesClient._on_message of <connectors.binance_futures.BinanceFuturesClient object at 0x105fba0d0>>: [Errno 5] Input/output error
+2021-12-09 20:52:47,570 ERROR :: Binance connection error: [Errno 5] Input/output error
+2021-12-11 12:19:37,446 INFO :: Binance Futures Client successfully initialized
+2021-12-11 12:19:38,907 INFO :: Binance connection opened
+2021-12-11 12:22:09,478 INFO :: Binance Futures Client successfully initialized
+2021-12-11 12:22:11,129 INFO :: Binance connection opened
+2021-12-11 12:23:30,392 INFO :: Binance Futures Client successfully initialized
+2021-12-11 12:23:31,922 INFO :: Binance connection opened
+2021-12-11 12:26:11,103 INFO :: Binance Futures Client successfully initialized
+2021-12-11 12:26:12,511 INFO :: Binance connection opened
+2021-12-11 12:29:41,492 INFO :: Binance Futures Client successfully initialized
+2021-12-11 12:32:24,003 INFO :: Binance Futures Client successfully initialized
+2021-12-11 12:32:40,515 INFO :: Binance Futures Client successfully initialized
+2021-12-11 12:34:28,651 INFO :: Binance Futures Client successfully initialized
+2021-12-11 12:34:49,304 INFO :: Binance Futures Client successfully initialized
+2021-12-11 12:40:48,746 INFO :: Binance Futures Client successfully initialized
+2021-12-11 12:41:48,364 INFO :: Binance Futures Client successfully initialized
+2021-12-11 12:45:56,851 INFO :: Binance Futures Client successfully initialized
+2021-12-11 12:47:47,750 INFO :: Binance Futures Client successfully initialized
+2021-12-13 20:14:41,606 INFO :: Binance Futures Client successfully initialized
+2021-12-13 20:16:22,984 INFO :: Binance Futures Client successfully initialized
+2021-12-13 20:17:16,433 INFO :: Binance Futures Client successfully initialized
+2021-12-13 20:20:11,221 INFO :: Binance Futures Client successfully initialized
+2021-12-13 20:32:03,593 INFO :: Binance Futures Client successfully initialized
+2021-12-13 20:33:43,120 INFO :: Binance Futures Client successfully initialized
+2021-12-13 20:51:37,069 INFO :: Binance Futures Client successfully initialized
+2021-12-13 20:52:24,371 INFO :: Binance Futures Client successfully initialized
+2021-12-13 20:52:39,430 INFO :: Binance Futures Client successfully initialized
+2021-12-13 21:01:24,989 INFO :: Binance Futures Client successfully initialized
+2021-12-13 21:02:04,041 INFO :: Binance Futures Client successfully initialized
+2021-12-13 21:02:30,463 INFO :: Binance Futures Client successfully initialized
+2021-12-13 21:02:46,743 INFO :: Binance Futures Client successfully initialized
+2021-12-13 21:04:07,271 INFO :: Binance Futures Client successfully initialized
+2021-12-13 21:21:16,799 INFO :: Binance Futures Client successfully initialized
+2021-12-13 21:23:23,236 INFO :: Binance Futures Client successfully initialized
+2021-12-13 21:24:30,452 INFO :: Binance Futures Client successfully initialized
+2021-12-13 21:24:31,850 INFO :: Binance connection opened
+2021-12-13 21:27:40,291 INFO :: Binance Futures Client successfully initialized
+2021-12-13 21:28:35,061 INFO :: Binance Futures Client successfully initialized
+2021-12-13 21:28:36,550 INFO :: Binance connection opened
+2021-12-13 21:30:45,004 INFO :: Binance Futures Client successfully initialized
+2021-12-13 21:30:46,228 INFO :: Binance connection opened
+2021-12-13 21:37:18,253 INFO :: Binance Futures Client successfully initialized
+2021-12-13 21:37:19,167 INFO :: Binance connection opened
+2021-12-13 21:38:58,662 INFO :: Binance Futures Client successfully initialized
+2021-12-13 21:38:59,995 INFO :: Binance connection opened
+2021-12-13 21:39:56,375 INFO :: Binance Futures Client successfully initialized
+2021-12-13 21:39:57,095 INFO :: Binance connection opened
+2021-12-14 07:51:31,853 INFO :: Binance Futures Client successfully initialized
+2021-12-14 07:51:33,384 INFO :: Binance connection opened
+2021-12-16 11:53:19,430 INFO :: Binance Futures Client successfully initialized
+2021-12-16 11:53:21,188 INFO :: Binance connection opened
+2021-12-16 12:01:01,239 INFO :: Binance Futures Client successfully initialized
+2021-12-16 12:01:02,619 INFO :: Binance connection opened
+2021-12-16 12:03:01,072 INFO :: Binance Futures Client successfully initialized
+2021-12-16 12:03:02,333 INFO :: Binance connection opened
+2021-12-16 12:17:45,388 INFO :: Binance Futures Client successfully initialized
+2021-12-16 12:17:46,809 INFO :: Binance connection opened
+2021-12-16 12:47:52,213 INFO :: Binance Futures Client successfully initialized
+2021-12-16 12:47:53,510 INFO :: Binance connection opened
+2021-12-16 13:10:36,987 INFO :: Binance Futures Client successfully initialized
+2021-12-16 13:10:38,827 INFO :: Binance connection opened
+2021-12-16 13:13:06,285 INFO :: Binance Futures Client successfully initialized
+2021-12-16 13:13:07,581 INFO :: Binance connection opened
+2021-12-16 13:13:57,891 INFO :: Binance Futures Client successfully initialized
+2021-12-16 13:13:59,120 INFO :: Binance connection opened
+2021-12-16 13:14:27,846 INFO :: Binance Futures Client successfully initialized
+2021-12-16 13:14:29,223 INFO :: Binance connection opened
+2021-12-16 13:17:07,125 INFO :: Binance Futures Client successfully initialized
+2021-12-16 13:17:08,407 INFO :: Binance connection opened
+2021-12-16 13:19:49,177 INFO :: Binance Futures Client successfully initialized
+2021-12-16 13:19:50,547 INFO :: Binance connection opened
+2021-12-16 13:22:16,777 INFO :: Binance Futures Client successfully initialized
+2021-12-16 13:22:18,612 INFO :: Binance connection opened
+2021-12-16 13:22:45,034 INFO :: Binance Futures Client successfully initialized
+2021-12-16 13:22:46,567 INFO :: Binance connection opened
+2021-12-16 13:33:31,500 INFO :: Binance Futures Client successfully initialized
+2021-12-16 13:33:32,916 INFO :: Binance connection opened
+2021-12-16 13:36:39,812 INFO :: Binance Futures Client successfully initialized
+2021-12-16 13:36:41,956 INFO :: Binance connection opened
+2021-12-16 13:52:08,644 INFO :: Binance Futures Client successfully initialized
+2021-12-16 13:52:10,271 INFO :: Binance connection opened
+2021-12-16 13:52:37,616 INFO :: Binance Futures Client successfully initialized
+2021-12-16 13:52:38,841 INFO :: Binance connection opened
+2021-12-16 13:53:52,775 INFO :: Binance Futures Client successfully initialized
+2021-12-16 13:53:53,708 INFO :: Binance connection opened
+2021-12-16 13:56:08,659 INFO :: Binance Futures Client successfully initialized
+2021-12-16 13:56:10,191 INFO :: Binance connection opened
+2021-12-16 14:08:01,981 INFO :: Binance Futures Client successfully initialized
+2021-12-16 14:08:03,093 INFO :: Binance connection opened
+2021-12-16 14:08:13,961 INFO :: Binance Futures Client successfully initialized
+2021-12-16 14:08:16,106 INFO :: Binance connection opened
+2021-12-16 14:16:06,614 INFO :: Binance Futures Client successfully initialized
+2021-12-16 14:16:08,180 INFO :: Binance connection opened
+2021-12-16 15:22:51,303 INFO :: Binance Futures Client successfully initialized
+2021-12-16 15:22:52,174 INFO :: Binance connection opened
+2021-12-16 15:54:24,009 INFO :: Binance Futures Client successfully initialized
+2021-12-16 15:54:25,414 INFO :: Binance connection opened
+2021-12-18 11:44:25,917 INFO :: Binance Futures Client successfully initialized
+2021-12-18 11:44:27,449 INFO :: Binance connection opened
+2021-12-18 12:14:01,085 INFO :: Binance Futures Client successfully initialized
+2021-12-18 12:14:02,033 INFO :: Binance connection opened

@@ -1,0 +1,4 @@
+logger.debug('Only important when debugging the program')
+logger.info('Basic information')
+logger.warning('About something to pay attention to')
+logger.error('Help debug an error that occured')
