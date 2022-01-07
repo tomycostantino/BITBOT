@@ -4,6 +4,8 @@ from interface.styling import *
 
 from connectors.binance_futures import BinanceFuturesClient
 
+from strategies import TechnicalStrategy, BreakoutStrategy
+
 
 class StrategyEditor(tk.Frame):
     def __init__(self, root, binance: BinanceFuturesClient, *args, **kwargs):
@@ -60,6 +62,7 @@ class StrategyEditor(tk.Frame):
 
         self._extra_params = {
             'Technical': [
+                {'code_name': 'rsi_length', 'name': 'RSI Periods', 'widget': tk.Entry, 'data_type': int},
                 {'code_name': 'ema_fast', 'name': 'MACD fast length', 'widget': tk.Entry, 'data_type': int},
                 {'code_name': 'ema_slow', 'name': 'MACD slow length', 'widget': tk.Entry, 'data_type': int},
                 {'code_name': 'ema_signal', 'name': 'MACD signal length', 'widget': tk.Entry, 'data_type': int}
@@ -200,11 +203,38 @@ class StrategyEditor(tk.Frame):
         exchange = self.body_widgets['contract_var'][b_index].get().split('_')[1]
         timeframe = self.body_widgets['timeframe_var'][b_index].get().split('_')
 
+        contract = self._exchanges[exchange].contracts[symbol]
+
         balance_pct = float(self.body_widgets['balance_pct'][b_index].get())
         take_profit = float(self.body_widgets['take_profit'][b_index].get())
         stop_loss = float(self.body_widgets['stop_loss'][b_index].get())
 
         if self.body_widgets['activation'][b_index].cget('text') == 'OFF':
+
+            if strat_selected == 'Technical':
+                new_strategy = TechnicalStrategy(self._exchanges[exchange], contract, exchange, timeframe[0],
+                                                 balance_pct, take_profit, stop_loss,
+                                                 self._additional_parameters[b_index])
+
+            elif strat_selected == 'Breakout':
+                new_strategy = BreakoutStrategy(self._exchanges[exchange], contract, exchange, timeframe[0],
+                                                balance_pct, take_profit, stop_loss,
+                                                self._additional_parameters[b_index])
+            else:
+                return
+
+            new_strategy.candles = self._exchanges[exchange].get_historical_candles(contract, timeframe)
+
+            if len(new_strategy.candles) == 0:
+                self.root.logging_frame.add_log(f'No historical data retrieved for {contract.symbol}')
+                return
+
+            if exchange == 'Binance':
+                self._exchanges[exchange].subscribe_channel([contract], 'aggTrade')
+
+            new_strategy._check_signal()
+
+            self._exchanges[exchange].strategies[b_index] = new_strategy
 
             for param in self._base_params:
                 code_name = param['code_name']
@@ -217,6 +247,9 @@ class StrategyEditor(tk.Frame):
                 self.root.logging_frame.add_log(f'{strat_selected} strategy on {symbol} / {timeframe} started')
 
         else:
+
+            del self._exchanges[exchange].strategies[b_index]
+
             for param in self._base_params:
                 code_name = param['code_name']
 

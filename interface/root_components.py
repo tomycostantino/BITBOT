@@ -51,6 +51,35 @@ class Root(tk.Tk):
             if not log['displayed']:
                 self.logging_frame.add_log(log['log'])
                 log['displayed'] = True
+
+        # trades and logs
+
+        try:
+
+            for b_index, strat in self.binance.strategies.items():
+                for log in strat.logs:
+                    if not log['displayed']:
+                        self.logging_frame.add_log(log['log'])
+                        log['displayed'] = True
+
+                for trade in strat.trades:
+                    if trade.time not in self._trades_frame.body_widgets['symbol']:
+                        self._trades_frame.add_trade(trade)
+
+                    if trade.contract.exchange == 'binance':
+                        precision = trade.contract.price_decimals
+                    else:
+                        precision = 8
+
+                    pnl_str = '{0:.{prec}f}'.format(trade.pnl, prec=precision)
+                    self._trades_frame.body_widgets['pnl_var'][trade.time].set(pnl_str)
+                    self._trades_frame.body_widgets['status_var'][trade.time].set(trade.status.capitalize())
+
+        except RuntimeError as e:
+            logger.error('Error while looping through strategies dictionary')
+
+        # watchlist prices
+
         try:
             for key, value in self._watchlist_frame.body_widgets['symbol'].items():
 
