@@ -1,46 +1,59 @@
 import logging
-from connectors.models import *
-from typing import *
 import time
+import pandas as pd
 
+from models import *
+from typing import *
 from threading import Timer
 
 if TYPE_CHECKING:
     from connectors.binance_futures import BinanceFuturesClient
 
-import pandas as pd
-
 logger = logging.getLogger()
 
+# timeframe equivalent
 TF_EQUIV = {'1m': 60, '5m': 300, '15m': 900, '30m': 1800, '1h': 3600, '4h': 14400}
 
 
+# parent class for Breakout and Technical strategies
 class Strategy:
-    def __init__(self, client: "BinanceFuturesClient", contract: Contract, exchange: str, timeframe: str, balance_pct: float, take_profit: float,
-                 stop_loss: float, strat_name: str):
+    # constructor
+    def __init__(self, client: "BinanceFuturesClient", contract: Contract, exchange: str, timeframe: str,
+                 balance_pct: float, take_profit: float, stop_loss: float, strat_name: str):
 
         self.client = client
-
         self.contract = contract
         self.exchange = exchange
         self.tf = timeframe
         self.tf_equiv = TF_EQUIV[timeframe] * 1000
-        self.balance_pct = balance_pct
+        self.balance_pct = balance_pct  # balance percentage
         self.take_profit = take_profit
         self.stop_loss = stop_loss
 
+        # strategy name, either technical or breakout
         self.strat_name = strat_name
 
+        # is there an ongoing position? that means, we bought an asset for either short or long and now
+        # we are about to sell
         self.ongoing_position = False
 
+        # list of candles and trades that will be used for the strategy
         self.candles: List[Candle] = []
         self.trades: List[Trade] = []
+
+        # list of logs
         self.logs = []
 
+    # adds logs to document what happens while using the program
+    # just appends to the list of logs created in the constructor, does not return
     def _add_log(self, msg: str):
         logger.info('%s', msg)
         self.logs.append({'log': msg, 'displayed': False})
 
+    # this function will be in charge of managing candlestick data as it comes
+    # it will define whether the data received belongs to the same candle that was being updated or
+    # there is now a new candle created
+    # returns a string that can take between 'same_candle' and 'new_candle'
     def parse_trades(self, price: float, size: float, timestamp: int) -> str:
 
         timestamp_diff = int(time.time() * 1000) - timestamp
@@ -62,8 +75,7 @@ class Strategy:
             elif price < last_candle.low:
                 last_candle.low = price
 
-            # check TP / SL
-
+            # check TP / SL to update and help decide whether to buy or sell
             for trade in self.trades:
                 if trade.status == 'open' and trade.entry_price is not None:
                     self._check_tp_sl(trade)
@@ -106,6 +118,8 @@ class Strategy:
             logger.info('New candle for %s %s: %s', self.exchange, self.contract.symbol, self.tf)
             return 'new_candle'
 
+    # check the status of an order
+    # does not return anything
     def _check_order_status(self, order_id):
 
         order_status = self.client.get_order_status(self.contract, order_id)
@@ -123,12 +137,15 @@ class Strategy:
             t = Timer(2.0, lambda: self._check_order_status(order_id))
             t.start()
 
+    # open position to buy assets
+    # does not return anything
     def _open_position(self, signal_result: int):
 
         trade_size = self.client.get_trade_size(self.contract, self.candles[-1].close, self.balance_pct)
         if trade_size is None:
             return
 
+        # signal result can be 1 or -1
         order_side = 'buy' if signal_result == 1 else 'sell'
         position_side = 'long' if signal_result == 1 else 'short'
 
@@ -154,6 +171,7 @@ class Strategy:
 
             self.trades.append(new_trade)
 
+    # check if take profit and stop loss are triggered
     def _check_tp_sl(self, trade: Trade):
 
         tp_triggered = False
@@ -192,7 +210,10 @@ class Strategy:
                 self.ongoing_position = False
 
 
+# child classes for strategies
+
 class TechnicalStrategy(Strategy):
+    # constructor
     def __init__(self, client, contract: Contract, exchange: str, timeframe: str, balance_pct: float, take_profit: float,
                  stop_loss: float, other_params: Dict):
         super().__init__(client, contract, exchange, timeframe, balance_pct, take_profit, stop_loss, 'Technical')
@@ -205,6 +226,8 @@ class TechnicalStrategy(Strategy):
 
         self._rsi_length = other_params['rsi_length']
 
+    # calculate rsi value and return it
+    # rsi needs a pandas timeseries object to calculate it
     def _rsi(self):
 
         close_list = []
@@ -229,6 +252,8 @@ class TechnicalStrategy(Strategy):
 
         return rsi.iloc[-2]
 
+    # calculate macd indicator and
+    # return macd line and macd signal
     def _macd(self) -> Tuple[float, float]:
         close_list = []
         for candle in self.candles:
@@ -244,7 +269,9 @@ class TechnicalStrategy(Strategy):
 
         return macd_line.iloc[-2], macd_signal.iloc[-2]
 
-    def _check_signal(self):
+    # check indicators and decide whether to buy or sell
+    # returns a value between -1 and 1
+    def _check_signal(self) -> int:
 
         macd_line, macd_signal = self._macd()
 
@@ -259,7 +286,9 @@ class TechnicalStrategy(Strategy):
         else:
             return 0
 
-    def check_trade(self,tick_type: str):
+    # check the value returned by the _check_signal function
+    # and open a position if that is the case
+    def check_trade(self, tick_type: str):
         if tick_type == 'new_candle':
             signal_result = self._check_signal()
 
@@ -268,12 +297,15 @@ class TechnicalStrategy(Strategy):
 
 
 class BreakoutStrategy(Strategy):
+    # constructor
     def __init__(self, client, contract: Contract, exchange: str, timeframe: str, balance_pct: float, take_profit: float,
                  stop_loss: float, other_params: Dict):
         super().__init__(client, contract, exchange, timeframe, balance_pct, take_profit, stop_loss, 'Breakout')
 
         self._min_volume = other_params['min_volume']
 
+    # check indicators and decide whether to buy or sell
+    # returns a value between -1 and 1
     def _check_signal(self) -> int:
 
         if self.candles[-1].close > self.candles[-2].high and self.candles[-1].volume > self._min_volume:
@@ -285,6 +317,8 @@ class BreakoutStrategy(Strategy):
         else:
             return 0
 
+    # check the value returned by the _check_signal function
+    # and open a position if that is the case
     def check_trade(self, tick_type: str):
 
         if not self.ongoing_position:

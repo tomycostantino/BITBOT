@@ -3,7 +3,7 @@ import tkinter as tk
 from connectors.binance_futures import BinanceFuturesClient
 
 import logging
-
+from tkinter.messagebox import askquestion
 from interface.styling import *
 from interface.logging_component import Logging
 from interface.watchlist_components import Watchlist
@@ -19,6 +19,8 @@ class Root(tk.Tk):
         self.binance = binance
 
         self.title('Trading Bot')
+
+        self.protocol('WM_DELETE_WINDOW', self._ask_before_close)
 
         # background color
         self.configure(bg=BG_COLOR_2)
@@ -37,13 +39,21 @@ class Root(tk.Tk):
         self.logging_frame = Logging(self._left_frame, bg=BG_COLOR)
         self.logging_frame.pack(side=tk.TOP)
 
-        self._trades_frame = TradesWatch(self._right_frame, bg=BG_COLOR)
-        self._trades_frame.pack(side=tk.TOP)
-
         self._strategy_frame = StrategyEditor(self, self.binance, self._right_frame, bg=BG_COLOR)
         self._strategy_frame.pack(side=tk.TOP)
 
+        self._trades_frame = TradesWatch(self._right_frame, bg=BG_COLOR)
+        self._trades_frame.pack(side=tk.TOP)
+
         self.update_ui()
+
+    def _ask_before_close(self):
+        result = askquestion('Confirmation', 'Do you really want to exit the application?')
+        if result == 'yes':
+            self.binance.reconnect = False
+            self.binance.ws.close()
+
+            self.destroy()
 
     def update_ui(self):
 

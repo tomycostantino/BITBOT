@@ -2,27 +2,22 @@ import logging
 import requests
 import time
 import typing
-
-from urllib.parse import urlencode
-
 import hmac
 import hashlib
-
 import websocket
-
 import threading
-
 import json
 
-from connectors.models import *
-
+from urllib.parse import urlencode
+from models import *
 from strategies import TechnicalStrategy, BreakoutStrategy
 
 logger = logging.getLogger()
 
 
+# HANDLER FOR BINANCE CLIENTS
 class BinanceFuturesClient:
-    # init
+    # constructor
     def __init__(self, public_key: str, secret_key: str, testnet: bool):
         if testnet:
             self._base_url = "https://testnet.binancefuture.com"
@@ -36,29 +31,47 @@ class BinanceFuturesClient:
 
         self._headers = {'X-MBX-APIKEY': self._public_key}
 
+        # obtain all contracts, BTCUSDT, ETHUSDT, ADAUSDT, etc
         self.contracts = self.get_contracts()
+
+        # obtain balances of all assets
         self.balances = self.get_balances()
 
+        # nested dictionary that will keep track of bid and ask prices of a symbol
+        # it will be updated when a func is called and new symbols are to be added when requested
         self.prices = dict()
 
         self.strategies: typing.Dict[int, typing.Union[TechnicalStrategy, BreakoutStrategy]] = dict()
 
+        # list of logs
         self.logs = []
-        self._ws = None
 
+        # websocket
+        self.ws: websocket.WebSocketApp
+
+        self.reconnect = True
+        # websocket id
         self._ws_id = 0
 
+        # start threading for ws manager
         t = threading.Thread(target=self._start_ws)
         t.start()
         logger.info("Binance Futures Client successfully initialized")
 
+    # the signature is required when getting balances, place and cancel orders, and know order status
+    # returns the signature
     def _generate_signature(self, data: typing.Dict) -> str:
         return hmac.new(self._secret_key.encode(), urlencode(data).encode(), hashlib.sha256).hexdigest()
 
+    # logger to document what happens when using the program
+    # it appends the logs to the list created previously, does not return anything
     def _add_log(self, msg: str):
         logger.info('%s', msg)
         self.logs.append({'log': msg, 'displayed': False})
 
+    # this function will communicate with the Binance API
+    # it permits requesting, sending and deleting info when interacting with the API
+    # returns the response in a JSON format, which would be a dictionary
     def _make_request(self, method: str, endpoint: str, data: typing.Dict):
         if method == 'GET':
             try:
@@ -84,6 +97,7 @@ class BinanceFuturesClient:
         else:
             raise ValueError
 
+        # check if the response is valid, 200 means that
         if response.status_code == 200:
             return response.json()
 
@@ -94,17 +108,24 @@ class BinanceFuturesClient:
 
     # public endpoints
     # get the possible contracts like BTC/USDT or ETH/USDT for example
+    # returns a dictionary of contracts
     def get_contracts(self) -> typing.Dict[str, Contract]:
         exchange_info = self._make_request('GET', '/fapi/v1/exchangeInfo', dict())
 
         contracts = dict()
         if exchange_info is not None:
+            # loop through the symbols and add them to the contracts dict
             for contract_data in exchange_info['symbols']:
                 contracts[contract_data['symbol']] = Contract(contract_data, 'binance')
 
+        else:
+            self._add_log('Data could not be obtained from exchange')
+
         return contracts
 
-    # candles
+    # manages to get the historical candlestick, up to 1000
+    # receives the contract and the time interval, 1m, 5m, 15m and so on
+    # returns a list of Candle
     def get_historical_candles(self, contract: Contract, interval: str) -> typing.List[Candle]:
         data = dict()
         data['symbol'] = contract.symbol
@@ -121,8 +142,11 @@ class BinanceFuturesClient:
 
         return candles
 
-    # bid and ask prices for symbols
-    def get_bid_ask(self, contract: Contract) -> typing.Dict[str, float]:
+    # returns a nested dict with most recent bid and ask price
+    # if the symbol passed was not in dict created before, it will be added now, otherwise the prices will be updated
+    # the output looks like this:
+    # {'BTCUSDT':{'bidPrice': 10.0, 'askPrice': 9.0}}
+    def get_bid_ask(self, contract: Contract) -> typing.Dict[str, typing.Dict]:
         data = dict()
         data['symbol'] = contract.symbol
         ob_data = self._make_request('GET', '/fapi/v1/ticker/bookTicker', data)
@@ -138,7 +162,8 @@ class BinanceFuturesClient:
 
             return self.prices[contract.symbol]
 
-    # amount of cryptos user has
+    # in charge of getting the amount of all cryptos the user has
+    # returns a dict of Balance
     def get_balances(self) -> typing.Dict[str, Balance]:
         data = dict()
         data['timestamp'] = int(time.time() * 1000)
@@ -154,14 +179,16 @@ class BinanceFuturesClient:
 
         return balances
 
-    # private endpoints
-    # place an order for a symbol
-    def place_order(self, contract: Contract, order_type: str, quantity: float, side: str, price=None, tif=None):
+    # place orders to buy or sell depending on the signal
+    # gets the contract, the type: MARKET, the quantity, and the side: buy or sell
+    # return the status of the order
+    def place_order(self, contract: Contract, order_type: str, quantity: float, side: str, price=None, tif=None) -> \
+            OrderStatus:
         data = dict()
         data['symbol'] = contract.symbol
-        data['side'] = side.upper()
-        data['quantity'] = quantity
         data['type'] = order_type
+        data['quantity'] = quantity
+        data['side'] = side.upper()
 
         if price is not None:
             data['price'] = price
@@ -179,8 +206,10 @@ class BinanceFuturesClient:
 
         return order_status
 
-    # cancel
-    def cancel_order(self, contract: Contract, order_id: int):
+    # cancel order when required
+    # receives the Contract and the order id to cancel
+    # returns an OrderStatus object
+    def cancel_order(self, contract: Contract, order_id: int) -> OrderStatus:
         data = dict()
         data['orderId'] = order_id
         data['symbol'] = contract.symbol
@@ -195,7 +224,9 @@ class BinanceFuturesClient:
 
         return order_status
 
-    # check the order
+    # check the status of an order
+    # gets the contract and the order id
+    # returns an OrderStatus
     def get_order_status(self, contract: Contract, order_id: int) -> OrderStatus:
         data = dict()
         data['timestamp'] = int(time.time() * 1000)
@@ -217,28 +248,35 @@ class BinanceFuturesClient:
 
         while True:
             try:
-                self.ws.run_forever()
+                if self.reconnect:
+                    self.ws.run_forever()
+                else:
+                    break
             except Exception as e:
                 logger.error('Binance error in run_forever method: %s', e)
             time.sleep(2)
 
     # these function will be called by the Websocket manager
+    # the argument 'ws' is not used but it must be there to avoid rising an error
     def _on_open(self, ws):
         logger.info('Binance connection opened')
 
         self.subscribe_channel(list(self.contracts.values()), 'bookTicker')
 
-    def _on_close(self, ws):
+    def _on_close(self, ws, *args, **kwargs):
         logger.warning('Websocket connection closed')
 
     def _on_error(self, ws, msg: str):
         logger.error('Binance connection error: %s', msg)
 
+    # this is the most important function for the ws manager because it will interpret what the ws is sending
+    # read binance documentation to see what the letters mean
     def _on_message(self, ws, msg: str):
 
         data = json.loads(msg)
 
         if 'e' in data:
+            # if bookTicker, the data received is bid and ask price
             if data['e'] == 'bookTicker':
 
                 symbol = data['s']
@@ -250,7 +288,8 @@ class BinanceFuturesClient:
                     self.prices[symbol]['ask'] = float(data['a'])
 
                 # PNL calculation
-
+                # it is done here because everytime the bid and ask are updated, the PNL are calculated to know
+                # when to sell when on a position, and check for all ongoing trades as well
                 try:
                     for b_index, strat in self.strategies.items():
                         if strat.contract.symbol == symbol:
@@ -263,6 +302,7 @@ class BinanceFuturesClient:
                 except RuntimeError as e:
                     logger.error('Error while looping through the binance strategies %s:', e)
 
+            # if aggTrade, data received is a new candle to append
             elif data['e'] == 'aggTrade':
                 symbol = data['s']
 
@@ -271,7 +311,7 @@ class BinanceFuturesClient:
                         res = strat.parse_trades(float(data['p']), float(data['q']), data['T'])
                         strat.check_trade(res)
 
-    # subscribe to channel to receive data
+    # subscribe channels to receive data from ws
     def subscribe_channel(self, contracts: typing.List[Contract], channel: str):
         data = dict()
         data['method'] = 'SUBSCRIBE'
@@ -289,6 +329,7 @@ class BinanceFuturesClient:
 
         self._ws_id += 1
 
+    # calculate the size of the trade and return it
     def get_trade_size(self, contract: Contract, price: float, balance_pct: float):
 
         balance = self.get_balances()
