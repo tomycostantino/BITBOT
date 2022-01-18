@@ -1,6 +1,7 @@
 import tkinter as tk
 import json
-from connectors.binance_futures import BinanceFuturesClient
+from connectors.binance import BinanceClient
+from connectors.bitmex import BitmexClient
 
 import logging
 from tkinter.messagebox import askquestion
@@ -13,10 +14,11 @@ logger = logging.getLogger()
 
 
 class Root(tk.Tk):
-    def __init__(self, binance: BinanceFuturesClient):
+    def __init__(self, binance: BinanceClient, bitmex: BitmexClient):
         super().__init__()
 
         self.binance = binance
+        self.bitmex = bitmex
 
         self.title('Trading Bot')
 
@@ -52,80 +54,120 @@ class Root(tk.Tk):
         self._trades_frame = TradesWatch(self._right_frame, bg=BG_COLOR)
         self._trades_frame.pack(side=tk.TOP)
 
-        self.update_ui()
+        self._update_ui()
 
     def _ask_before_close(self):
         result = askquestion('Confirmation', 'Do you really want to exit the application?')
         if result == 'yes':
             self.binance.reconnect = False
+            self.bitmex.reconnect = False
             self.binance.ws.close()
+            self.bitmex.ws.close()
 
             self.destroy()
 
-    def update_ui(self):
+    def _update_ui(self):
+
+
+        """
+        Called by itself every 1500 seconds. It is similar to an infinite loop but runs within the same Thread
+        as .mainloop() thanks to the .after() method, thus it is "thread-safe" to update elements of the interface
+        in this method. Do not update Tkinter elements from another Thread like the websocket thread.
+        :return:
+        """
+
+        # Logs
+
+        for log in self.bitmex.logs:
+            if not log['displayed']:
+                self.logging_frame.add_log(log['log'])
+                log['displayed'] = True
 
         for log in self.binance.logs:
             if not log['displayed']:
                 self.logging_frame.add_log(log['log'])
                 log['displayed'] = True
 
-        # trades and logs
+        # Trades and Logs
 
-        try:
+        for client in [self.binance, self.bitmex]:
 
-            for b_index, strat in self.binance.strategies.items():
-                for log in strat.logs:
-                    if not log['displayed']:
-                        self.logging_frame.add_log(log['log'])
-                        log['displayed'] = True
+            try:  # try...except statement to handle the case when a dictionary is updated during the following loops
 
-                for trade in strat.trades:
-                    if trade.time not in self._trades_frame.body_widgets['symbol']:
-                        self._trades_frame.add_trade(trade)
+                for b_index, strat in client.strategies.items():
+                    for log in strat.logs:
+                        if not log['displayed']:
+                            self.logging_frame.add_log(log['log'])
+                            log['displayed'] = True
 
-                    if trade.contract.exchange == 'binance':
-                        precision = trade.contract.price_decimals
-                    else:
-                        precision = 8
+                    # Update the Trades component (add a new trade, change status/PNL)
 
-                    pnl_str = '{0:.{prec}f}'.format(trade.pnl, prec=precision)
-                    self._trades_frame.body_widgets['pnl_var'][trade.time].set(pnl_str)
-                    self._trades_frame.body_widgets['status_var'][trade.time].set(trade.status.capitalize())
+                    for trade in strat.trades:
+                        if trade.time not in self._trades_frame.body_widgets['symbol']:
+                            self._trades_frame.add_trade(trade)
 
-        except RuntimeError as e:
-            logger.error('Error while looping through strategies dictionary')
+                        if "binance" in trade.contract.exchange:
+                            precision = trade.contract.price_decimals
+                        else:
+                            precision = 8  # The Bitmex PNL is always is BTC, thus 8 decimals
 
-        # watchlist prices
+                        pnl_str = "{0:.{prec}f}".format(trade.pnl, prec=precision)
+                        self._trades_frame.body_widgets['pnl_var'][trade.time].set(pnl_str)
+                        self._trades_frame.body_widgets['status_var'][trade.time].set(trade.status.capitalize())
+                        self._trades_frame.body_widgets['quantity_var'][trade.time].set(trade.quantity)
+
+            except RuntimeError as e:
+                logger.error("Error while looping through strategies dictionary: %s", e)
+
+        # Watchlist prices
 
         try:
             for key, value in self._watchlist_frame.body_widgets['symbol'].items():
 
-                symbol = self._watchlist_frame.body_widgets['symbol'][key].cget('text')
-                exchange = self._watchlist_frame.body_widgets['exchange'][key].cget('text')
+                symbol = self._watchlist_frame.body_widgets['symbol'][key].cget("text")
+                exchange = self._watchlist_frame.body_widgets['exchange'][key].cget("text")
 
-                if exchange == 'Binance':
+                if exchange == "Binance":
                     if symbol not in self.binance.contracts:
                         continue
 
+                    if symbol not in self.binance.ws_subscriptions["bookTicker"] and self.binance.ws_connected:
+                        self.binance.subscribe_channel([self.binance.contracts[symbol]], "bookTicker")
+
                     if symbol not in self.binance.prices:
                         self.binance.get_bid_ask(self.binance.contracts[symbol])
+                        continue
 
-                    # precision = self.binance.prices[symbol].price_decimals
+                    precision = self.binance.contracts[symbol].price_decimals
 
                     prices = self.binance.prices[symbol]
 
-                if prices['bid'] is not None:
-                    # price_str = '{0:.{prec}f}'.format(prices['bid'], prec=precision)
-                    self._watchlist_frame.body_widgets['bid_var'][key].set(prices['bid'])
+                elif exchange == "Bitmex":
 
+                    if symbol not in self.bitmex.contracts:
+                        continue
+
+                    if symbol not in self.bitmex.prices:
+                        continue
+
+                    precision = self.bitmex.contracts[symbol].price_decimals
+
+                    prices = self.bitmex.prices[symbol]
+
+                else:
+                    continue
+
+                if prices['bid'] is not None:
+                    price_str = "{0:.{prec}f}".format(prices['bid'], prec=precision)
+                    self._watchlist_frame.body_widgets['bid_var'][key].set(price_str)
                 if prices['ask'] is not None:
-                    # price_str = '{0:.{prec}f}'.format(prices['bid'], prec=precision)
-                    self._watchlist_frame.body_widgets['ask_var'][key].set(prices['ask'])
+                    price_str = "{0:.{prec}f}".format(prices['ask'], prec=precision)
+                    self._watchlist_frame.body_widgets['ask_var'][key].set(price_str)
 
         except RuntimeError as e:
-            logger.error('Error while looping through watchlist dictionary')
+            logger.error("Error while looping through watchlist dictionary: %s", e)
 
-        self.after(1500, self.update_ui)
+        self.after(1500, self._update_ui)
 
     def _save_workspace(self):
 
@@ -175,6 +217,6 @@ class Root(tk.Tk):
             strategies.append((strategy_type, contract, timeframe, balance_pct, take_profit, stop_loss,
                                json.dumps(extra_params),))
 
-        # self._strategy_frame.db.save("strategies", strategies)
+        self._strategy_frame.db.save("strategies", strategies)
 
         self.logging_frame.add_log("Workspace saved")

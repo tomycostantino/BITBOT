@@ -4,7 +4,7 @@ import json
 from interface.styling import *
 from utils import *
 
-from connectors.binance_futures import BinanceFuturesClient
+from connectors.binance import BinanceClient
 from interface.scrollable_frame import ScrollableFrame
 from database import WorkspaceData
 
@@ -12,7 +12,7 @@ from strategies import TechnicalStrategy, BreakoutStrategy
 
 
 class StrategyEditor(tk.Frame):
-    def __init__(self, root, binance: BinanceFuturesClient, *args, **kwargs):
+    def __init__(self, root, binance: BinanceClient, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
         self.root = root
@@ -44,23 +44,26 @@ class StrategyEditor(tk.Frame):
 
         self._headers_frame = tk.Frame(self._table_frame, height=20, width=950, bg=BG_COLOR)
 
-        self._additional_parameters = dict()
+        self.additional_parameters = dict()
 
         self._extra_input = dict()
 
         self._base_params = [
             {'code_name': 'strategy_type', 'widget': tk.OptionMenu, 'data_type': str,
-             'values': ['Technical', 'Breakout'], 'width': 15, 'header': 'Strategy'},
+             'values': ['Technical', 'Breakout'], 'width': 12, 'header': 'Strategy', 'padx': 10},
 
             {'code_name': 'contract', 'widget': tk.OptionMenu, 'data_type': str, 'values': self._all_contracts,
-             'width': 15, 'header': 'Contract'},
+             'width': 18, 'header': 'Contract', 'padx': 13},
 
             {'code_name': 'timeframe', 'widget': tk.OptionMenu, 'data_type': str, 'values': self._all_timeframes,
-             'width': 15, 'header': 'Timeframe'},
+             'width': 10, 'header': 'Timeframe', 'padx': 10},
 
-            {'code_name': 'balance_pct', 'widget': tk.Entry, 'data_type': float, 'width': 10, 'header': 'Balance %'},
-            {'code_name': 'take_profit', 'widget': tk.Entry, 'data_type': float, 'width': 10, 'header': 'TP %'},
-            {'code_name': 'stop_loss', 'widget': tk.Entry, 'data_type': float, 'width': 10, 'header': 'SL %'},
+            {'code_name': 'balance_pct', 'widget': tk.Entry, 'data_type': float, 'width': 10, 'header': 'Balance %',
+             'padx': 10},
+            {'code_name': 'take_profit', 'widget': tk.Entry, 'data_type': float, 'width': 10, 'header': 'TP %',
+             'padx': 10},
+            {'code_name': 'stop_loss', 'widget': tk.Entry, 'data_type': float, 'width': 10, 'header': 'SL %',
+             'padx': 10},
             {'code_name': 'parameters', 'widget': tk.Button, 'data_type': float, 'text': 'Parameters',
              'bg': BG_COLOR_2, 'command': self._show_popup, 'header': '', 'width': 50},
             {'code_name': 'activation', 'widget': tk.Button, 'data_type': float, 'text': 'OFF',
@@ -70,7 +73,7 @@ class StrategyEditor(tk.Frame):
 
         ]
 
-        self._extra_params = {
+        self.extra_params = {
             'Technical': [
                 {'code_name': 'rsi_length', 'name': 'RSI Periods', 'widget': tk.Entry, 'data_type': int},
                 {'code_name': 'ema_fast', 'name': 'MACD fast length', 'widget': tk.Entry, 'data_type': int},
@@ -87,7 +90,8 @@ class StrategyEditor(tk.Frame):
         for idx, h in enumerate(self._base_params):
             header = tk.Label(self._headers_frame, text=h['header'], bg=BG_COLOR, fg=FG_COLOR, font=GLOBAL_FONT,
                               width=h['width'], bd=0, relief=tk.FLAT)
-            header.grid(row=0, column=idx, padx=10)
+            if h['header'] != '':
+                header.grid(row=0, column=idx, padx=h['padx'])
 
         header = tk.Label(self._headers_frame, text='', bg=BG_COLOR, fg=FG_COLOR, font=GLOBAL_FONT,
                           width=0, bd=0, relief=tk.FLAT)
@@ -144,11 +148,11 @@ class StrategyEditor(tk.Frame):
 
             self.body_widgets[code_name][b_index].grid(row=b_index, column=col)
 
-        self._additional_parameters[b_index] = dict()
+        self.additional_parameters[b_index] = dict()
 
-        for strat, params in self._extra_params.items():
+        for strat, params in self.extra_params.items():
             for param in params:
-                self._additional_parameters[b_index][param['code_name']] = None
+                self.additional_parameters[b_index][param['code_name']] = None
 
         self._body_index += 1
 
@@ -176,7 +180,7 @@ class StrategyEditor(tk.Frame):
 
         row_nb = 0
 
-        for param in self._extra_params[strat_selected]:
+        for param in self.extra_params[strat_selected]:
             code_name = param['code_name']
 
             temp_label = tk.Label(self._popup_window, bg=BG_COLOR, fg=FG_COLOR, text=param['name'], font=BOLD_FONT)
@@ -191,8 +195,8 @@ class StrategyEditor(tk.Frame):
                 elif param['data_type'] == float:
                     self._extra_input[code_name].config(validate='key', validatecommand=(self._valid_float, '%P'))
 
-                if self._additional_parameters[b_index][code_name] is not None:
-                    self._extra_input[code_name].insert(tk.END, str(self._additional_parameters[b_index][code_name]))
+                if self.additional_parameters[b_index][code_name] is not None:
+                    self._extra_input[code_name].insert(tk.END, str(self.additional_parameters[b_index][code_name]))
 
             else:
                 continue
@@ -211,14 +215,14 @@ class StrategyEditor(tk.Frame):
 
         strat_selected = self.body_widgets['strategy_type_var'][b_index].get()
 
-        for param in self._extra_params[strat_selected]:
+        for param in self.extra_params[strat_selected]:
             code_name = param['code_name']
 
             if self._extra_input[code_name].get() == '':
-                self._additional_parameters[b_index][code_name] = None
+                self.additional_parameters[b_index][code_name] = None
 
             else:
-                self._additional_parameters[b_index][code_name] = param['data_type'](self._extra_input[code_name].get())
+                self.additional_parameters[b_index][code_name] = param['data_type'](self._extra_input[code_name].get())
 
         self._popup_window.destroy()
 
@@ -231,8 +235,8 @@ class StrategyEditor(tk.Frame):
 
         strat_selected = self.body_widgets['strategy_type_var'][b_index].get()
 
-        for param in self._extra_params[strat_selected]:
-            if self._additional_parameters[b_index][param['code_name']] is None:
+        for param in self.extra_params[strat_selected]:
+            if self.additional_parameters[b_index][param['code_name']] is None:
                 self.root.logging_frame.add_log(f'Msissing {param["code_name"]} parameter')
 
                 return
@@ -252,12 +256,12 @@ class StrategyEditor(tk.Frame):
             if strat_selected == 'Technical':
                 new_strategy = TechnicalStrategy(self._exchanges[exchange], contract, exchange, timeframe[0],
                                                  balance_pct, take_profit, stop_loss,
-                                                 self._additional_parameters[b_index])
+                                                 self.additional_parameters[b_index])
 
             elif strat_selected == 'Breakout':
                 new_strategy = BreakoutStrategy(self._exchanges[exchange], contract, exchange, timeframe[0],
                                                 balance_pct, take_profit, stop_loss,
-                                                self._additional_parameters[b_index])
+                                                self.additional_parameters[b_index])
             else:
                 return
 

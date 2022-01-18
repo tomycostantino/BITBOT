@@ -1554,3 +1554,620 @@
 2022-01-18 11:24:22,773 INFO :: Sell order placed on Binance | Status: new
 2022-01-18 11:24:34,692 INFO :: Binance Futures Client successfully initialized
 2022-01-18 11:24:36,219 INFO :: Binance connection opened
+2022-01-18 11:38:44,351 INFO :: Binance Futures Client successfully initialized
+2022-01-18 11:38:45,935 INFO :: Binance connection opened
+2022-01-18 11:38:45,936 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-01-18 11:39:51,540 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-01-18 11:40:03,296 INFO :: New candle for Binance BTCUSDT: 1m
+2022-01-18 11:40:44,171 WARNING :: Binance BTCUSDT: 2443 milliseconds of difference between the current time and the trade time
+2022-01-18 11:40:44,173 WARNING :: Binance BTCUSDT: 2251 milliseconds of difference between the current time and the trade time
+2022-01-18 11:41:05,706 INFO :: New candle for Binance BTCUSDT: 1m
+2022-01-18 11:41:05,709 INFO :: Getting Binance trade size...
+2022-01-18 11:41:06,609 INFO :: Binance current USDT balance = 9992.78718606, trade size = 0.002
+2022-01-18 11:41:06,610 INFO :: Long signal on BTCUSDT 1m
+2022-01-18 11:41:07,309 INFO :: Buy order placed on Binance | Status: new
+2022-01-18 11:41:10,990 INFO :: Binance order status: filled
+2022-01-18 11:42:44,601 INFO :: Binance Futures Client successfully initialized
+2022-01-18 11:42:45,602 INFO :: Binance connection opened
+2022-01-18 11:42:45,603 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-01-18 11:45:05,298 INFO :: Binance Futures Client successfully initialized
+2022-01-18 11:45:07,134 INFO :: Binance connection opened
+2022-01-18 11:45:07,135 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-01-18 11:45:24,957 INFO :: Binance Futures Client successfully initialized
+2022-01-18 11:45:25,954 INFO :: Binance connection opened
+2022-01-18 11:45:25,955 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-01-18 11:47:09,403 INFO :: Binance Futures Client successfully initialized
+2022-01-18 11:47:10,278 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 11:47:10,485 INFO :: Binance connection opened
+2022-01-18 11:47:10,486 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-01-18 11:47:10,818 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 11:47:10,819 INFO :: Bitmex Client successfully initialized
+2022-01-18 11:47:12,478 INFO :: Bitmex connection opened
+2022-01-18 11:47:39,202 INFO :: Binance Futures Client successfully initialized
+2022-01-18 11:47:39,815 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 11:47:40,440 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 11:47:40,441 INFO :: Binance connection opened
+2022-01-18 11:47:40,442 INFO :: Bitmex Client successfully initialized
+2022-01-18 11:47:40,442 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-01-18 11:47:42,280 INFO :: Bitmex connection opened
+2022-01-18 11:48:07,901 INFO :: Binance: subscribing to: btcbusd@aggTrade
+2022-01-18 11:48:21,906 INFO :: Binance: subscribing to: dodousdt@aggTrade
+2022-01-18 11:48:26,423 INFO :: Binance: subscribing to: dodousdt@bookTicker
+2022-01-18 11:48:32,957 INFO :: Getting Binance trade size...
+2022-01-18 11:48:33,561 INFO :: Binance current BUSD balance = 0.0, trade size = 0.0
+2022-01-18 11:48:33,561 INFO :: Short signal on BTCBUSD 1m
+2022-01-18 11:48:34,167 ERROR :: Error while making POST request to /fapi/v1/order: {'code': -4003, 'msg': 'Quantity less than zero.'} (error code 400)
+2022-01-18 11:48:34,168 INFO :: Getting Binance trade size...
+2022-01-18 11:48:34,814 INFO :: Binance current BUSD balance = 0.0, trade size = 0.0
+2022-01-18 11:48:34,815 INFO :: Short signal on BTCBUSD 1m
+2022-01-18 11:48:35,640 ERROR :: Error while making POST request to /fapi/v1/order: {'code': -4003, 'msg': 'Quantity less than zero.'} (error code 400)
+2022-01-18 11:48:42,787 INFO :: Getting Binance trade size...
+2022-01-18 11:48:43,458 INFO :: Binance current BUSD balance = 0.0, trade size = 0.0
+2022-01-18 11:48:43,458 INFO :: Short signal on BTCBUSD 1m
+2022-01-18 11:48:43,971 ERROR :: Error while making POST request to /fapi/v1/order: {'code': -4003, 'msg': 'Quantity less than zero.'} (error code 400)
+2022-01-18 11:48:48,931 INFO :: Getting Binance trade size...
+2022-01-18 11:48:49,715 INFO :: Binance current BUSD balance = 0.0, trade size = 0.0
+2022-01-18 11:48:49,716 INFO :: Short signal on BTCBUSD 1m
+2022-01-18 11:48:50,498 ERROR :: Error while making POST request to /fapi/v1/order: {'code': -4003, 'msg': 'Quantity less than zero.'} (error code 400)
+2022-01-18 11:48:51,695 INFO :: Getting Binance trade size...
+2022-01-18 11:48:51,964 INFO :: Binance current BUSD balance = 0.0, trade size = 0.0
+2022-01-18 11:48:51,964 INFO :: Short signal on BTCBUSD 1m
+2022-01-18 11:48:52,264 ERROR :: Error while making POST request to /fapi/v1/order: {'code': -4003, 'msg': 'Quantity less than zero.'} (error code 400)
+2022-01-18 11:48:52,265 INFO :: Getting Binance trade size...
+2022-01-18 11:48:53,545 INFO :: Binance current BUSD balance = 0.0, trade size = 0.0
+2022-01-18 11:48:53,546 INFO :: Short signal on BTCBUSD 1m
+2022-01-18 11:48:54,156 ERROR :: Error while making POST request to /fapi/v1/order: {'code': -4003, 'msg': 'Quantity less than zero.'} (error code 400)
+2022-01-18 11:48:54,160 INFO :: Getting Binance trade size...
+2022-01-18 11:48:55,080 INFO :: Binance current BUSD balance = 0.0, trade size = 0.0
+2022-01-18 11:48:55,081 INFO :: Short signal on BTCBUSD 1m
+2022-01-18 11:48:55,692 ERROR :: Error while making POST request to /fapi/v1/order: {'code': -4003, 'msg': 'Quantity less than zero.'} (error code 400)
+2022-01-18 11:48:55,693 INFO :: Getting Binance trade size...
+2022-01-18 11:48:55,932 INFO :: Binance current BUSD balance = 0.0, trade size = 0.0
+2022-01-18 11:48:55,933 INFO :: Short signal on BTCBUSD 1m
+2022-01-18 11:48:57,535 ERROR :: Error while making POST request to /fapi/v1/order: {'code': -4003, 'msg': 'Quantity less than zero.'} (error code 400)
+2022-01-18 11:48:57,536 WARNING :: Binance BTCBUSD: 2618 milliseconds of difference between the current time and the trade time
+2022-01-18 11:48:57,536 INFO :: Getting Binance trade size...
+2022-01-18 11:48:58,153 INFO :: Binance current BUSD balance = 0.0, trade size = 0.0
+2022-01-18 11:48:58,154 INFO :: Short signal on BTCBUSD 1m
+2022-01-18 11:48:58,806 ERROR :: Error while making POST request to /fapi/v1/order: {'code': -4003, 'msg': 'Quantity less than zero.'} (error code 400)
+2022-01-18 11:48:58,807 INFO :: Getting Binance trade size...
+2022-01-18 11:48:59,760 INFO :: Binance current BUSD balance = 0.0, trade size = 0.0
+2022-01-18 11:48:59,760 INFO :: Short signal on BTCBUSD 1m
+2022-01-18 11:49:00,688 ERROR :: Error while making POST request to /fapi/v1/order: {'code': -4003, 'msg': 'Quantity less than zero.'} (error code 400)
+2022-01-18 11:49:00,808 INFO :: New candle for Binance BTCBUSD: 1m
+2022-01-18 11:56:14,987 INFO :: Binance Futures Client successfully initialized
+2022-01-18 11:56:15,458 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 11:56:15,905 INFO :: Binance connection opened
+2022-01-18 11:56:15,909 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 11:56:15,910 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-01-18 11:56:15,911 INFO :: Bitmex Client successfully initialized
+2022-01-18 11:56:17,528 INFO :: Bitmex connection opened
+2022-01-18 11:56:32,502 INFO :: Binance: subscribing to: 1000shibusdt@aggTrade
+2022-01-18 11:57:15,368 INFO :: Binance: subscribing to: btcbusd@aggTrade
+2022-01-18 11:57:32,749 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-01-18 11:57:55,397 INFO :: Getting Binance trade size...
+2022-01-18 11:57:55,986 INFO :: Binance current USDT balance = 9992.75332999, trade size = 0.002
+2022-01-18 11:57:55,986 INFO :: Short signal on BTCUSDT 1m
+2022-01-18 11:57:56,667 INFO :: Sell order placed on Binance | Status: new
+2022-01-18 11:57:59,433 INFO :: Binance order status: filled
+2022-01-18 11:58:02,624 INFO :: Binance New candle for BTCBUSD 1m
+2022-01-18 11:58:02,725 INFO :: Getting Binance trade size...
+2022-01-18 11:58:04,056 INFO :: Binance current BUSD balance = 0.0, trade size = 0.0
+2022-01-18 11:58:04,057 INFO :: Short signal on BTCBUSD 1m
+2022-01-18 11:58:04,962 ERROR :: Error while making POST request to /fapi/v1/order: {'code': -4003, 'msg': 'Quantity less than zero.'} (error code 400)
+2022-01-18 11:58:04,963 INFO :: Getting Binance trade size...
+2022-01-18 11:58:05,574 INFO :: Binance current BUSD balance = 0.0, trade size = 0.0
+2022-01-18 11:58:05,575 INFO :: Short signal on BTCBUSD 1m
+2022-01-18 11:58:06,188 ERROR :: Error while making POST request to /fapi/v1/order: {'code': -4003, 'msg': 'Quantity less than zero.'} (error code 400)
+2022-01-18 11:58:06,798 INFO :: Getting Binance trade size...
+2022-01-18 11:58:07,047 INFO :: Binance current BUSD balance = 0.0, trade size = 0.0
+2022-01-18 11:58:07,047 INFO :: Short signal on BTCBUSD 1m
+2022-01-18 11:58:07,728 ERROR :: Error while making POST request to /fapi/v1/order: {'code': -4003, 'msg': 'Quantity less than zero.'} (error code 400)
+2022-01-18 11:58:09,358 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-18 12:04:50,217 INFO :: Binance Futures Client successfully initialized
+2022-01-18 12:04:50,836 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 12:04:51,451 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 12:04:51,451 INFO :: Binance connection opened
+2022-01-18 12:04:51,452 INFO :: Bitmex Client successfully initialized
+2022-01-18 12:04:51,452 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-01-18 12:04:53,290 INFO :: Bitmex connection opened
+2022-01-18 12:05:08,845 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-01-18 12:05:25,379 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-01-18 12:05:32,168 INFO :: Binance: subscribing to: adausdt@bookTicker
+2022-01-18 12:05:49,703 INFO :: Binance: subscribing to: 1000shibusdt@aggTrade
+2022-01-18 12:06:01,802 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-18 12:06:05,803 INFO :: Getting Binance trade size...
+2022-01-18 12:06:06,407 INFO :: Binance current USDT balance = 9992.78754695, trade size = 0.002
+2022-01-18 12:06:06,408 INFO :: Short signal on BTCUSDT 1m
+2022-01-18 12:06:06,951 INFO :: Sell order placed on Binance | Status: new
+2022-01-18 12:06:09,515 INFO :: Binance order status: filled
+2022-01-18 12:06:30,090 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-01-18 12:06:48,888 INFO :: Getting Binance trade size...
+2022-01-18 12:06:49,416 INFO :: Binance current USDT balance = 9992.72560239, trade size = 0.031
+2022-01-18 12:06:49,416 INFO :: Short signal on ETHUSDT 1m
+2022-01-18 12:06:49,554 INFO :: Binance: subscribing to: adausdt@aggTrade
+2022-01-18 12:06:50,028 INFO :: Sell order placed on Binance | Status: new
+2022-01-18 12:06:50,029 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x11609c1f0>>: dictionary changed size during iteration
+2022-01-18 12:06:50,029 ERROR :: Binance connection error: dictionary changed size during iteration
+2022-01-18 12:06:52,793 INFO :: Binance order status: filled
+2022-01-18 12:06:59,552 INFO :: Stop loss for BTCUSDT 1m | Current Price = 42772.8 (Entry price was 42305.7)
+2022-01-18 12:07:00,473 INFO :: Exit order on BTCUSDT 1m placed successfully
+2022-01-18 12:07:00,473 INFO :: Getting Binance trade size...
+2022-01-18 12:07:01,089 INFO :: Binance current USDT balance = 9992.64804198, trade size = 0.002
+2022-01-18 12:07:01,090 INFO :: Long signal on BTCUSDT 1m
+2022-01-18 12:07:01,704 ERROR :: Error while making POST request to /fapi/v1/order: {'code': -4131, 'msg': "The counterparty's best price does not meet the PERCENT_PRICE filter limit."} (error code 400)
+2022-01-18 12:07:01,711 WARNING :: Binance BTCUSDT: 2455 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:01,712 INFO :: Getting Binance trade size...
+2022-01-18 12:07:01,991 INFO :: Binance current USDT balance = 9992.64804198, trade size = 0.002
+2022-01-18 12:07:01,992 INFO :: Long signal on BTCUSDT 1m
+2022-01-18 12:07:02,623 INFO :: Buy order placed on Binance | Status: new
+2022-01-18 12:07:02,626 WARNING :: Binance BTCUSDT: 3370 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,627 WARNING :: Binance BTCUSDT: 3371 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,627 WARNING :: Binance BTCUSDT: 3371 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,627 WARNING :: Binance BTCUSDT: 3371 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,628 WARNING :: Binance BTCUSDT: 3372 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,628 WARNING :: Binance BTCUSDT: 3372 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,628 WARNING :: Binance BTCUSDT: 3372 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,628 WARNING :: Binance BTCUSDT: 3372 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,629 WARNING :: Binance BTCUSDT: 3373 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,629 WARNING :: Binance BTCUSDT: 3373 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,629 WARNING :: Binance BTCUSDT: 3373 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,629 WARNING :: Binance BTCUSDT: 3373 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,629 WARNING :: Binance BTCUSDT: 3373 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,630 WARNING :: Binance BTCUSDT: 3374 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,630 WARNING :: Binance BTCUSDT: 3374 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,630 WARNING :: Binance BTCUSDT: 3374 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,630 WARNING :: Binance BTCUSDT: 3374 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,630 WARNING :: Binance BTCUSDT: 3374 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,631 WARNING :: Binance BTCUSDT: 3375 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,631 WARNING :: Binance BTCUSDT: 3375 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,631 WARNING :: Binance BTCUSDT: 3375 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,631 WARNING :: Binance BTCUSDT: 3375 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,631 WARNING :: Binance BTCUSDT: 3375 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,632 WARNING :: Binance BTCUSDT: 3376 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,632 WARNING :: Binance BTCUSDT: 3376 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,632 WARNING :: Binance BTCUSDT: 3376 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,632 WARNING :: Binance BTCUSDT: 3376 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,632 WARNING :: Binance BTCUSDT: 3376 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,633 WARNING :: Binance BTCUSDT: 3377 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,633 WARNING :: Binance BTCUSDT: 3377 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,633 WARNING :: Binance BTCUSDT: 3377 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,633 WARNING :: Binance BTCUSDT: 3377 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,633 WARNING :: Binance BTCUSDT: 3377 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,634 WARNING :: Binance BTCUSDT: 3378 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,634 WARNING :: Binance BTCUSDT: 3378 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,634 WARNING :: Binance BTCUSDT: 3378 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,635 WARNING :: Binance BTCUSDT: 2585 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,635 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-18 12:07:02,635 WARNING :: Binance ADAUSDT: 2477 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,635 INFO :: Binance New candle for ADAUSDT 1m
+2022-01-18 12:07:02,635 WARNING :: Binance BTCUSDT: 2585 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:02,636 WARNING :: Binance ADAUSDT: 2478 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:03,423 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-18 12:07:05,388 INFO :: Binance order status: filled
+2022-01-18 12:07:07,843 INFO :: Stop loss for BTCUSDT 1m | Current Price = 42316.5 (Entry price was 44511.0)
+2022-01-18 12:07:08,767 INFO :: Exit order on BTCUSDT 1m placed successfully
+2022-01-18 12:07:32,121 INFO :: Getting Binance trade size...
+2022-01-18 12:07:32,730 INFO :: Binance current USDT balance = 9989.17295415, trade size = 63.0
+2022-01-18 12:07:32,731 INFO :: Long signal on ADAUSDT 1m
+2022-01-18 12:07:33,649 INFO :: Buy order placed on Binance | Status: new
+2022-01-18 12:07:33,651 WARNING :: Binance ETHUSDT: 2094 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:33,651 WARNING :: Binance ADAUSDT: 2041 milliseconds of difference between the current time and the trade time
+2022-01-18 12:07:36,219 INFO :: Binance order status: filled
+2022-01-18 12:08:00,386 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-18 12:08:01,611 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-18 12:08:03,445 INFO :: Binance New candle for ADAUSDT 1m
+2022-01-18 12:08:35,394 INFO :: Stop loss for ADAUSDT 1m | Current Price = 1.5902 (Entry price was 1.6075)
+2022-01-18 12:08:36,284 INFO :: Exit order on ADAUSDT 1m placed successfully
+2022-01-18 12:09:03,658 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-18 12:09:06,626 INFO :: Binance New candle for ADAUSDT 1m
+2022-01-18 12:09:24,065 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-18 12:09:24,068 INFO :: Getting Binance trade size...
+2022-01-18 12:09:24,860 INFO :: Binance current USDT balance = 9987.88551891, trade size = 0.002
+2022-01-18 12:09:24,860 INFO :: Short signal on BTCUSDT 1m
+2022-01-18 12:09:25,788 INFO :: Sell order placed on Binance | Status: new
+2022-01-18 12:09:28,396 INFO :: Binance order status: filled
+2022-01-18 12:10:01,818 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-18 12:10:09,397 INFO :: Binance New candle for ADAUSDT 1m
+2022-01-18 12:10:09,418 INFO :: Getting Binance trade size...
+2022-01-18 12:10:10,018 INFO :: Binance current USDT balance = 9984.4217496, trade size = 63.0
+2022-01-18 12:10:10,018 INFO :: Short signal on ADAUSDT 1m
+2022-01-18 12:10:10,938 INFO :: Sell order placed on Binance | Status: new
+2022-01-18 12:10:11,679 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-18 12:10:13,702 INFO :: Binance order status: filled
+2022-01-18 12:11:01,384 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-18 12:11:01,511 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-18 12:11:12,569 INFO :: Binance New candle for ADAUSDT 1m
+2022-01-18 12:12:05,522 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-18 12:12:15,747 INFO :: Binance New candle for ADAUSDT 1m
+2022-01-18 12:12:19,564 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-18 12:12:30,714 ERROR :: error from callback <bound method BinanceClient._on_close of <connectors.binance.BinanceClient object at 0x11609c1f0>>: _on_close() takes 2 positional arguments but 4 were given
+2022-01-18 12:12:30,723 ERROR :: Binance connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-01-18 14:52:53,754 INFO :: Binance Futures Client successfully initialized
+2022-01-18 14:52:54,367 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 14:52:54,557 INFO :: Binance connection opened
+2022-01-18 14:52:54,558 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-01-18 14:52:54,911 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 14:52:54,912 INFO :: Bitmex Client successfully initialized
+2022-01-18 14:52:56,681 INFO :: Bitmex connection opened
+2022-01-18 14:53:09,490 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-01-18 14:53:15,711 INFO :: Getting Binance trade size...
+2022-01-18 14:53:16,221 INFO :: Binance current USDT balance = 9984.38176224, trade size = 0.002
+2022-01-18 14:53:16,222 INFO :: Long signal on BTCUSDT 1m
+2022-01-18 14:53:17,100 INFO :: Buy order placed on Binance | Status: new
+2022-01-18 14:53:19,867 INFO :: Binance order status: filled
+2022-01-18 14:57:06,902 INFO :: Binance Futures Client successfully initialized
+2022-01-18 14:57:07,513 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 14:57:07,960 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 14:57:07,960 INFO :: Bitmex Client successfully initialized
+2022-01-18 14:57:08,187 INFO :: Binance connection opened
+2022-01-18 14:57:08,188 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-01-18 14:57:09,647 INFO :: Bitmex connection opened
+2022-01-18 14:57:22,294 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-01-18 14:58:01,759 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-18 14:58:01,763 INFO :: Getting Binance trade size...
+2022-01-18 14:58:02,505 INFO :: Binance current USDT balance = 9984.34812848, trade size = 0.002
+2022-01-18 14:58:02,505 INFO :: Short signal on BTCUSDT 1m
+2022-01-18 14:58:03,033 INFO :: Sell order placed on Binance | Status: new
+2022-01-18 14:58:06,487 INFO :: Binance order status: filled
+2022-01-18 14:59:01,817 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-18 15:00:08,427 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-18 15:01:04,070 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-18 15:02:42,400 INFO :: Binance Futures Client successfully initialized
+2022-01-18 15:02:42,942 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 15:02:43,254 INFO :: Binance connection opened
+2022-01-18 15:02:43,255 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-01-18 15:02:43,367 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 15:02:43,368 INFO :: Bitmex Client successfully initialized
+2022-01-18 15:02:45,409 INFO :: Bitmex connection opened
+2022-01-18 15:04:37,269 INFO :: Binance Futures Client successfully initialized
+2022-01-18 15:04:38,318 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 15:04:38,751 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 15:04:38,752 INFO :: Bitmex Client successfully initialized
+2022-01-18 15:04:40,650 INFO :: Bitmex connection opened
+2022-01-18 15:04:40,918 INFO :: Binance connection opened
+2022-01-18 15:04:40,918 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-01-18 15:05:58,673 INFO :: Binance Futures Client successfully initialized
+2022-01-18 15:05:59,284 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 15:05:59,899 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 15:05:59,899 INFO :: Binance connection opened
+2022-01-18 15:05:59,900 INFO :: Bitmex Client successfully initialized
+2022-01-18 15:06:00,070 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-01-18 15:06:01,739 INFO :: Bitmex connection opened
+2022-01-18 15:07:26,148 INFO :: Binance Futures Client successfully initialized
+2022-01-18 15:07:26,792 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 15:07:27,452 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 15:07:27,453 INFO :: Binance connection opened
+2022-01-18 15:07:27,454 INFO :: Bitmex Client successfully initialized
+2022-01-18 15:07:27,687 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-01-18 15:07:29,098 INFO :: Bitmex connection opened
+2022-01-18 15:11:31,675 INFO :: Binance Futures Client successfully initialized
+2022-01-18 15:11:32,764 INFO :: Binance connection opened
+2022-01-18 15:11:32,765 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-01-18 15:11:32,808 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 15:11:33,229 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 15:11:33,230 INFO :: Bitmex Client successfully initialized
+2022-01-18 15:11:36,128 INFO :: Bitmex connection opened
+2022-01-18 15:13:03,828 INFO :: Binance Futures Client successfully initialized
+2022-01-18 15:13:04,356 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 15:13:05,056 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 15:13:05,057 INFO :: Binance connection opened
+2022-01-18 15:13:05,058 INFO :: Bitmex Client successfully initialized
+2022-01-18 15:13:05,304 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-01-18 15:13:06,778 INFO :: Bitmex connection opened
+2022-01-18 15:14:45,205 INFO :: Binance Futures Client successfully initialized
+2022-01-18 15:14:45,692 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 15:14:46,120 INFO :: Binance connection opened
+2022-01-18 15:14:46,121 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-01-18 15:14:47,176 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 15:14:47,177 INFO :: Bitmex Client successfully initialized
+2022-01-18 15:14:48,888 INFO :: Bitmex connection opened
+2022-01-18 15:15:52,171 INFO :: Binance Futures Client successfully initialized
+2022-01-18 15:15:52,786 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 15:15:53,394 INFO :: Binance connection opened
+2022-01-18 15:15:53,398 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 15:15:53,398 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-01-18 15:15:53,399 INFO :: Bitmex Client successfully initialized
+2022-01-18 15:15:55,242 INFO :: Bitmex connection opened
+2022-01-18 15:16:25,652 INFO :: Binance Futures Client successfully initialized
+2022-01-18 15:16:26,512 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 15:16:27,085 INFO :: Binance connection opened
+2022-01-18 15:16:27,087 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 15:16:27,088 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-01-18 15:16:27,089 INFO :: Bitmex Client successfully initialized
+2022-01-18 15:16:28,754 INFO :: Bitmex connection opened
+2022-01-18 15:16:37,320 ERROR :: error from callback <bound method BinanceClient._on_close of <connectors.binance.BinanceClient object at 0x117ba5070>>: _on_close() takes 2 positional arguments but 4 were given
+2022-01-18 15:16:37,322 ERROR :: Binance connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-01-18 21:46:12,570 INFO :: Binance Futures Client successfully initialized
+2022-01-18 21:46:13,795 INFO :: Binance connection opened
+2022-01-18 21:46:15,500 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 21:46:16,170 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 21:46:16,171 INFO :: Bitmex Client successfully initialized
+2022-01-18 21:46:18,847 INFO :: Bitmex connection opened
+2022-01-18 21:46:52,319 INFO :: Getting Binance trade size...
+2022-01-18 21:46:52,836 INFO :: Binance current USDT balance = 9982.06989787, trade size = 0.002
+2022-01-18 21:46:52,836 INFO :: Long signal on BTCUSDT 1m
+2022-01-18 21:46:53,411 INFO :: Buy order placed on Binance | Status: new
+2022-01-18 21:46:55,733 INFO :: Binance order status: filled
+2022-01-18 21:47:12,174 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-18 21:47:17,979 INFO :: Getting Binance trade size...
+2022-01-18 21:47:18,599 INFO :: Binance current USDT balance = 9982.03625419, trade size = 0.031
+2022-01-18 21:47:18,599 INFO :: Short signal on ETHUSDT 1m
+2022-01-18 21:47:19,112 INFO :: Sell order placed on Binance | Status: new
+2022-01-18 21:47:21,668 INFO :: Binance order status: filled
+2022-01-18 21:48:00,044 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-18 21:48:03,777 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-18 21:48:38,927 WARNING :: Binance BTCUSDT: 2842 milliseconds of difference between the current time and the trade time
+2022-01-18 21:49:03,665 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-18 21:49:09,433 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-18 21:50:01,889 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-18 21:50:01,892 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-18 21:50:01,902 INFO :: Binance New candle for ETCUSDT 1m
+2022-01-18 21:50:12,020 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-18 21:50:30,892 WARNING :: Binance BTCUSDT: 2301 milliseconds of difference between the current time and the trade time
+2022-01-18 21:50:30,894 WARNING :: Binance BTCUSDT: 2303 milliseconds of difference between the current time and the trade time
+2022-01-18 21:50:30,895 WARNING :: Binance BTCUSDT: 2202 milliseconds of difference between the current time and the trade time
+2022-01-18 21:50:30,895 WARNING :: Binance BTCUSDT: 2202 milliseconds of difference between the current time and the trade time
+2022-01-18 21:50:43,185 ERROR :: Error while making GET request to /fapi/v1/ticker/bookTicker: {'code': -4108, 'msg': 'Symbol is on delivering or delivered or settling or closed or pre-trading.'} (error code 400)
+2022-01-18 21:50:46,869 ERROR :: Error while making GET request to /fapi/v1/ticker/bookTicker: {'code': -4108, 'msg': 'Symbol is on delivering or delivered or settling or closed or pre-trading.'} (error code 400)
+2022-01-18 21:50:49,329 ERROR :: Error while making GET request to /fapi/v1/ticker/bookTicker: {'code': -4108, 'msg': 'Symbol is on delivering or delivered or settling or closed or pre-trading.'} (error code 400)
+2022-01-18 21:50:49,903 ERROR :: Error while making GET request to /fapi/v1/ticker/bookTicker: {'code': -4108, 'msg': 'Symbol is on delivering or delivered or settling or closed or pre-trading.'} (error code 400)
+2022-01-18 21:51:01,305 INFO :: Binance New candle for ETCUSDT 1m
+2022-01-18 21:51:01,312 INFO :: Getting Binance trade size...
+2022-01-18 21:51:01,927 INFO :: Binance current USDT balance = 9981.99679665, trade size = 3.17
+2022-01-18 21:51:01,928 INFO :: Long signal on ETCUSDT 1m
+2022-01-18 21:51:02,221 INFO :: Buy order placed on Binance | Status: new
+2022-01-18 21:51:02,462 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-18 21:51:02,463 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-18 21:51:03,687 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-18 21:51:04,784 INFO :: Binance order status: filled
+2022-01-18 21:51:05,581 ERROR :: Error while making GET request to /fapi/v1/ticker/bookTicker: {'code': -4108, 'msg': 'Symbol is on delivering or delivered or settling or closed or pre-trading.'} (error code 400)
+2022-01-18 21:51:09,762 ERROR :: Error while making GET request to /fapi/v1/ticker/bookTicker: {'code': -4108, 'msg': 'Symbol is on delivering or delivered or settling or closed or pre-trading.'} (error code 400)
+2022-01-18 21:51:11,773 ERROR :: Error while making GET request to /fapi/v1/ticker/bookTicker: {'code': -4108, 'msg': 'Symbol is on delivering or delivered or settling or closed or pre-trading.'} (error code 400)
+2022-01-18 21:51:13,902 ERROR :: Error while making GET request to /fapi/v1/ticker/bookTicker: {'code': -4108, 'msg': 'Symbol is on delivering or delivered or settling or closed or pre-trading.'} (error code 400)
+2022-01-18 21:51:17,592 ERROR :: Error while making GET request to /fapi/v1/ticker/bookTicker: {'code': -4108, 'msg': 'Symbol is on delivering or delivered or settling or closed or pre-trading.'} (error code 400)
+2022-01-18 21:51:22,693 ERROR :: Error while making GET request to /fapi/v1/ticker/bookTicker: {'code': -4108, 'msg': 'Symbol is on delivering or delivered or settling or closed or pre-trading.'} (error code 400)
+2022-01-18 21:51:29,934 WARNING :: Binance BTCUSDT: 2040 milliseconds of difference between the current time and the trade time
+2022-01-18 21:51:29,938 WARNING :: Binance BTCUSDT: 2044 milliseconds of difference between the current time and the trade time
+2022-01-18 21:52:01,811 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-18 21:52:03,180 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-18 21:52:03,181 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-18 21:52:07,521 INFO :: Binance New candle for ETCUSDT 1m
+2022-01-18 21:53:00,932 INFO :: Binance New candle for SOLUSDT 1m
+2022-01-18 21:53:00,934 INFO :: Getting Binance trade size...
+2022-01-18 21:53:01,576 INFO :: Binance current USDT balance = 9981.95684578, trade size = 1.0
+2022-01-18 21:53:01,576 INFO :: Short signal on SOLUSDT 1m
+2022-01-18 21:53:02,111 INFO :: Sell order placed on Binance | Status: new
+2022-01-18 21:53:03,010 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-18 21:53:03,010 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-18 21:53:03,644 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-18 21:53:04,611 INFO :: Binance order status: filled
+2022-01-18 21:53:13,778 INFO :: Binance New candle for ETCUSDT 1m
+2022-01-18 21:53:20,179 INFO :: Stop loss for SOLUSDT 1m | Current Price = 137.8 (Entry price was 137.08)
+2022-01-18 21:53:21,003 INFO :: Exit order on SOLUSDT 1m placed successfully
+2022-01-18 21:53:46,844 WARNING :: Binance BTCUSDT: 4500 milliseconds of difference between the current time and the trade time
+2022-01-18 21:53:46,847 WARNING :: Binance BTCUSDT: 4503 milliseconds of difference between the current time and the trade time
+2022-01-18 21:54:00,067 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-18 21:54:00,068 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-18 21:54:05,035 INFO :: Binance New candle for SOLUSDT 1m
+2022-01-18 21:54:07,628 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-18 21:54:20,012 INFO :: Binance New candle for ETCUSDT 1m
+2022-01-18 21:54:36,875 INFO :: Getting Binance trade size...
+2022-01-18 21:54:37,920 INFO :: Binance current USDT balance = 9981.12689378, trade size = 1.0
+2022-01-18 21:54:37,920 INFO :: Long signal on SOLUSDT 1m
+2022-01-18 21:54:38,644 INFO :: Buy order placed on Binance | Status: new
+2022-01-18 21:54:41,304 INFO :: Binance order status: filled
+2022-01-18 21:55:03,100 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-18 21:55:03,103 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-18 21:55:03,613 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-18 21:55:09,843 INFO :: Binance New candle for SOLUSDT 1m
+2022-01-18 21:55:25,785 INFO :: Binance New candle for ETCUSDT 1m
+2022-01-18 21:55:38,400 WARNING :: Binance ETHUSDT: 4809 milliseconds of difference between the current time and the trade time
+2022-01-18 21:55:38,404 WARNING :: Binance BTCUSDT: 4336 milliseconds of difference between the current time and the trade time
+2022-01-18 21:55:38,404 WARNING :: Binance BTCUSDT: 4336 milliseconds of difference between the current time and the trade time
+2022-01-18 21:55:41,463 INFO :: Stop loss for SOLUSDT 1m | Current Price = 137.72 (Entry price was 137.93)
+2022-01-18 21:55:42,085 INFO :: Exit order on SOLUSDT 1m placed successfully
+2022-01-18 21:55:42,086 INFO :: Getting Binance trade size...
+2022-01-18 21:55:42,695 INFO :: Binance current USDT balance = 9980.16688978, trade size = 1.0
+2022-01-18 21:55:42,695 INFO :: Short signal on SOLUSDT 1m
+2022-01-18 21:55:43,313 INFO :: Sell order placed on Binance | Status: new
+2022-01-18 21:55:45,988 INFO :: Binance order status: filled
+2022-01-18 21:55:54,639 WARNING :: Binance BTCUSDT: 4389 milliseconds of difference between the current time and the trade time
+2022-01-18 21:55:54,640 WARNING :: Binance BTCUSDT: 4390 milliseconds of difference between the current time and the trade time
+2022-01-18 21:55:54,641 WARNING :: Binance BTCUSDT: 3635 milliseconds of difference between the current time and the trade time
+2022-01-18 21:55:54,641 WARNING :: Binance BTCUSDT: 3635 milliseconds of difference between the current time and the trade time
+2022-01-18 21:55:54,642 WARNING :: Binance BTCUSDT: 2772 milliseconds of difference between the current time and the trade time
+2022-01-18 21:55:54,642 WARNING :: Binance BTCUSDT: 2772 milliseconds of difference between the current time and the trade time
+2022-01-18 21:55:54,643 WARNING :: Binance BTCUSDT: 2574 milliseconds of difference between the current time and the trade time
+2022-01-18 21:55:54,643 WARNING :: Binance BTCUSDT: 2574 milliseconds of difference between the current time and the trade time
+2022-01-18 21:56:01,826 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-18 21:56:04,282 INFO :: Binance New candle for ETCUSDT 1m
+2022-01-18 21:56:13,540 INFO :: Binance New candle for SOLUSDT 1m
+2022-01-18 21:56:13,689 INFO :: Stop loss for SOLUSDT 1m | Current Price = 137.94 (Entry price was 137.08)
+2022-01-18 21:56:14,302 INFO :: Exit order on SOLUSDT 1m placed successfully
+2022-01-18 21:56:26,017 WARNING :: Binance BTCUSDT: 3670 milliseconds of difference between the current time and the trade time
+2022-01-18 21:56:26,019 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-18 21:56:26,019 WARNING :: Binance BTCUSDT: 3672 milliseconds of difference between the current time and the trade time
+2022-01-18 21:56:26,019 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-18 21:56:26,032 WARNING :: Binance BTCUSDT: 2657 milliseconds of difference between the current time and the trade time
+2022-01-18 21:56:26,032 WARNING :: Binance BTCUSDT: 2657 milliseconds of difference between the current time and the trade time
+2022-01-18 21:56:26,033 WARNING :: Binance ETHUSDT: 2180 milliseconds of difference between the current time and the trade time
+2022-01-18 21:56:33,590 WARNING :: Websocket connection closed
+2022-01-18 21:56:34,788 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x1176eed00>>: _on_close() takes 2 positional arguments but 4 were given
+2022-01-18 21:56:34,789 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-01-18 21:56:47,822 INFO :: Binance Futures Client successfully initialized
+2022-01-18 21:56:48,450 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 21:56:49,052 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 21:56:49,052 INFO :: Binance connection opened
+2022-01-18 21:56:49,053 INFO :: Bitmex Client successfully initialized
+2022-01-18 21:56:50,694 INFO :: Bitmex connection opened
+2022-01-18 23:24:43,416 INFO :: Binance Futures Client successfully initialized
+2022-01-18 23:24:44,333 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:24:44,539 INFO :: Binance connection opened
+2022-01-18 23:24:45,094 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:24:45,095 INFO :: Bitmex Client successfully initialized
+2022-01-18 23:24:47,099 INFO :: Bitmex connection opened
+2022-01-18 23:25:23,148 INFO :: Binance Futures Client successfully initialized
+2022-01-18 23:25:23,587 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:25:23,903 INFO :: Binance connection opened
+2022-01-18 23:25:24,067 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:25:24,068 INFO :: Bitmex Client successfully initialized
+2022-01-18 23:25:25,809 INFO :: Bitmex connection opened
+2022-01-18 23:26:18,030 INFO :: Binance Futures Client successfully initialized
+2022-01-18 23:26:18,555 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:26:18,932 INFO :: Binance connection opened
+2022-01-18 23:26:19,037 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:26:19,038 INFO :: Bitmex Client successfully initialized
+2022-01-18 23:26:20,800 INFO :: Bitmex connection opened
+2022-01-18 23:26:38,621 INFO :: Binance Futures Client successfully initialized
+2022-01-18 23:26:39,740 INFO :: Binance connection opened
+2022-01-18 23:26:40,333 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:26:40,804 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:26:40,805 INFO :: Bitmex Client successfully initialized
+2022-01-18 23:26:42,415 INFO :: Bitmex connection opened
+2022-01-18 23:27:58,801 INFO :: Binance Futures Client successfully initialized
+2022-01-18 23:27:59,417 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:28:00,024 INFO :: Binance connection opened
+2022-01-18 23:28:01,259 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:28:01,260 INFO :: Bitmex Client successfully initialized
+2022-01-18 23:28:03,052 INFO :: Bitmex connection opened
+2022-01-18 23:29:28,502 INFO :: Binance Futures Client successfully initialized
+2022-01-18 23:29:29,316 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:29:30,035 INFO :: Binance connection opened
+2022-01-18 23:29:30,037 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:29:30,038 INFO :: Bitmex Client successfully initialized
+2022-01-18 23:29:31,777 INFO :: Bitmex connection opened
+2022-01-18 23:30:11,518 INFO :: Binance Futures Client successfully initialized
+2022-01-18 23:30:12,739 INFO :: Binance connection opened
+2022-01-18 23:30:13,048 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:30:13,666 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:30:13,667 INFO :: Bitmex Client successfully initialized
+2022-01-18 23:30:15,507 INFO :: Bitmex connection opened
+2022-01-18 23:30:26,594 WARNING :: Websocket connection closed
+2022-01-18 23:30:26,935 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x1251eca30>>: _on_close() takes 2 positional arguments but 4 were given
+2022-01-18 23:30:26,936 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-01-18 23:33:44,209 INFO :: Binance Futures Client successfully initialized
+2022-01-18 23:33:44,765 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:33:45,332 INFO :: Binance connection opened
+2022-01-18 23:33:45,334 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:33:45,335 INFO :: Bitmex Client successfully initialized
+2022-01-18 23:33:46,961 INFO :: Bitmex connection opened
+2022-01-18 23:35:34,085 INFO :: Binance Futures Client successfully initialized
+2022-01-18 23:35:34,660 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:35:35,012 INFO :: Binance connection opened
+2022-01-18 23:35:36,227 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:35:36,228 INFO :: Bitmex Client successfully initialized
+2022-01-18 23:35:38,084 INFO :: Bitmex connection opened
+2022-01-18 23:36:09,416 INFO :: Binance Futures Client successfully initialized
+2022-01-18 23:36:10,025 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:36:10,413 INFO :: Binance connection opened
+2022-01-18 23:36:10,955 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:36:10,956 INFO :: Bitmex Client successfully initialized
+2022-01-18 23:36:12,794 INFO :: Bitmex connection opened
+2022-01-18 23:38:00,626 INFO :: Binance Futures Client successfully initialized
+2022-01-18 23:38:01,459 INFO :: Binance connection opened
+2022-01-18 23:38:02,466 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:38:03,081 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:38:03,082 INFO :: Bitmex Client successfully initialized
+2022-01-18 23:38:04,752 INFO :: Bitmex connection opened
+2022-01-18 23:40:48,977 INFO :: Binance Futures Client successfully initialized
+2022-01-18 23:40:49,527 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:40:50,200 INFO :: Binance connection opened
+2022-01-18 23:40:51,124 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:40:51,125 INFO :: Bitmex Client successfully initialized
+2022-01-18 23:40:52,774 INFO :: Bitmex connection opened
+2022-01-18 23:41:02,493 INFO :: Binance Futures Client successfully initialized
+2022-01-18 23:41:03,107 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:41:03,720 INFO :: Binance connection opened
+2022-01-18 23:41:03,721 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:41:03,722 INFO :: Bitmex Client successfully initialized
+2022-01-18 23:41:05,868 INFO :: Bitmex connection opened
+2022-01-18 23:41:17,593 INFO :: Binance Futures Client successfully initialized
+2022-01-18 23:41:18,161 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:41:18,776 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:41:18,777 INFO :: Binance connection opened
+2022-01-18 23:41:18,778 INFO :: Bitmex Client successfully initialized
+2022-01-18 23:41:20,624 INFO :: Bitmex connection opened
+2022-01-18 23:42:07,930 INFO :: Binance Futures Client successfully initialized
+2022-01-18 23:42:08,543 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:42:08,947 INFO :: Binance connection opened
+2022-01-18 23:42:08,974 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:42:08,974 INFO :: Bitmex Client successfully initialized
+2022-01-18 23:42:10,693 INFO :: Bitmex connection opened
+2022-01-18 23:43:17,276 INFO :: Binance Futures Client successfully initialized
+2022-01-18 23:43:18,385 INFO :: Binance connection opened
+2022-01-18 23:43:18,895 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:43:19,389 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:43:19,390 INFO :: Bitmex Client successfully initialized
+2022-01-18 23:43:21,013 INFO :: Bitmex connection opened
+2022-01-18 23:43:35,984 INFO :: Binance Futures Client successfully initialized
+2022-01-18 23:43:36,644 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:43:37,102 INFO :: Binance connection opened
+2022-01-18 23:43:37,103 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:43:37,105 INFO :: Bitmex Client successfully initialized
+2022-01-18 23:43:38,774 INFO :: Bitmex connection opened
+2022-01-18 23:44:01,899 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-18 23:45:24,232 INFO :: Binance Futures Client successfully initialized
+2022-01-18 23:45:24,719 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:45:25,377 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:45:25,378 INFO :: Binance connection opened
+2022-01-18 23:45:25,378 INFO :: Bitmex Client successfully initialized
+2022-01-18 23:45:27,071 INFO :: Bitmex connection opened
+2022-01-18 23:45:45,135 INFO :: Getting Binance trade size...
+2022-01-18 23:45:45,947 INFO :: Binance current USDT balance = 9979.19688178, trade size = 0.002
+2022-01-18 23:45:45,947 INFO :: Short signal on BTCUSDT 1m
+2022-01-18 23:45:46,431 INFO :: Sell order placed on Binance | Status: new
+2022-01-18 23:46:53,943 INFO :: Binance Futures Client successfully initialized
+2022-01-18 23:46:54,556 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:46:55,167 INFO :: Binance connection opened
+2022-01-18 23:46:55,563 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:46:55,564 INFO :: Bitmex Client successfully initialized
+2022-01-18 23:46:57,328 INFO :: Bitmex connection opened
+2022-01-18 23:47:09,797 INFO :: Getting Binance trade size...
+2022-01-18 23:47:10,541 INFO :: Binance current USDT balance = 9976.65970957, trade size = 0.002
+2022-01-18 23:47:10,541 INFO :: Long signal on BTCUSDT 1m
+2022-01-18 23:47:11,145 INFO :: Buy order placed on Binance | Status: new
+2022-01-18 23:47:13,906 INFO :: Binance order status: filled
+2022-01-18 23:49:15,259 INFO :: Binance Futures Client successfully initialized
+2022-01-18 23:49:15,870 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:49:16,487 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:49:16,488 INFO :: Bitmex Client successfully initialized
+2022-01-18 23:49:16,488 INFO :: Binance connection opened
+2022-01-18 23:49:18,232 INFO :: Bitmex connection opened
+2022-01-18 23:50:03,245 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-18 23:50:24,074 INFO :: Binance Futures Client successfully initialized
+2022-01-18 23:50:24,523 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:50:25,255 INFO :: Binance connection opened
+2022-01-18 23:50:26,221 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:50:26,221 INFO :: Bitmex Client successfully initialized
+2022-01-18 23:50:28,064 INFO :: Bitmex connection opened
+2022-01-18 23:51:47,635 INFO :: Binance Futures Client successfully initialized
+2022-01-18 23:51:48,209 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:51:48,526 INFO :: Binance connection opened
+2022-01-18 23:51:49,509 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:51:49,510 INFO :: Bitmex Client successfully initialized
+2022-01-18 23:51:51,170 INFO :: Bitmex connection opened
+2022-01-18 23:52:25,419 INFO :: Binance Futures Client successfully initialized
+2022-01-18 23:52:25,862 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:52:26,300 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:52:26,301 INFO :: Bitmex Client successfully initialized
+2022-01-18 23:52:26,744 INFO :: Binance connection opened
+2022-01-18 23:52:28,186 INFO :: Bitmex connection opened
+2022-01-18 23:54:28,924 INFO :: Binance Futures Client successfully initialized
+2022-01-18 23:54:29,545 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:54:29,949 INFO :: Binance connection opened
+2022-01-18 23:54:29,999 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:54:30,000 INFO :: Bitmex Client successfully initialized
+2022-01-18 23:54:32,006 INFO :: Bitmex connection opened
+2022-01-18 23:54:51,980 INFO :: Binance Futures Client successfully initialized
+2022-01-18 23:54:52,444 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:54:53,154 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:54:53,155 INFO :: Binance connection opened
+2022-01-18 23:54:53,155 INFO :: Bitmex Client successfully initialized
+2022-01-18 23:54:54,835 INFO :: Bitmex connection opened
+2022-01-18 23:55:21,476 INFO :: Binance Futures Client successfully initialized
+2022-01-18 23:55:21,942 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:55:22,394 INFO :: Binance connection opened
+2022-01-18 23:55:22,397 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 23:55:22,397 INFO :: Bitmex Client successfully initialized
+2022-01-18 23:55:24,243 INFO :: Bitmex connection opened

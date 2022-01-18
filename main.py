@@ -8,7 +8,8 @@
 import tkinter as tk
 import logging
 
-from connectors.binance_futures import BinanceFuturesClient
+from connectors.binance import BinanceClient
+from connectors.bitmex import BitmexClient
 from interface.root_components import Root
 
 # These are the keys for the testnet
@@ -35,7 +36,8 @@ logger.addHandler(file_handler)
 
 if __name__ == '__main__':
 
-    binance = BinanceFuturesClient(api_key, api_secret, True)
+    binance = BinanceClient(api_key, api_secret, True, True)
+    bitmex = BitmexClient('', '', True)
 
-    root = Root(binance)
+    root = Root(binance, bitmex)
     root.mainloop()

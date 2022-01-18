@@ -45,7 +45,7 @@ class TradesWatch(tk.Frame):
 
         for h in self._headers:
             self.body_widgets[h] = dict()
-            if h in ["status", "pnl"]:
+            if h in ["status", "pnl", "quantity"]:
                 self.body_widgets[h + "_var"] = dict()
 
         self._body_index = 0
@@ -53,54 +53,76 @@ class TradesWatch(tk.Frame):
     # add the new trades to the watchlist
     def add_trade(self, trade: Trade):
 
+        """
+        Add a new trade row.
+        :param trade:
+        :return:
+        """
+
         b_index = self._body_index
 
-        t_index = trade.time
+        t_index = trade.time  # This is the trade row identifier, Unix Timestamp in milliseconds, so should be unique.
 
         dt_str = datetime.datetime.fromtimestamp(trade.time / 1000).strftime("%b %d %H:%M")
 
-        # add widgets
-        self.body_widgets['time'][t_index] = tk.Label(self._body_frame.sub_frame, text=dt_str, bg=BG_COLOR, fg=FG_COLOR_2,
-                                                      font=GLOBAL_FONT, width=self._col_width)
-        self.body_widgets['time'][t_index].grid(row=b_index, column=0)
+        self.body_widgets['time'][t_index] = tk.Label(self._body_frame.sub_frame, text=dt_str, bg=BG_COLOR,
+                                                      fg=FG_COLOR_2, font=GLOBAL_FONT, width=self._col_width)
+        self.body_widgets['time'][t_index].grid(row=b_index, column=0, padx=10)
 
-        # symbol
-        self.body_widgets['symbol'][t_index] = tk.Label(self._body_frame.sub_frame, text=trade.contract.symbol, bg=BG_COLOR,
-                                                        fg=FG_COLOR_2, font=GLOBAL_FONT, width=self._col_width)
-        self.body_widgets['symbol'][t_index].grid(row=b_index, column=1)
+        # Symbol
 
-        # exchange
-        self.body_widgets['exchange'][t_index] = tk.Label(self._body_frame.sub_frame, text=trade.contract.exchange.capitalize(),
-                                                          bg=BG_COLOR, fg=FG_COLOR_2, font=GLOBAL_FONT, width=self._col_width)
-        self.body_widgets['exchange'][t_index].grid(row=b_index, column=2)
+        self.body_widgets['symbol'][t_index] = tk.Label(self._body_frame.sub_frame, text=trade.contract.symbol,
+                                                        bg=BG_COLOR, fg=FG_COLOR_2, font=GLOBAL_FONT,
+                                                        width=self._col_width)
+        self.body_widgets['symbol'][t_index].grid(row=b_index, column=1, padx=10)
 
-        # strategy
+        # Exchange
+
+        self.body_widgets['exchange'][t_index] = tk.Label(self._body_frame.sub_frame,
+                                                          text=trade.contract.exchange.capitalize(),
+                                                          bg=BG_COLOR, fg=FG_COLOR_2, font=GLOBAL_FONT,
+                                                          width=self._col_width)
+        self.body_widgets['exchange'][t_index].grid(row=b_index, column=2, padx=10)
+
+        # Strategy
+
         self.body_widgets['strategy'][t_index] = tk.Label(self._body_frame.sub_frame, text=trade.strategy, bg=BG_COLOR,
                                                           fg=FG_COLOR_2, font=GLOBAL_FONT, width=self._col_width)
-        self.body_widgets['strategy'][t_index].grid(row=b_index, column=3)
+        self.body_widgets['strategy'][t_index].grid(row=b_index, column=3, padx=10)
 
-        # side
-        self.body_widgets['side'][t_index] = tk.Label(self._body_frame.sub_frame, text=trade.side.capitalize(), bg=BG_COLOR, fg=FG_COLOR_2,
-                                                      font=GLOBAL_FONT, width=self._col_width)
-        self.body_widgets['side'][t_index].grid(row=b_index, column=4)
+        # Side
 
-        # quantity
-        self.body_widgets['quantity'][t_index] = tk.Label(self._body_frame.sub_frame, text=trade.quantity, bg=BG_COLOR,
-                                                          fg=FG_COLOR_2, font=GLOBAL_FONT, width=self._col_width)
-        self.body_widgets['quantity'][t_index].grid(row=b_index, column=5)
+        self.body_widgets['side'][t_index] = tk.Label(self._body_frame.sub_frame, text=trade.side.capitalize(),
+                                                      bg=BG_COLOR, fg=FG_COLOR_2, font=GLOBAL_FONT,
+                                                      width=self._col_width)
+        self.body_widgets['side'][t_index].grid(row=b_index, column=4, padx=10)
 
-        # status
+        # Quantity
+
+        self.body_widgets['quantity_var'][
+            t_index] = tk.StringVar()  # Variable because the order is not always filled immediately
+        self.body_widgets['quantity'][t_index] = tk.Label(self._body_frame.sub_frame,
+                                                          textvariable=self.body_widgets['quantity_var'][t_index],
+                                                          bg=BG_COLOR, fg=FG_COLOR_2, font=GLOBAL_FONT,
+                                                          width=self._col_width)
+        self.body_widgets['quantity'][t_index].grid(row=b_index, column=5, padx=10)
+
+        # Status
+
         self.body_widgets['status_var'][t_index] = tk.StringVar()
         self.body_widgets['status'][t_index] = tk.Label(self._body_frame.sub_frame,
                                                         textvariable=self.body_widgets['status_var'][t_index],
-                                                        bg=BG_COLOR, fg=FG_COLOR_2, font=GLOBAL_FONT, width=self._col_width)
-        self.body_widgets['status'][t_index].grid(row=b_index, column=6)
+                                                        bg=BG_COLOR, fg=FG_COLOR_2, font=GLOBAL_FONT,
+                                                        width=self._col_width)
+        self.body_widgets['status'][t_index].grid(row=b_index, column=6, padx=10)
 
-        # pnl
+        # PNL
+
         self.body_widgets['pnl_var'][t_index] = tk.StringVar()
         self.body_widgets['pnl'][t_index] = tk.Label(self._body_frame.sub_frame,
                                                      textvariable=self.body_widgets['pnl_var'][t_index], bg=BG_COLOR,
                                                      fg=FG_COLOR_2, font=GLOBAL_FONT, width=self._col_width)
-        self.body_widgets['pnl'][t_index].grid(row=b_index, column=7)
+        self.body_widgets['pnl'][t_index].grid(row=b_index, column=7, padx=10)
 
         self._body_index += 1
+
