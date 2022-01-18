@@ -1062,3 +1062,495 @@
 2022-01-12 00:35:53,978 INFO :: Binance Futures Client successfully initialized
 2022-01-12 00:35:55,301 INFO :: Binance connection opened
 2022-01-12 00:35:58,990 WARNING :: Websocket connection closed
+2022-01-12 06:57:11,284 INFO :: Binance Futures Client successfully initialized
+2022-01-12 06:57:12,210 INFO :: Binance connection opened
+2022-01-12 06:57:49,348 INFO :: Binance Futures Client successfully initialized
+2022-01-12 06:57:50,080 INFO :: Binance connection opened
+2022-01-12 06:58:20,094 INFO :: Binance Futures current USDT balance = 99944.00580817, trade size = 0.023
+2022-01-12 06:58:20,096 INFO :: Short signal on BTCUSDT 1m
+2022-01-12 06:58:20,620 INFO :: Sell order placed on Binance | Status: new
+2022-01-12 06:58:22,930 INFO :: Binance order status: filled
+2022-01-12 06:58:47,386 INFO :: Binance Futures current USDT balance = 99963.86559039, trade size = 0.309
+2022-01-12 06:58:47,388 INFO :: Short signal on ETHUSDT 1m
+2022-01-12 06:58:47,886 INFO :: Sell order placed on Binance | Status: new
+2022-01-12 06:58:47,886 ERROR :: error from callback <bound method BinanceFuturesClient._on_message of <connectors.binance_futures.BinanceFuturesClient object at 0x118b8ff70>>: dictionary changed size during iteration
+2022-01-12 06:58:47,886 ERROR :: Binance connection error: dictionary changed size during iteration
+2022-01-12 06:58:48,878 INFO :: Binance Futures current USDT balance = 99996.60566933, trade size = 7.6
+2022-01-12 06:58:48,878 INFO :: Short signal on LTCUSDT 1m
+2022-01-12 06:58:49,343 INFO :: Sell order placed on Binance | Status: new
+2022-01-12 06:58:49,343 ERROR :: error from callback <bound method BinanceFuturesClient._on_message of <connectors.binance_futures.BinanceFuturesClient object at 0x118b8ff70>>: dictionary changed size during iteration
+2022-01-12 06:58:49,343 ERROR :: Binance connection error: dictionary changed size during iteration
+2022-01-12 06:58:50,510 INFO :: Binance order status: filled
+2022-01-12 06:58:51,633 INFO :: Binance order status: filled
+2022-01-12 06:58:52,989 INFO :: Binance Futures current USDT balance = 99996.20572693, trade size = 2.17
+2022-01-12 06:58:52,989 INFO :: Short signal on BNBUSDT 1m
+2022-01-12 06:58:53,468 INFO :: Sell order placed on Binance | Status: new
+2022-01-12 06:58:56,036 INFO :: Binance order status: filled
+2022-01-12 06:59:00,680 INFO :: New candle for Binance LTCUSDT: 1m
+2022-01-12 06:59:01,365 INFO :: New candle for Binance ETHUSDT: 1m
+2022-01-12 06:59:02,948 INFO :: New candle for Binance BNBUSDT: 1m
+2022-01-12 06:59:04,539 INFO :: New candle for Binance BTCUSDT: 1m
+2022-01-12 07:01:33,327 INFO :: Binance Futures Client successfully initialized
+2022-01-12 07:01:34,857 INFO :: Binance connection opened
+2022-01-12 07:02:02,910 INFO :: New candle for Binance BTCUSDT: 1m
+2022-01-12 07:02:19,242 INFO :: Binance Futures current USDT balance = 99995.80655109, trade size = 2.17
+2022-01-12 07:02:19,243 INFO :: Short signal on BNBUSDT 1m
+2022-01-12 07:02:19,808 INFO :: Sell order placed on Binance | Status: new
+2022-01-12 07:02:22,198 INFO :: Binance order status: filled
+2022-01-12 07:02:35,723 INFO :: Binance Futures current USDT balance = 99995.40724346, trade size = 0.309
+2022-01-12 07:02:35,724 INFO :: Short signal on ETHUSDT 1m
+2022-01-12 07:02:36,312 INFO :: Sell order placed on Binance | Status: new
+2022-01-12 07:02:38,824 INFO :: Binance order status: filled
+2022-01-12 23:41:02,248 INFO :: Binance Futures Client successfully initialized
+2022-01-12 23:41:03,565 INFO :: Binance connection opened
+2022-01-12 23:45:38,300 INFO :: Binance Futures Client successfully initialized
+2022-01-12 23:45:39,830 INFO :: Binance connection opened
+2022-01-12 23:52:44,397 INFO :: Binance Futures Client successfully initialized
+2022-01-12 23:52:45,927 INFO :: Binance connection opened
+2022-01-12 23:53:00,987 INFO :: Binance Futures Client successfully initialized
+2022-01-12 23:53:02,826 INFO :: Binance connection opened
+2022-01-12 23:55:05,915 INFO :: Binance Futures Client successfully initialized
+2022-01-12 23:55:07,241 INFO :: Binance connection opened
+2022-01-14 06:39:22,135 INFO :: Binance Futures Client successfully initialized
+2022-01-14 06:39:23,622 INFO :: Binance connection opened
+2022-01-14 06:41:29,580 INFO :: Binance Futures Client successfully initialized
+2022-01-14 06:41:31,726 INFO :: Binance connection opened
+2022-01-14 06:41:58,457 INFO :: Binance Futures Client successfully initialized
+2022-01-14 06:42:00,600 INFO :: Binance connection opened
+2022-01-14 06:42:17,192 INFO :: Binance Futures Client successfully initialized
+2022-01-14 06:42:18,761 INFO :: Binance connection opened
+2022-01-14 06:42:37,468 INFO :: Binance Futures Client successfully initialized
+2022-01-14 06:42:39,224 INFO :: Binance connection opened
+2022-01-14 06:44:36,375 INFO :: Binance Futures Client successfully initialized
+2022-01-14 06:44:37,892 INFO :: Binance connection opened
+2022-01-14 06:45:46,703 INFO :: Binance Futures Client successfully initialized
+2022-01-14 06:45:48,063 INFO :: Binance connection opened
+2022-01-14 06:47:00,744 INFO :: Binance Futures Client successfully initialized
+2022-01-14 06:47:02,579 INFO :: Binance connection opened
+2022-01-14 07:01:38,211 INFO :: Binance Futures Client successfully initialized
+2022-01-14 07:01:39,501 INFO :: Binance connection opened
+2022-01-14 07:01:53,227 INFO :: Binance Futures Client successfully initialized
+2022-01-14 07:01:54,126 INFO :: Binance connection opened
+2022-01-14 07:02:43,827 INFO :: Binance Futures current USDT balance = 10000.40866865, trade size = 0.002
+2022-01-14 07:02:43,829 INFO :: Short signal on BTCUSDT 1m
+2022-01-14 07:02:44,383 INFO :: Sell order placed on Binance | Status: new
+2022-01-14 07:02:47,111 INFO :: Binance order status: filled
+2022-01-14 07:04:46,221 INFO :: Binance Futures Client successfully initialized
+2022-01-14 07:04:47,517 INFO :: Binance connection opened
+2022-01-14 07:05:00,670 INFO :: New candle for Binance BTCUSDT: 1m
+2022-01-14 07:05:15,403 INFO :: Binance Futures current USDT balance = 10000.37459433, trade size = 0.031
+2022-01-14 07:05:15,404 INFO :: Short signal on ETHUSDT 1m
+2022-01-14 07:05:15,659 INFO :: Sell order placed on Binance | Status: new
+2022-01-14 07:05:17,915 INFO :: Binance order status: filled
+2022-01-14 07:05:47,968 INFO :: Binance Futures Client successfully initialized
+2022-01-14 07:05:49,518 INFO :: Binance connection opened
+2022-01-14 07:06:01,533 INFO :: New candle for Binance BTCUSDT: 1m
+2022-01-14 07:07:26,272 INFO :: Binance Futures Client successfully initialized
+2022-01-14 07:07:28,725 INFO :: Binance connection opened
+2022-01-15 09:01:50,908 INFO :: Binance Futures Client successfully initialized
+2022-01-15 09:01:51,878 INFO :: Binance connection opened
+2022-01-15 09:03:00,892 INFO :: New candle for Binance BTCUSDT: 1m
+2022-01-15 09:03:08,713 INFO :: Binance Futures current USDT balance = 10001.02070663, trade size = 0.002
+2022-01-15 09:03:08,714 INFO :: Long signal on BTCUSDT 1m
+2022-01-15 09:03:09,276 INFO :: Buy order placed on Binance | Status: new
+2022-01-15 09:03:12,054 INFO :: Binance order status: filled
+2022-01-15 09:03:26,802 INFO :: Binance Futures Client successfully initialized
+2022-01-15 09:03:28,196 INFO :: Binance connection opened
+2022-01-15 09:04:48,462 INFO :: Binance Futures Client successfully initialized
+2022-01-15 09:04:49,665 INFO :: Binance connection opened
+2022-01-15 09:08:46,596 INFO :: Binance Futures Client successfully initialized
+2022-01-15 09:08:47,562 INFO :: Binance connection opened
+2022-01-15 09:09:02,742 INFO :: Binance Futures Client successfully initialized
+2022-01-15 09:09:03,650 INFO :: Binance connection opened
+2022-01-15 09:09:18,239 INFO :: Binance Futures Client successfully initialized
+2022-01-15 09:09:19,250 INFO :: Binance connection opened
+2022-01-15 09:09:36,670 INFO :: Binance Futures Client successfully initialized
+2022-01-15 09:09:37,890 INFO :: Binance connection opened
+2022-01-15 09:10:02,374 INFO :: Binance Futures Client successfully initialized
+2022-01-15 09:10:03,127 INFO :: Binance connection opened
+2022-01-17 13:34:23,386 INFO :: Binance Futures Client successfully initialized
+2022-01-17 13:34:28,825 INFO :: Binance connection opened
+2022-01-17 13:36:31,485 INFO :: Binance Futures Client successfully initialized
+2022-01-17 13:36:33,832 INFO :: Binance connection opened
+2022-01-17 13:37:01,585 INFO :: New candle for Binance BTCUSDT: 1m
+2022-01-17 13:40:33,289 INFO :: Binance Futures Client successfully initialized
+2022-01-17 13:40:36,916 INFO :: Binance connection opened
+2022-01-17 13:42:53,917 INFO :: Binance Futures Client successfully initialized
+2022-01-17 13:42:55,147 INFO :: Binance connection opened
+2022-01-17 13:43:28,649 INFO :: Binance Futures current USDT balance = 10001.99721871, trade size = 0.002
+2022-01-17 13:43:28,651 INFO :: Long signal on BTCUSDT 1m
+2022-01-17 13:43:29,268 INFO :: Buy order placed on Binance | Status: new
+2022-01-17 13:43:32,015 INFO :: Binance order status: filled
+2022-01-17 13:44:04,616 INFO :: New candle for Binance BTCUSDT: 1m
+2022-01-17 13:45:03,994 INFO :: New candle for Binance BTCUSDT: 1m
+2022-01-17 13:45:53,335 INFO :: Binance Futures Client successfully initialized
+2022-01-17 13:45:54,663 INFO :: Binance connection opened
+2022-01-17 13:52:18,059 INFO :: Binance Futures Client successfully initialized
+2022-01-17 13:52:20,471 INFO :: Binance connection opened
+2022-01-17 16:09:55,628 INFO :: Binance Futures Client successfully initialized
+2022-01-17 16:09:56,851 INFO :: Binance connection opened
+2022-01-17 16:14:30,917 INFO :: Binance Futures Client successfully initialized
+2022-01-17 16:14:32,014 INFO :: Binance connection opened
+2022-01-17 16:18:46,755 INFO :: Binance Futures Client successfully initialized
+2022-01-17 16:18:48,592 INFO :: Binance connection opened
+2022-01-17 16:25:11,941 INFO :: Binance Futures Client successfully initialized
+2022-01-17 16:25:13,269 INFO :: Binance connection opened
+2022-01-17 16:25:59,908 INFO :: Binance Futures current USDT balance = 10001.96293467, trade size = 0.002
+2022-01-17 16:25:59,910 INFO :: Long signal on BTCUSDT 1m
+2022-01-17 16:26:00,419 INFO :: Buy order placed on Binance | Status: new
+2022-01-17 16:26:00,443 INFO :: New candle for Binance BTCUSDT: 1m
+2022-01-17 16:26:03,291 INFO :: Binance order status: filled
+2022-01-17 16:26:12,981 INFO :: Binance Futures current USDT balance = 10001.92892251, trade size = 0.031
+2022-01-17 16:26:12,982 INFO :: Long signal on ETHUSDT 1m
+2022-01-17 16:26:13,459 INFO :: Buy order placed on Binance | Status: new
+2022-01-17 16:26:15,972 INFO :: Binance order status: filled
+2022-01-17 16:27:01,651 INFO :: New candle for Binance BTCUSDT: 1m
+2022-01-17 16:27:03,500 INFO :: New candle for Binance ETHUSDT: 1m
+2022-01-17 16:28:00,167 INFO :: New candle for Binance BTCUSDT: 1m
+2022-01-17 16:28:01,597 INFO :: New candle for Binance ETHUSDT: 1m
+2022-01-17 16:28:05,190 INFO :: Take profit for ETHUSDT 1m
+2022-01-17 16:28:05,862 INFO :: Exit order on ETHUSDT 1m placed successfully
+2022-01-17 16:28:06,507 INFO :: Binance Futures current USDT balance = 10001.33887658, trade size = 0.03
+2022-01-17 16:28:06,508 INFO :: Long signal on ETHUSDT 1m
+2022-01-17 16:28:07,090 INFO :: Buy order placed on Binance | Status: new
+2022-01-17 16:28:09,354 INFO :: Binance order status: filled
+2022-01-17 16:28:11,409 INFO :: Stop loss for ETHUSDT 1m
+2022-01-17 16:28:11,943 INFO :: Exit order on ETHUSDT 1m placed successfully
+2022-01-17 16:28:12,195 INFO :: Binance Futures current USDT balance = 10000.79130422, trade size = 0.031
+2022-01-17 16:28:12,195 INFO :: Short signal on ETHUSDT 1m
+2022-01-17 16:28:12,962 INFO :: Sell order placed on Binance | Status: new
+2022-01-17 16:28:15,441 INFO :: Binance order status: filled
+2022-01-17 16:29:01,030 INFO :: New candle for Binance BTCUSDT: 1m
+2022-01-17 16:29:02,385 INFO :: New candle for Binance ETHUSDT: 1m
+2022-01-17 16:30:00,209 INFO :: New candle for Binance BTCUSDT: 1m
+2022-01-17 16:30:01,807 INFO :: New candle for Binance ETHUSDT: 1m
+2022-01-17 16:31:00,005 INFO :: New candle for Binance BTCUSDT: 1m
+2022-01-17 16:31:01,635 INFO :: New candle for Binance ETHUSDT: 1m
+2022-01-17 16:31:47,604 INFO :: Binance Futures Client successfully initialized
+2022-01-17 16:31:49,180 INFO :: Binance connection opened
+2022-01-17 16:32:11,923 INFO :: Binance Futures Client successfully initialized
+2022-01-17 16:32:12,948 INFO :: Binance connection opened
+2022-01-17 16:32:22,674 INFO :: Binance Futures Client successfully initialized
+2022-01-17 16:32:24,204 INFO :: Binance connection opened
+2022-01-17 16:33:01,198 INFO :: New candle for Binance BTCUSDT: 1m
+2022-01-17 16:33:01,870 INFO :: New candle for Binance ETHUSDT: 1m
+2022-01-17 16:33:07,108 INFO :: Binance Futures current USDT balance = 10000.75093689, trade size = 0.002
+2022-01-17 16:33:07,109 INFO :: Short signal on BTCUSDT 1m
+2022-01-17 16:41:37,779 INFO :: Binance Futures Client successfully initialized
+2022-01-17 16:41:40,485 INFO :: Binance connection opened
+2022-01-17 16:41:49,227 INFO :: Binance Futures current USDT balance = 10000.75093689, trade size = 0.002
+2022-01-17 16:41:49,228 INFO :: Short signal on BTCUSDT 1m
+2022-01-17 16:41:49,755 INFO :: Sell order placed on Binance | Status: new
+2022-01-17 16:41:52,214 INFO :: Binance order status: filled
+2022-01-17 16:42:01,119 INFO :: New candle for Binance BTCUSDT: 1m
+2022-01-17 16:42:42,475 INFO :: Binance Futures current USDT balance = 10000.46983761, trade size = 0.031
+2022-01-17 16:42:42,477 INFO :: Short signal on ETHUSDT 1m
+2022-01-17 16:42:43,030 INFO :: Sell order placed on Binance | Status: new
+2022-01-17 16:42:45,444 INFO :: Binance order status: filled
+2022-01-17 16:43:01,169 INFO :: New candle for Binance BTCUSDT: 1m
+2022-01-17 16:43:01,941 INFO :: New candle for Binance ETHUSDT: 1m
+2022-01-17 16:43:26,923 INFO :: Binance Futures Client successfully initialized
+2022-01-17 16:43:28,256 INFO :: Binance connection opened
+2022-01-17 16:43:58,141 INFO :: Binance Futures current USDT balance = 10000.42951678, trade size = 0.002
+2022-01-17 16:43:58,142 INFO :: Long signal on BTCUSDT 1m
+2022-01-17 16:43:58,447 INFO :: Buy order placed on Binance | Status: new
+2022-01-17 16:44:00,219 INFO :: New candle for Binance BTCUSDT: 1m
+2022-01-17 16:44:01,637 INFO :: Binance order status: filled
+2022-01-17 16:44:21,297 INFO :: Binance Futures Client successfully initialized
+2022-01-17 16:44:22,824 INFO :: Binance connection opened
+2022-01-17 16:44:39,602 INFO :: Binance Futures current USDT balance = 10000.39543879, trade size = 0.002
+2022-01-17 16:44:39,603 INFO :: Long signal on BTCUSDT 1m
+2022-01-17 16:48:51,015 INFO :: Binance Futures Client successfully initialized
+2022-01-17 16:48:52,550 INFO :: Binance connection opened
+2022-01-17 16:49:07,636 INFO :: Binance Futures current USDT balance = 10000.36135911, trade size = 0.002
+2022-01-17 16:49:07,637 INFO :: Short signal on BTCUSDT 1m
+2022-01-17 16:49:08,132 INFO :: Sell order placed on Binance | Status: new
+2022-01-17 16:50:17,032 INFO :: Binance Futures Client successfully initialized
+2022-01-17 16:50:18,157 INFO :: Binance connection opened
+2022-01-17 16:50:36,694 INFO :: Binance Futures current USDT balance = 10000.11332613, trade size = 0.002
+2022-01-17 16:50:36,695 INFO :: Short signal on BTCUSDT 1m
+2022-01-17 16:50:37,308 INFO :: Sell order placed on Binance | Status: new
+2022-01-17 16:50:40,161 INFO :: Binance order status: filled
+2022-01-17 16:51:03,997 INFO :: Binance Futures Client successfully initialized
+2022-01-17 16:51:05,871 INFO :: Binance connection opened
+2022-01-17 16:51:23,695 INFO :: Binance Futures Client successfully initialized
+2022-01-17 16:51:25,532 INFO :: Binance connection opened
+2022-01-17 16:51:41,466 INFO :: Binance Futures current USDT balance = 9999.81291411, trade size = 0.002
+2022-01-17 16:51:41,467 INFO :: Long signal on BTCUSDT 1m
+2022-01-17 16:51:41,717 INFO :: Buy order placed on Binance | Status: new
+2022-01-17 16:51:44,583 INFO :: Binance order status: filled
+2022-01-17 16:54:38,155 INFO :: Binance Futures Client successfully initialized
+2022-01-17 16:54:39,683 INFO :: Binance connection opened
+2022-01-17 16:54:52,587 INFO :: Binance Futures current USDT balance = 9999.77888547, trade size = 0.002
+2022-01-17 16:54:52,588 INFO :: Long signal on BTCUSDT 1m
+2022-01-17 16:54:53,205 INFO :: Buy order placed on Binance | Status: new
+2022-01-17 16:59:55,490 INFO :: Binance Futures Client successfully initialized
+2022-01-17 16:59:57,023 INFO :: Binance connection opened
+2022-01-17 17:00:19,323 INFO :: Binance Futures current USDT balance = 9999.74484372, trade size = 0.002
+2022-01-17 17:00:19,324 INFO :: Long signal on BTCUSDT 1m
+2022-01-17 17:00:19,672 INFO :: Buy order placed on Binance | Status: new
+2022-01-17 17:00:21,835 INFO :: Binance Futures current USDT balance = 9999.71068068, trade size = 0.262
+2022-01-17 17:00:21,835 INFO :: Long signal on BCHUSDT 1m
+2022-01-17 17:00:22,090 INFO :: Buy order placed on Binance | Status: new
+2022-01-17 17:00:22,151 INFO :: Binance order status: filled
+2022-01-17 17:00:24,572 INFO :: Binance order status: filled
+2022-01-17 17:02:24,788 INFO :: Binance Futures Client successfully initialized
+2022-01-17 17:02:26,628 INFO :: Binance connection opened
+2022-01-17 17:04:25,516 INFO :: Binance Futures Client successfully initialized
+2022-01-17 17:04:27,049 INFO :: Binance connection opened
+2022-01-17 17:04:39,037 INFO :: Binance Futures Client successfully initialized
+2022-01-17 17:04:41,185 INFO :: Binance connection opened
+2022-01-17 17:05:03,857 INFO :: New candle for Binance BTCUSDT: 1m
+2022-01-17 17:06:05,129 INFO :: New candle for Binance BTCUSDT: 1m
+2022-01-17 17:06:09,726 INFO :: Binance Futures current USDT balance = 9999.6707152, trade size = 0.002
+2022-01-17 17:06:09,727 INFO :: Long signal on BTCUSDT 1m
+2022-01-17 17:06:10,217 INFO :: Buy order placed on Binance | Status: new
+2022-01-17 17:06:13,101 INFO :: Binance order status: filled
+2022-01-17 17:07:00,677 INFO :: New candle for Binance BTCUSDT: 1m
+2022-01-17 17:07:22,536 INFO :: Binance Futures Client successfully initialized
+2022-01-17 17:07:24,371 INFO :: Binance connection opened
+2022-01-17 17:07:42,611 INFO :: Binance Futures current USDT balance = 9999.63653976, trade size = 0.002
+2022-01-17 17:07:42,612 INFO :: Long signal on BTCUSDT 1m
+2022-01-17 17:07:43,086 INFO :: Buy order placed on Binance | Status: new
+2022-01-17 17:07:45,614 INFO :: Binance order status: filled
+2022-01-17 17:08:00,282 INFO :: New candle for Binance BTCUSDT: 1m
+2022-01-17 17:08:49,799 INFO :: Binance Futures Client successfully initialized
+2022-01-17 17:08:53,469 INFO :: Binance Futures Client successfully initialized
+2022-01-17 17:08:57,163 INFO :: Binance Futures Client successfully initialized
+2022-01-17 17:08:58,271 INFO :: Binance connection opened
+2022-01-17 17:45:40,279 INFO :: Binance Futures Client successfully initialized
+2022-01-17 17:45:41,809 INFO :: Binance connection opened
+2022-01-17 17:46:00,971 INFO :: New candle for Binance BTCUSDT: 1m
+2022-01-17 17:46:01,440 INFO :: Binance Futures current USDT balance = 9999.6023272, trade size = 0.002
+2022-01-17 17:46:01,441 INFO :: Short signal on BTCUSDT 1m
+2022-01-17 17:46:01,932 INFO :: Sell order placed on Binance | Status: new
+2022-01-17 17:46:04,221 INFO :: Binance order status: filled
+2022-01-17 17:49:43,281 INFO :: Binance Futures Client successfully initialized
+2022-01-17 17:49:44,166 INFO :: Binance connection opened
+2022-01-17 17:50:08,474 INFO :: Binance Futures Client successfully initialized
+2022-01-17 17:50:09,692 INFO :: Binance connection opened
+2022-01-17 18:01:33,839 INFO :: Binance Futures Client successfully initialized
+2022-01-17 18:01:35,680 INFO :: Binance connection opened
+2022-01-17 18:10:26,233 INFO :: Binance Futures Client successfully initialized
+2022-01-17 18:10:28,373 INFO :: Binance connection opened
+2022-01-17 18:11:04,936 INFO :: Binance Futures Client successfully initialized
+2022-01-17 18:11:06,096 INFO :: Binance connection opened
+2022-01-17 18:14:16,607 INFO :: Binance Futures Client successfully initialized
+2022-01-17 18:14:18,138 INFO :: Binance connection opened
+2022-01-17 18:16:00,135 INFO :: Binance Futures Client successfully initialized
+2022-01-17 18:16:01,321 INFO :: Binance connection opened
+2022-01-17 18:17:06,091 INFO :: Binance Futures Client successfully initialized
+2022-01-17 18:17:07,235 INFO :: Binance connection opened
+2022-01-17 18:17:32,577 INFO :: Binance Futures Client successfully initialized
+2022-01-17 18:17:33,661 INFO :: Binance connection opened
+2022-01-17 18:26:44,639 INFO :: Binance Futures Client successfully initialized
+2022-01-17 18:26:46,167 INFO :: Binance connection opened
+2022-01-17 18:27:00,562 INFO :: Binance Futures current USDT balance = 9999.80870762, trade size = 0.002
+2022-01-17 18:27:00,563 INFO :: Long signal on BTCUSDT 1m
+2022-01-17 18:27:00,879 INFO :: Buy order placed on Binance | Status: new
+2022-01-17 18:27:01,015 INFO :: New candle for Binance BTCUSDT: 1m
+2022-01-17 18:27:03,437 INFO :: Binance order status: filled
+2022-01-17 18:27:31,065 INFO :: Binance Futures current USDT balance = 9999.77440946, trade size = 0.03
+2022-01-17 18:27:31,066 INFO :: Short signal on ETHUSDT 1m
+2022-01-17 18:27:31,604 INFO :: Sell order placed on Binance | Status: new
+2022-01-17 18:29:04,054 INFO :: Binance Futures Client successfully initialized
+2022-01-17 18:29:05,636 INFO :: Binance connection opened
+2022-01-17 18:30:19,905 INFO :: Binance Futures Client successfully initialized
+2022-01-17 18:30:21,210 INFO :: Binance connection opened
+2022-01-17 18:30:34,020 INFO :: Binance Futures current USDT balance = 9999.73495022, trade size = 0.002
+2022-01-17 18:30:34,021 INFO :: Long signal on BTCUSDT 1m
+2022-01-17 18:30:34,744 INFO :: Buy order placed on Binance | Status: new
+2022-01-17 18:30:37,047 INFO :: Binance order status: filled
+2022-01-17 18:30:50,733 INFO :: Binance Futures current USDT balance = 9999.70065247, trade size = 0.03
+2022-01-17 18:30:50,734 INFO :: Short signal on ETHUSDT 1m
+2022-01-17 18:30:51,091 INFO :: Sell order placed on Binance | Status: new
+2022-01-17 18:30:53,631 INFO :: Binance order status: filled
+2022-01-17 18:31:01,515 INFO :: New candle for Binance BTCUSDT: 1m
+2022-01-17 18:38:09,001 INFO :: Binance Futures Client successfully initialized
+2022-01-17 18:38:10,582 INFO :: Binance connection opened
+2022-01-17 18:42:55,004 INFO :: Binance Futures Client successfully initialized
+2022-01-17 18:42:55,966 INFO :: Binance connection opened
+2022-01-17 18:43:55,948 INFO :: Binance Futures Client successfully initialized
+2022-01-17 18:43:56,770 INFO :: Binance connection opened
+2022-01-17 18:45:59,010 INFO :: Binance Futures Client successfully initialized
+2022-01-17 18:46:00,434 INFO :: Binance connection opened
+2022-01-17 18:46:18,224 INFO :: Binance Futures Client successfully initialized
+2022-01-17 18:46:19,238 INFO :: Binance connection opened
+2022-01-17 20:34:57,150 INFO :: Binance Futures Client successfully initialized
+2022-01-17 20:34:58,160 INFO :: Binance connection opened
+2022-01-17 20:35:27,508 INFO :: Binance Futures Client successfully initialized
+2022-01-17 20:35:28,515 INFO :: Binance connection opened
+2022-01-17 20:35:43,777 INFO :: Binance Futures Client successfully initialized
+2022-01-17 20:35:44,694 INFO :: Binance connection opened
+2022-01-17 20:36:20,046 INFO :: Binance Futures Client successfully initialized
+2022-01-17 20:36:21,146 INFO :: Binance connection opened
+2022-01-17 20:36:36,632 INFO :: Binance Futures Client successfully initialized
+2022-01-17 20:36:37,544 INFO :: Binance connection opened
+2022-01-17 21:29:54,677 DEBUG :: Starting new HTTPS connection (1): testnet.binancefuture.com:443
+2022-01-17 21:29:55,090 DEBUG :: https://testnet.binancefuture.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2022-01-17 21:29:55,106 DEBUG :: Starting new HTTPS connection (1): testnet.binancefuture.com:443
+2022-01-17 21:29:55,913 DEBUG :: https://testnet.binancefuture.com:443 "GET /fapi/v1/account?timestamp=1642415395100&signature=a02b9883c21fcd3f7ace036274c78076523c70109f821509d39ed1944a5408e4 HTTP/1.1" 401 46
+2022-01-17 21:29:55,917 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2014, 'msg': 'API-key format invalid.'} (error code 401)
+2022-01-17 21:29:55,918 INFO :: Binance Futures Client successfully initialized
+2022-01-17 21:29:55,977 DEBUG :: Starting new HTTPS connection (1): testnet.bitmex.com:443
+2022-01-17 21:29:56,731 INFO :: Binance connection opened
+2022-01-17 21:29:56,732 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-01-17 21:29:57,090 DEBUG :: https://testnet.bitmex.com:443 "GET /api/v1/instrument/active HTTP/1.1" 400 59
+2022-01-17 21:29:57,094 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-17 21:29:57,099 DEBUG :: Starting new HTTPS connection (1): testnet.bitmex.com:443
+2022-01-17 21:29:58,747 DEBUG :: https://testnet.bitmex.com:443 "GET /api/v1/user/margin?currency=all HTTP/1.1" 400 59
+2022-01-17 21:29:58,753 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-17 21:29:58,753 INFO :: Bitmex Client successfully initialized
+2022-01-17 21:30:00,536 INFO :: Bitmex connection opened
+2022-01-17 21:30:18,571 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-01-17 21:30:18,580 DEBUG :: Starting new HTTPS connection (1): testnet.binancefuture.com:443
+2022-01-17 21:30:19,247 DEBUG :: https://testnet.binancefuture.com:443 "GET /fapi/v1/ticker/bookTicker?symbol=ETHUSDT HTTP/1.1" 200 None
+2022-01-17 21:31:19,711 DEBUG :: Starting new HTTPS connection (1): testnet.binancefuture.com:443
+2022-01-17 21:31:20,686 DEBUG :: https://testnet.binancefuture.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2022-01-17 21:31:20,700 DEBUG :: Starting new HTTPS connection (1): testnet.binancefuture.com:443
+2022-01-17 21:31:21,301 DEBUG :: https://testnet.binancefuture.com:443 "GET /fapi/v1/account?timestamp=1642415480695&signature=61cf8d3d5d1ef73be1bfd8b80ccd0747aef8ef5b80c57bc78a5b6dce981d4062 HTTP/1.1" 401 46
+2022-01-17 21:31:21,305 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2014, 'msg': 'API-key format invalid.'} (error code 401)
+2022-01-17 21:31:21,306 INFO :: Binance Futures Client successfully initialized
+2022-01-17 21:31:21,312 DEBUG :: Starting new HTTPS connection (1): testnet.bitmex.com:443
+2022-01-17 21:31:22,537 INFO :: Binance connection opened
+2022-01-17 21:31:22,538 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-01-17 21:31:23,006 DEBUG :: https://testnet.bitmex.com:443 "GET /api/v1/instrument/active HTTP/1.1" 400 59
+2022-01-17 21:31:23,009 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-17 21:31:23,031 DEBUG :: Starting new HTTPS connection (1): testnet.bitmex.com:443
+2022-01-17 21:31:24,067 DEBUG :: https://testnet.bitmex.com:443 "GET /api/v1/user/margin?currency=all HTTP/1.1" 400 59
+2022-01-17 21:31:24,072 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-17 21:31:24,073 INFO :: Bitmex Client successfully initialized
+2022-01-17 21:31:25,609 INFO :: Bitmex connection opened
+2022-01-17 21:31:37,081 DEBUG :: Starting new HTTPS connection (1): testnet.binancefuture.com:443
+2022-01-17 21:31:37,582 DEBUG :: https://testnet.binancefuture.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2022-01-17 21:31:37,598 DEBUG :: Starting new HTTPS connection (1): testnet.binancefuture.com:443
+2022-01-17 21:31:38,150 DEBUG :: https://testnet.binancefuture.com:443 "GET /fapi/v1/account?timestamp=1642415497592&signature=3bd8da751c6b015f0d9b44f49220ad333c2d928840a5b025d96c625d5b71563c HTTP/1.1" 401 46
+2022-01-17 21:31:38,153 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2014, 'msg': 'API-key format invalid.'} (error code 401)
+2022-01-17 21:31:38,153 INFO :: Binance Futures Client successfully initialized
+2022-01-17 21:31:38,212 DEBUG :: Starting new HTTPS connection (1): testnet.bitmex.com:443
+2022-01-17 21:31:39,427 INFO :: Binance connection opened
+2022-01-17 21:31:39,428 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-01-17 21:31:39,791 DEBUG :: https://testnet.bitmex.com:443 "GET /api/v1/instrument/active HTTP/1.1" 400 59
+2022-01-17 21:31:39,794 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-17 21:31:39,799 DEBUG :: Starting new HTTPS connection (1): testnet.bitmex.com:443
+2022-01-17 21:31:40,658 DEBUG :: https://testnet.bitmex.com:443 "GET /api/v1/user/margin?currency=all HTTP/1.1" 400 59
+2022-01-17 21:31:40,663 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-17 21:31:40,664 INFO :: Bitmex Client successfully initialized
+2022-01-17 21:31:42,500 INFO :: Bitmex connection opened
+2022-01-18 10:42:32,253 DEBUG :: Starting new HTTPS connection (1): testnet.binancefuture.com:443
+2022-01-18 10:42:32,781 DEBUG :: https://testnet.binancefuture.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2022-01-18 10:42:32,794 DEBUG :: Starting new HTTPS connection (1): testnet.binancefuture.com:443
+2022-01-18 10:42:33,232 DEBUG :: https://testnet.binancefuture.com:443 "GET /fapi/v1/account?timestamp=1642462952791&signature=6b96bf740b073988c36e0e106c6c8d94c2f7c2680cf452e096bfa41d34bcb518 HTTP/1.1" 401 46
+2022-01-18 10:42:33,233 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2014, 'msg': 'API-key format invalid.'} (error code 401)
+2022-01-18 10:42:33,234 INFO :: Binance Futures Client successfully initialized
+2022-01-18 10:42:33,284 DEBUG :: Starting new HTTPS connection (1): testnet.bitmex.com:443
+2022-01-18 10:42:33,992 DEBUG :: https://testnet.bitmex.com:443 "GET /api/v1/instrument/active HTTP/1.1" 400 59
+2022-01-18 10:42:33,997 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 10:42:34,002 DEBUG :: Starting new HTTPS connection (1): testnet.bitmex.com:443
+2022-01-18 10:42:34,033 INFO :: Binance connection opened
+2022-01-18 10:42:34,033 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-01-18 10:42:34,429 DEBUG :: https://testnet.bitmex.com:443 "GET /api/v1/user/margin?currency=all HTTP/1.1" 400 59
+2022-01-18 10:42:34,431 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 10:42:34,432 INFO :: Bitmex Client successfully initialized
+2022-01-18 10:42:36,472 INFO :: Bitmex connection opened
+2022-01-18 10:43:45,326 DEBUG :: Starting new HTTPS connection (1): testnet.binancefuture.com:443
+2022-01-18 10:43:46,003 DEBUG :: https://testnet.binancefuture.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2022-01-18 10:43:46,014 DEBUG :: Starting new HTTPS connection (1): testnet.binancefuture.com:443
+2022-01-18 10:43:46,816 DEBUG :: https://testnet.binancefuture.com:443 "GET /fapi/v1/account?timestamp=1642463026009&signature=cb9b111c5499cb1d5f6cf42dd86f34ab32ba281b1a328326c37a1fbdf05fbbf8 HTTP/1.1" 401 46
+2022-01-18 10:43:46,820 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2014, 'msg': 'API-key format invalid.'} (error code 401)
+2022-01-18 10:43:46,821 INFO :: Binance Futures Client successfully initialized
+2022-01-18 10:43:46,827 DEBUG :: Starting new HTTPS connection (1): testnet.bitmex.com:443
+2022-01-18 10:43:47,431 DEBUG :: https://testnet.bitmex.com:443 "GET /api/v1/instrument/active HTTP/1.1" 400 59
+2022-01-18 10:43:47,437 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 10:43:47,442 DEBUG :: Starting new HTTPS connection (1): testnet.bitmex.com:443
+2022-01-18 10:43:47,877 DEBUG :: https://testnet.bitmex.com:443 "GET /api/v1/user/margin?currency=all HTTP/1.1" 400 59
+2022-01-18 10:43:47,883 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 10:43:47,884 INFO :: Binance connection opened
+2022-01-18 10:43:47,885 INFO :: Bitmex Client successfully initialized
+2022-01-18 10:43:47,885 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-01-18 10:43:49,587 INFO :: Bitmex connection opened
+2022-01-18 10:44:00,219 DEBUG :: Starting new HTTPS connection (1): testnet.binancefuture.com:443
+2022-01-18 10:44:01,006 DEBUG :: https://testnet.binancefuture.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2022-01-18 10:44:01,020 DEBUG :: Starting new HTTPS connection (1): testnet.binancefuture.com:443
+2022-01-18 10:44:01,873 DEBUG :: https://testnet.binancefuture.com:443 "GET /fapi/v1/account?timestamp=1642463041015&signature=6830dafb8b31177380a41e7ef173802d43e0d8b714cc4f61ac7928dad73f5889 HTTP/1.1" 401 46
+2022-01-18 10:44:01,875 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2014, 'msg': 'API-key format invalid.'} (error code 401)
+2022-01-18 10:44:01,876 INFO :: Binance Futures Client successfully initialized
+2022-01-18 10:44:01,880 DEBUG :: Starting new HTTPS connection (1): testnet.bitmex.com:443
+2022-01-18 10:44:02,570 DEBUG :: https://testnet.bitmex.com:443 "GET /api/v1/instrument/active HTTP/1.1" 400 59
+2022-01-18 10:44:02,575 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 10:44:02,580 DEBUG :: Starting new HTTPS connection (1): testnet.bitmex.com:443
+2022-01-18 10:44:03,005 INFO :: Binance connection opened
+2022-01-18 10:44:03,006 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-01-18 10:44:03,030 DEBUG :: https://testnet.bitmex.com:443 "GET /api/v1/user/margin?currency=all HTTP/1.1" 400 59
+2022-01-18 10:44:03,035 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 10:44:03,036 INFO :: Bitmex Client successfully initialized
+2022-01-18 10:44:04,982 INFO :: Bitmex connection opened
+2022-01-18 10:45:56,948 DEBUG :: Starting new HTTPS connection (1): testnet.binancefuture.com:443
+2022-01-18 10:45:57,996 DEBUG :: https://testnet.binancefuture.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2022-01-18 10:45:58,014 DEBUG :: Starting new HTTPS connection (1): testnet.binancefuture.com:443
+2022-01-18 10:45:58,537 DEBUG :: https://testnet.binancefuture.com:443 "GET /fapi/v1/account?timestamp=1642463158009&signature=514c3357dbb3b2b8a5e5fe54087d494f183f658780192d3a3ef97bd414600f59 HTTP/1.1" 200 None
+2022-01-18 10:45:58,543 INFO :: Binance Futures Client successfully initialized
+2022-01-18 10:45:58,588 DEBUG :: Starting new HTTPS connection (1): testnet.bitmex.com:443
+2022-01-18 10:45:59,227 DEBUG :: https://testnet.bitmex.com:443 "GET /api/v1/instrument/active HTTP/1.1" 400 59
+2022-01-18 10:45:59,228 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 10:45:59,231 DEBUG :: Starting new HTTPS connection (1): testnet.bitmex.com:443
+2022-01-18 10:45:59,836 DEBUG :: https://testnet.bitmex.com:443 "GET /api/v1/user/margin?currency=all HTTP/1.1" 400 59
+2022-01-18 10:45:59,840 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 10:45:59,841 INFO :: Binance connection opened
+2022-01-18 10:45:59,842 INFO :: Bitmex Client successfully initialized
+2022-01-18 10:46:00,028 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-01-18 10:46:01,674 INFO :: Bitmex connection opened
+2022-01-18 10:53:49,623 DEBUG :: Starting new HTTPS connection (1): testnet.binancefuture.com:443
+2022-01-18 10:53:50,460 DEBUG :: https://testnet.binancefuture.com:443 "GET /fapi/v1/exchangeInfo HTTP/1.1" 200 None
+2022-01-18 10:53:50,473 DEBUG :: Starting new HTTPS connection (1): testnet.binancefuture.com:443
+2022-01-18 10:53:51,067 DEBUG :: https://testnet.binancefuture.com:443 "GET /fapi/v1/account?timestamp=1642463630468&signature=50e44a3d70f86d1873d8a9d33d99fe47819d20284ae4f6b6930fa4ebec50a625 HTTP/1.1" 200 None
+2022-01-18 10:53:51,073 INFO :: Binance Futures Client successfully initialized
+2022-01-18 10:53:51,155 DEBUG :: Starting new HTTPS connection (1): testnet.bitmex.com:443
+2022-01-18 10:53:51,682 DEBUG :: https://testnet.bitmex.com:443 "GET /api/v1/instrument/active HTTP/1.1" 400 59
+2022-01-18 10:53:51,689 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 10:53:51,694 DEBUG :: Starting new HTTPS connection (1): testnet.bitmex.com:443
+2022-01-18 10:53:52,059 INFO :: Binance connection opened
+2022-01-18 10:53:52,061 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-01-18 10:53:52,138 DEBUG :: https://testnet.bitmex.com:443 "GET /api/v1/user/margin?currency=all HTTP/1.1" 400 59
+2022-01-18 10:53:52,144 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Missing API key.', 'name': 'HTTPError'}} (error code 400)
+2022-01-18 10:53:52,147 INFO :: Bitmex Client successfully initialized
+2022-01-18 10:53:53,825 INFO :: Bitmex connection opened
+2022-01-18 11:08:25,117 INFO :: Binance Futures Client successfully initialized
+2022-01-18 11:08:26,489 INFO :: Binance connection opened
+2022-01-18 11:08:54,170 INFO :: Binance Futures current USDT balance = 9992.92878558, trade size = 0.002
+2022-01-18 11:08:54,171 INFO :: Long signal on BTCUSDT 1m
+2022-01-18 11:08:54,423 INFO :: Buy order placed on Binance | Status: new
+2022-01-18 11:08:56,989 INFO :: Binance order status: filled
+2022-01-18 11:09:01,484 INFO :: New candle for Binance BTCUSDT: 1m
+2022-01-18 11:10:52,837 INFO :: Binance Futures Client successfully initialized
+2022-01-18 11:10:55,020 INFO :: Binance connection opened
+2022-01-18 11:12:42,240 INFO :: Binance Futures Client successfully initialized
+2022-01-18 11:12:43,775 INFO :: Binance connection opened
+2022-01-18 11:12:55,702 WARNING :: Websocket connection closed
+2022-01-18 11:14:54,591 INFO :: Binance Futures Client successfully initialized
+2022-01-18 11:14:56,503 INFO :: Binance connection opened
+2022-01-18 11:15:17,647 INFO :: Binance Futures Client successfully initialized
+2022-01-18 11:15:19,208 INFO :: Binance connection opened
+2022-01-18 11:15:47,491 INFO :: Binance Futures Client successfully initialized
+2022-01-18 11:15:49,020 INFO :: Binance connection opened
+2022-01-18 11:16:05,303 INFO :: Binance Futures Client successfully initialized
+2022-01-18 11:16:07,776 INFO :: Binance connection opened
+2022-01-18 11:19:15,841 INFO :: Binance Futures Client successfully initialized
+2022-01-18 11:19:18,888 INFO :: Binance connection opened
+2022-01-18 11:20:58,170 INFO :: Binance Futures current USDT balance = 9992.89501462, trade size = 0.002
+2022-01-18 11:20:58,172 INFO :: Long signal on BTCUSDT 1m
+2022-01-18 11:20:58,490 INFO :: Buy order placed on Binance | Status: new
+2022-01-18 11:21:01,139 INFO :: Binance order status: filled
+2022-01-18 11:22:33,637 INFO :: Binance Futures Client successfully initialized
+2022-01-18 11:22:34,795 INFO :: Binance connection opened
+2022-01-18 11:22:56,084 INFO :: Binance Futures current USDT balance = 9992.86112654, trade size = 0.002
+2022-01-18 11:22:56,085 INFO :: Long signal on BTCUSDT 1m
+2022-01-18 11:22:56,689 INFO :: Buy order placed on Binance | Status: new
+2022-01-18 11:22:59,457 INFO :: Binance order status: filled
+2022-01-18 11:23:09,478 INFO :: New candle for Binance BTCUSDT: 1m
+2022-01-18 11:24:02,953 INFO :: New candle for Binance BTCUSDT: 1m
+2022-01-18 11:24:21,932 INFO :: Binance Futures current USDT balance = 9992.82721846, trade size = 0.031
+2022-01-18 11:24:21,933 INFO :: Short signal on ETHUSDT 1m
+2022-01-18 11:24:22,773 INFO :: Sell order placed on Binance | Status: new
+2022-01-18 11:24:34,692 INFO :: Binance Futures Client successfully initialized
+2022-01-18 11:24:36,219 INFO :: Binance connection opened
