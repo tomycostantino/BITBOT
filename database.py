@@ -9,15 +9,7 @@ class WorkspaceData:
         self.cursor = self.conn.cursor()
 
         self.cursor.execute("CREATE TABLE IF NOT EXISTS watchlist (symbol TEXT, exchange TEXT)")
-
-        self._strat_cols = ['strategy_type', 'contract', 'timeframe', 'balance_pct',
-                            'take_profit', 'stop_loss', 'extra_params']
-        # for strat in self._strat_cols:
-        # addColumn = 'ALTER TABLE strategies ADD COLUMN' + self._strat_cols[0]
-        # self.cursor.execute(addColumn)
-        # self.cursor.execute("CREATE TABLE IF NOT EXISTS strategies (strategy_type TEXT, contract TEXT, "
-        #                     "timeframe TEXT, balance_pct REAL, take_profit REAL, stop_loss REAL, extra_params TEXT)")
-        self.cursor.execute("CREATE TABLE IF NOT EXISTS strategies (strategy_type TEXT, contract TEXT"
+        self.cursor.execute("CREATE TABLE IF NOT EXISTS strategies (strategy_type TEXT, contract TEXT, "
                             "timeframe TEXT, balance_pct REAL, take_profit REAL, stop_loss REAL, extra_params TEXT)")
         self.conn.commit()  # Saves the changes
 
@@ -33,16 +25,17 @@ class WorkspaceData:
         # Creates the SQL insert statement dynamically
         if table == 'watchlist':
             self.cursor.execute(f"DELETE FROM watchlist")
-            table_data = self.cursor.execute(f"SELECT * FROM {table}")
+            table_data = self.cursor.execute("SELECT * FROM watchlist")
             columns = [description[0] for description in table_data.description]  # Lists the columns of the table
-            sql_statement = f"INSERT INTO watchlist ({', '.join(columns)}) VALUES ({', '.join(['?'] * 2)})"
+            sql_statement = f"INSERT INTO watchlist ({', '.join(columns)}) VALUES ({', '.join(['?'] * len(columns))})"
             self.cursor.executemany(sql_statement, data)
 
         elif table == 'strategies':
             self.cursor.execute(f"DELETE FROM strategies")
-            table_data = self.cursor.execute(f"SELECT * FROM strategies")
+            table_data = self.cursor.execute("SELECT * FROM strategies")
             columns = [description[0] for description in table_data.description]  # Lists the columns of the table
-            self.conn.executemany(f'INSERT INTO strategies ({", ".join(columns)}) VALUES ({", ".join(["?"] * 2)})', data)
+            sql_statement = f"INSERT INTO strategies ({', '.join(columns)}) VALUES ({', '.join(['?'] * len(columns))});"
+            self.conn.executemany(sql_statement, data)
 
         self.conn.commit()
 
