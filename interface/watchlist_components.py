@@ -13,12 +13,14 @@ from models import *
 # watchlist of prices of cryptos
 class Watchlist(tk.Frame):
     # constructor
-    def __init__(self, binance_contracts: typing.Dict[str, Contract], *args, **kwargs):
+    def __init__(self, binance_contracts: typing.Dict[str, Contract], bitmex_contracts: typing.Dict[str, Contract],
+                 *args, **kwargs):
         super().__init__(*args, **kwargs)
 
         self.db = WorkspaceData()
 
         self.binance_symbols = list(binance_contracts.keys())
+        self.bitmex_symbols = list(bitmex_contracts.keys())
 
         self._commands_frame = tk.Frame(self, bg=BG_COLOR)
         self._commands_frame.pack(side=tk.TOP)
@@ -32,24 +34,24 @@ class Watchlist(tk.Frame):
         self._binance_entry = Autocomplete(self.binance_symbols, self._commands_frame, fg=FG_COLOR, justify=tk.CENTER,
                                            insertbackground=FG_COLOR, bg=BG_COLOR_2, highlightthickness=False)
         self._binance_entry.bind("<Return>", self._add_binance_symbol)
-        self._binance_entry.grid(row=1, column=0)
+        self._binance_entry.grid(row=1, column=0, padx=5)
 
         self._bitmex_label = tk.Label(self._commands_frame, text="Bitmex", bg=BG_COLOR, fg=FG_COLOR, font=BOLD_FONT)
         self._bitmex_label.grid(row=0, column=1)
 
-        # It should be an Autocomplete object but I havent created the binance client yet
-        self._bitmex_entry = tk.Entry(self._commands_frame, fg=FG_COLOR, justify=tk.CENTER,
-                                      insertbackground=FG_COLOR, bg=BG_COLOR_2, highlightthickness=False)
+        self._bitmex_entry = Autocomplete(self.bitmex_symbols, self._commands_frame, fg=FG_COLOR, justify=tk.CENTER,
+                                          insertbackground=FG_COLOR, bg=BG_COLOR_2, highlightthickness=False)
+
         self._bitmex_entry.bind("<Return>", self._add_bitmex_symbol)
         self._bitmex_entry.grid(row=1, column=1)
+
+        self.body_widgets = dict()
 
         self._headers = ['symbol', 'exchange', 'bid', 'ask', 'remove']
 
         self._headers_frame = tk.Frame(self._table_frame, bg=BG_COLOR)
 
         self._col_width = 11
-
-        self.body_widgets = dict()
 
         for idx, h in enumerate(self._headers):
             header = tk.Label(self._headers_frame, text=h.capitalize() if h != 'remove' else '', bg=BG_COLOR, fg=FG_COLOR,

@@ -13,8 +13,11 @@ from connectors.bitmex import BitmexClient
 from interface.root_components import Root
 
 # These are the keys for the testnet
-api_key = '9b020287e6105b7a91d95bc858ec13c9c3b724377e63c12909095dd934b7ad60'
-api_secret = 'b0ffaac2300e0ce792b8fe614599cecd1b454e0ee5cf6da63b4a8b5b2a0ee1a2'
+binance_api_key = '9b020287e6105b7a91d95bc858ec13c9c3b724377e63c12909095dd934b7ad60'
+binance_api_secret = 'b0ffaac2300e0ce792b8fe614599cecd1b454e0ee5cf6da63b4a8b5b2a0ee1a2'
+
+bitmex_api_key = 'QhRkPwfkuRwzD1Rx3aeacOUA'
+bitmex_api_secret ='25Sxg2JEgTAorNwe8KxXZO7Rbg_s2yTzYRwPSyiVHi_f3JR0'
 
 # Create logger
 logger = logging.getLogger()
@@ -36,8 +39,8 @@ logger.addHandler(file_handler)
 
 if __name__ == '__main__':
 
-    binance = BinanceClient(api_key, api_secret, True, True)
-    bitmex = BitmexClient('', '', True)
+    binance = BinanceClient(binance_api_key, binance_api_secret, True, True)
+    bitmex = BitmexClient(bitmex_api_key, bitmex_api_secret, testnet=True)
 
     root = Root(binance, bitmex)
     root.mainloop()

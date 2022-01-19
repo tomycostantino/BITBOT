@@ -24,15 +24,15 @@ class Root(tk.Tk):
 
         self.protocol('WM_DELETE_WINDOW', self._ask_before_close)
 
+        # background color
+        self.configure(bg=BG_COLOR_2)
+
         self.main_menu = tk.Menu(self)
         self.configure(menu=self.main_menu)
 
         self.workspace_menu = tk.Menu(self.main_menu, tearoff=False)
         self.main_menu.add_cascade(label="Workspace", menu=self.workspace_menu)
         self.workspace_menu.add_command(label="Save workspace", command=self._save_workspace)
-
-        # background color
-        self.configure(bg=BG_COLOR_2)
 
         # create left frame
         self._left_frame = tk.Frame(self, bg=BG_COLOR)
@@ -42,13 +42,13 @@ class Root(tk.Tk):
         self._right_frame = tk.Frame(self, bg=BG_COLOR)
         self._right_frame.pack(side=tk.LEFT)
 
-        self._watchlist_frame = Watchlist(self.binance.contracts, self._left_frame, bg=BG_COLOR_2)
-        self._watchlist_frame.pack(side=tk.TOP)
+        self._watchlist_frame = Watchlist(self.binance.contracts, self.bitmex.contracts, self._left_frame, bg=BG_COLOR_2)
+        self._watchlist_frame.pack(side=tk.TOP, padx=10)
 
         self.logging_frame = Logging(self._left_frame, bg=BG_COLOR)
-        self.logging_frame.pack(side=tk.TOP)
+        self.logging_frame.pack(side=tk.TOP, pady=15)
 
-        self._strategy_frame = StrategyEditor(self, self.binance, self._right_frame, bg=BG_COLOR)
+        self._strategy_frame = StrategyEditor(self, self.binance, self.bitmex, self._right_frame, bg=BG_COLOR)
         self._strategy_frame.pack(side=tk.TOP)
 
         self._trades_frame = TradesWatch(self._right_frame, bg=BG_COLOR)
@@ -67,7 +67,6 @@ class Root(tk.Tk):
             self.destroy()
 
     def _update_ui(self):
-
 
         """
         Called by itself every 1500 seconds. It is similar to an infinite loop but runs within the same Thread
@@ -143,7 +142,6 @@ class Root(tk.Tk):
                     prices = self.binance.prices[symbol]
 
                 elif exchange == "Bitmex":
-
                     if symbol not in self.bitmex.contracts:
                         continue
 

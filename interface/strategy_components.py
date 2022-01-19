@@ -1,18 +1,23 @@
 import tkinter as tk
 import tkmacosx as tkmac
 import json
+import typing
 from interface.styling import *
 from utils import *
 
 from connectors.binance import BinanceClient
+from connectors.bitmex import BitmexClient
 from interface.scrollable_frame import ScrollableFrame
 from database import WorkspaceData
 
 from strategies import TechnicalStrategy, BreakoutStrategy
 
+if typing.TYPE_CHECKING:
+    from interface.root_components import Root
+
 
 class StrategyEditor(tk.Frame):
-    def __init__(self, root, binance: BinanceClient, *args, **kwargs):
+    def __init__(self, root, binance: BinanceClient, bitmex: BitmexClient, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
         self.root = root
@@ -22,7 +27,7 @@ class StrategyEditor(tk.Frame):
         self._valid_integer = self.register(check_integer_format)
         self._valid_float = self.register(check_float_format)
 
-        self._exchanges = {'Binance': binance}
+        self._exchanges = {'Binance': binance, "Bitmex": bitmex}
 
         self._all_contracts = []
         self._all_timeframes = ['1m', '5m', '15m', '30m', '1h', '4h']
@@ -89,9 +94,8 @@ class StrategyEditor(tk.Frame):
 
         for idx, h in enumerate(self._base_params):
             header = tk.Label(self._headers_frame, text=h['header'], bg=BG_COLOR, fg=FG_COLOR, font=GLOBAL_FONT,
-                              width=h['width'], bd=0, relief=tk.FLAT)
-            if h['header'] != '':
-                header.grid(row=0, column=idx, padx=h['padx'])
+                              width=h['width'], bd=1, relief=tk.FLAT)
+            header.grid(row=0, column=idx, padx=11)
 
         header = tk.Label(self._headers_frame, text='', bg=BG_COLOR, fg=FG_COLOR, font=GLOBAL_FONT,
                           width=0, bd=0, relief=tk.FLAT)
