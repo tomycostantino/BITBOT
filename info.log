@@ -2410,3 +2410,118 @@
 2022-01-19 21:09:09,641 INFO :: Binance New candle for ETHUSDT 1m
 2022-01-19 21:10:03,629 INFO :: Binance New candle for ETHUSDT 1m
 2022-01-19 21:10:04,317 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-19 21:11:01,248 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-19 21:11:03,473 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-21 07:04:49,090 ERROR :: Connection error while making GET request to /fapi/v1/exchangeInfo: HTTPSConnectionPool(host='testnet.binancefuture.com', port=443): Max retries exceeded with url: /fapi/v1/exchangeInfo (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x1181f3640>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))
+2022-01-21 07:04:49,090 INFO :: Data could not be obtained from exchange
+2022-01-21 07:07:17,623 INFO :: Binance Futures Client successfully initialized
+2022-01-21 07:07:18,482 INFO :: Binance connection opened
+2022-01-21 07:07:20,247 INFO :: Bitmex Client successfully initialized
+2022-01-21 07:07:21,834 INFO :: Bitmex connection opened
+2022-01-21 07:07:53,209 INFO :: Getting Binance trade size...
+2022-01-21 07:07:53,466 INFO :: Binance current USDT balance = 10019.74770378, trade size = 0.002
+2022-01-21 07:07:53,466 INFO :: Short signal on BTCUSDT 1m
+2022-01-21 07:07:54,003 INFO :: Sell order placed on Binance | Status: new
+2022-01-21 07:07:56,563 INFO :: Binance order status: filled
+2022-01-21 07:08:00,716 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-21 07:08:51,995 INFO :: Binance Futures Client successfully initialized
+2022-01-21 07:08:53,218 INFO :: Binance connection opened
+2022-01-21 07:08:55,374 INFO :: Bitmex Client successfully initialized
+2022-01-21 07:08:57,217 INFO :: Bitmex connection opened
+2022-01-21 07:09:24,354 INFO :: Binance Futures Client successfully initialized
+2022-01-21 07:09:25,061 INFO :: Binance connection opened
+2022-01-21 07:09:25,467 INFO :: Bitmex Client successfully initialized
+2022-01-21 07:09:27,166 INFO :: Bitmex connection opened
+2022-01-21 07:10:02,422 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-21 07:10:15,745 INFO :: Getting Binance trade size...
+2022-01-21 07:10:16,290 INFO :: Binance current USDT balance = 10019.71340298, trade size = 0.002
+2022-01-21 07:10:16,290 INFO :: Long signal on BTCUSDT 1m
+2022-01-21 07:10:16,762 INFO :: Buy order placed on Binance | Status: new
+2022-01-21 07:10:19,287 INFO :: Binance order status: filled
+2022-01-21 07:11:00,875 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-21 07:12:01,270 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-21 07:35:09,553 INFO :: Binance Futures Client successfully initialized
+2022-01-21 07:35:10,505 INFO :: Binance connection opened
+2022-01-21 07:35:10,516 INFO :: Bitmex Client successfully initialized
+2022-01-21 07:35:12,117 INFO :: Bitmex connection opened
+2022-01-21 07:35:51,343 INFO :: Binance Futures Client successfully initialized
+2022-01-21 07:35:52,425 INFO :: Binance connection opened
+2022-01-21 07:35:53,559 INFO :: Bitmex Client successfully initialized
+2022-01-21 07:35:55,310 INFO :: Bitmex connection opened
+2022-01-21 07:36:38,249 INFO :: Binance Futures Client successfully initialized
+2022-01-21 07:36:39,159 INFO :: Binance connection opened
+2022-01-21 07:36:39,159 INFO :: Bitmex Client successfully initialized
+2022-01-21 07:36:40,796 INFO :: Bitmex connection opened
+2022-01-21 07:37:08,550 INFO :: Binance Futures Client successfully initialized
+2022-01-21 07:37:09,772 INFO :: Binance connection opened
+2022-01-21 07:37:09,775 INFO :: Bitmex Client successfully initialized
+2022-01-21 07:37:11,520 INFO :: Bitmex connection opened
+2022-01-21 07:39:23,655 INFO :: Binance Futures Client successfully initialized
+2022-01-21 07:39:24,782 INFO :: Binance connection opened
+2022-01-21 07:39:25,870 INFO :: Bitmex Client successfully initialized
+2022-01-21 07:39:27,486 INFO :: Bitmex connection opened
+2022-01-21 07:40:49,711 INFO :: Binance Futures Client successfully initialized
+2022-01-21 07:40:50,754 INFO :: Binance connection opened
+2022-01-21 07:40:50,757 INFO :: Bitmex Client successfully initialized
+2022-01-21 07:40:53,382 INFO :: Binance Futures Client successfully initialized
+2022-01-21 07:40:54,356 INFO :: Binance connection opened
+2022-01-21 07:40:54,356 INFO :: Bitmex Client successfully initialized
+2022-01-21 07:40:55,947 INFO :: Bitmex connection opened
+2022-01-21 07:41:18,096 INFO :: Binance Futures Client successfully initialized
+2022-01-21 07:41:19,117 INFO :: Bitmex Client successfully initialized
+2022-01-21 07:41:20,139 INFO :: Binance connection opened
+2022-01-21 07:41:20,703 INFO :: Bitmex connection opened
+2022-01-21 07:41:49,267 INFO :: Binance Futures Client successfully initialized
+2022-01-21 07:41:49,977 INFO :: Binance connection opened
+2022-01-21 07:41:50,170 INFO :: Bitmex Client successfully initialized
+2022-01-21 07:41:51,794 INFO :: Bitmex connection opened
+2022-01-21 07:42:03,152 INFO :: Binance Futures Client successfully initialized
+2022-01-21 07:42:04,197 INFO :: Binance connection opened
+2022-01-21 07:42:05,090 INFO :: Bitmex Client successfully initialized
+2022-01-21 07:42:06,717 INFO :: Bitmex connection opened
+2022-01-21 07:44:11,956 INFO :: Binance Futures Client successfully initialized
+2022-01-21 07:44:12,908 INFO :: Binance connection opened
+2022-01-21 07:44:12,929 INFO :: Bitmex Client successfully initialized
+2022-01-21 07:44:14,544 INFO :: Bitmex connection opened
+2022-01-21 07:44:58,771 INFO :: Getting Binance trade size...
+2022-01-21 07:44:59,254 INFO :: Binance current USDT balance = 10019.64168722, trade size = 0.002
+2022-01-21 07:44:59,255 INFO :: Short signal on BTCUSDT 1m
+2022-01-21 07:44:59,792 INFO :: Sell order placed on Binance | Status: new
+2022-01-21 07:45:01,396 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-21 07:45:02,463 INFO :: Binance order status: filled
+2022-01-21 07:46:02,977 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-21 07:47:02,036 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-21 07:48:04,722 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-21 07:49:03,578 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-21 07:55:25,228 INFO :: Binance Futures Client successfully initialized
+2022-01-21 07:55:25,981 INFO :: Binance connection opened
+2022-01-21 07:55:26,259 INFO :: Bitmex Client successfully initialized
+2022-01-21 07:55:27,811 INFO :: Bitmex connection opened
+2022-01-21 07:55:55,152 INFO :: Binance Futures Client successfully initialized
+2022-01-21 07:55:56,110 INFO :: Binance connection opened
+2022-01-21 07:55:56,110 INFO :: Bitmex Client successfully initialized
+2022-01-21 07:55:57,695 INFO :: Bitmex connection opened
+2022-01-21 07:56:21,268 INFO :: Binance Futures Client successfully initialized
+2022-01-21 07:56:22,322 INFO :: Binance connection opened
+2022-01-21 07:56:22,328 INFO :: Bitmex Client successfully initialized
+2022-01-21 07:56:23,927 INFO :: Bitmex connection opened
+2022-01-21 07:56:38,062 INFO :: Binance Futures Client successfully initialized
+2022-01-21 07:56:39,080 INFO :: Binance connection opened
+2022-01-21 07:56:39,083 INFO :: Bitmex Client successfully initialized
+2022-01-21 07:56:40,620 INFO :: Bitmex connection opened
+2022-01-21 07:57:36,325 INFO :: Binance Futures Client successfully initialized
+2022-01-21 07:57:37,425 INFO :: Binance connection opened
+2022-01-21 07:57:38,508 INFO :: Bitmex Client successfully initialized
+2022-01-21 07:57:40,111 INFO :: Bitmex connection opened
+2022-01-21 07:59:22,719 INFO :: Binance Futures Client successfully initialized
+2022-01-21 07:59:23,634 INFO :: Binance connection opened
+2022-01-21 07:59:24,572 INFO :: Bitmex Client successfully initialized
+2022-01-21 07:59:26,223 INFO :: Bitmex connection opened
+2022-01-21 08:01:32,764 INFO :: Binance Futures Client successfully initialized
+2022-01-21 08:01:33,697 INFO :: Binance connection opened
+2022-01-21 08:01:35,474 INFO :: Bitmex Client successfully initialized
+2022-01-21 08:01:37,076 INFO :: Bitmex connection opened
+2022-01-21 08:02:17,265 INFO :: Binance Futures Client successfully initialized
+2022-01-21 08:02:18,229 INFO :: Binance connection opened
+2022-01-21 08:02:18,232 INFO :: Bitmex Client successfully initialized
+2022-01-21 08:02:19,869 INFO :: Bitmex connection opened

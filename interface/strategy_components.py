@@ -115,8 +115,6 @@ class StrategyEditor(tk.Frame):
 
         self._body_index = 0
 
-        self._load_workspace()
-
     def _add_strategy_row(self):
         b_index = self._body_index
 
@@ -306,7 +304,7 @@ class StrategyEditor(tk.Frame):
 
                 self.root.logging_frame.add_log(f'{strat_selected} strategy on {symbol} / {timeframe} stopped')
 
-    def _load_workspace(self):
+    def load_workspace(self):
 
         """
         Add the rows and fill them with data saved in the database

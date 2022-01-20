@@ -5,7 +5,7 @@ import typing
 from interface.autocomplete_widget import Autocomplete
 from interface.scrollable_frame import ScrollableFrame
 from interface.styling import *
-from database import  WorkspaceData
+from database import WorkspaceData
 
 from models import *
 
@@ -74,12 +74,6 @@ class Watchlist(tk.Frame):
 
         self._body_index = 0
 
-        # Loads the Watchlist symbols saved to the database during a previous session
-        saved_symbols = self.db.get("watchlist")
-
-        for s in saved_symbols:
-            self._add_symbol(s['symbol'], s['exchange'])
-
     def _remove_symbol(self, b_index: int):
 
         for h in self._headers:
@@ -128,3 +122,10 @@ class Watchlist(tk.Frame):
         self.body_widgets['remove'][b_index].grid(row=b_index, column=4)
 
         self._body_index += 1
+
+    def load_workspace(self):
+        # Loads the Watchlist symbols saved to the database during a previous session
+        saved_symbols = self.db.get("watchlist")
+
+        for s in saved_symbols:
+            self._add_symbol(s['symbol'], s['exchange'])

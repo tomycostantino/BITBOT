@@ -2,6 +2,7 @@ import tkinter as tk
 import json
 from connectors.binance import BinanceClient
 from connectors.bitmex import BitmexClient
+from tkinter import filedialog
 
 import logging
 from tkinter.messagebox import askquestion
@@ -20,6 +21,8 @@ class Root(tk.Tk):
         self.binance = binance
         self.bitmex = bitmex
 
+        self.db = ''
+
         self.title('Trading Bot')
 
         self.protocol('WM_DELETE_WINDOW', self._ask_before_close)
@@ -33,6 +36,7 @@ class Root(tk.Tk):
         self.workspace_menu = tk.Menu(self.main_menu, tearoff=False)
         self.main_menu.add_cascade(label="Workspace", menu=self.workspace_menu)
         self.workspace_menu.add_command(label="Save workspace", command=self._save_workspace)
+        self.workspace_menu.add_command(label="Load workspace", command=self._load_workspace)
 
         # create left frame
         self._left_frame = tk.Frame(self, bg=BG_COLOR)
@@ -218,3 +222,13 @@ class Root(tk.Tk):
         self._strategy_frame.db.save("strategies", strategies)
 
         self.logging_frame.add_log("Workspace saved")
+
+    def _load_workspace(self):
+        # self.db = filedialog.askopenfilename()  # Returns the name of the file
+        # print(self.db)
+        # self._watchlist_frame.db.open_file(self.db)
+        # self._strategy_frame.db.open_file(self.db)
+
+        self._watchlist_frame.load_workspace()
+        self._strategy_frame.load_workspace()
+        self.logging_frame.add_log('Workspace loaded')
