@@ -20,8 +20,9 @@ class BinanceClient:
     # constructor
     def __init__(self, public_key: str, secret_key: str, testnet: bool, futures: bool):
         self.futures = futures
+        self.testnet = testnet
         if self.futures:
-            if testnet:
+            if self.testnet:
                 self.platform = 'binance_futures'
                 self._base_url = "https://testnet.binancefuture.com"
                 self._wss_url = 'wss://stream.binancefuture.com/ws'
@@ -30,7 +31,7 @@ class BinanceClient:
                 self._wss_url = 'wss://fstream.binance.com/ws'
         else:
             self.platform = "binance_spot"
-            if testnet:
+            if self.testnet:
                 self._base_url = "https://testnet.binance.vision"
                 self._wss_url = "wss://testnet.binance.vision/ws"
             else:

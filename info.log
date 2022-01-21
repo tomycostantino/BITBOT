@@ -2525,3 +2525,85 @@
 2022-01-21 08:02:18,229 INFO :: Binance connection opened
 2022-01-21 08:02:18,232 INFO :: Bitmex Client successfully initialized
 2022-01-21 08:02:19,869 INFO :: Bitmex connection opened
+2022-01-21 18:16:04,910 INFO :: Binance Futures Client successfully initialized
+2022-01-21 18:16:06,141 INFO :: Binance connection opened
+2022-01-21 18:16:06,142 INFO :: Bitmex Client successfully initialized
+2022-01-21 18:16:07,672 INFO :: Bitmex connection opened
+2022-01-21 18:16:42,303 ERROR :: Error while making GET request to /fapi/v1/ticker/bookTicker: {'code': -4108, 'msg': 'Symbol is on delivering or delivered or settling or closed or pre-trading.'} (error code 400)
+2022-01-21 18:16:44,541 ERROR :: Error while making GET request to /fapi/v1/ticker/bookTicker: {'code': -4108, 'msg': 'Symbol is on delivering or delivered or settling or closed or pre-trading.'} (error code 400)
+2022-01-21 18:16:47,121 ERROR :: Error while making GET request to /fapi/v1/ticker/bookTicker: {'code': -4108, 'msg': 'Symbol is on delivering or delivered or settling or closed or pre-trading.'} (error code 400)
+2022-01-21 18:16:49,760 ERROR :: Error while making GET request to /fapi/v1/ticker/bookTicker: {'code': -4108, 'msg': 'Symbol is on delivering or delivered or settling or closed or pre-trading.'} (error code 400)
+2022-01-21 18:24:17,973 INFO :: Binance Futures Client successfully initialized
+2022-01-21 18:24:19,001 INFO :: Binance connection opened
+2022-01-21 18:24:19,122 INFO :: Bitmex Client successfully initialized
+2022-01-21 18:24:21,133 INFO :: Bitmex connection opened
+2022-01-21 18:27:11,233 INFO :: Binance Futures Client successfully initialized
+2022-01-21 18:27:12,102 INFO :: Binance connection opened
+2022-01-21 18:27:12,284 INFO :: Bitmex Client successfully initialized
+2022-01-21 18:27:14,299 INFO :: Bitmex connection opened
+2022-01-21 18:30:27,222 INFO :: Binance Futures Client successfully initialized
+2022-01-21 18:30:28,330 INFO :: Binance connection opened
+2022-01-21 18:30:28,334 INFO :: Bitmex Client successfully initialized
+2022-01-21 18:30:30,171 INFO :: Bitmex connection opened
+2022-01-21 18:30:53,329 INFO :: Binance Futures Client successfully initialized
+2022-01-21 18:30:56,665 INFO :: Bitmex Client successfully initialized
+2022-01-21 18:30:56,863 INFO :: Binance connection opened
+2022-01-21 18:30:58,754 INFO :: Bitmex connection opened
+2022-01-21 18:44:59,066 INFO :: Binance Futures Client successfully initialized
+2022-01-21 18:45:00,097 INFO :: Binance connection opened
+2022-01-21 18:45:00,286 INFO :: Bitmex Client successfully initialized
+2022-01-21 18:45:01,607 INFO :: Bitmex connection opened
+2022-01-21 18:56:11,210 INFO :: Binance Futures Client successfully initialized
+2022-01-21 18:56:13,113 INFO :: Binance connection opened
+2022-01-21 18:56:13,361 INFO :: Bitmex Client successfully initialized
+2022-01-21 18:56:14,762 INFO :: Bitmex connection opened
+2022-01-21 18:56:21,790 ERROR :: Error while making GET request to /api/v3/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action.'} (error code 401)
+2022-01-21 18:56:21,793 INFO :: Binance Futures Client successfully initialized
+2022-01-21 18:56:22,438 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2022-01-21 18:56:23,030 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2022-01-21 18:56:23,032 INFO :: Binance connection opened
+2022-01-21 18:56:23,032 INFO :: Bitmex Client successfully initialized
+2022-01-21 18:56:24,379 INFO :: Bitmex connection opened
+2022-01-21 18:57:00,888 ERROR :: Error while making GET request to /api/v3/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action.'} (error code 401)
+2022-01-21 18:57:00,892 INFO :: Binance Futures Client successfully initialized
+2022-01-21 18:57:01,844 INFO :: Binance connection opened
+2022-01-21 18:57:02,964 INFO :: Bitmex Client successfully initialized
+2022-01-21 18:57:04,504 INFO :: Bitmex connection opened
+2022-01-21 18:57:27,615 ERROR :: Error while making GET request to /api/v3/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action.'} (error code 401)
+2022-01-21 18:57:27,623 INFO :: Binance Futures Client successfully initialized
+2022-01-21 18:57:28,042 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2022-01-21 18:57:28,439 INFO :: Binance connection opened
+2022-01-21 18:57:28,474 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2022-01-21 18:57:28,475 INFO :: Bitmex Client successfully initialized
+2022-01-21 18:57:29,829 INFO :: Bitmex connection opened
+2022-01-21 18:57:37,064 ERROR :: Error while making GET request to /api/v3/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action.'} (error code 401)
+2022-01-21 18:57:37,067 INFO :: Binance Futures Client successfully initialized
+2022-01-21 18:57:37,840 INFO :: Binance connection opened
+2022-01-21 18:57:37,961 INFO :: Bitmex Client successfully initialized
+2022-01-21 18:57:39,267 INFO :: Bitmex connection opened
+2022-01-21 18:58:28,877 ERROR :: Error while making GET request to /api/v3/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action.'} (error code 401)
+2022-01-21 18:58:28,880 INFO :: Binance Futures Client successfully initialized
+2022-01-21 18:58:30,211 INFO :: Binance connection opened
+2022-01-21 18:58:30,212 INFO :: Bitmex Client successfully initialized
+2022-01-21 18:58:31,747 INFO :: Bitmex connection opened
+2022-01-21 18:59:57,848 ERROR :: Error while making GET request to /api/v3/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action.'} (error code 401)
+2022-01-21 18:59:57,850 INFO :: Binance Futures Client successfully initialized
+2022-01-21 18:59:58,970 INFO :: Binance connection opened
+2022-01-21 18:59:58,971 INFO :: Bitmex Client successfully initialized
+2022-01-21 19:00:00,464 INFO :: Bitmex connection opened
+2022-01-21 19:00:50,899 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.145.166.89'} (error code 401)
+2022-01-21 19:00:50,902 INFO :: Binance Futures Client successfully initialized
+2022-01-21 19:00:52,025 INFO :: Binance connection opened
+2022-01-21 19:00:52,027 INFO :: Bitmex Client successfully initialized
+2022-01-21 19:00:53,666 INFO :: Bitmex connection opened
+2022-01-21 19:01:13,416 INFO :: Binance Futures Client successfully initialized
+2022-01-21 19:01:14,552 INFO :: Binance connection opened
+2022-01-21 19:01:14,555 INFO :: Bitmex Client successfully initialized
+2022-01-21 19:01:16,090 INFO :: Bitmex connection opened
+2022-01-21 19:02:55,043 INFO :: Binance Futures Client successfully initialized
+2022-01-21 19:02:56,030 INFO :: Binance connection opened
+2022-01-21 19:02:56,055 INFO :: Bitmex Client successfully initialized
+2022-01-21 19:02:57,692 INFO :: Bitmex connection opened
+2022-01-21 19:03:02,390 ERROR :: Error while making GET request to /api/v3/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action.'} (error code 401)
+2022-01-21 19:03:02,392 INFO :: Binance Futures Client successfully initialized
+2022-01-21 19:03:03,606 INFO :: Binance connection opened

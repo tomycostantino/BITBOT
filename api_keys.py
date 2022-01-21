@@ -1,0 +1,11 @@
+# These are the keys for the testnet
+binance_testnet_api_key = '9b020287e6105b7a91d95bc858ec13c9c3b724377e63c12909095dd934b7ad60'
+binance_testnet_api_key_api_secret = 'b0ffaac2300e0ce792b8fe614599cecd1b454e0ee5cf6da63b4a8b5b2a0ee1a2'
+
+
+binance_api_key = '5CWQHvHfhyU9WWWWiRUaY0xbq6wmQkgO4512GKupzTkrwwdiTphQQxsZQCcB48rM'
+binance_api_secret = 'ULgitDDFVLA9RELEXA8nisOUZLi9JVWUZPsKs3ctjMj2iszmMDdx5Kmeg8sz5xik'
+
+
+bitmex_api_key = 'QhRkPwfkuRwzD1Rx3aeacOUA'
+bitmex_api_secret ='25Sxg2JEgTAorNwe8KxXZO7Rbg_s2yTzYRwPSyiVHi_f3JR0'

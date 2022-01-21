@@ -36,8 +36,9 @@ class BitmexClient:
 
         self.futures = True
         self.platform = "bitmex"  # Just to have more homogeneous connectors, even if self.platform is not used
+        self.testnet = testnet
 
-        if testnet:
+        if self.testnet:
             self._base_url = "https://testnet.bitmex.com"
             self._wss_url = "wss://testnet.bitmex.com/realtime"
         else:

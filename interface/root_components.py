@@ -1,3 +1,4 @@
+from api_keys import *
 import tkinter as tk
 import json
 from connectors.binance import BinanceClient
@@ -15,13 +16,11 @@ logger = logging.getLogger()
 
 
 class Root(tk.Tk):
-    def __init__(self, binance: BinanceClient, bitmex: BitmexClient):
+    def __init__(self):
         super().__init__()
 
-        self.binance = binance
-        self.bitmex = bitmex
-
-        self.db = ''
+        self.binance = BinanceClient(binance_testnet_api_key, binance_testnet_api_key_api_secret, True, True)
+        self.bitmex = BitmexClient(bitmex_api_key, bitmex_api_secret, testnet=True)
 
         self.title('Trading Bot')
 
@@ -37,6 +36,11 @@ class Root(tk.Tk):
         self.main_menu.add_cascade(label="Workspace", menu=self.workspace_menu)
         self.workspace_menu.add_command(label="Save workspace", command=self._save_workspace)
         self.workspace_menu.add_command(label="Load workspace", command=self._load_workspace)
+
+        self.testnet_menu = tk.Menu(self.main_menu, tearoff=False)
+        self.main_menu.add_cascade(label='Testnet', menu=self.testnet_menu)
+        self.testnet_menu.add_command(label='Testnet', command=self._set_testnet)
+        self.testnet_menu.add_command(label='Spot', command=self._set_spot)
 
         # create left frame
         self._left_frame = tk.Frame(self, bg=BG_COLOR)
@@ -224,7 +228,7 @@ class Root(tk.Tk):
         self.logging_frame.add_log("Workspace saved")
 
     def _load_workspace(self):
-        # self.db = filedialog.askopenfilename()  # Returns the name of the file
+        # filename = filedialog.askopenfilename()  # Returns the name of the file
         # print(self.db)
         # self._watchlist_frame.db.open_file(self.db)
         # self._strategy_frame.db.open_file(self.db)
@@ -232,3 +236,54 @@ class Root(tk.Tk):
         self._watchlist_frame.load_workspace()
         self._strategy_frame.load_workspace()
         self.logging_frame.add_log('Workspace loaded')
+
+    def _set_testnet(self):
+        if not self.binance.testnet:
+            self.binance.ws_connected = False
+            self.binance.reconnect = False
+
+            del self.binance
+
+            self.binance = BinanceClient(binance_testnet_api_key, binance_testnet_api_key_api_secret, True, True)
+
+        else:
+            self.logging_frame.add_log('Binance Client already on testnet')
+        '''
+        if not self.bitmex.testnet:
+            self.bitmex.reconnect = False
+
+            del self.bitmex
+
+            self.bitmex = BitmexClient(bitmex_api_key, bitmex_api_secret, testnet=True)
+
+        else:
+            self.logging_frame.add_log('Bitmex Client already on testnet')
+        
+        '''
+
+    def _set_spot(self):
+
+        if self.binance.testnet:
+            self.binance.ws_connected = False
+            self.binance.reconnect = False
+
+            del self.binance
+
+            self.logging_frame.add_log('Binance Testnet Client deleted')
+
+            self.binance = BinanceClient(binance_api_key, binance_api_secret, False, False)
+
+            self.logging_frame.add_log('Binance Spot client started')
+        '''
+        if self.bitmex.testnet:
+            self.bitmex.testnet = False
+
+            del self.bitmex
+
+            self.logging_frame.add_log('Bitmex Testnet Client deleted')
+
+            self.bitmex = BitmexClient(bitmex_api_key, bitmex_api_secret, testnet=False)
+
+            self.logging_frame.add_log('Binance Spot client started')
+            
+        '''
