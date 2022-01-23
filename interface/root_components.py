@@ -3,7 +3,6 @@ import tkinter as tk
 import json
 from connectors.binance import BinanceClient
 from connectors.bitmex import BitmexClient
-from tkinter import filedialog
 
 import logging
 from tkinter.messagebox import askquestion
@@ -19,7 +18,7 @@ class Root(tk.Tk):
     def __init__(self):
         super().__init__()
 
-        self.binance = BinanceClient(binance_testnet_api_key, binance_testnet_api_key_api_secret, True, True)
+        self.binance = BinanceClient(binance_testnet_api_key, binance_testnet_api_secret, True, True)
         self.bitmex = BitmexClient(bitmex_api_key, bitmex_api_secret, testnet=True)
 
         self.title('Trading Bot')
@@ -41,6 +40,11 @@ class Root(tk.Tk):
         self.main_menu.add_cascade(label='Testnet', menu=self.testnet_menu)
         self.testnet_menu.add_command(label='Testnet', command=self._set_testnet)
         self.testnet_menu.add_command(label='Spot', command=self._set_spot)
+
+        self.futures_menu = tk.Menu(self.main_menu, tearoff=False)
+        self.main_menu.add_cascade(label='Futures', menu=self.futures_menu)
+        self.futures_menu.add_command(label='Binance', command=self._set_binance_normal)
+        self.futures_menu.add_command(label='Binance Futures', command=self._set_binance_future)
 
         # create left frame
         self._left_frame = tk.Frame(self, bg=BG_COLOR)
@@ -228,8 +232,8 @@ class Root(tk.Tk):
         self.logging_frame.add_log("Workspace saved")
 
     def _load_workspace(self):
-        # filename = filedialog.askopenfilename()  # Returns the name of the file
-        # print(self.db)
+        # filename = self._get_path_name()  # Returns the name of the file
+        # print(filename)
         # self._watchlist_frame.db.open_file(self.db)
         # self._strategy_frame.db.open_file(self.db)
 
@@ -244,7 +248,7 @@ class Root(tk.Tk):
 
             del self.binance
 
-            self.binance = BinanceClient(binance_testnet_api_key, binance_testnet_api_key_api_secret, True, True)
+            self.binance = BinanceClient(binance_testnet_api_key, binance_testnet_api_secret, True, True)
 
         else:
             self.logging_frame.add_log('Binance Client already on testnet')
@@ -287,3 +291,31 @@ class Root(tk.Tk):
             self.logging_frame.add_log('Binance Spot client started')
             
         '''
+
+    def _set_binance_normal(self):
+        if self.binance.futures:
+            if self.binance.testnet:
+                del self.binance
+                self.binance = BinanceClient(binance_testnet_api_key, binance_testnet_api_secret, True, False)
+                self.logging_frame.add_log('Binance client set on testnet normal')
+
+            elif not self.binance.testnet:
+                del self.binance
+                self.binance = BinanceClient(binance_api_key, binance_api_secret, False, False)
+                self.logging_frame.add_log('Binance client set on spot normal')
+        else:
+            self.logging_frame.add_log('Binance client is already normal')
+
+    def _set_binance_future(self):
+        if self.binance.futures:
+            self.logging_frame.add_log('Binance client is already on Futures')
+        else:
+            if self.binance.testnet:
+                del self.binance
+                self.binance = BinanceClient(binance_api_key, binance_api_secret, True, True)
+                self.logging_frame.add_log('Binance client set on testnet futures')
+            else:
+                del self.binance
+                self.binance = BinanceClient(binance_api_key, binance_api_secret, False, True)
+                self.logging_frame.add_log('Binance client set on futures')
+
