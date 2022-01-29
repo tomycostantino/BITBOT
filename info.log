@@ -2729,3 +2729,121 @@
 2022-01-23 23:16:34,805 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.107.172'} (error code 401)
 2022-01-23 23:16:34,807 INFO :: Binance Futures Client successfully initialized
 2022-01-23 23:16:35,645 INFO :: Binance connection opened
+2022-01-24 13:17:05,285 INFO :: Binance Futures Client successfully initialized
+2022-01-24 13:17:06,229 INFO :: Binance connection opened
+2022-01-24 13:17:07,654 INFO :: Bitmex Client successfully initialized
+2022-01-24 13:17:08,994 INFO :: Bitmex connection opened
+2022-01-24 13:17:33,886 INFO :: Getting Binance trade size...
+2022-01-24 13:17:34,444 INFO :: Binance current USDT balance = 10040.27838639, trade size = 0.003
+2022-01-24 13:17:34,445 INFO :: Short signal on BTCUSDT 1m
+2022-01-24 13:17:35,363 INFO :: Sell order placed on Binance | Status: new
+2022-01-24 13:17:37,951 INFO :: Binance order status: filled
+2022-01-24 13:17:38,686 INFO :: Getting Binance trade size...
+2022-01-24 13:17:38,926 INFO :: Binance current USDT balance = 10040.23566615, trade size = 0.041
+2022-01-24 13:17:38,926 INFO :: Short signal on ETHUSDT 1m
+2022-01-24 13:17:39,357 INFO :: Sell order placed on Binance | Status: new
+2022-01-24 13:17:42,122 INFO :: Binance order status: filled
+2022-01-24 13:18:03,315 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-24 13:18:05,634 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-24 13:19:02,703 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-24 13:19:03,536 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-24 13:20:08,789 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-24 13:20:09,087 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-24 13:21:00,589 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-24 13:21:01,556 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-24 13:22:04,132 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-24 13:22:12,480 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-24 13:23:02,592 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-24 13:23:09,485 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-24 13:39:09,029 INFO :: Binance Futures Client successfully initialized
+2022-01-24 13:39:09,941 INFO :: Binance connection opened
+2022-01-24 13:39:11,180 INFO :: Bitmex Client successfully initialized
+2022-01-24 13:39:12,714 INFO :: Bitmex connection opened
+2022-01-24 13:40:22,728 WARNING :: Websocket connection closed
+2022-01-24 13:40:23,066 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x1428ba0a0>>: _on_close() takes 2 positional arguments but 4 were given
+2022-01-24 13:40:23,067 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-01-28 10:09:22,699 INFO :: Binance Futures Client successfully initialized
+2022-01-28 10:09:23,836 INFO :: Binance connection opened
+2022-01-28 10:09:24,101 INFO :: Bitmex Client successfully initialized
+2022-01-28 10:09:25,767 INFO :: Bitmex connection opened
+2022-01-28 10:10:27,834 INFO :: Getting Binance trade size...
+2022-01-28 10:10:28,761 INFO :: Binance current USDT balance = 10040.23618909, trade size = 0.042
+2022-01-28 10:10:28,762 INFO :: Short signal on ETHUSDT 1m
+2022-01-28 10:10:29,667 INFO :: Sell order placed on Binance | Status: new
+2022-01-28 10:10:32,245 INFO :: Binance order status: filled
+2022-01-28 10:11:01,997 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-28 10:11:02,840 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-28 10:11:26,848 INFO :: Getting Binance trade size...
+2022-01-28 10:11:27,733 INFO :: Binance current USDT balance = 10040.19568833, trade size = 0.003
+2022-01-28 10:11:27,733 INFO :: Short signal on BTCUSDT 1m
+2022-01-28 10:11:28,231 INFO :: Sell order placed on Binance | Status: new
+2022-01-28 10:11:30,488 INFO :: Binance order status: filled
+2022-01-28 10:12:01,492 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-28 10:12:01,818 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-28 10:13:01,690 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-28 10:13:03,794 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-28 10:13:21,222 WARNING :: Websocket connection closed
+2022-01-28 10:13:21,446 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x136b970a0>>: _on_close() takes 2 positional arguments but 4 were given
+2022-01-28 10:13:21,448 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-01-28 19:14:59,713 INFO :: Binance Futures Client successfully initialized
+2022-01-28 19:15:03,210 INFO :: Bitmex Client successfully initialized
+2022-01-28 19:15:28,230 INFO :: Binance Futures Client successfully initialized
+2022-01-28 19:15:31,919 INFO :: Bitmex Client successfully initialized
+2022-01-28 19:16:14,951 INFO :: Binance Futures Client successfully initialized
+2022-01-28 19:16:18,328 INFO :: Bitmex Client successfully initialized
+2022-01-28 19:17:38,169 INFO :: Binance Futures Client successfully initialized
+2022-01-28 19:17:41,867 INFO :: Bitmex Client successfully initialized
+2022-01-28 19:18:30,842 INFO :: Binance Futures Client successfully initialized
+2022-01-28 19:18:34,087 INFO :: Bitmex Client successfully initialized
+2022-01-28 19:22:15,571 INFO :: Binance Futures Client successfully initialized
+2022-01-28 19:22:18,363 INFO :: Bitmex Client successfully initialized
+2022-01-28 19:33:46,205 INFO :: Binance Futures Client successfully initialized
+2022-01-28 19:33:48,341 INFO :: Bitmex Client successfully initialized
+2022-01-29 16:34:01,513 INFO :: Binance Futures Client successfully initialized
+2022-01-29 16:34:02,848 INFO :: Binance connection opened
+2022-01-29 16:34:04,289 INFO :: Bitmex Client successfully initialized
+2022-01-29 16:34:05,800 INFO :: Bitmex connection opened
+2022-01-29 16:35:51,929 WARNING :: Websocket connection closed
+2022-01-29 16:35:54,168 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x128d0d190>>: _on_close() takes 2 positional arguments but 4 were given
+2022-01-29 16:35:54,170 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-01-29 16:58:03,627 INFO :: Binance Futures Client successfully initialized
+2022-01-29 16:58:04,542 INFO :: Binance connection opened
+2022-01-29 16:58:04,570 INFO :: Bitmex Client successfully initialized
+2022-01-29 16:58:05,982 INFO :: Bitmex connection opened
+2022-01-29 16:58:45,504 INFO :: Binance Futures Client successfully initialized
+2022-01-29 16:58:46,526 INFO :: Binance connection opened
+2022-01-29 16:58:46,529 INFO :: Bitmex Client successfully initialized
+2022-01-29 16:58:47,961 INFO :: Bitmex connection opened
+2022-01-29 16:58:58,711 WARNING :: Websocket connection closed
+2022-01-29 16:58:59,009 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x117c51e80>>: _on_close() takes 2 positional arguments but 4 were given
+2022-01-29 16:58:59,010 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-01-29 17:07:15,969 INFO :: Binance Futures Client successfully initialized
+2022-01-29 17:07:17,406 INFO :: Binance connection opened
+2022-01-29 17:07:17,406 INFO :: Bitmex Client successfully initialized
+2022-01-29 17:07:19,141 INFO :: Bitmex connection opened
+2022-01-29 17:07:41,658 INFO :: Binance Futures Client successfully initialized
+2022-01-29 17:07:42,648 INFO :: Binance connection opened
+2022-01-29 17:07:42,673 INFO :: Bitmex Client successfully initialized
+2022-01-29 17:07:44,053 INFO :: Bitmex connection opened
+2022-01-29 17:07:59,242 WARNING :: Websocket connection closed
+2022-01-29 17:07:59,591 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x13b03a430>>: _on_close() takes 2 positional arguments but 4 were given
+2022-01-29 17:07:59,591 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-01-29 17:09:12,908 INFO :: Binance Futures Client successfully initialized
+2022-01-29 17:09:13,802 INFO :: Binance connection opened
+2022-01-29 17:09:13,832 INFO :: Bitmex Client successfully initialized
+2022-01-29 17:09:15,261 INFO :: Bitmex connection opened
+2022-01-29 17:20:06,875 ERROR :: Error while making GET request to /api/v3/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action.'} (error code 401)
+2022-01-29 17:20:06,876 INFO :: Binance Futures Client successfully initialized
+2022-01-29 17:20:07,375 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2022-01-29 17:20:07,739 INFO :: Binance connection opened
+2022-01-29 17:20:07,780 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2022-01-29 17:20:07,780 INFO :: Bitmex Client successfully initialized
+2022-01-29 17:20:09,099 INFO :: Bitmex connection opened
+2022-01-29 17:21:21,171 INFO :: Binance Futures Client successfully initialized
+2022-01-29 17:21:21,918 INFO :: Binance connection opened
+2022-01-29 17:21:23,039 INFO :: Bitmex Client successfully initialized
+2022-01-29 17:21:24,369 INFO :: Bitmex connection opened
+2022-01-29 17:21:26,388 INFO :: Binance Futures Client successfully initialized
+2022-01-29 17:21:27,150 INFO :: Binance connection opened
+2022-01-29 17:21:27,315 INFO :: Bitmex Client successfully initialized
+2022-01-29 17:21:28,631 INFO :: Bitmex connection opened

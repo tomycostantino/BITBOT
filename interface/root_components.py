@@ -1,3 +1,5 @@
+import typing
+
 from api_keys import *
 import tkinter as tk
 import json
@@ -5,6 +7,7 @@ from connectors.binance import BinanceClient
 from connectors.bitmex import BitmexClient
 
 import logging
+import tkmacosx as tkmac
 from tkinter.messagebox import askquestion
 from interface.styling import *
 from interface.logging_component import Logging
@@ -18,8 +21,8 @@ class Root(tk.Tk):
     def __init__(self):
         super().__init__()
 
-        self.binance = BinanceClient(binance_testnet_api_key, binance_testnet_api_secret, True, True)
-        self.bitmex = BitmexClient(bitmex_api_key, bitmex_api_secret, testnet=True)
+        self._show_popup()
+        self._init_clients(True, True)
 
         self.title('Trading Bot')
 
@@ -67,6 +70,49 @@ class Root(tk.Tk):
         self._trades_frame.pack(side=tk.TOP)
 
         self._update_ui()
+
+    def _show_popup(self) -> typing.Union[str, str]:
+        self._popup_window = tk.Toplevel(self)
+        self._popup_window.wm_title('Start in Testnet or Spot')
+
+        self._popup_window.config(bg=BG_COLOR)
+        self._popup_window.attributes('-topmost', 'true')
+        self._popup_window.grab_set()
+
+        testnet_f = tkmac.Button(self._popup_window, text="Testnet futures",
+                                 command=lambda: self._init_clients(True, True))
+        testnet_f.pack(side=tk.TOP, anchor='center')
+
+        testnet_nf = tkmac.Button(self._popup_window, text="Testnet normal",
+                                  command=lambda: self._init_clients(True, False))
+        testnet_nf.pack(side=tk.TOP, anchor='center')
+
+        spot_f = tkmac.Button(self._popup_window, text='Spot futures', command=lambda: self._init_clients(False, True))
+        spot_f.pack(side=tk.TOP, anchor='center')
+
+        spot_nf = tkmac.Button(self._popup_window, text='Spot normal', command=lambda: self._init_clients(False, False))
+        spot_nf.pack(side=tk.TOP, anchor='center')
+
+    def _init_clients(self, testnet: bool, futures: bool):
+        if testnet and futures:
+            self.binance = BinanceClient(binance_testnet_api_key, binance_testnet_api_secret, True, True)
+            self.bitmex = BitmexClient(bitmex_api_key, bitmex_api_secret, testnet=True)
+            # self.logging_frame.add_log('Clients initialized in testnet and futures')
+
+        elif testnet and not futures:
+            self.binance = BinanceClient(binance_testnet_api_key, binance_testnet_api_secret, True, False)
+            self.bitmex = BitmexClient(bitmex_api_key, bitmex_api_secret, testnet=True)
+            # self.logging_frame.add_log('Clients initialized in testnet and not futures')
+
+        elif not testnet and futures:
+            self.binance = BinanceClient(binance_testnet_api_key, binance_testnet_api_secret, False, True)
+            self.bitmex = BitmexClient(bitmex_api_key, bitmex_api_secret, testnet=False)
+            # self.logging_frame.add_log('Clients initialized in normal net and futures')
+
+        else:
+            self.binance = BinanceClient(binance_testnet_api_key, binance_testnet_api_secret, False, False)
+            self.bitmex = BitmexClient(bitmex_api_key, bitmex_api_secret, testnet=False)
+            # self.logging_frame.add_log('Clients initialized in normal net and not futures')
 
     def _ask_before_close(self):
         result = askquestion('Confirmation', 'Do you really want to exit the application?')
@@ -232,7 +278,7 @@ class Root(tk.Tk):
         self.logging_frame.add_log("Workspace saved")
 
     def _load_workspace(self):
-        # filename = self._get_path_name()  # Returns the name of the file
+        # filename = filedialog.askopenfilename() # Returns the name of the file
         # print(filename)
         # self._watchlist_frame.db.open_file(self.db)
         # self._strategy_frame.db.open_file(self.db)
