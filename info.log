@@ -2847,3 +2847,94 @@
 2022-01-29 17:21:27,150 INFO :: Binance connection opened
 2022-01-29 17:21:27,315 INFO :: Bitmex Client successfully initialized
 2022-01-29 17:21:28,631 INFO :: Bitmex connection opened
+2022-01-29 17:46:56,123 INFO :: Bitmex connection opened
+2022-01-30 12:16:16,566 INFO :: Bitmex connection opened
+2022-01-30 12:16:32,280 INFO :: Bitmex connection opened
+2022-01-30 12:24:00,997 INFO :: Binance Futures Client successfully initialized
+2022-01-30 12:24:02,226 INFO :: Binance connection opened
+2022-01-30 12:24:02,227 INFO :: Bitmex Client successfully initialized
+2022-01-30 12:24:03,756 INFO :: Bitmex connection opened
+2022-01-30 12:24:52,604 ERROR :: Error while making GET request to /api/v3/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action.'} (error code 401)
+2022-01-30 12:24:52,607 INFO :: Binance Futures Client successfully initialized
+2022-01-30 12:24:53,234 INFO :: Binance connection opened
+2022-01-30 12:24:53,585 INFO :: Bitmex Client successfully initialized
+2022-01-30 12:24:55,062 INFO :: Bitmex connection opened
+2022-01-30 12:57:15,644 INFO :: Binance Futures Client successfully initialized
+2022-01-30 12:57:16,399 INFO :: Binance connection opened
+2022-01-30 12:57:16,622 INFO :: Bitmex Client successfully initialized
+2022-01-30 12:57:18,100 INFO :: Bitmex connection opened
+2022-01-30 12:57:36,226 INFO :: Binance Futures Client successfully initialized
+2022-01-30 12:57:37,673 INFO :: Binance connection opened
+2022-01-30 12:57:38,516 INFO :: Bitmex Client successfully initialized
+2022-01-30 12:57:39,912 INFO :: Bitmex connection opened
+2022-01-30 12:57:48,210 INFO :: Binance Futures Client successfully initialized
+2022-01-30 12:57:49,432 INFO :: Binance connection opened
+2022-01-30 12:57:49,440 INFO :: Bitmex Client successfully initialized
+2022-01-30 12:57:58,347 INFO :: Binance Futures Client successfully initialized
+2022-01-30 12:57:59,227 INFO :: Binance connection opened
+2022-01-30 12:57:59,231 INFO :: Bitmex Client successfully initialized
+2022-01-30 12:58:00,803 INFO :: Bitmex connection opened
+2022-01-30 12:59:55,694 INFO :: Binance Futures Client successfully initialized
+2022-01-30 12:59:57,227 INFO :: Binance connection opened
+2022-01-30 12:59:57,229 INFO :: Bitmex Client successfully initialized
+2022-01-30 12:59:58,960 INFO :: Bitmex connection opened
+2022-01-30 13:05:55,419 INFO :: Binance Futures Client successfully initialized
+2022-01-30 13:05:56,536 INFO :: Binance connection opened
+2022-01-30 13:05:56,953 INFO :: Bitmex Client successfully initialized
+2022-01-30 13:05:58,458 INFO :: Bitmex connection opened
+2022-01-30 13:07:26,422 WARNING :: Websocket connection closed
+2022-01-30 13:07:26,746 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x7fd16076af10>>: _on_close() takes 2 positional arguments but 4 were given
+2022-01-30 13:07:26,748 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-01-30 13:07:36,489 ERROR :: Error while making GET request to /api/v3/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action.'} (error code 401)
+2022-01-30 13:07:36,490 INFO :: Binance Futures Client successfully initialized
+2022-01-30 13:07:37,104 INFO :: Binance connection opened
+2022-01-30 13:07:37,447 INFO :: Bitmex Client successfully initialized
+2022-01-30 13:07:38,807 INFO :: Bitmex connection opened
+2022-01-30 13:08:11,511 INFO :: Binance Futures Client successfully initialized
+2022-01-30 13:08:14,272 INFO :: Binance connection opened
+2022-01-30 13:08:14,895 INFO :: Bitmex Client successfully initialized
+2022-01-30 13:08:16,426 INFO :: Bitmex connection opened
+2022-01-30 13:09:09,058 INFO :: Getting Binance trade size...
+2022-01-30 13:09:09,589 INFO :: Binance current USDT balance = 10041.77403332, trade size = 0.918
+2022-01-30 13:09:09,590 INFO :: Short signal on LTCUSDT 1m
+2022-01-30 13:09:09,912 INFO :: Sell order placed on Binance | Status: new
+2022-01-30 13:09:09,913 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fad506e7e20>>: dictionary changed size during iteration
+2022-01-30 13:09:09,913 ERROR :: Binance connection error: dictionary changed size during iteration
+2022-01-30 13:09:12,218 INFO :: Binance order status: filled
+2022-01-30 13:09:40,464 INFO :: Getting Binance trade size...
+2022-01-30 13:09:41,212 INFO :: Binance current USDT balance = 10041.73388735, trade size = 0.039
+2022-01-30 13:09:41,213 INFO :: Short signal on ETHUSDT 1m
+2022-01-30 13:09:41,832 INFO :: Sell order placed on Binance | Status: new
+2022-01-30 13:09:44,595 INFO :: Binance order status: filled
+2022-01-30 13:10:01,036 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-30 13:10:09,301 INFO :: Binance New candle for LTCUSDT 1m
+2022-01-30 13:10:10,857 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-30 13:10:29,238 INFO :: Getting Binance trade size...
+2022-01-30 13:10:29,855 INFO :: Binance current USDT balance = 10041.69368147, trade size = 0.003
+2022-01-30 13:10:29,855 INFO :: Short signal on BTCUSDT 1m
+2022-01-30 13:10:30,349 INFO :: Sell order placed on Binance | Status: new
+2022-01-30 13:10:33,231 INFO :: Binance order status: filled
+2022-01-30 13:11:00,875 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-30 13:11:03,496 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-30 13:11:11,324 INFO :: Binance New candle for LTCUSDT 1m
+2022-01-30 13:12:00,496 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-30 13:12:05,694 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-30 13:12:17,064 INFO :: Binance New candle for LTCUSDT 1m
+2022-01-30 13:13:04,489 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-30 13:13:05,688 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-30 13:13:09,598 INFO :: Binance New candle for LTCUSDT 1m
+2022-01-30 13:14:04,278 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-30 13:14:04,572 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-30 13:14:07,663 INFO :: Binance New candle for LTCUSDT 1m
+2022-01-30 13:15:01,177 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-30 13:15:03,632 INFO :: Binance New candle for LTCUSDT 1m
+2022-01-30 13:15:14,934 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-30 13:16:01,677 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-30 13:16:05,185 INFO :: Binance New candle for LTCUSDT 1m
+2022-01-30 13:16:11,600 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-30 13:17:01,547 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-30 13:17:03,072 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-30 13:17:09,522 INFO :: Binance New candle for LTCUSDT 1m
+2022-01-30 13:18:00,572 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-30 13:18:01,599 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-30 13:18:09,215 INFO :: Binance New candle for LTCUSDT 1m

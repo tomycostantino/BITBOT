@@ -11,6 +11,7 @@ import logging
 from connectors.binance import BinanceClient
 from connectors.bitmex import BitmexClient
 from interface.root_components import Root
+from interface.initial_popup import InitialPopup
 
 # Create logger
 logger = logging.getLogger()
@@ -32,5 +33,7 @@ logger.addHandler(file_handler)
 
 if __name__ == '__main__':
 
+    popup = InitialPopup()
+    popup.mainloop()
     root = Root()
     root.mainloop()

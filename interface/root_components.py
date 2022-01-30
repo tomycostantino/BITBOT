@@ -7,7 +7,7 @@ from connectors.binance import BinanceClient
 from connectors.bitmex import BitmexClient
 
 import logging
-import tkmacosx as tkmac
+import clients
 from tkinter.messagebox import askquestion
 from interface.styling import *
 from interface.logging_component import Logging
@@ -21,8 +21,8 @@ class Root(tk.Tk):
     def __init__(self):
         super().__init__()
 
-        self._show_popup()
-        self._init_clients(True, True)
+        self.binance = clients.binance
+        self.bitmex = clients.bitmex
 
         self.title('Trading Bot')
 
@@ -31,23 +31,21 @@ class Root(tk.Tk):
         # background color
         self.configure(bg=BG_COLOR_2)
 
-        self.main_menu = tk.Menu(self)
-        self.configure(menu=self.main_menu)
+        # menu bar on top
+        self._main_menu = tk.Menu(self)
+        self.configure(menu=self._main_menu)
 
-        self.workspace_menu = tk.Menu(self.main_menu, tearoff=False)
-        self.main_menu.add_cascade(label="Workspace", menu=self.workspace_menu)
-        self.workspace_menu.add_command(label="Save workspace", command=self._save_workspace)
-        self.workspace_menu.add_command(label="Load workspace", command=self._load_workspace)
+        # sub menu to save and load workspace on database
+        self._workspace_menu = tk.Menu(self._main_menu, tearoff=False)
+        self._main_menu.add_cascade(label="Workspace", menu=self._workspace_menu)
+        self._workspace_menu.add_command(label="Save workspace", command=self._save_workspace)
+        self._workspace_menu.add_command(label="Load workspace", command=self._load_workspace)
 
-        self.testnet_menu = tk.Menu(self.main_menu, tearoff=False)
-        self.main_menu.add_cascade(label='Testnet', menu=self.testnet_menu)
-        self.testnet_menu.add_command(label='Testnet', command=self._set_testnet)
-        self.testnet_menu.add_command(label='Spot', command=self._set_spot)
-
-        self.futures_menu = tk.Menu(self.main_menu, tearoff=False)
-        self.main_menu.add_cascade(label='Futures', menu=self.futures_menu)
-        self.futures_menu.add_command(label='Binance', command=self._set_binance_normal)
-        self.futures_menu.add_command(label='Binance Futures', command=self._set_binance_future)
+        # sub menu to restart client with new settings
+        self._reset_client_menu = tk.Menu(self._main_menu, tearoff=False)
+        self._main_menu.add_cascade(label='Testnet & Spot', menu=self._reset_client_menu)
+        self._reset_client_menu.add_command(label='Testnet', command=lambda: self._reset_client('testnet'))
+        self._reset_client_menu.add_command(label='Spot', command=lambda: self._reset_client('spot'))
 
         # create left frame
         self._left_frame = tk.Frame(self, bg=BG_COLOR)
@@ -57,62 +55,23 @@ class Root(tk.Tk):
         self._right_frame = tk.Frame(self, bg=BG_COLOR)
         self._right_frame.pack(side=tk.LEFT)
 
+        # create watchlist component
         self._watchlist_frame = Watchlist(self.binance.contracts, self.bitmex.contracts, self._left_frame, bg=BG_COLOR_2)
         self._watchlist_frame.pack(side=tk.TOP, padx=10)
 
+        # create logging frame under watchlist
         self.logging_frame = Logging(self._left_frame, bg=BG_COLOR)
         self.logging_frame.pack(side=tk.TOP, pady=15)
 
+        # create the strategy component
         self._strategy_frame = StrategyEditor(self, self.binance, self.bitmex, self._right_frame, bg=BG_COLOR)
         self._strategy_frame.pack(side=tk.TOP)
 
+        # create the trade component under strategy
         self._trades_frame = TradesWatch(self._right_frame, bg=BG_COLOR)
         self._trades_frame.pack(side=tk.TOP)
 
         self._update_ui()
-
-    def _show_popup(self) -> typing.Union[str, str]:
-        self._popup_window = tk.Toplevel(self)
-        self._popup_window.wm_title('Start in Testnet or Spot')
-
-        self._popup_window.config(bg=BG_COLOR)
-        self._popup_window.attributes('-topmost', 'true')
-        self._popup_window.grab_set()
-
-        testnet_f = tkmac.Button(self._popup_window, text="Testnet futures",
-                                 command=lambda: self._init_clients(True, True))
-        testnet_f.pack(side=tk.TOP, anchor='center')
-
-        testnet_nf = tkmac.Button(self._popup_window, text="Testnet normal",
-                                  command=lambda: self._init_clients(True, False))
-        testnet_nf.pack(side=tk.TOP, anchor='center')
-
-        spot_f = tkmac.Button(self._popup_window, text='Spot futures', command=lambda: self._init_clients(False, True))
-        spot_f.pack(side=tk.TOP, anchor='center')
-
-        spot_nf = tkmac.Button(self._popup_window, text='Spot normal', command=lambda: self._init_clients(False, False))
-        spot_nf.pack(side=tk.TOP, anchor='center')
-
-    def _init_clients(self, testnet: bool, futures: bool):
-        if testnet and futures:
-            self.binance = BinanceClient(binance_testnet_api_key, binance_testnet_api_secret, True, True)
-            self.bitmex = BitmexClient(bitmex_api_key, bitmex_api_secret, testnet=True)
-            # self.logging_frame.add_log('Clients initialized in testnet and futures')
-
-        elif testnet and not futures:
-            self.binance = BinanceClient(binance_testnet_api_key, binance_testnet_api_secret, True, False)
-            self.bitmex = BitmexClient(bitmex_api_key, bitmex_api_secret, testnet=True)
-            # self.logging_frame.add_log('Clients initialized in testnet and not futures')
-
-        elif not testnet and futures:
-            self.binance = BinanceClient(binance_testnet_api_key, binance_testnet_api_secret, False, True)
-            self.bitmex = BitmexClient(bitmex_api_key, bitmex_api_secret, testnet=False)
-            # self.logging_frame.add_log('Clients initialized in normal net and futures')
-
-        else:
-            self.binance = BinanceClient(binance_testnet_api_key, binance_testnet_api_secret, False, False)
-            self.bitmex = BitmexClient(bitmex_api_key, bitmex_api_secret, testnet=False)
-            # self.logging_frame.add_log('Clients initialized in normal net and not futures')
 
     def _ask_before_close(self):
         result = askquestion('Confirmation', 'Do you really want to exit the application?')
@@ -287,81 +246,39 @@ class Root(tk.Tk):
         self._strategy_frame.load_workspace()
         self.logging_frame.add_log('Workspace loaded')
 
-    def _set_testnet(self):
-        if not self.binance.testnet:
-            self.binance.ws_connected = False
-            self.binance.reconnect = False
+    def _reset_client(self, mode: str):
 
-            del self.binance
-
-            self.binance = BinanceClient(binance_testnet_api_key, binance_testnet_api_secret, True, True)
-
-        else:
-            self.logging_frame.add_log('Binance Client already on testnet')
-        '''
-        if not self.bitmex.testnet:
-            self.bitmex.reconnect = False
-
-            del self.bitmex
-
-            self.bitmex = BitmexClient(bitmex_api_key, bitmex_api_secret, testnet=True)
-
-        else:
-            self.logging_frame.add_log('Bitmex Client already on testnet')
-        
-        '''
-
-    def _set_spot(self):
-
-        if self.binance.testnet:
-            self.binance.ws_connected = False
-            self.binance.reconnect = False
-
-            del self.binance
-
-            self.logging_frame.add_log('Binance Testnet Client deleted')
-
-            self.binance = BinanceClient(binance_api_key, binance_api_secret, False, False)
-
-            self.logging_frame.add_log('Binance Spot client started')
-        '''
-        if self.bitmex.testnet:
-            self.bitmex.testnet = False
-
-            del self.bitmex
-
-            self.logging_frame.add_log('Bitmex Testnet Client deleted')
-
-            self.bitmex = BitmexClient(bitmex_api_key, bitmex_api_secret, testnet=False)
-
-            self.logging_frame.add_log('Binance Spot client started')
-            
-        '''
-
-    def _set_binance_normal(self):
-        if self.binance.futures:
-            if self.binance.testnet:
-                del self.binance
-                self.binance = BinanceClient(binance_testnet_api_key, binance_testnet_api_secret, True, False)
-                self.logging_frame.add_log('Binance client set on testnet normal')
-
-            elif not self.binance.testnet:
-                del self.binance
-                self.binance = BinanceClient(binance_api_key, binance_api_secret, False, False)
-                self.logging_frame.add_log('Binance client set on spot normal')
-        else:
-            self.logging_frame.add_log('Binance client is already normal')
-
-    def _set_binance_future(self):
-        if self.binance.futures:
-            self.logging_frame.add_log('Binance client is already on Futures')
-        else:
-            if self.binance.testnet:
-                del self.binance
-                self.binance = BinanceClient(binance_api_key, binance_api_secret, True, True)
-                self.logging_frame.add_log('Binance client set on testnet futures')
+        if mode == 'testnet':
+            if not self.binance.testnet:
+                self.binance.ws_connected = False
+                self.binance.reconnect = False
+                self.binance = BinanceClient(binance_testnet_api_key, binance_testnet_api_secret, True,
+                                             self.binance.futures)
+                self.logging_frame.add_log('Binance client initialized on Testnet')
             else:
-                del self.binance
-                self.binance = BinanceClient(binance_api_key, binance_api_secret, False, True)
-                self.logging_frame.add_log('Binance client set on futures')
+                self.logging_frame.add_log('Binance client already on Testnet')
+
+            if not self.bitmex.testnet:
+                self.bitmex.ws_connected = False
+                self.bitmex.reconnect = False
+                self.bitmex = BitmexClient(bitmex_api_key, bitmex_api_secret, testnet=True)
+            else:
+                self.logging_frame.add_log('Bitmex client already on Testnet')
+
+        elif mode == 'spot':
+            if self.binance.testnet:
+                self.binance.ws_connected = False
+                self.binance.reconnect = False
+                self.binance = BinanceClient(binance_api_key, binance_api_secret, False,
+                                             self.binance.futures)
+                self.logging_frame.add_log('Binance client initialized on Spot')
+            else:
+                self.logging_frame.add_log('Binance client already on Spot')
+
+            if self.bitmex.testnet:
+                self.bitmex.ws_connected = False
+                self.bitmex.reconnect = False
+                self.bitmex = BitmexClient(bitmex_api_key, bitmex_api_secret, testnet=False)
+            else:
+                self.logging_frame.add_log('Bitmex client already on Spot')
 
