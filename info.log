@@ -2938,3 +2938,164 @@
 2022-01-30 13:18:00,572 INFO :: Binance New candle for ETHUSDT 1m
 2022-01-30 13:18:01,599 INFO :: Binance New candle for BTCUSDT 1m
 2022-01-30 13:18:09,215 INFO :: Binance New candle for LTCUSDT 1m
+2022-01-30 13:18:53,828 INFO :: Stop loss for ETHUSDT 1m | Current Price = 2665.09 (Entry price was 2577.3)
+2022-01-30 13:18:54,900 ERROR :: Error while making POST request to /fapi/v1/order: {'code': -4131, 'msg': "The counterparty's best price does not meet the PERCENT_PRICE filter limit."} (error code 400)
+2022-01-30 13:18:54,903 INFO :: Stop loss for ETHUSDT 1m | Current Price = 2751.55 (Entry price was 2577.3)
+2022-01-30 13:18:55,829 INFO :: Exit order on ETHUSDT 1m placed successfully
+2022-01-30 13:18:55,829 INFO :: Getting Binance trade size...
+2022-01-30 13:18:56,478 INFO :: Binance current USDT balance = 10061.24687242, trade size = 0.037
+2022-01-30 13:18:56,479 INFO :: Long signal on ETHUSDT 1m
+2022-01-30 13:18:57,034 INFO :: Buy order placed on Binance | Status: new
+2022-01-30 13:18:57,035 WARNING :: Binance ETHUSDT: 3352 milliseconds of difference between the current time and the trade time
+2022-01-30 13:18:59,599 INFO :: Binance order status: filled
+2022-01-30 13:19:01,036 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-30 13:19:01,666 INFO :: Binance New candle for LTCUSDT 1m
+2022-01-30 13:19:06,961 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-30 13:20:00,482 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-30 13:20:01,611 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-30 13:20:07,619 INFO :: Binance New candle for LTCUSDT 1m
+2022-01-30 13:21:00,849 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-30 13:21:03,538 INFO :: Binance New candle for LTCUSDT 1m
+2022-01-30 13:21:14,763 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-30 13:21:34,341 INFO :: Stop loss for LTCUSDT 1m | Current Price = 110.5 (Entry price was 109.33)
+2022-01-30 13:21:35,144 INFO :: Exit order on LTCUSDT 1m placed successfully
+2022-01-30 13:21:35,145 INFO :: Getting Binance trade size...
+2022-01-30 13:21:35,872 INFO :: Binance current USDT balance = 10097.88878816, trade size = 0.914
+2022-01-30 13:21:35,872 INFO :: Long signal on LTCUSDT 1m
+2022-01-30 13:21:36,421 INFO :: Buy order placed on Binance | Status: new
+2022-01-30 13:21:36,423 WARNING :: Binance LTCUSDT: 2420 milliseconds of difference between the current time and the trade time
+2022-01-30 13:21:36,423 WARNING :: Binance LTCUSDT: 2420 milliseconds of difference between the current time and the trade time
+2022-01-30 13:21:36,423 WARNING :: Binance LTCUSDT: 2420 milliseconds of difference between the current time and the trade time
+2022-01-30 13:21:36,424 WARNING :: Binance LTCUSDT: 2421 milliseconds of difference between the current time and the trade time
+2022-01-30 13:21:36,424 WARNING :: Binance LTCUSDT: 2421 milliseconds of difference between the current time and the trade time
+2022-01-30 13:21:36,425 WARNING :: Binance LTCUSDT: 2422 milliseconds of difference between the current time and the trade time
+2022-01-30 13:21:36,425 WARNING :: Binance LTCUSDT: 2422 milliseconds of difference between the current time and the trade time
+2022-01-30 13:21:36,425 WARNING :: Binance LTCUSDT: 2422 milliseconds of difference between the current time and the trade time
+2022-01-30 13:21:36,426 WARNING :: Binance LTCUSDT: 2423 milliseconds of difference between the current time and the trade time
+2022-01-30 13:21:36,426 WARNING :: Binance LTCUSDT: 2423 milliseconds of difference between the current time and the trade time
+2022-01-30 13:21:38,822 INFO :: Binance order status: filled
+2022-01-30 13:22:04,579 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-30 13:22:05,847 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-30 13:22:23,525 INFO :: Binance New candle for LTCUSDT 1m
+2022-01-30 13:23:00,833 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-30 13:23:07,554 INFO :: Binance New candle for LTCUSDT 1m
+2022-01-30 13:23:10,181 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-30 13:23:27,732 WARNING :: Binance ETHUSDT: 4959 milliseconds of difference between the current time and the trade time
+2022-01-30 13:23:28,621 WARNING :: Binance BTCUSDT: 5269 milliseconds of difference between the current time and the trade time
+2022-01-30 13:23:28,624 WARNING :: Binance BTCUSDT: 3097 milliseconds of difference between the current time and the trade time
+2022-01-30 13:23:28,625 WARNING :: Binance BTCUSDT: 3074 milliseconds of difference between the current time and the trade time
+2022-01-30 13:24:00,652 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-30 13:24:03,024 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-30 13:24:11,656 INFO :: Binance New candle for LTCUSDT 1m
+2022-01-30 13:25:01,709 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-30 13:25:06,612 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-30 13:25:07,841 INFO :: Binance New candle for LTCUSDT 1m
+2022-01-30 13:26:00,458 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-30 13:26:01,745 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-30 13:26:05,597 INFO :: Binance New candle for LTCUSDT 1m
+2022-01-30 13:27:00,125 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-30 13:27:00,748 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-30 13:27:21,810 INFO :: Binance New candle for LTCUSDT 1m
+2022-01-30 13:28:01,679 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-30 13:28:04,800 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-30 13:28:05,409 INFO :: Binance New candle for LTCUSDT 1m
+2022-01-30 13:29:01,142 INFO :: Binance New candle for LTCUSDT 1m
+2022-01-30 13:29:10,844 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-30 13:29:13,912 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-30 13:29:25,522 WARNING :: Websocket connection closed
+2022-01-30 13:29:25,894 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x7fad50802f10>>: _on_close() takes 2 positional arguments but 4 were given
+2022-01-30 13:29:25,895 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-01-31 07:21:00,405 INFO :: Binance Futures Client successfully initialized
+2022-01-31 07:21:01,627 INFO :: Binance connection opened
+2022-01-31 07:21:01,636 INFO :: Bitmex Client successfully initialized
+2022-01-31 07:21:03,189 INFO :: Bitmex connection opened
+2022-01-31 07:21:31,738 INFO :: Binance Futures Client successfully initialized
+2022-01-31 07:21:32,711 INFO :: Binance connection opened
+2022-01-31 07:21:32,966 INFO :: Bitmex Client successfully initialized
+2022-01-31 07:21:34,503 INFO :: Bitmex connection opened
+2022-01-31 07:21:38,702 WARNING :: Websocket connection closed
+2022-01-31 07:21:38,947 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x7fd838243e20>>: _on_close() takes 2 positional arguments but 4 were given
+2022-01-31 07:21:38,948 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-01-31 07:23:32,470 INFO :: Binance Futures Client successfully initialized
+2022-01-31 07:23:33,254 INFO :: Binance connection opened
+2022-01-31 07:23:33,697 INFO :: Bitmex Client successfully initialized
+2022-01-31 07:23:35,234 INFO :: Bitmex connection opened
+2022-01-31 07:24:00,422 INFO :: Binance Futures Client successfully initialized
+2022-01-31 07:24:01,652 INFO :: Binance connection opened
+2022-01-31 07:24:01,660 INFO :: Bitmex Client successfully initialized
+2022-01-31 07:24:03,189 INFO :: Bitmex connection opened
+2022-01-31 07:26:05,257 INFO :: Binance Futures Client successfully initialized
+2022-01-31 07:26:06,501 INFO :: Bitmex Client successfully initialized
+2022-01-31 07:26:06,654 INFO :: Binance connection opened
+2022-01-31 07:26:08,328 INFO :: Bitmex connection opened
+2022-01-31 07:26:09,881 WARNING :: Websocket connection closed
+2022-01-31 07:26:10,477 ERROR :: Bitmex connection error: The read operation timed out
+2022-01-31 07:26:10,478 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x7fdc28893ee0>>: _on_close() takes 2 positional arguments but 4 were given
+2022-01-31 07:26:10,478 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-01-31 07:26:41,200 INFO :: Binance Futures Client successfully initialized
+2022-01-31 07:26:42,685 INFO :: Binance connection opened
+2022-01-31 07:26:42,903 INFO :: Bitmex Client successfully initialized
+2022-01-31 07:26:44,577 INFO :: Bitmex connection opened
+2022-01-31 07:27:43,222 INFO :: Getting Binance trade size...
+2022-01-31 07:27:43,869 INFO :: Binance current USDT balance = 10115.81860131, trade size = 0.003
+2022-01-31 07:27:43,873 INFO :: Short signal on BTCUSDT 1m
+2022-01-31 07:27:44,781 INFO :: Sell order placed on Binance | Status: new
+2022-01-31 07:27:47,551 INFO :: Binance order status: filled
+2022-01-31 07:27:50,619 INFO :: Getting Binance trade size...
+2022-01-31 07:27:51,098 INFO :: Binance current USDT balance = 10115.77336323, trade size = 0.93
+2022-01-31 07:27:51,098 INFO :: Short signal on LTCUSDT 1m
+2022-01-31 07:27:51,860 INFO :: Sell order placed on Binance | Status: new
+2022-01-31 07:27:54,405 INFO :: Binance order status: filled
+2022-01-31 07:28:02,820 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-31 07:28:02,826 INFO :: Getting Binance trade size...
+2022-01-31 07:28:03,379 INFO :: Binance current USDT balance = 10115.73288219, trade size = 0.039
+2022-01-31 07:28:03,379 INFO :: Short signal on ETHUSDT 1m
+2022-01-31 07:28:03,896 INFO :: Sell order placed on Binance | Status: new
+2022-01-31 07:28:07,226 INFO :: Binance order status: filled
+2022-01-31 07:28:10,156 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-31 07:28:15,072 INFO :: Binance New candle for LTCUSDT 1m
+2022-01-31 07:29:00,967 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-31 07:29:03,189 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-31 07:29:08,480 INFO :: Binance New candle for LTCUSDT 1m
+2022-01-31 07:30:01,953 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-31 07:30:03,066 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-31 07:30:08,546 INFO :: Binance New candle for LTCUSDT 1m
+2022-01-31 07:31:00,772 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-31 07:31:00,774 INFO :: Binance New candle for LTCUSDT 1m
+2022-01-31 07:31:08,758 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-31 07:32:00,671 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-31 07:32:00,766 INFO :: Binance New candle for LTCUSDT 1m
+2022-01-31 07:32:00,861 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-31 07:33:00,881 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-31 07:33:00,882 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-31 07:33:02,555 INFO :: Binance New candle for LTCUSDT 1m
+2022-01-31 07:34:00,786 INFO :: Binance New candle for LTCUSDT 1m
+2022-01-31 07:34:00,878 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-31 07:34:00,903 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-31 07:35:00,900 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-31 07:35:02,528 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-31 07:35:02,996 INFO :: Binance New candle for LTCUSDT 1m
+2022-01-31 07:36:00,796 INFO :: Binance New candle for LTCUSDT 1m
+2022-01-31 07:36:07,040 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-31 07:36:10,817 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-31 07:37:00,311 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-31 07:37:01,127 INFO :: Binance New candle for LTCUSDT 1m
+2022-01-31 07:37:23,094 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-31 07:37:45,966 INFO :: Binance Futures Client successfully initialized
+2022-01-31 07:37:46,746 INFO :: Binance connection opened
+2022-01-31 07:37:47,038 INFO :: Bitmex Client successfully initialized
+2022-01-31 07:37:48,732 INFO :: Bitmex connection opened
+2022-01-31 07:38:00,789 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-31 07:38:05,319 ERROR :: Error while making GET request to /api/v3/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action.'} (error code 401)
+2022-01-31 07:38:05,323 INFO :: Binance Futures Client successfully initialized
+2022-01-31 07:38:05,324 INFO :: Binance New candle for LTCUSDT 1m
+2022-01-31 07:38:05,936 INFO :: Binance connection opened
+2022-01-31 07:38:06,243 INFO :: Bitmex Client successfully initialized
+2022-01-31 07:38:07,759 INFO :: Bitmex connection opened
+2022-01-31 07:38:09,099 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-31 07:39:00,913 INFO :: Binance New candle for LTCUSDT 1m
+2022-01-31 07:39:01,070 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-31 07:39:04,599 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-31 07:40:02,978 INFO :: Binance New candle for ETHUSDT 1m
+2022-01-31 07:40:04,808 INFO :: Binance New candle for BTCUSDT 1m
+2022-01-31 07:40:04,810 INFO :: Binance New candle for LTCUSDT 1m

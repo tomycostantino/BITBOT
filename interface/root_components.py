@@ -7,7 +7,7 @@ from connectors.binance import BinanceClient
 from connectors.bitmex import BitmexClient
 
 import logging
-import clients
+import variables
 from tkinter.messagebox import askquestion
 from interface.styling import *
 from interface.logging_component import Logging
@@ -21,8 +21,8 @@ class Root(tk.Tk):
     def __init__(self):
         super().__init__()
 
-        self.binance = clients.binance
-        self.bitmex = clients.bitmex
+        self.binance = variables.binance
+        self.bitmex = variables.bitmex
 
         self.title('Trading Bot')
 
@@ -46,6 +46,10 @@ class Root(tk.Tk):
         self._main_menu.add_cascade(label='Testnet & Spot', menu=self._reset_client_menu)
         self._reset_client_menu.add_command(label='Testnet', command=lambda: self._reset_client('testnet'))
         self._reset_client_menu.add_command(label='Spot', command=lambda: self._reset_client('spot'))
+
+        self._restart = tk.Menu(self._main_menu, tearoff=False)
+        self._main_menu.add_cascade(label='Restart', menu=self._restart)
+        self._restart.add_cascade(label='Restart program', command=self._restart_code)
 
         # create left frame
         self._left_frame = tk.Frame(self, bg=BG_COLOR)
@@ -76,6 +80,7 @@ class Root(tk.Tk):
     def _ask_before_close(self):
         result = askquestion('Confirmation', 'Do you really want to exit the application?')
         if result == 'yes':
+            variables.restart = False
             self.binance.reconnect = False
             self.bitmex.reconnect = False
             self.binance.ws.close()
@@ -250,8 +255,6 @@ class Root(tk.Tk):
 
         if mode == 'testnet':
             if not self.binance.testnet:
-                self.binance.ws_connected = False
-                self.binance.reconnect = False
                 self.binance = BinanceClient(binance_testnet_api_key, binance_testnet_api_secret, True,
                                              self.binance.futures)
                 self.logging_frame.add_log('Binance client initialized on Testnet')
@@ -259,9 +262,8 @@ class Root(tk.Tk):
                 self.logging_frame.add_log('Binance client already on Testnet')
 
             if not self.bitmex.testnet:
-                self.bitmex.ws_connected = False
-                self.bitmex.reconnect = False
                 self.bitmex = BitmexClient(bitmex_api_key, bitmex_api_secret, testnet=True)
+                self.logging_frame.add_log('Bitmex client initialized on Testnet')
             else:
                 self.logging_frame.add_log('Bitmex client already on Testnet')
 
@@ -282,3 +284,8 @@ class Root(tk.Tk):
             else:
                 self.logging_frame.add_log('Bitmex client already on Spot')
 
+    def _restart_code(self):
+        result = askquestion('Confirmation', 'Do you really want to restart the application?')
+        if result == 'yes':
+            variables.restart = True
+            self.destroy()
