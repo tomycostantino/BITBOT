@@ -38,6 +38,8 @@ if __name__ == '__main__':
         if variables.restart:
             popup = InitialPopup()
             popup.mainloop()
+            if variables.binance is None:
+                break
             root = Root()
             root.mainloop()
         else:

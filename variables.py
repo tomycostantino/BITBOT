@@ -3,5 +3,5 @@ from connectors.bitmex import BitmexClient
 
 restart = True
 
-binance = BinanceClient
-bitmex = BitmexClient
+binance = None
+bitmex = None

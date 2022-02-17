@@ -22,8 +22,8 @@ class BinanceClient:
         self.futures = futures
         self.testnet = testnet
         if self.futures:
+            self.platform = 'binance_futures'
             if self.testnet:
-                self.platform = 'binance_futures'
                 self._base_url = "https://testnet.binancefuture.com"
                 self._wss_url = 'wss://stream.binancefuture.com/ws'
             else:

@@ -3099,3 +3099,457 @@
 2022-01-31 07:40:02,978 INFO :: Binance New candle for ETHUSDT 1m
 2022-01-31 07:40:04,808 INFO :: Binance New candle for BTCUSDT 1m
 2022-01-31 07:40:04,810 INFO :: Binance New candle for LTCUSDT 1m
+2022-02-16 16:04:09,041 INFO :: Binance Futures Client successfully initialized
+2022-02-16 16:04:10,047 INFO :: Bitmex Client successfully initialized
+2022-02-16 16:04:10,161 INFO :: Binance connection opened
+2022-02-16 16:04:11,501 INFO :: Bitmex connection opened
+2022-02-16 16:04:39,490 WARNING :: Websocket connection closed
+2022-02-16 16:04:39,994 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x7ff71867bee0>>: _on_close() takes 2 positional arguments but 4 were given
+2022-02-16 16:04:39,995 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-02-16 16:04:51,278 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-02-16 16:04:51,280 INFO :: Binance Futures Client successfully initialized
+2022-02-16 16:04:51,828 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2022-02-16 16:04:52,345 INFO :: Binance connection opened
+2022-02-16 16:04:52,350 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2022-02-16 16:04:52,352 INFO :: Bitmex Client successfully initialized
+2022-02-16 16:04:53,896 INFO :: Bitmex connection opened
+2022-02-16 16:10:35,545 INFO :: Binance Futures Client successfully initialized
+2022-02-16 16:10:36,113 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2022-02-16 16:10:36,509 INFO :: Binance connection opened
+2022-02-16 16:10:36,556 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2022-02-16 16:10:36,557 INFO :: Bitmex Client successfully initialized
+2022-02-16 16:10:37,969 INFO :: Bitmex connection opened
+2022-02-17 15:34:24,155 INFO :: Binance Futures Client successfully initialized
+2022-02-17 15:34:25,182 INFO :: Binance connection opened
+2022-02-17 15:34:25,683 INFO :: Bitmex Client successfully initialized
+2022-02-17 15:34:27,535 INFO :: Bitmex connection opened
+2022-02-17 15:34:32,140 WARNING :: Websocket connection closed
+2022-02-17 15:35:11,751 ERROR :: Error while making GET request to /api/v3/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action.'} (error code 401)
+2022-02-17 15:35:11,752 INFO :: Binance Futures Client successfully initialized
+2022-02-17 15:35:12,388 INFO :: Binance connection opened
+2022-02-17 15:35:13,315 INFO :: Bitmex Client successfully initialized
+2022-02-17 15:35:14,950 INFO :: Bitmex connection opened
+2022-02-17 15:35:31,430 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:35:31,431 INFO :: Binance Futures Client successfully initialized
+2022-02-17 15:35:32,045 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2022-02-17 15:35:32,661 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2022-02-17 15:35:32,662 INFO :: Bitmex Client successfully initialized
+2022-02-17 15:35:32,663 INFO :: Binance connection opened
+2022-02-17 15:35:34,071 INFO :: Bitmex connection opened
+2022-02-17 15:36:00,349 INFO :: Binance New candle for BTCUSDT 1m
+2022-02-17 15:36:18,742 INFO :: Getting Binance trade size...
+2022-02-17 15:36:19,318 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:19,319 INFO :: Getting Binance trade size...
+2022-02-17 15:36:19,546 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:19,547 INFO :: Getting Binance trade size...
+2022-02-17 15:36:19,785 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:19,798 INFO :: Getting Binance trade size...
+2022-02-17 15:36:20,029 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:30,631 INFO :: Getting Binance trade size...
+2022-02-17 15:36:30,863 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:30,871 INFO :: Getting Binance trade size...
+2022-02-17 15:36:31,112 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:31,114 INFO :: Getting Binance trade size...
+2022-02-17 15:36:31,347 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:31,347 INFO :: Getting Binance trade size...
+2022-02-17 15:36:31,577 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:31,578 INFO :: Getting Binance trade size...
+2022-02-17 15:36:31,806 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:31,806 INFO :: Getting Binance trade size...
+2022-02-17 15:36:32,040 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:32,041 INFO :: Getting Binance trade size...
+2022-02-17 15:36:32,279 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:32,280 INFO :: Getting Binance trade size...
+2022-02-17 15:36:32,499 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:32,500 INFO :: Getting Binance trade size...
+2022-02-17 15:36:32,731 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:32,731 INFO :: Getting Binance trade size...
+2022-02-17 15:36:32,963 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:32,963 WARNING :: Binance BTCUSDT: 2097 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:32,963 INFO :: Getting Binance trade size...
+2022-02-17 15:36:33,190 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:33,191 WARNING :: Binance BTCUSDT: 2325 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:33,191 INFO :: Getting Binance trade size...
+2022-02-17 15:36:33,426 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:33,426 WARNING :: Binance BTCUSDT: 2560 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:33,426 INFO :: Getting Binance trade size...
+2022-02-17 15:36:33,671 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:33,672 WARNING :: Binance BTCUSDT: 2806 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:33,672 INFO :: Getting Binance trade size...
+2022-02-17 15:36:33,902 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:33,902 WARNING :: Binance BTCUSDT: 3036 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:33,902 INFO :: Getting Binance trade size...
+2022-02-17 15:36:34,142 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:34,142 WARNING :: Binance BTCUSDT: 3276 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:34,143 INFO :: Getting Binance trade size...
+2022-02-17 15:36:34,366 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:34,367 WARNING :: Binance BTCUSDT: 3501 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:34,367 INFO :: Getting Binance trade size...
+2022-02-17 15:36:34,622 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:34,622 WARNING :: Binance BTCUSDT: 3756 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:34,622 INFO :: Getting Binance trade size...
+2022-02-17 15:36:34,945 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:34,946 WARNING :: Binance BTCUSDT: 4079 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:34,946 INFO :: Getting Binance trade size...
+2022-02-17 15:36:35,168 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:35,168 WARNING :: Binance BTCUSDT: 4302 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:35,168 INFO :: Getting Binance trade size...
+2022-02-17 15:36:35,416 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:35,416 WARNING :: Binance BTCUSDT: 4550 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:35,416 INFO :: Getting Binance trade size...
+2022-02-17 15:36:35,978 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:35,979 WARNING :: Binance BTCUSDT: 5113 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:35,979 INFO :: Getting Binance trade size...
+2022-02-17 15:36:36,219 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:36,220 WARNING :: Binance BTCUSDT: 5354 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:36,220 INFO :: Getting Binance trade size...
+2022-02-17 15:36:36,448 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:36,448 WARNING :: Binance BTCUSDT: 5582 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:36,448 INFO :: Getting Binance trade size...
+2022-02-17 15:36:36,676 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:36,677 WARNING :: Binance BTCUSDT: 5811 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:36,677 INFO :: Getting Binance trade size...
+2022-02-17 15:36:36,924 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:36,924 WARNING :: Binance BTCUSDT: 6058 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:36,924 INFO :: Getting Binance trade size...
+2022-02-17 15:36:37,149 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:37,150 WARNING :: Binance BTCUSDT: 6284 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:37,150 INFO :: Getting Binance trade size...
+2022-02-17 15:36:37,785 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:37,786 WARNING :: Binance BTCUSDT: 6920 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:37,786 INFO :: Getting Binance trade size...
+2022-02-17 15:36:38,021 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:38,022 WARNING :: Binance BTCUSDT: 7156 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:38,022 INFO :: Getting Binance trade size...
+2022-02-17 15:36:38,266 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:38,267 WARNING :: Binance BTCUSDT: 7401 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:38,267 INFO :: Getting Binance trade size...
+2022-02-17 15:36:38,496 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:38,497 WARNING :: Binance BTCUSDT: 7631 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:38,497 INFO :: Getting Binance trade size...
+2022-02-17 15:36:38,789 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:38,790 WARNING :: Binance BTCUSDT: 7924 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:38,790 INFO :: Getting Binance trade size...
+2022-02-17 15:36:39,102 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:39,103 WARNING :: Binance BTCUSDT: 8237 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:39,103 INFO :: Getting Binance trade size...
+2022-02-17 15:36:39,428 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:39,429 WARNING :: Binance BTCUSDT: 8563 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:39,429 INFO :: Getting Binance trade size...
+2022-02-17 15:36:39,742 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:39,743 WARNING :: Binance BTCUSDT: 8877 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:39,743 INFO :: Getting Binance trade size...
+2022-02-17 15:36:40,063 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:40,066 WARNING :: Binance BTCUSDT: 9200 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:40,066 INFO :: Getting Binance trade size...
+2022-02-17 15:36:40,308 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:40,314 WARNING :: Binance BTCUSDT: 9436 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:40,314 INFO :: Getting Binance trade size...
+2022-02-17 15:36:40,559 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:40,564 WARNING :: Binance BTCUSDT: 9663 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:40,564 INFO :: Getting Binance trade size...
+2022-02-17 15:36:40,803 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:40,818 WARNING :: Binance BTCUSDT: 9897 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:40,818 INFO :: Getting Binance trade size...
+2022-02-17 15:36:41,061 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:41,062 WARNING :: Binance BTCUSDT: 9916 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:41,062 INFO :: Getting Binance trade size...
+2022-02-17 15:36:41,305 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:41,306 WARNING :: Binance BTCUSDT: 10160 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:41,306 INFO :: Getting Binance trade size...
+2022-02-17 15:36:41,544 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:41,544 WARNING :: Binance BTCUSDT: 10398 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:41,544 INFO :: Getting Binance trade size...
+2022-02-17 15:36:41,829 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:41,830 WARNING :: Binance BTCUSDT: 10684 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:41,830 INFO :: Getting Binance trade size...
+2022-02-17 15:36:42,066 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:42,067 WARNING :: Binance BTCUSDT: 10921 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:42,067 INFO :: Getting Binance trade size...
+2022-02-17 15:36:42,296 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:42,299 WARNING :: Binance BTCUSDT: 11153 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:42,299 INFO :: Getting Binance trade size...
+2022-02-17 15:36:42,890 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:42,894 WARNING :: Binance BTCUSDT: 11727 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:42,894 INFO :: Getting Binance trade size...
+2022-02-17 15:36:43,126 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:43,130 WARNING :: Binance BTCUSDT: 11680 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:43,130 INFO :: Getting Binance trade size...
+2022-02-17 15:36:43,377 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:43,378 WARNING :: Binance BTCUSDT: 11738 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:43,378 INFO :: Getting Binance trade size...
+2022-02-17 15:36:43,740 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:43,742 WARNING :: Binance BTCUSDT: 11999 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:43,742 INFO :: Getting Binance trade size...
+2022-02-17 15:36:43,991 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:43,992 WARNING :: Binance BTCUSDT: 12195 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:43,993 INFO :: Getting Binance trade size...
+2022-02-17 15:36:44,217 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:44,221 WARNING :: Binance BTCUSDT: 12198 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:44,221 INFO :: Getting Binance trade size...
+2022-02-17 15:36:44,456 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:44,457 WARNING :: Binance BTCUSDT: 12410 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:44,457 INFO :: Getting Binance trade size...
+2022-02-17 15:36:44,709 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:44,710 WARNING :: Binance BTCUSDT: 12663 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:44,710 INFO :: Getting Binance trade size...
+2022-02-17 15:36:44,959 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:44,965 WARNING :: Binance BTCUSDT: 12918 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:44,965 INFO :: Getting Binance trade size...
+2022-02-17 15:36:45,211 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:45,214 WARNING :: Binance BTCUSDT: 13073 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:45,214 INFO :: Getting Binance trade size...
+2022-02-17 15:36:45,509 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:45,510 WARNING :: Binance BTCUSDT: 13322 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:45,510 INFO :: Getting Binance trade size...
+2022-02-17 15:36:46,065 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:46,066 WARNING :: Binance BTCUSDT: 13878 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:46,066 INFO :: Getting Binance trade size...
+2022-02-17 15:36:46,344 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:46,345 WARNING :: Binance BTCUSDT: 14157 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:46,345 INFO :: Getting Binance trade size...
+2022-02-17 15:36:46,615 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:46,616 WARNING :: Binance BTCUSDT: 14428 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:46,616 INFO :: Getting Binance trade size...
+2022-02-17 15:36:47,000 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:47,002 WARNING :: Binance BTCUSDT: 14814 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:47,002 INFO :: Getting Binance trade size...
+2022-02-17 15:36:47,615 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:47,627 WARNING :: Binance BTCUSDT: 15402 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:47,627 INFO :: Getting Binance trade size...
+2022-02-17 15:36:47,909 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:47,911 WARNING :: Binance BTCUSDT: 15542 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:47,912 INFO :: Getting Binance trade size...
+2022-02-17 15:36:48,153 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:48,154 WARNING :: Binance BTCUSDT: 15626 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:48,154 INFO :: Getting Binance trade size...
+2022-02-17 15:36:48,420 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:48,423 WARNING :: Binance BTCUSDT: 15775 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:48,423 INFO :: Getting Binance trade size...
+2022-02-17 15:36:48,670 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:48,671 WARNING :: Binance BTCUSDT: 15861 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:48,671 INFO :: Getting Binance trade size...
+2022-02-17 15:36:48,912 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:48,917 WARNING :: Binance BTCUSDT: 15989 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:48,917 INFO :: Getting Binance trade size...
+2022-02-17 15:36:49,160 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:49,164 WARNING :: Binance BTCUSDT: 16086 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:49,164 INFO :: Getting Binance trade size...
+2022-02-17 15:36:49,415 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:49,416 WARNING :: Binance BTCUSDT: 16170 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:49,417 INFO :: Getting Binance trade size...
+2022-02-17 15:36:49,681 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:49,690 WARNING :: Binance BTCUSDT: 16438 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:49,690 INFO :: Getting Binance trade size...
+2022-02-17 15:36:49,989 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:49,995 WARNING :: Binance BTCUSDT: 16553 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:49,995 INFO :: Getting Binance trade size...
+2022-02-17 15:36:50,271 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:50,272 WARNING :: Binance BTCUSDT: 16724 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:50,272 INFO :: Getting Binance trade size...
+2022-02-17 15:36:50,686 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:50,700 WARNING :: Binance BTCUSDT: 17077 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:50,700 INFO :: Getting Binance trade size...
+2022-02-17 15:36:51,301 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:51,301 WARNING :: Binance BTCUSDT: 17503 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:51,301 INFO :: Getting Binance trade size...
+2022-02-17 15:36:51,915 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:51,916 WARNING :: Binance BTCUSDT: 18118 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:51,916 INFO :: Getting Binance trade size...
+2022-02-17 15:36:52,289 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:52,290 WARNING :: Binance BTCUSDT: 18488 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:52,290 INFO :: Getting Binance trade size...
+2022-02-17 15:36:52,549 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:52,550 WARNING :: Binance BTCUSDT: 18739 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:52,550 INFO :: Getting Binance trade size...
+2022-02-17 15:36:52,806 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:52,807 WARNING :: Binance BTCUSDT: 18996 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:52,807 INFO :: Getting Binance trade size...
+2022-02-17 15:36:53,088 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:53,089 WARNING :: Binance BTCUSDT: 19278 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:53,089 INFO :: Getting Binance trade size...
+2022-02-17 15:36:53,341 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:53,342 WARNING :: Binance BTCUSDT: 19531 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:53,342 INFO :: Getting Binance trade size...
+2022-02-17 15:36:53,599 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:53,611 WARNING :: Binance BTCUSDT: 19800 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:53,612 INFO :: Getting Binance trade size...
+2022-02-17 15:36:54,373 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:54,389 WARNING :: Binance BTCUSDT: 20463 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:54,390 INFO :: Getting Binance trade size...
+2022-02-17 15:36:54,693 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:54,695 WARNING :: Binance BTCUSDT: 20618 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:54,695 INFO :: Getting Binance trade size...
+2022-02-17 15:36:54,949 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:54,952 WARNING :: Binance BTCUSDT: 20718 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:54,952 INFO :: Getting Binance trade size...
+2022-02-17 15:36:55,173 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:55,181 WARNING :: Binance BTCUSDT: 20586 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:55,181 INFO :: Getting Binance trade size...
+2022-02-17 15:36:55,427 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:55,432 WARNING :: Binance BTCUSDT: 20441 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:55,432 INFO :: Getting Binance trade size...
+2022-02-17 15:36:55,660 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:55,661 WARNING :: Binance BTCUSDT: 20474 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:55,661 INFO :: Getting Binance trade size...
+2022-02-17 15:36:55,894 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:55,898 WARNING :: Binance BTCUSDT: 20711 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:55,898 INFO :: Getting Binance trade size...
+2022-02-17 15:36:56,127 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:56,128 WARNING :: Binance BTCUSDT: 20898 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:56,128 INFO :: Getting Binance trade size...
+2022-02-17 15:36:56,390 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:56,397 WARNING :: Binance BTCUSDT: 21167 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:56,398 INFO :: Getting Binance trade size...
+2022-02-17 15:36:56,701 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:56,702 WARNING :: Binance BTCUSDT: 21472 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:56,702 INFO :: Getting Binance trade size...
+2022-02-17 15:36:57,272 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:57,274 WARNING :: Binance BTCUSDT: 22044 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:57,274 INFO :: Getting Binance trade size...
+2022-02-17 15:36:57,489 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:57,490 WARNING :: Binance BTCUSDT: 22260 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:57,490 INFO :: Getting Binance trade size...
+2022-02-17 15:36:57,719 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:57,720 WARNING :: Binance BTCUSDT: 22490 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:57,720 INFO :: Getting Binance trade size...
+2022-02-17 15:36:57,956 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:57,956 WARNING :: Binance BTCUSDT: 22726 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:57,956 INFO :: Getting Binance trade size...
+2022-02-17 15:36:58,200 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:58,201 WARNING :: Binance BTCUSDT: 22971 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:58,201 INFO :: Getting Binance trade size...
+2022-02-17 15:36:58,464 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:58,469 WARNING :: Binance BTCUSDT: 23239 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:58,469 INFO :: Getting Binance trade size...
+2022-02-17 15:36:58,981 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:58,982 WARNING :: Binance BTCUSDT: 23694 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:58,982 INFO :: Getting Binance trade size...
+2022-02-17 15:36:59,213 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:59,219 WARNING :: Binance BTCUSDT: 23907 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:59,219 INFO :: Getting Binance trade size...
+2022-02-17 15:36:59,596 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:59,601 WARNING :: Binance BTCUSDT: 23902 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:59,601 INFO :: Getting Binance trade size...
+2022-02-17 15:36:59,908 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:36:59,909 WARNING :: Binance BTCUSDT: 24176 milliseconds of difference between the current time and the trade time
+2022-02-17 15:36:59,909 INFO :: Getting Binance trade size...
+2022-02-17 15:37:00,133 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:37:00,149 WARNING :: Binance BTCUSDT: 24416 milliseconds of difference between the current time and the trade time
+2022-02-17 15:37:00,149 INFO :: Getting Binance trade size...
+2022-02-17 15:37:00,824 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:37:00,826 WARNING :: Binance BTCUSDT: 24965 milliseconds of difference between the current time and the trade time
+2022-02-17 15:37:00,826 INFO :: Getting Binance trade size...
+2022-02-17 15:37:01,235 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:37:01,236 WARNING :: Binance BTCUSDT: 25131 milliseconds of difference between the current time and the trade time
+2022-02-17 15:37:01,236 INFO :: Getting Binance trade size...
+2022-02-17 15:37:01,461 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:37:01,462 WARNING :: Binance BTCUSDT: 25357 milliseconds of difference between the current time and the trade time
+2022-02-17 15:37:01,462 INFO :: Getting Binance trade size...
+2022-02-17 15:37:01,697 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:37:01,698 WARNING :: Binance BTCUSDT: 25520 milliseconds of difference between the current time and the trade time
+2022-02-17 15:37:01,698 INFO :: Getting Binance trade size...
+2022-02-17 15:37:02,032 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:37:02,033 WARNING :: Binance BTCUSDT: 25841 milliseconds of difference between the current time and the trade time
+2022-02-17 15:37:02,033 INFO :: Getting Binance trade size...
+2022-02-17 15:37:02,248 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:37:02,257 WARNING :: Binance BTCUSDT: 26065 milliseconds of difference between the current time and the trade time
+2022-02-17 15:37:02,257 INFO :: Getting Binance trade size...
+2022-02-17 15:37:02,476 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:37:02,480 WARNING :: Binance BTCUSDT: 26059 milliseconds of difference between the current time and the trade time
+2022-02-17 15:37:02,480 INFO :: Getting Binance trade size...
+2022-02-17 15:37:02,699 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:37:02,701 WARNING :: Binance BTCUSDT: 26194 milliseconds of difference between the current time and the trade time
+2022-02-17 15:37:02,701 INFO :: Getting Binance trade size...
+2022-02-17 15:37:02,925 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:37:02,926 WARNING :: Binance BTCUSDT: 26307 milliseconds of difference between the current time and the trade time
+2022-02-17 15:37:02,926 INFO :: Getting Binance trade size...
+2022-02-17 15:37:03,142 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:37:03,144 WARNING :: Binance BTCUSDT: 26458 milliseconds of difference between the current time and the trade time
+2022-02-17 15:37:03,145 INFO :: Getting Binance trade size...
+2022-02-17 15:37:03,376 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:37:03,378 WARNING :: Binance BTCUSDT: 26498 milliseconds of difference between the current time and the trade time
+2022-02-17 15:37:03,378 INFO :: Getting Binance trade size...
+2022-02-17 15:37:03,897 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:37:03,905 WARNING :: Binance BTCUSDT: 27011 milliseconds of difference between the current time and the trade time
+2022-02-17 15:37:03,905 INFO :: Getting Binance trade size...
+2022-02-17 15:37:04,132 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:37:04,133 WARNING :: Binance BTCUSDT: 26981 milliseconds of difference between the current time and the trade time
+2022-02-17 15:37:04,133 INFO :: Getting Binance trade size...
+2022-02-17 15:37:04,356 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:37:04,358 WARNING :: Binance BTCUSDT: 26875 milliseconds of difference between the current time and the trade time
+2022-02-17 15:37:04,358 INFO :: Getting Binance trade size...
+2022-02-17 15:37:04,818 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:37:04,819 WARNING :: Binance BTCUSDT: 27250 milliseconds of difference between the current time and the trade time
+2022-02-17 15:37:04,819 INFO :: Getting Binance trade size...
+2022-02-17 15:37:05,182 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:37:05,186 WARNING :: Binance BTCUSDT: 27558 milliseconds of difference between the current time and the trade time
+2022-02-17 15:37:05,186 INFO :: Getting Binance trade size...
+2022-02-17 15:37:05,420 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:37:05,420 WARNING :: Binance BTCUSDT: 27687 milliseconds of difference between the current time and the trade time
+2022-02-17 15:37:05,420 INFO :: Getting Binance trade size...
+2022-02-17 15:37:05,637 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:37:05,641 WARNING :: Binance BTCUSDT: 27907 milliseconds of difference between the current time and the trade time
+2022-02-17 15:37:05,641 INFO :: Getting Binance trade size...
+2022-02-17 15:37:05,855 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:37:05,856 WARNING :: Binance BTCUSDT: 27940 milliseconds of difference between the current time and the trade time
+2022-02-17 15:37:05,856 INFO :: Getting Binance trade size...
+2022-02-17 15:39:33,349 INFO :: Binance Futures Client successfully initialized
+2022-02-17 15:39:34,116 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2022-02-17 15:39:34,728 INFO :: Binance connection opened
+2022-02-17 15:39:35,650 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2022-02-17 15:39:35,651 INFO :: Bitmex Client successfully initialized
+2022-02-17 15:39:37,195 INFO :: Bitmex connection opened
+2022-02-17 15:39:40,171 WARNING :: Websocket connection closed
+2022-02-17 15:39:41,176 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x7f89880c2d60>>: _on_close() takes 2 positional arguments but 4 were given
+2022-02-17 15:39:41,176 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-02-17 15:40:19,746 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.106.9'} (error code 401)
+2022-02-17 15:40:19,747 INFO :: Binance Futures Client successfully initialized
+2022-02-17 15:40:20,412 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2022-02-17 15:40:21,117 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2022-02-17 15:40:21,117 INFO :: Binance connection opened
+2022-02-17 15:40:21,118 INFO :: Bitmex Client successfully initialized
+2022-02-17 15:40:22,531 INFO :: Bitmex connection opened
+2022-02-17 15:40:25,815 WARNING :: Websocket connection closed
+2022-02-17 15:42:49,194 INFO :: Binance Futures Client successfully initialized
+2022-02-17 15:42:50,728 INFO :: Binance connection opened
+2022-02-17 15:42:50,730 INFO :: Bitmex Client successfully initialized
+2022-02-17 15:42:52,263 INFO :: Bitmex connection opened
+2022-02-17 15:43:07,882 ERROR :: Error while making GET request to /api/v3/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action.'} (error code 401)
+2022-02-17 15:43:07,883 INFO :: Binance Futures Client successfully initialized
+2022-02-17 15:43:08,856 INFO :: Binance connection opened
+2022-02-17 15:43:09,468 INFO :: Bitmex Client successfully initialized
+2022-02-17 15:43:11,005 INFO :: Bitmex connection opened
+2022-02-17 15:43:55,752 INFO :: Binance Futures Client successfully initialized
+2022-02-17 15:43:57,080 INFO :: Binance connection opened
+2022-02-17 15:43:57,183 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2022-02-17 15:43:57,697 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2022-02-17 15:43:57,697 INFO :: Bitmex Client successfully initialized
+2022-02-17 15:43:59,080 INFO :: Bitmex connection opened
+2022-02-17 15:44:19,998 WARNING :: Websocket connection closed
+2022-02-17 15:44:20,378 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x7fecd803cd60>>: _on_close() takes 2 positional arguments but 4 were given
+2022-02-17 15:44:20,379 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-02-17 15:55:55,616 ERROR :: Error while making GET request to /api/v3/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action.'} (error code 401)
+2022-02-17 15:55:55,618 INFO :: Binance Futures Client successfully initialized
+2022-02-17 15:55:56,538 INFO :: Binance connection opened
+2022-02-17 15:55:57,152 INFO :: Bitmex Client successfully initialized
+2022-02-17 15:55:58,688 INFO :: Bitmex connection opened
+2022-02-17 15:56:09,880 WARNING :: Websocket connection closed
+2022-02-17 15:56:10,360 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x7fbb90628fa0>>: _on_close() takes 2 positional arguments but 4 were given
+2022-02-17 15:56:10,361 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-02-17 19:29:44,607 INFO :: Binance Futures Client successfully initialized
+2022-02-17 19:29:45,473 INFO :: Binance connection opened
+2022-02-17 19:29:45,637 INFO :: Bitmex Client successfully initialized
+2022-02-17 19:29:46,919 INFO :: Bitmex connection opened
+2022-02-17 19:29:59,804 ERROR :: Error while making GET request to /api/v3/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action.'} (error code 401)
+2022-02-17 19:29:59,806 INFO :: Binance Futures Client successfully initialized
+2022-02-17 19:30:00,383 INFO :: Binance connection opened
+2022-02-17 19:30:00,693 INFO :: Bitmex Client successfully initialized
+2022-02-17 19:30:01,985 INFO :: Bitmex connection opened
+2022-02-17 19:31:04,780 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x7f86e8848fa0>>: _on_close() takes 2 positional arguments but 4 were given
+2022-02-17 19:31:04,781 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-02-17 20:46:15,754 ERROR :: Error while making GET request to /api/v3/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action.'} (error code 401)
+2022-02-17 20:46:15,756 INFO :: Binance Futures Client successfully initialized
+2022-02-17 20:46:16,350 INFO :: Binance connection opened
+2022-02-17 20:46:16,937 INFO :: Bitmex Client successfully initialized
+2022-02-17 20:46:18,263 INFO :: Bitmex connection opened

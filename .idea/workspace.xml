@@ -6,12 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="6b6e2309-d3ee-46f4-8e4d-8daac01e26b6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/clients.py" beforeDir="false" afterPath="$PROJECT_DIR$/variables.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_keys.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_keys.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connectors/binance.py" beforeDir="false" afterPath="$PROJECT_DIR$/connectors/binance.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/initial_popup.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/initial_popup.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/root_components.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/root_components.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/styling.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/styling.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/variables.py" beforeDir="false" afterPath="$PROJECT_DIR$/variables.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +20,15 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/requirements.txt" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/interface/root_components.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/interface/scrollable_frame.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/main.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/interface/styling.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/variables.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/interface/initial_popup.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -33,6 +42,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
