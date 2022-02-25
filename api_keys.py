@@ -3,10 +3,11 @@ binance_testnet_api_key = '9b020287e6105b7a91d95bc858ec13c9c3b724377e63c12909095
 binance_testnet_api_secret = 'b0ffaac2300e0ce792b8fe614599cecd1b454e0ee5cf6da63b4a8b5b2a0ee1a2'
 
 
-# binance_api_key = 'WB3FISZsC4XdVoi5leJyyEr2PMzWFaYHMp3vOv9CpCnPqKQdbduX6RfCbO27eBiL'
-# binance_api_secret = '8ljMwrSrYKe280WrBSnVurBXsHKW0tQsS6039PUByUsLApsH5wjAp0Bw62lZYFBa'
-binance_api_key = '9b020287e6105b7a91d95bc858ec13c9c3b724377e63c12909095dd934b7ad60'
-binance_api_secret = 'b0ffaac2300e0ce792b8fe614599cecd1b454e0ee5cf6da63b4a8b5b2a0ee1a2'
+# binance_api_key = '0FQHu0xI85EpazubQSfosLjuTZtWWmN66BMiC0NDAfGg6Hiyk7C1ZWzR72uvdamG'
+# binance_api_secret = 'b0ffaac2300e0ce792b8fe614599cecd1b454e0ee5cf6da63b4a8b5b2a0ee1a2'
+
+binance_api_key = 'WB3FISZsC4XdVoi5leJyyEr2PMzWFaYHMp3vOv9CpCnPqKQdbduX6RfCbO27eBiL'
+binance_api_secret = '8lijMwrSrYKe280WrBSnVurBXsHKW0tQsS6039PUByUsLApsH5wjAp0Bw62lZYFBa'
 
 bitmex_api_key = 'QhRkPwfkuRwzD1Rx3aeacOUA'
 bitmex_api_secret ='25Sxg2JEgTAorNwe8KxXZO7Rbg_s2yTzYRwPSyiVHi_f3JR0'
