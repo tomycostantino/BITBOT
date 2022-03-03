@@ -12,6 +12,7 @@ class BinanceClient:
     def __init__(self, api_key: str, api_secret: str, testnet: bool, futures: bool):
         self._client = Client(api_key, api_secret)
         self._client.API_URL = 'https://testnet.binance.vision/api'
+        #self._client.API_URL = 'https://api.binance.com/api'
         self._api_key = api_key
         self._testnet = testnet
         self._futures = futures
@@ -94,9 +95,20 @@ class BinanceClient:
 
         return contracts
 
-    def get_balances(self, assets):
+    def get_balances(self) -> typing.Dict[str, Balance]:
         balances = {}
-        for asset in assets:
-            balance = self._client.get_asset_balance(asset=asset)
-            balances[asset] = balance
+        info = self._client.get_account()
+        for i in info['balances']:
+            balances[i['asset']] = Balance(i, self.platform)
         return balances
+
+    '''
+        balances = []
+        info = self._client.get_account()
+        for balance in info['balances']:
+            balances.append(balance)
+        return balances
+    '''
+
+    def get_info(self):
+        return self._client.get_account()

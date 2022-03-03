@@ -191,7 +191,6 @@ class BinanceClient:
     def get_balances(self) -> typing.Dict[str, Balance]:
         data = dict()
         data['timestamp'] = int(time.time() * 1000)
-        print(data['timestamp'])
         data['signature'] = self._generate_signature(data)
 
         balances = dict()
@@ -202,7 +201,6 @@ class BinanceClient:
             data['timestamp'] = int(time.time() * 1000 + 1)
             data['signature'] = self._generate_signature(data)
             account_data = self._make_request('GET', '/api/v3/account', data)
-            print(data['timestamp'])
 
         if account_data is not None:
             if self.futures:
@@ -236,7 +234,6 @@ class BinanceClient:
 
         data['timestamp'] = int(time.time() * 1000)
         data['signature'] = self._generate_signature(data)
-        print(data['signature'])
 
         if self.futures:
             order_status = self._make_request('POST', '/fapi/v1/order', data)
@@ -264,7 +261,6 @@ class BinanceClient:
 
         data['timestamp'] = int(time.time() * 1000)
         data['signature'] = self._generate_signature(data)
-        print(data['signature'])
 
         if self.futures:
             order_status = self._make_request('DELETE', '/fapi/v1/order', data)
@@ -288,7 +284,6 @@ class BinanceClient:
         data['symbol'] = contract.symbol
         data['orderId'] = order_id
         data['signature'] = self._generate_signature(data)
-        print(data['signature'])
 
         if self.futures:
             order_status = self._make_request('GET', '/fapi/v1/order', data)
@@ -317,7 +312,6 @@ class BinanceClient:
         data['timestamp'] = int(time.time() * 1000)
         data['symbol'] = contract.symbol
         data['signature'] = self._generate_signature(data)
-        print(data['signature'])
 
         trades = self._make_request('GET', '/api/v3/myTrades', data)
 

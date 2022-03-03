@@ -4070,3 +4070,176 @@
 2022-02-25 12:42:58,321 INFO :: Bitmex Client successfully initialized
 2022-02-25 12:42:58,479 INFO :: Binance connection opened
 2022-02-25 12:42:59,729 INFO :: Bitmex connection opened
+2022-03-03 21:20:47,216 INFO :: Binance Futures Client successfully initialized
+2022-03-03 21:20:48,271 INFO :: Binance connection opened
+2022-03-03 21:20:48,467 INFO :: Bitmex Client successfully initialized
+2022-03-03 21:20:49,980 INFO :: Bitmex connection opened
+2022-03-03 21:21:26,274 INFO :: Getting Binance trade size...
+2022-03-03 21:21:26,853 INFO :: Binance current USDT balance = 10491.98788745, trade size = 0.945
+2022-03-03 21:21:26,857 INFO :: Short signal on LTCUSDT 1m
+2022-03-03 21:21:27,458 INFO :: Sell order placed on Binance | Status: new
+2022-03-03 21:21:28,308 INFO :: Getting Binance trade size...
+2022-03-03 21:21:28,995 INFO :: Binance current USDT balance = 10491.94591811, trade size = 0.036
+2022-03-03 21:21:28,996 INFO :: Long signal on ETHUSDT 1m
+2022-03-03 21:21:29,329 INFO :: Buy order placed on Binance | Status: new
+2022-03-03 21:21:30,229 INFO :: Binance order status: filled
+2022-03-03 21:21:32,063 INFO :: Binance order status: filled
+2022-03-03 21:21:52,267 WARNING :: Websocket connection closed
+2022-03-03 21:21:52,627 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x7f8490335970>>: _on_close() takes 2 positional arguments but 4 were given
+2022-03-03 21:21:52,629 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-03-03 21:25:39,097 ERROR :: Error while making GET request to /api/v3/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action.'} (error code 401)
+2022-03-03 21:25:39,101 INFO :: Binance Futures Client successfully initialized
+2022-03-03 21:25:40,284 INFO :: Binance connection opened
+2022-03-03 21:25:40,291 INFO :: Bitmex Client successfully initialized
+2022-03-03 21:25:41,825 INFO :: Bitmex connection opened
+2022-03-03 21:26:23,207 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.136.104.116'} (error code 401)
+2022-03-03 21:26:23,210 INFO :: Binance Futures Client successfully initialized
+2022-03-03 21:26:23,953 INFO :: Binance connection opened
+2022-03-03 21:26:24,671 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2022-03-03 21:26:25,137 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2022-03-03 21:26:25,139 INFO :: Bitmex Client successfully initialized
+2022-03-03 21:26:26,490 INFO :: Bitmex connection opened
+2022-03-03 21:32:44,836 ERROR :: Error while making GET request to /api/v3/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action.'} (error code 401)
+2022-03-03 21:32:44,839 INFO :: Binance Futures Client successfully initialized
+2022-03-03 21:32:45,767 INFO :: Binance connection opened
+2022-03-03 21:32:45,889 INFO :: Bitmex Client successfully initialized
+2022-03-03 21:32:47,253 INFO :: Bitmex connection opened
+2022-03-03 21:33:14,958 ERROR :: Error while making GET request to /api/v3/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action.'} (error code 401)
+2022-03-03 21:33:14,961 INFO :: Binance Futures Client successfully initialized
+2022-03-03 21:33:16,788 INFO :: Binance connection opened
+2022-03-03 21:33:16,792 INFO :: Bitmex Client successfully initialized
+2022-03-03 21:33:18,140 INFO :: Bitmex connection opened
+2022-03-03 21:34:01,906 ERROR :: Error while making GET request to /api/v3/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action.'} (error code 401)
+2022-03-03 21:34:01,910 INFO :: Binance Futures Client successfully initialized
+2022-03-03 21:34:02,668 INFO :: Binance connection opened
+2022-03-03 21:34:02,993 INFO :: Bitmex Client successfully initialized
+2022-03-03 21:34:04,367 INFO :: Bitmex connection opened
+2022-03-03 21:34:37,983 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.136.104.116'} (error code 401)
+2022-03-03 21:34:37,986 INFO :: Binance Futures Client successfully initialized
+2022-03-03 21:34:38,437 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2022-03-03 21:34:38,842 INFO :: Binance connection opened
+2022-03-03 21:34:38,870 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2022-03-03 21:34:38,871 INFO :: Bitmex Client successfully initialized
+2022-03-03 21:34:40,267 INFO :: Bitmex connection opened
+2022-03-03 21:35:14,063 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.136.104.116'} (error code 401)
+2022-03-03 21:35:14,067 INFO :: Binance Futures Client successfully initialized
+2022-03-03 21:35:14,530 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2022-03-03 21:35:14,784 INFO :: Binance connection opened
+2022-03-03 21:35:14,982 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2022-03-03 21:35:14,983 INFO :: Bitmex Client successfully initialized
+2022-03-03 21:35:16,349 INFO :: Bitmex connection opened
+2022-03-03 21:35:33,150 INFO :: Getting Binance trade size...
+2022-03-03 21:35:33,460 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.136.104.116'} (error code 401)
+2022-03-03 21:35:33,629 INFO :: Getting Binance trade size...
+2022-03-03 21:35:33,927 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.136.104.116'} (error code 401)
+2022-03-03 21:35:33,931 INFO :: Getting Binance trade size...
+2022-03-03 21:35:34,227 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.136.104.116'} (error code 401)
+2022-03-03 21:35:34,340 INFO :: Getting Binance trade size...
+2022-03-03 21:35:34,637 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.136.104.116'} (error code 401)
+2022-03-03 21:35:35,207 INFO :: Getting Binance trade size...
+2022-03-03 21:35:35,509 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.136.104.116'} (error code 401)
+2022-03-03 21:35:35,999 INFO :: Getting Binance trade size...
+2022-03-03 21:35:36,298 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.136.104.116'} (error code 401)
+2022-03-03 21:35:36,305 INFO :: Getting Binance trade size...
+2022-03-03 21:35:36,582 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.136.104.116'} (error code 401)
+2022-03-03 21:35:36,589 INFO :: Getting Binance trade size...
+2022-03-03 21:35:36,884 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.136.104.116'} (error code 401)
+2022-03-03 21:35:36,886 INFO :: Getting Binance trade size...
+2022-03-03 21:35:37,178 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.136.104.116'} (error code 401)
+2022-03-03 21:35:37,179 INFO :: Getting Binance trade size...
+2022-03-03 21:35:37,464 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.136.104.116'} (error code 401)
+2022-03-03 21:35:37,464 INFO :: Getting Binance trade size...
+2022-03-03 21:35:37,742 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.136.104.116'} (error code 401)
+2022-03-03 21:35:37,745 INFO :: Getting Binance trade size...
+2022-03-03 21:35:38,040 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.136.104.116'} (error code 401)
+2022-03-03 21:35:38,041 INFO :: Getting Binance trade size...
+2022-03-03 21:35:38,323 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.136.104.116'} (error code 401)
+2022-03-03 21:35:38,327 INFO :: Getting Binance trade size...
+2022-03-03 21:35:38,608 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.136.104.116'} (error code 401)
+2022-03-03 21:35:38,760 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x7fb3884d5b80>>: _on_close() takes 2 positional arguments but 4 were given
+2022-03-03 21:35:38,760 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-03-03 21:49:12,175 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-03 21:49:12,179 INFO :: Binance Futures Client successfully initialized
+2022-03-03 21:49:13,099 INFO :: Binance connection opened
+2022-03-03 21:49:13,220 INFO :: Bitmex Client successfully initialized
+2022-03-03 21:49:14,900 INFO :: Bitmex connection opened
+2022-03-03 21:50:00,365 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-03 21:50:00,635 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-03 21:50:00,698 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-03 21:50:03,062 INFO :: Binance New candle for LTCUSDT 1m
+2022-03-03 21:50:03,063 INFO :: Getting Binance trade size...
+2022-03-03 21:50:03,638 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-03 21:50:04,041 INFO :: Getting Binance trade size...
+2022-03-03 21:50:04,615 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-03 21:50:04,617 INFO :: Getting Binance trade size...
+2022-03-03 21:50:04,918 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-03 21:50:04,920 INFO :: Getting Binance trade size...
+2022-03-03 21:50:05,215 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-03 21:50:05,217 INFO :: Getting Binance trade size...
+2022-03-03 21:50:05,527 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-03 21:50:05,527 INFO :: Getting Binance trade size...
+2022-03-03 21:50:05,832 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-03 21:50:05,832 INFO :: Getting Binance trade size...
+2022-03-03 21:50:06,508 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-03 21:50:06,510 INFO :: Getting Binance trade size...
+2022-03-03 21:50:06,836 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-03 21:50:06,837 INFO :: Getting Binance trade size...
+2022-03-03 21:50:07,158 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-03 21:50:07,161 WARNING :: Binance ETHUSDT: 2076 milliseconds of difference between the current time and the trade time
+2022-03-03 21:50:07,162 INFO :: Getting Binance trade size...
+2022-03-03 21:50:07,478 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-03 21:50:07,480 INFO :: Getting Binance trade size...
+2022-03-03 21:50:07,800 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-03 21:50:07,801 WARNING :: Binance ETHUSDT: 2019 milliseconds of difference between the current time and the trade time
+2022-03-03 21:50:07,801 INFO :: Getting Binance trade size...
+2022-03-03 21:50:08,108 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-03 21:50:08,108 INFO :: Getting Binance trade size...
+2022-03-03 21:50:08,406 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-03 21:50:08,408 WARNING :: Binance ETHUSDT: 2039 milliseconds of difference between the current time and the trade time
+2022-03-03 21:50:08,408 INFO :: Getting Binance trade size...
+2022-03-03 21:50:09,275 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-03 21:50:09,277 WARNING :: Binance ETHUSDT: 2908 milliseconds of difference between the current time and the trade time
+2022-03-03 21:50:09,278 INFO :: Getting Binance trade size...
+2022-03-03 21:50:09,601 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-03 21:50:09,602 WARNING :: Binance ETHUSDT: 3233 milliseconds of difference between the current time and the trade time
+2022-03-03 21:50:09,602 INFO :: Getting Binance trade size...
+2022-03-03 21:50:09,917 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-03 21:50:09,918 WARNING :: Binance BTCUSDT: 3508 milliseconds of difference between the current time and the trade time
+2022-03-03 21:50:09,919 WARNING :: Binance ETHUSDT: 3354 milliseconds of difference between the current time and the trade time
+2022-03-03 21:50:09,919 INFO :: Getting Binance trade size...
+2022-03-03 21:50:10,222 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-03 21:50:10,223 WARNING :: Binance ETHUSDT: 3657 milliseconds of difference between the current time and the trade time
+2022-03-03 21:50:10,223 INFO :: Getting Binance trade size...
+2022-03-03 21:50:10,537 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-03 21:50:10,538 WARNING :: Binance ETHUSDT: 3258 milliseconds of difference between the current time and the trade time
+2022-03-03 21:50:10,538 INFO :: Getting Binance trade size...
+2022-03-03 21:50:10,846 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-03 21:50:10,848 WARNING :: Binance ETHUSDT: 3475 milliseconds of difference between the current time and the trade time
+2022-03-03 21:50:10,848 INFO :: Getting Binance trade size...
+2022-03-03 21:50:11,167 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-03 21:50:11,168 WARNING :: Binance ETHUSDT: 3279 milliseconds of difference between the current time and the trade time
+2022-03-03 21:50:11,168 INFO :: Getting Binance trade size...
+2022-03-03 21:50:11,491 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-03 21:50:11,493 WARNING :: Binance ETHUSDT: 3367 milliseconds of difference between the current time and the trade time
+2022-03-03 21:50:11,493 INFO :: Getting Binance trade size...
+2022-03-03 21:50:11,807 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-03 21:50:11,808 WARNING :: Binance ETHUSDT: 3600 milliseconds of difference between the current time and the trade time
+2022-03-03 21:50:11,808 INFO :: Getting Binance trade size...
+2022-03-03 21:50:12,093 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-03 21:50:12,094 WARNING :: Binance XRPUSDT: 2448 milliseconds of difference between the current time and the trade time
+2022-03-03 21:50:12,094 WARNING :: Binance BTCUSDT: 2347 milliseconds of difference between the current time and the trade time
+2022-03-03 21:50:12,095 WARNING :: Binance BTCUSDT: 2318 milliseconds of difference between the current time and the trade time
+2022-03-03 21:50:12,096 WARNING :: Binance ETHUSDT: 2182 milliseconds of difference between the current time and the trade time
+2022-03-03 21:50:12,096 INFO :: Getting Binance trade size...
+2022-03-03 21:50:12,422 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-03 21:50:12,422 WARNING :: Binance ETHUSDT: 2508 milliseconds of difference between the current time and the trade time
+2022-03-03 21:50:12,422 INFO :: Getting Binance trade size...
+2022-03-03 21:50:12,723 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-03 21:50:12,724 WARNING :: Binance ETHUSDT: 2784 milliseconds of difference between the current time and the trade time
+2022-03-03 21:50:12,724 INFO :: Getting Binance trade size...
+2022-03-03 21:50:13,031 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-03 21:50:13,032 WARNING :: Binance ETHUSDT: 2999 milliseconds of difference between the current time and the trade time
+2022-03-03 21:50:13,032 INFO :: Getting Binance trade size...
+2022-03-03 21:50:13,341 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-03 21:50:13,342 WARNING :: Binance ETHUSDT: 3218 milliseconds of difference between the current time and the trade time
+2022-03-03 21:50:13,342 INFO :: Getting Binance trade size...

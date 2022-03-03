@@ -37,21 +37,21 @@ class InitialPopup(tk.Tk):
         spot_nf.pack(side=tk.TOP, anchor='center', fill='both')
 
     def _testnet_f(self):
-        variables.binance = BinanceClient(binance_testnet_api_key, binance_testnet_api_secret, True, True)
+        variables.binance = BinanceClient(binance_futures_api_key, binance_futures_api_secret, True, True)
         variables.bitmex = BitmexClient(bitmex_api_key, bitmex_api_secret, testnet=True)
         self.destroy()
 
     def _testnet_n(self):
-        variables.binance = BinanceClient(binance_testnet_api_key, binance_testnet_api_secret, True, False)
+        variables.binance = BinanceClient(api_key, api_secret, True, False)
         variables.bitmex = BitmexClient(bitmex_api_key, bitmex_api_secret, testnet=True)
         self.destroy()
 
     def _spot_f(self):
-        variables.binance = BinanceClient(binance_api_key, binance_api_secret, False, True)
+        variables.binance = BinanceClient(binance_futures_api_key, binance_futures_api_secret, False, True)
         variables.bitmex = BitmexClient(bitmex_api_key, bitmex_api_secret, testnet=False)
         self.destroy()
 
     def _spot_n(self):
-        variables.binance = BinanceClient(binance_api_key, binance_api_secret, False, False)
+        variables.binance = BinanceClient(api_key, api_secret, False, False)
         variables.bitmex = BitmexClient(bitmex_api_key, bitmex_api_secret, testnet=False)
         self.destroy()
