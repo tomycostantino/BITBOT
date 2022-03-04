@@ -4243,3 +4243,17 @@
 2022-03-03 21:50:13,341 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
 2022-03-03 21:50:13,342 WARNING :: Binance ETHUSDT: 3218 milliseconds of difference between the current time and the trade time
 2022-03-03 21:50:13,342 INFO :: Getting Binance trade size...
+2022-03-04 22:04:12,066 INFO :: Binance Futures Client successfully initialized
+2022-03-04 22:04:13,105 INFO :: Binance connection opened
+2022-03-04 22:04:13,149 INFO :: Bitmex Client successfully initialized
+2022-03-04 22:04:14,846 INFO :: Bitmex connection opened
+2022-03-04 22:04:30,897 WARNING :: Websocket connection closed
+2022-03-04 22:04:31,229 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x7fdb183d3f10>>: _on_close() takes 2 positional arguments but 4 were given
+2022-03-04 22:04:31,230 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-03-04 22:13:07,729 INFO :: Binance Futures Client successfully initialized
+2022-03-04 22:13:08,713 INFO :: Binance connection opened
+2022-03-04 22:13:10,184 INFO :: Bitmex Client successfully initialized
+2022-03-04 22:13:11,567 INFO :: Bitmex connection opened
+2022-03-04 22:13:51,291 WARNING :: Websocket connection closed
+2022-03-04 22:13:51,648 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x7fac283f2fa0>>: _on_close() takes 2 positional arguments but 4 were given
+2022-03-04 22:13:51,649 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given

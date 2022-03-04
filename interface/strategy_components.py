@@ -247,6 +247,8 @@ class StrategyEditor(tk.Frame):
         exchange = self.body_widgets['contract_var'][b_index].get().split('_')[1]
         timeframe = self.body_widgets['timeframe_var'][b_index].get().split('_')
 
+        print(timeframe)
+
         contract = self._exchanges[exchange].contracts[symbol]
 
         balance_pct = float(self.body_widgets['balance_pct'][b_index].get())

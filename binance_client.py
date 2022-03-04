@@ -1,6 +1,9 @@
 import logging
+
+import binance.client
 import requests
 import typing
+import time
 from binance.client import Client
 from models import *
 from strategies import TechnicalStrategy, BreakoutStrategy
@@ -12,7 +15,6 @@ class BinanceClient:
     def __init__(self, api_key: str, api_secret: str, testnet: bool, futures: bool):
         self._client = Client(api_key, api_secret)
         self._client.API_URL = 'https://testnet.binance.vision/api'
-        #self._client.API_URL = 'https://api.binance.com/api'
         self._api_key = api_key
         self._testnet = testnet
         self._futures = futures
@@ -37,6 +39,14 @@ class BinanceClient:
         self._headers = {'X-MBX-APIKEY': self._api_key}
 
         self.logs = []
+
+        self._timeframes = {
+            '1m': self._client.KLINE_INTERVAL_1MINUTE,
+            '5m': self._client.KLINE_INTERVAL_5MINUTE,
+            '15m': self._client.KLINE_INTERVAL_15MINUTE,
+            '30m': self._client.KLINE_INTERVAL_30MINUTE,
+            '1h': self._client.KLINE_INTERVAL_1HOUR
+        }
 
     # logger to document what happens when using the program
     # it appends the logs to the list created previously, does not return anything
@@ -78,6 +88,9 @@ class BinanceClient:
                          method, endpoint, response.json(), response.status_code)
             return None
 
+    # public endpoints
+    # get the possible contracts like BTC/USDT or ETH/USDT for example
+    # returns a dictionary of contracts
     def get_contracts(self) -> typing.Dict[str, Contract]:
         if self._futures:
             exchange_info = self._make_request('GET', '/fapi/v1/exchangeInfo', dict())
@@ -95,20 +108,49 @@ class BinanceClient:
 
         return contracts
 
+    # in charge of getting the amount of all cryptos the user has
+    # returns a dict of Balance
     def get_balances(self) -> typing.Dict[str, Balance]:
-        balances = {}
-        info = self._client.get_account()
-        for i in info['balances']:
-            balances[i['asset']] = Balance(i, self.platform)
+
+        balances = dict()
+
+        if self._futures:
+            data = dict()
+            data['timestamp'] = int(time.time() * 1000)
+            data['signature'] = self._generate_signature(data)
+            account_data = self._make_request('GET', '/fapi/v1/account', data)
+            if account_data is not None:
+                for a in account_data['assets']:
+                    balances[a['asset']] = Balance(a, self.platform)
+
+        else:
+            info = self._client.get_account()
+            for i in info['balances']:
+                balances[i['asset']] = Balance(i, self.platform)
         return balances
 
-    '''
-        balances = []
-        info = self._client.get_account()
-        for balance in info['balances']:
-            balances.append(balance)
-        return balances
-    '''
+    # manages to get the historical candlestick, up to 1000
+    # receives the contract and the time interval, 1m, 5m, 15m and so on
+    # returns a list of Candle
+    def get_historical_candles(self, contract: Contract, interval: str) -> typing.List[Candle]:
+        candles = []
+
+        if self._futures:
+            data = dict()
+            data['symbol'] = contract.symbol
+            data['interval'] = interval
+            data['limit'] = 1000
+            raw_candles = self._make_request('GET', '/fapi/v1/klines', data)
+            if raw_candles is not None:
+                for c in raw_candles:
+                    candles.append(Candle(c, interval, self.platform))
+        else:
+            raw_candles = self._client.get_klines(symbol=contract.symbol, interval=self._timeframes[interval])
+            if candles is not None:
+                for c in raw_candles:
+                    candles.append(Candle(c, interval, self.platform))
+
+        return candles
 
     def get_info(self):
         return self._client.get_account()
