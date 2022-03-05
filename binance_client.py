@@ -5,6 +5,7 @@ import requests
 import typing
 import time
 from binance.client import Client
+from binance.enums import *
 from models import *
 from strategies import TechnicalStrategy, BreakoutStrategy
 
@@ -151,6 +152,109 @@ class BinanceClient:
                     candles.append(Candle(c, interval, self.platform))
 
         return candles
+
+    # returns a nested dict with most recent bid and ask price
+    # if the symbol passed was not in dict created before, it will be added now, otherwise the prices will be updated
+    # the output looks like this:
+    # {'BTCUSDT':{'bidPrice': 10.0, 'askPrice': 9.0}}
+    def get_bid_ask(self, contract: Contract) -> typing.Dict[str, typing.Dict]:
+        data = dict()
+        data['symbol'] = contract.symbol
+
+        if self.futures:
+            ob_data = self._make_request('GET', '/fapi/v1/ticker/bookTicker', data)
+        else:
+            ob_data = self._make_request('GET', '/api/v3/ticker/bookTicker', data)
+
+        # 'https://testnet.binancefuture.com/fapi/v1/ticker/bookTicker?symbol=BTCUSDT'
+
+        if ob_data is not None:
+            if contract.symbol not in self.prices:
+                self.prices[contract.symbol] = {'bid': float(ob_data['bidPrice']), 'ask': float(ob_data['askPrice'])}
+            else:
+                self.prices[contract.symbol]['bid'] = float(ob_data['bidPrice'])
+                self.prices[contract.symbol]['ask'] = float(ob_data['askPrice'])
+
+            return self.prices[contract.symbol]
+
+    # place orders to buy or sell depending on the signal
+    # gets the contract, the type: MARKET, the quantity, and the side: buy or sell
+    # return the status of the order
+    def place_order(self, contract: Contract, order_type: str, quantity: float, side: str, price=None, tif=None) -> \
+            OrderStatus:
+
+        data = dict()
+        data['symbol'] = contract.symbol
+        data['type'] = order_type
+
+        ''' come back to this part (quantity)'''
+        data['quantity'] = quantity
+        data['side'] = side.upper()
+
+        if price is not None:
+            data['price'] = round(round(price / contract.tick_size) * contract.tick_size, 8)
+            data['price'] = '%.*f' % (contract.price_decimals, data['price'])
+
+        if tif is not None:
+            data['timeInForce'] = tif
+
+        if self._futures:
+            data['timestamp'] = int(time.time() * 1000)
+            data['signature'] = self._generate_signature(data)
+            order_status = self._make_request('POST', '/fapi/v1/order', data)
+
+        else:
+            order_status = self._client.create_order(
+                symbol=data['symbol'],
+                type=data['type'],
+                side=data['side'],
+                quantity=data['quantity']
+            )
+
+        if order_status is not None:
+            if not self._futures:
+                if order_status['status'] == 'FILLED':
+                    order_status['avgPrice'] = self._get_execution_price(contract, order_status['orderId'])
+                else:
+                    order_status['avgPrice'] = 0
+
+            order_status = OrderStatus(order_status, self.platform)
+
+        return order_status
+
+    def _get_execution_price(self, contract: Contract, order_id: int) -> float:
+        """
+                For Binance Spot only, find the equivalent of the 'avgPrice' key on the futures side.
+                The average price is the weighted sum of each trade price related to the order_id
+                :param contract:
+                :param order_id:
+                :return:
+        """
+        data = dict()
+        data['symbol'] = contract.symbol
+
+        if self._futures:
+            data['timestamp'] = int(time.time() * 1000)
+            data['signature'] = self._generate_signature(data)
+            trades = self._make_request('GET', '/api/v3/myTrades', data)
+
+        else:
+            trades = self._client.get_my_trades(symbol=data['symbol'])
+
+        avg_price = 0
+
+        if trades is not None:
+            executed_qty = 0
+            for t in trades:
+                if t['orderId'] == order_id:
+                    executed_qty += float(t['qty'])
+
+            for t in trades:
+                if t['orderId'] == order_id:
+                    fill_pct = float(t['qty']) / executed_qty
+                    avg_price += (float(t['price']) * fill_pct)
+
+        return round(round(avg_price / contract.tick_size) * contract.tick_size, 8)
 
     def get_info(self):
         return self._client.get_account()

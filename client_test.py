@@ -22,3 +22,7 @@ for b in balances.items():
 candles = client.get_historical_candles(contracts['BTCUSDT'], '5m')
 for c in candles:
     print(c)
+
+    order = client.place_order(contracts['BNBUSDT'], 'MARKET', 1, 'BUY')
+
+print(order)
