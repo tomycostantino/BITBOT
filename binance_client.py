@@ -49,6 +49,9 @@ class BinanceClient:
             '1h': self._client.KLINE_INTERVAL_1HOUR
         }
 
+        #info = self._client.get_symbol_info('ETHUSDT')
+        #print(info)
+
     # logger to document what happens when using the program
     # it appends the logs to the list created previously, does not return anything
     def _add_log(self, msg: str):
@@ -206,19 +209,24 @@ class BinanceClient:
         else:
             order_status = self._client.create_order(
                 symbol=data['symbol'],
-                type=data['type'],
-                side=data['side'],
-                quantity=data['quantity']
+                type=ORDER_TYPE_LIMIT,
+                side=SIDE_BUY,
+                quantity=data['quantity'],
+                timeInForce=TIME_IN_FORCE_GTC,
+                price=str(data['price'])
             )
 
         if order_status is not None:
             if not self._futures:
                 if order_status['status'] == 'FILLED':
+                    print(order_status['status'])
                     order_status['avgPrice'] = self._get_execution_price(contract, order_status['orderId'])
+                    print(order_status['avgPrice'])
                 else:
                     order_status['avgPrice'] = 0
 
             order_status = OrderStatus(order_status, self.platform)
+            print(order_status)
 
         return order_status
 
@@ -239,7 +247,7 @@ class BinanceClient:
             trades = self._make_request('GET', '/api/v3/myTrades', data)
 
         else:
-            trades = self._client.get_my_trades(symbol=data['symbol'])
+            trades = self._client.get_my_trades(symbol=contract.symbol)
 
         avg_price = 0
 
