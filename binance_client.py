@@ -230,6 +230,57 @@ class BinanceClient:
 
         return order_status
 
+    # cancel order when required
+    # receives the Contract and the order id to cancel
+    # returns an OrderStatus object
+    def cancel_order(self, contract: Contract, order_id: int) -> OrderStatus:
+
+        if self.futures:
+            data = dict()
+            data['orderId'] = order_id
+            data['symbol'] = contract.symbol
+
+            data['timestamp'] = int(time.time() * 1000)
+            data['signature'] = self._generate_signature(data)
+            order_status = self._make_request('DELETE', '/fapi/v1/order', data)
+        else:
+
+            order_status = self._client.cancel_order(symbol=contract.symbol, orderId=order_id)
+
+        if order_status is not None:
+            if not self.futures:
+                # get average execution price based on the recent trades
+                order_status['avgPrice'] = self._get_execution_price(contract, order_id)
+            order_status = OrderStatus(order_status, self.platform)
+
+        return order_status
+
+    # check the status of an order
+    # gets the contract and the order id
+    # returns an OrderStatus
+    def get_order_status(self, contract: Contract, order_id: int) -> OrderStatus:
+
+        if self.futures:
+            data = dict()
+            data['timestamp'] = int(time.time() * 1000)
+            data['symbol'] = contract.symbol
+            data['orderId'] = order_id
+            data['signature'] = self._generate_signature(data)
+            order_status = self._make_request('GET', '/fapi/v1/order', data)
+        else:
+            order_status = self._client.get_order(symbol=contract.symbol, orderId=order_id)
+
+        if order_status is not None:
+            if not self.futures:
+                if order_status['status'] == 'FILLED':
+                    order_status['avgPrice'] = self._get_execution_price(contract, order_id)
+                else:
+                    order_status['avgPrice'] = 0
+            order_status = OrderStatus(order_status, self.platform)
+
+        return order_status
+
+
     def _get_execution_price(self, contract: Contract, order_id: int) -> float:
         """
                 For Binance Spot only, find the equivalent of the 'avgPrice' key on the futures side.
