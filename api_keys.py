@@ -6,14 +6,17 @@ binance_futures_api_secret = 'b0ffaac2300e0ce792b8fe614599cecd1b454e0ee5cf6da63b
 # binance_api_key = '0FQHu0xI85EpazubQSfosLjuTZtWWmN66BMiC0NDAfGg6Hiyk7C1ZWzR72uvdamG'
 # binance_api_secret = 'b0ffaac2300e0ce792b8fe614599cecd1b454e0ee5cf6da63b4a8b5b2a0ee1a2'
 
-#binance_api_key = 'WB3FISZsC4XdVoi5leJyyEr2PMzWFaYHMp3vOv9CpCnPqKQdbduX6RfCbO27eBiL'
-#binance_api_secret = '8lijMwrSrYKe280WrBSnVurBXsHKW0tQsS6039PUByUsLApsH5wjAp0Bw62lZYFBa'
+# binance_api_key = 'WB3FISZsC4XdVoi5leJyyEr2PMzWFaYHMp3vOv9CpCnPqKQdbduX6RfCbO27eBiL'
+# binance_api_secret = '8lijMwrSrYKe280WrBSnVurBXsHKW0tQsS6039PUByUsLApsH5wjAp0Bw62lZYFBa'
 
-#api_key = '8p2nKptA6L4nWtyYsb4a5DSBe6u9G5myqhtJMI9ZTanlHCeaUCilFZFW5G15tdyf'
-#api_secret = 'SlosYFeFvkhKc6JJ6y6tMdgHgt83cXgI2A2y0wvSj1QgLiFQ7PkKchwDPAzbrlUJ'
+# api_key = '8p2nKptA6L4nWtyYsb4a5DSBe6u9G5myqhtJMI9ZTanlHCeaUCilFZFW5G15tdyf'
+# api_secret = 'SlosYFeFvkhKc6JJ6y6tMdgHgt83cXgI2A2y0wvSj1QgLiFQ7PkKchwDPAzbrlUJ'
 
-api_key = '5CWQHvHfhyU9WWWWiRUaY0xbq6wmQkgO4512GKupzTkrwwdiTphQQxsZQCcB48rM'
-api_secret = 'ULgitDDFVLA9RELEXA8nisOUZLi9JVWUZPsKs3ctjMj2iszmMDdx5Kmeg8sz5xik'
+# api_key = '5CWQHvHfhyU9WWWWiRUaY0xbq6wmQkgO4512GKupzTkrwwdiTphQQxsZQCcB48rM'
+# api_secret = 'ULgitDDFVLA9RELEXA8nisOUZLi9JVWUZPsKs3ctjMj2iszmMDdx5Kmeg8sz5xik'
 
 bitmex_api_key = 'QhRkPwfkuRwzD1Rx3aeacOUA'
 bitmex_api_secret ='25Sxg2JEgTAorNwe8KxXZO7Rbg_s2yTzYRwPSyiVHi_f3JR0'
+
+api_key = '2CpvwuhhitzO3QfyXTX35FgfairEiMAPfzXxyRrddC3WhbduvOy5WZdQXT2XjR4u'
+api_secret = 'PA5ay0omak1L4oZmLlvrCTnnnbJz0WUlwRC0OPZRCQp6A9cyxL0uMYKJtjpnkfHA'

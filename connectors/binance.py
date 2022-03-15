@@ -71,6 +71,42 @@ class BinanceClient:
         t.start()
         logger.info("Binance Futures Client successfully initialized")
 
+    def _hashing(self, query_string):
+        return hmac.new(
+            self._secret_key.encode('utf-8'), query_string.encode('utf-8'), hashlib.sha256
+        ).hexdigest()
+
+    def _get_timestamp(self):
+        return int(time.time() * 1000)
+
+    def _dispatch_request(self, http_method):
+        session = requests.Session()
+        session.headers.update(
+            {"Content-Type": "application/json;charset=utf-8", "X-MBX-APIKEY": self._public_key}
+        )
+        return {
+            "GET": session.get,
+            "DELETE": session.delete,
+            "PUT": session.put,
+            "POST": session.post,
+        }.get(http_method, "GET")
+
+    def _send_signed_request(self, http_method, url_path, payload={}):
+        query_string = urlencode(payload, True)
+        if query_string:
+            query_string = "{}&timestamp={}".format(query_string, self._get_timestamp())
+        else:
+            query_string = "timestamp={}".format(self._get_timestamp())
+
+        url = (
+            self._base_url + url_path + "?" + query_string + "&signature=" + self._hashing(query_string)
+        )
+
+        print("{} {}".format(http_method, url))
+        params = {"url": url, "params": {}}
+        response = self._dispatch_request(http_method)(**params)
+        return response.json()
+
     # the signature is required when getting balances, place and cancel orders, and know order status
     # returns the signature
     def _generate_signature(self, data: typing.Dict) -> str:
@@ -198,9 +234,13 @@ class BinanceClient:
         if self.futures:
             account_data = self._make_request('GET', '/fapi/v1/account', data)
         else:
-            data['timestamp'] = int(time.time() * 1000 + 1)
+            account_data = self._send_signed_request("GET", "/api/v3/account")
+            print(account_data)
+            '''
+            data['timestamp'] = int(time.time() * 1000)
             data['signature'] = self._generate_signature(data)
             account_data = self._make_request('GET', '/api/v3/account', data)
+            '''
 
         if account_data is not None:
             if self.futures:

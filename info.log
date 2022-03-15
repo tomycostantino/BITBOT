@@ -4257,3 +4257,134 @@
 2022-03-04 22:13:51,291 WARNING :: Websocket connection closed
 2022-03-04 22:13:51,648 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x7fac283f2fa0>>: _on_close() takes 2 positional arguments but 4 were given
 2022-03-04 22:13:51,649 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-03-16 08:05:54,588 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-16 08:05:54,591 INFO :: Binance Futures Client successfully initialized
+2022-03-16 08:05:55,487 INFO :: Binance connection opened
+2022-03-16 08:05:55,647 INFO :: Bitmex Client successfully initialized
+2022-03-16 08:05:57,361 INFO :: Bitmex connection opened
+2022-03-16 08:06:14,506 WARNING :: Websocket connection closed
+2022-03-16 08:06:14,856 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x7fd710c32fa0>>: _on_close() takes 2 positional arguments but 4 were given
+2022-03-16 08:06:14,857 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-03-16 08:06:23,201 ERROR :: Error while making GET request to /fapi/v1/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action, request ip: 1.152.110.93'} (error code 401)
+2022-03-16 08:06:23,203 INFO :: Binance Futures Client successfully initialized
+2022-03-16 08:06:23,727 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2022-03-16 08:06:23,960 INFO :: Binance connection opened
+2022-03-16 08:06:24,140 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2022-03-16 08:06:24,141 INFO :: Bitmex Client successfully initialized
+2022-03-16 08:06:25,473 INFO :: Bitmex connection opened
+2022-03-16 08:06:41,785 ERROR :: Error while making GET request to /api/v3/account: {'code': -2015, 'msg': 'Invalid API-key, IP, or permissions for action.'} (error code 401)
+2022-03-16 08:06:41,787 INFO :: Binance Futures Client successfully initialized
+2022-03-16 08:06:42,196 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2022-03-16 08:06:42,655 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2022-03-16 08:06:42,656 INFO :: Bitmex Client successfully initialized
+2022-03-16 08:06:42,860 INFO :: Binance connection opened
+2022-03-16 08:06:44,368 INFO :: Bitmex connection opened
+2022-03-16 08:06:49,769 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-16 08:06:49,771 INFO :: Binance Futures Client successfully initialized
+2022-03-16 08:06:50,641 INFO :: Binance connection opened
+2022-03-16 08:06:50,748 INFO :: Bitmex Client successfully initialized
+2022-03-16 08:06:52,077 INFO :: Bitmex connection opened
+2022-03-16 08:07:13,650 INFO :: Binance Futures Client successfully initialized
+2022-03-16 08:07:14,432 INFO :: Binance connection opened
+2022-03-16 08:07:14,565 INFO :: Bitmex Client successfully initialized
+2022-03-16 08:07:15,905 INFO :: Bitmex connection opened
+2022-03-16 08:07:31,594 INFO :: Getting Binance trade size...
+2022-03-16 08:07:32,072 INFO :: Binance current USDT balance = 10511.38681962, trade size = 0.981
+2022-03-16 08:07:32,076 INFO :: Short signal on LTCUSDT 1m
+2022-03-16 08:07:32,320 INFO :: Sell order placed on Binance | Status: new
+2022-03-16 08:07:34,608 INFO :: Binance order status: filled
+2022-03-16 08:07:43,327 INFO :: Getting Binance trade size...
+2022-03-16 08:07:43,845 INFO :: Binance current USDT balance = 10511.34478181, trade size = 136.8
+2022-03-16 08:07:43,845 INFO :: Short signal on XRPUSDT 1m
+2022-03-16 08:07:44,372 INFO :: Sell order placed on Binance | Status: new
+2022-03-16 08:07:44,376 INFO :: Getting Binance trade size...
+2022-03-16 08:07:44,915 INFO :: Binance current USDT balance = 10511.30271308, trade size = 131.0
+2022-03-16 08:07:44,915 INFO :: Short signal on ADAUSDT 1m
+2022-03-16 08:07:45,390 INFO :: Sell order placed on Binance | Status: new
+2022-03-16 08:07:46,876 INFO :: Binance order status: filled
+2022-03-16 08:07:47,684 INFO :: Binance order status: filled
+2022-03-16 08:07:52,462 INFO :: Getting Binance trade size...
+2022-03-16 08:07:52,925 INFO :: Binance current USDT balance = 10503.81413066, trade size = 0.04
+2022-03-16 08:07:52,925 INFO :: Short signal on ETHUSDT 1m
+2022-03-16 08:07:53,419 INFO :: Sell order placed on Binance | Status: new
+2022-03-16 08:07:55,808 INFO :: Binance order status: filled
+2022-03-16 08:08:00,502 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-16 08:08:00,526 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-16 08:08:01,855 INFO :: Binance New candle for LTCUSDT 1m
+2022-03-16 08:08:02,379 INFO :: Getting Binance trade size...
+2022-03-16 08:08:02,862 INFO :: Binance current USDT balance = 10503.77236026, trade size = 0.003
+2022-03-16 08:08:02,863 INFO :: Long signal on BTCUSDT 1m
+2022-03-16 08:08:03,345 INFO :: Buy order placed on Binance | Status: new
+2022-03-16 08:08:05,635 INFO :: Binance order status: filled
+2022-03-16 08:08:16,206 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-16 08:08:16,277 INFO :: Binance New candle for ADAUSDT 1m
+2022-03-16 08:08:16,430 INFO :: Stop loss for ADAUSDT 1m | Current Price = 0.8054 (Entry price was 0.7974)
+2022-03-16 08:08:16,989 INFO :: Exit order on ADAUSDT 1m placed successfully
+2022-03-16 08:09:00,804 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-16 08:09:00,809 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-16 08:09:01,755 INFO :: Binance New candle for LTCUSDT 1m
+2022-03-16 08:09:21,607 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-16 08:09:21,686 INFO :: Binance New candle for ADAUSDT 1m
+2022-03-16 08:09:21,825 INFO :: Getting Binance trade size...
+2022-03-16 08:09:22,817 INFO :: Binance current USDT balance = 10503.68294066, trade size = 130.0
+2022-03-16 08:09:22,818 INFO :: Long signal on ADAUSDT 1m
+2022-03-16 08:09:23,346 INFO :: Buy order placed on Binance | Status: new
+2022-03-16 08:09:25,837 INFO :: Binance order status: filled
+2022-03-16 08:10:00,055 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-16 08:10:02,638 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-16 08:10:04,909 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-16 08:10:27,655 INFO :: Binance New candle for ADAUSDT 1m
+2022-03-16 08:10:27,758 INFO :: Binance New candle for LTCUSDT 1m
+2022-03-16 08:11:00,085 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-16 08:11:00,431 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-16 08:11:00,451 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-16 08:11:00,622 INFO :: Binance New candle for LTCUSDT 1m
+2022-03-16 08:11:00,633 INFO :: Binance New candle for ADAUSDT 1m
+2022-03-16 08:12:02,941 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-16 08:12:05,765 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-16 08:12:05,809 INFO :: Binance New candle for ADAUSDT 1m
+2022-03-16 08:12:05,931 INFO :: Binance New candle for LTCUSDT 1m
+2022-03-16 08:12:06,703 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-16 08:12:12,830 WARNING :: Websocket connection closed
+2022-03-16 08:12:12,869 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x7f7c005a79d0>>: _on_close() takes 2 positional arguments but 4 were given
+2022-03-16 08:12:12,870 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-03-16 08:13:01,954 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-16 08:13:01,957 INFO :: Binance Futures Client successfully initialized
+2022-03-16 08:13:02,829 INFO :: Binance connection opened
+2022-03-16 08:13:02,996 INFO :: Bitmex Client successfully initialized
+2022-03-16 08:13:04,397 INFO :: Bitmex connection opened
+2022-03-16 08:13:08,721 WARNING :: Websocket connection closed
+2022-03-16 08:13:09,303 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x7fe788532fa0>>: _on_close() takes 2 positional arguments but 4 were given
+2022-03-16 08:13:09,304 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-03-16 08:21:58,085 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-16 08:21:58,088 INFO :: Binance Futures Client successfully initialized
+2022-03-16 08:21:58,925 INFO :: Binance connection opened
+2022-03-16 08:21:59,315 INFO :: Bitmex Client successfully initialized
+2022-03-16 08:22:00,662 INFO :: Bitmex connection opened
+2022-03-16 08:22:14,453 WARNING :: Websocket connection closed
+2022-03-16 08:22:14,787 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x7f85616bbfa0>>: _on_close() takes 2 positional arguments but 4 were given
+2022-03-16 08:22:14,788 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-03-16 08:29:34,053 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-16 08:29:34,057 INFO :: Binance Futures Client successfully initialized
+2022-03-16 08:29:35,080 INFO :: Binance connection opened
+2022-03-16 08:29:36,314 INFO :: Bitmex Client successfully initialized
+2022-03-16 08:29:37,849 INFO :: Bitmex connection opened
+2022-03-16 08:29:39,004 WARNING :: Websocket connection closed
+2022-03-16 08:29:39,378 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x7fbe49583fa0>>: _on_close() takes 2 positional arguments but 4 were given
+2022-03-16 08:29:39,378 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-03-16 08:55:05,024 ERROR :: Error while making GET request to /api/v3/account: {'code': -1022, 'msg': 'Signature for this request is not valid.'} (error code 400)
+2022-03-16 08:55:05,027 INFO :: Binance Futures Client successfully initialized
+2022-03-16 08:55:05,926 INFO :: Binance connection opened
+2022-03-16 08:55:06,071 INFO :: Bitmex Client successfully initialized
+2022-03-16 08:55:07,419 INFO :: Bitmex connection opened
+2022-03-16 09:32:33,741 INFO :: Binance Futures Client successfully initialized
+2022-03-16 09:32:34,726 INFO :: Binance connection opened
+2022-03-16 09:32:37,263 INFO :: Bitmex Client successfully initialized
+2022-03-16 09:32:39,656 INFO :: Bitmex connection opened
+2022-03-16 09:35:14,408 INFO :: Binance Futures Client successfully initialized
+2022-03-16 09:35:15,234 INFO :: Binance connection opened
+2022-03-16 09:35:16,355 INFO :: Bitmex Client successfully initialized
+2022-03-16 09:35:17,788 INFO :: Bitmex connection opened
+2022-03-16 09:35:32,621 WARNING :: Websocket connection closed
+2022-03-16 09:35:33,446 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x7f955867c9d0>>: _on_close() takes 2 positional arguments but 4 were given
+2022-03-16 09:35:33,447 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given

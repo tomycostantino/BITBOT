@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6b6e2309-d3ee-46f4-8e4d-8daac01e26b6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/None" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/binance_client.py" beforeDir="false" afterPath="$PROJECT_DIR$/binance_client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/~$nance Client Code snippets.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/api_keys.py" beforeDir="false" afterPath="$PROJECT_DIR$/api_keys.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connectors/binance.py" beforeDir="false" afterPath="$PROJECT_DIR$/connectors/binance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/info.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +60,7 @@
       <recent name="$PROJECT_DIR$/backtesing" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.client_test">
+  <component name="RunManager" selected="Python.main">
     <configuration name="client_test" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="TradingBot" />
       <option name="INTERPRETER_OPTIONS" value="" />
