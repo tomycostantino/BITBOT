@@ -280,7 +280,6 @@ class BinanceClient:
 
         return order_status
 
-
     def _get_execution_price(self, contract: Contract, order_id: int) -> float:
         """
                 For Binance Spot only, find the equivalent of the 'avgPrice' key on the futures side.

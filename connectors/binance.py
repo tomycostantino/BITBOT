@@ -71,7 +71,7 @@ class BinanceClient:
         t.start()
         logger.info("Binance Futures Client successfully initialized")
 
-    def _hashing(self, query_string):
+    def _hashing(self, query_string: str):
         return hmac.new(
             self._secret_key.encode('utf-8'), query_string.encode('utf-8'), hashlib.sha256
         ).hexdigest()
@@ -79,7 +79,7 @@ class BinanceClient:
     def _get_timestamp(self):
         return int(time.time() * 1000)
 
-    def _dispatch_request(self, http_method):
+    def _dispatch_request(self, http_method: str):
         session = requests.Session()
         session.headers.update(
             {"Content-Type": "application/json;charset=utf-8", "X-MBX-APIKEY": self._public_key}
@@ -91,7 +91,8 @@ class BinanceClient:
             "POST": session.post,
         }.get(http_method, "GET")
 
-    def _send_signed_request(self, http_method, url_path, payload={}):
+    # for signed endpoints
+    def _send_signed_request(self, http_method: str, url_path: str, payload={}):
         query_string = urlencode(payload, True)
         if query_string:
             query_string = "{}&timestamp={}".format(query_string, self._get_timestamp())
@@ -105,6 +106,16 @@ class BinanceClient:
         print("{} {}".format(http_method, url))
         params = {"url": url, "params": {}}
         response = self._dispatch_request(http_method)(**params)
+        return response.json()
+
+    # for public endpoints
+    def _send_public_request(self, url_path: str, payload={}):
+        query_string = urlencode(payload, True)
+        url = self._base_url + url_path
+        if query_string:
+            url = url + '?' + query_string
+        print('{}'.format(url))
+        response = self._dispatch_request('GET')(url=url)
         return response.json()
 
     # the signature is required when getting balances, place and cancel orders, and know order status
@@ -232,17 +243,12 @@ class BinanceClient:
         balances = dict()
 
         if self.futures:
-            account_data = self._make_request('GET', '/fapi/v1/account', data)
+            account_data = self._send_signed_request('GET', '/fapi/v1/account')
         else:
-            account_data = self._send_signed_request("GET", "/api/v3/account")
-            print(account_data)
-            '''
-            data['timestamp'] = int(time.time() * 1000)
-            data['signature'] = self._generate_signature(data)
-            account_data = self._make_request('GET', '/api/v3/account', data)
-            '''
-
+            account_data = self._send_signed_request('GET', '/api/v3/account')
+        print(account_data)
         if account_data is not None:
+
             if self.futures:
                 for a in account_data['assets']:
                     balances[a['asset']] = Balance(a, self.platform)
@@ -272,13 +278,10 @@ class BinanceClient:
         if tif is not None:
             data['timeInForce'] = tif
 
-        data['timestamp'] = int(time.time() * 1000)
-        data['signature'] = self._generate_signature(data)
-
         if self.futures:
-            order_status = self._make_request('POST', '/fapi/v1/order', data)
+            order_status = self._send_signed_request('POST', '/fapi/v1/order', data)
         else:
-            order_status = self._make_request('POST', '/api/v3/order', data)
+            order_status = self._send_signed_request('POST', '/api/v3/order', data)
 
         if order_status is not None:
             if not self.futures:
@@ -287,7 +290,11 @@ class BinanceClient:
                 else:
                     order_status['avgPrice'] = 0
 
+            print(order_status)
+
             order_status = OrderStatus(order_status, self.platform)
+
+            print(order_status)
 
         return order_status
 
@@ -299,13 +306,10 @@ class BinanceClient:
         data['orderId'] = order_id
         data['symbol'] = contract.symbol
 
-        data['timestamp'] = int(time.time() * 1000)
-        data['signature'] = self._generate_signature(data)
-
         if self.futures:
-            order_status = self._make_request('DELETE', '/fapi/v1/order', data)
+            order_status = self._send_signed_request('DELETE', '/fapi/v1/order', data)
         else:
-            order_status = self._make_request('DELETE', '/api/v3/order', data)
+            order_status = self._send_signed_request('DELETE', '/api/v3/order', data)
 
         if order_status is not None:
             if not self.futures:
@@ -320,15 +324,13 @@ class BinanceClient:
     # returns an OrderStatus
     def get_order_status(self, contract: Contract, order_id: int) -> OrderStatus:
         data = dict()
-        data['timestamp'] = int(time.time() * 1000)
         data['symbol'] = contract.symbol
         data['orderId'] = order_id
-        data['signature'] = self._generate_signature(data)
 
         if self.futures:
-            order_status = self._make_request('GET', '/fapi/v1/order', data)
+            order_status = self._send_signed_request('GET', '/fapi/v1/order', data)
         else:
-            order_status = self._make_request('GET', '/api/v3/order', data)
+            order_status = self._send_signed_request('GET', '/api/v3/order', data)
 
         if order_status is not None:
             if not self.futures:
@@ -349,11 +351,9 @@ class BinanceClient:
                 :return:
         """
         data = dict()
-        data['timestamp'] = int(time.time() * 1000)
         data['symbol'] = contract.symbol
-        data['signature'] = self._generate_signature(data)
 
-        trades = self._make_request('GET', '/api/v3/myTrades', data)
+        trades = self._send_signed_request('GET', '/api/v3/myTrades', data)
 
         avg_price = 0
 
