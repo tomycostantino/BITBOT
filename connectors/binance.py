@@ -30,6 +30,9 @@ class BinanceClient:
             else:
                 self._base_url = "https://fapi.binance.com"
                 self._wss_url = 'wss://fstream.binance.com/ws'
+
+            logger.info("Binance Futures Client successfully initialized")
+
         else:
             self.platform = "binance_spot"
             if self.testnet:
@@ -38,6 +41,8 @@ class BinanceClient:
             else:
                 self._base_url = "https://api.binance.com"
                 self._wss_url = "wss://stream.binance.com:9443/ws"
+
+            logger.info("Binance Spot Client successfully initialized")
 
         self._public_key = public_key
         self._secret_key = secret_key
@@ -60,16 +65,16 @@ class BinanceClient:
         self.logs = []
 
         # websocket
-        self.ws: websocket.WebSocketApp
+        self.ws = None
         self._ws_id = 1
         self.reconnect = True
         self.ws_connected = False
         self.ws_subscriptions = {'bookTicker': [], 'aggTrade': []}
 
         # start threading for ws manager
-        t = threading.Thread(target=self._start_ws)
+        t = threading.Thread(target=self.start_ws)
         t.start()
-        logger.info("Binance Futures Client successfully initialized")
+
 
     def _hashing(self, query_string: str):
         return hmac.new(
@@ -263,13 +268,16 @@ class BinanceClient:
     # return the status of the order
     def place_order(self, contract: Contract, order_type: str, quantity: float, side: str, price=None, tif=None) -> \
             OrderStatus:
+
         data = dict()
         data['symbol'] = contract.symbol
-        data['type'] = order_type
+        data['side'] = side.upper()
 
         ''' come back to this part (quantity)'''
-        data['quantity'] = quantity
-        data['side'] = side.upper()
+        # data['quantity'] = quantity
+        data['quantity'] = round(int(quantity / contract.lot_size) * contract.lot_size, 8)  # int() to round down
+
+        data['type'] = order_type.upper()
 
         if price is not None:
             data['price'] = round(round(price / contract.tick_size) * contract.tick_size, 8)
@@ -290,11 +298,7 @@ class BinanceClient:
                 else:
                     order_status['avgPrice'] = 0
 
-            print(order_status)
-
             order_status = OrderStatus(order_status, self.platform)
-
-            print(order_status)
 
         return order_status
 
@@ -371,7 +375,8 @@ class BinanceClient:
         return round(round(avg_price / contract.tick_size) * contract.tick_size, 8)
 
     # Websocket manager
-    def _start_ws(self):
+    def start_ws(self):
+
         self.ws = websocket.WebSocketApp(self._wss_url, on_open=self._on_open, on_close=self._on_close,
                                          on_error=self._on_error, on_message=self._on_message)
 
@@ -410,10 +415,12 @@ class BinanceClient:
     # read binance documentation to see what the letters mean
     def _on_message(self, ws, msg: str):
 
+       # print(msg)
+
         data = json.loads(msg)
 
         if 'u' in data and 'A' in data:
-            data['e'] = 'bookTicker' # For Binance Spot, to make the data structure uniform with Binance Futures
+            data['e'] = 'bookTicker'  # For Binance Spot, to make the data structure uniform with Binance Futures
             # See the data structure difference here:
             # https://binance-docs.github.io/apidocs/spot/en/#individual-symbol-book-ticker-streams
 
@@ -445,12 +452,13 @@ class BinanceClient:
                     logger.error('Error while looping through the binance strategies %s:', e)
 
             # if aggTrade, data received is a new candle to append
-            elif data['e'] == 'aggTrade':
+            if data['e'] == 'aggTrade':
                 symbol = data['s']
 
                 for key, strat in self.strategies.items():
                     if strat.contract.symbol == symbol:
                         res = strat.parse_trades(float(data['p']), float(data['q']), data['T'])
+                        # print(res)
                         strat.check_trade(res)
 
     # subscribe channels to receive data from ws
@@ -481,8 +489,9 @@ class BinanceClient:
 
         try:
             self.ws.send(json.dumps(data))
+            logger.info("Binance: subscribing to: %s", ','.join(data['params']))
         except Exception as e:
-            logger.error('Connection error while making %s request to %s %s updates: %s', len(contracts), channel, e)
+            logger.error("Websocket error while subscribing to @bookTicker and @aggTrade: %s", e)
 
         self._ws_id += 1
 

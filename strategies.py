@@ -130,6 +130,7 @@ class Strategy:
         """
 
         order_status = self.client.get_order_status(self.contract, order_id)
+        print(order_status)
 
         if order_status is not None:
 
