@@ -7,7 +7,6 @@ import hashlib
 import websocket
 import threading
 import json
-import collections
 
 from urllib.parse import urlencode
 from models import *

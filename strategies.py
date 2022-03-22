@@ -156,6 +156,7 @@ class Strategy:
         """
 
         # Short is not allowed on Spot platforms
+        print('signal result: ', signal_result)
         if self.client.platform == "binance_spot" and signal_result == -1:
             return
 
