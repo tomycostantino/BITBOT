@@ -55,6 +55,7 @@ class Strategy:
         """
 
         timestamp_diff = int(time.time() * 1000) - timestamp
+
         if timestamp_diff >= 2000:
             logger.warning("%s %s: %s milliseconds of difference between the current time and the trade time",
                            self.exchange, self.contract.symbol, timestamp_diff)
@@ -62,7 +63,6 @@ class Strategy:
         last_candle = self.candles[-1]
 
         # Same Candle
-
         if timestamp < last_candle.timestamp + self.tf_equiv:
 
             last_candle.close = price
@@ -130,7 +130,6 @@ class Strategy:
         """
 
         order_status = self.client.get_order_status(self.contract, order_id)
-        print(order_status)
 
         if order_status is not None:
 
@@ -156,7 +155,6 @@ class Strategy:
         """
 
         # Short is not allowed on Spot platforms
-        print('signal result: ', signal_result)
         if self.client.platform == "binance_spot" and signal_result == -1:
             return
 

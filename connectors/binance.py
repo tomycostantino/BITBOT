@@ -107,7 +107,7 @@ class BinanceClient:
             self._base_url + url_path + "?" + query_string + "&signature=" + self._hashing(query_string)
         )
 
-        print("{} {}".format(http_method, url))
+        # print("{} {}".format(http_method, url))
         params = {"url": url, "params": {}}
         response = self._dispatch_request(http_method)(**params)
         return response.json()
@@ -118,7 +118,7 @@ class BinanceClient:
         url = self._base_url + url_path
         if query_string:
             url = url + '?' + query_string
-        print('{}'.format(url))
+        # print('{}'.format(url))
         response = self._dispatch_request('GET')(url=url)
         return response.json()
 
@@ -250,7 +250,7 @@ class BinanceClient:
             account_data = self._send_signed_request('GET', '/fapi/v1/account')
         else:
             account_data = self._send_signed_request('GET', '/api/v3/account')
-        print(account_data)
+
         if account_data is not None:
 
             if self.futures:
@@ -414,8 +414,6 @@ class BinanceClient:
     # read binance documentation to see what the letters mean
     def _on_message(self, ws, msg: str):
 
-       # print(msg)
-
         data = json.loads(msg)
 
         if 'u' in data and 'A' in data:
@@ -440,6 +438,7 @@ class BinanceClient:
                 # when to sell when on a position, and check for all ongoing trades as well
                 try:
                     for b_index, strat in self.strategies.items():
+
                         if strat.contract.symbol == symbol:
                             for trade in strat.trades:
                                 if trade.status == 'open' and trade.entry_price is not None:
@@ -457,7 +456,6 @@ class BinanceClient:
                 for key, strat in self.strategies.items():
                     if strat.contract.symbol == symbol:
                         res = strat.parse_trades(float(data['p']), float(data['q']), data['T'])
-                        # print(res)
                         strat.check_trade(res)
 
     # subscribe channels to receive data from ws

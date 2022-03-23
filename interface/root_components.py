@@ -41,11 +41,13 @@ class Root(tk.Tk):
         self._workspace_menu.add_command(label="Save workspace", command=self._save_workspace)
         self._workspace_menu.add_command(label="Load workspace", command=self._load_workspace)
 
+        '''
         # sub menu to restart client with new settings
         self._reset_client_menu = tk.Menu(self._main_menu, tearoff=False)
         self._main_menu.add_cascade(label='Testnet & Spot', menu=self._reset_client_menu)
         self._reset_client_menu.add_command(label='Testnet', command=lambda: self._reset_client('testnet'))
         self._reset_client_menu.add_command(label='Spot', command=lambda: self._reset_client('spot'))
+        '''
 
         self._restart = tk.Menu(self._main_menu, tearoff=False)
         self._main_menu.add_cascade(label='Restart', menu=self._restart)
@@ -250,7 +252,7 @@ class Root(tk.Tk):
         self._watchlist_frame.load_workspace()
         self._strategy_frame.load_workspace()
         self.logging_frame.add_log('Workspace loaded')
-
+    '''
     def _reset_client(self, mode: str):
 
         if mode == 'testnet':
@@ -283,6 +285,7 @@ class Root(tk.Tk):
                 self.bitmex = BitmexClient(bitmex_api_key, bitmex_api_secret, testnet=False)
             else:
                 self.logging_frame.add_log('Bitmex client already on Spot')
+    '''
 
     def _restart_code(self):
         result = askquestion('Confirmation', 'Do you really want to restart the application?')

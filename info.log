@@ -6689,3 +6689,153 @@
 2022-03-22 17:56:06,720 INFO :: Getting Binance trade size...
 2022-03-22 17:56:07,399 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
 2022-03-22 17:56:07,400 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 10:42:49,726 INFO :: Binance Spot Client successfully initialized
+2022-03-23 10:42:51,959 INFO :: Binance connection opened
+2022-03-23 10:42:51,961 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-23 10:42:52,567 INFO :: Bitmex Client successfully initialized
+2022-03-23 10:42:54,100 INFO :: Bitmex connection opened
+2022-03-23 10:43:06,419 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-23 10:43:06,974 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-23 10:43:07,455 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-23 10:43:09,606 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-23 10:43:10,410 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-23 10:43:11,300 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-03-23 10:43:12,093 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-03-23 10:43:17,753 INFO :: Getting Binance trade size...
+2022-03-23 10:43:18,240 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.01954
+2022-03-23 10:43:18,246 INFO :: Long signal on LTCUSDT 1m
+2022-03-23 10:43:18,732 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fe4a986a8e0>>: 'status'
+2022-03-23 10:43:18,732 ERROR :: Binance connection error: 'status'
+2022-03-23 10:45:40,908 INFO :: Binance Spot Client successfully initialized
+2022-03-23 10:45:43,069 INFO :: Binance connection opened
+2022-03-23 10:45:43,070 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-23 10:45:43,221 INFO :: Bitmex Client successfully initialized
+2022-03-23 10:45:44,906 INFO :: Bitmex connection opened
+2022-03-23 10:45:49,271 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-23 10:45:49,804 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-23 10:45:50,162 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-23 10:46:00,355 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-23 10:46:01,220 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-23 10:46:02,004 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 10:46:02,736 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-03-23 10:46:05,297 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 10:46:07,685 INFO :: Binance New candle for LTCUSDT 1m
+2022-03-23 10:46:08,268 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-03-23 10:46:31,823 INFO :: Getting Binance trade size...
+2022-03-23 10:46:32,523 INFO :: Binance current USDT balance = 239.9772124, trade size = 2.9
+2022-03-23 10:46:32,527 INFO :: Long signal on XRPUSDT 1m
+2022-03-23 10:46:33,012 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f80a965ad90>>: 'status'
+2022-03-23 10:46:33,013 ERROR :: Binance connection error: 'status'
+2022-03-23 10:46:33,013 INFO :: Getting Binance trade size...
+2022-03-23 10:46:34,059 INFO :: Binance current USDT balance = 239.9772124, trade size = 2.9
+2022-03-23 10:46:34,060 INFO :: Long signal on XRPUSDT 1m
+2022-03-23 10:46:34,321 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f80a965ad90>>: 'status'
+2022-03-23 10:46:34,321 ERROR :: Binance connection error: 'status'
+2022-03-23 10:46:34,321 WARNING :: Binance XRPUSDT: 2505 milliseconds of difference between the current time and the trade time
+2022-03-23 10:46:34,322 INFO :: Getting Binance trade size...
+2022-03-23 10:46:34,795 INFO :: Binance current USDT balance = 239.9772124, trade size = 2.9
+2022-03-23 10:46:34,796 INFO :: Long signal on XRPUSDT 1m
+2022-03-23 10:46:35,295 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f80a965ad90>>: 'status'
+2022-03-23 10:46:35,296 ERROR :: Binance connection error: 'status'
+2022-03-23 10:46:35,298 WARNING :: Binance BTCUSDT: 3286 milliseconds of difference between the current time and the trade time
+2022-03-23 10:46:35,298 WARNING :: Binance LTCUSDT: 3062 milliseconds of difference between the current time and the trade time
+2022-03-23 10:52:03,980 INFO :: Binance Spot Client successfully initialized
+2022-03-23 10:52:06,457 INFO :: Binance connection opened
+2022-03-23 10:52:06,458 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-23 10:52:07,072 INFO :: Bitmex Client successfully initialized
+2022-03-23 10:52:08,611 INFO :: Bitmex connection opened
+2022-03-23 10:52:16,630 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-23 10:52:17,208 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-23 10:52:18,129 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-23 10:52:19,233 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-23 10:52:20,665 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-23 10:52:21,107 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-03-23 10:52:22,747 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-03-23 10:53:03,157 INFO :: Binance New candle for LTCUSDT 1m
+2022-03-23 10:53:12,192 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 10:53:12,194 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 10:53:44,141 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-23 10:53:52,745 INFO :: Getting Binance trade size...
+2022-03-23 10:53:53,669 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.01949
+2022-03-23 10:53:53,673 INFO :: Long signal on LTCUSDT 1m
+2022-03-23 10:53:53,992 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fc3404d1d90>>: 'status'
+2022-03-23 10:53:53,992 ERROR :: Binance connection error: 'status'
+2022-03-23 10:55:34,316 INFO :: Binance Spot Client successfully initialized
+2022-03-23 10:55:36,556 INFO :: Binance connection opened
+2022-03-23 10:55:36,557 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-23 10:55:36,754 INFO :: Bitmex Client successfully initialized
+2022-03-23 10:55:38,425 INFO :: Bitmex connection opened
+2022-03-23 10:55:44,393 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-23 10:55:45,214 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-23 10:55:45,486 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-23 10:55:49,322 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-23 10:55:49,684 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-23 10:55:52,262 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-03-23 10:55:53,109 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-03-23 10:56:00,848 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 10:56:03,305 INFO :: Binance New candle for LTCUSDT 1m
+2022-03-23 10:56:05,763 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 10:56:24,790 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-23 10:57:00,326 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 10:57:02,265 INFO :: Binance New candle for LTCUSDT 1m
+2022-03-23 10:57:02,648 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 10:57:25,101 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-23 10:57:28,670 INFO :: Getting Binance trade size...
+2022-03-23 10:57:29,267 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 10:57:29,271 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 10:57:29,803 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f7ee9603d90>>: 'status'
+2022-03-23 10:57:29,803 ERROR :: Binance connection error: 'status'
+2022-03-23 10:57:29,806 INFO :: Getting Binance trade size...
+2022-03-23 10:57:30,273 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 10:57:30,276 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 10:57:30,553 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f7ee9603d90>>: 'status'
+2022-03-23 10:57:30,553 ERROR :: Binance connection error: 'status'
+2022-03-23 10:57:30,553 INFO :: Getting Binance trade size...
+2022-03-23 10:57:30,802 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 10:57:30,802 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 11:15:47,148 INFO :: Binance Futures Client successfully initialized
+2022-03-23 11:22:37,135 INFO :: Binance Spot Client successfully initialized
+2022-03-23 11:22:38,983 INFO :: Binance connection opened
+2022-03-23 11:22:38,983 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-23 11:22:39,381 INFO :: Bitmex Client successfully initialized
+2022-03-23 11:22:40,752 INFO :: Bitmex connection opened
+2022-03-23 11:22:45,006 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-23 11:22:45,645 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-23 11:22:46,259 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-23 11:22:49,175 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-23 11:22:50,006 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-23 11:22:50,903 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-03-23 11:22:52,442 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-03-23 11:23:00,083 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 11:23:00,329 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 11:23:03,775 INFO :: Binance New candle for LTCUSDT 1m
+2022-03-23 11:23:12,075 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-23 11:24:00,296 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 11:24:00,330 INFO :: Binance New candle for LTCUSDT 1m
+2022-03-23 11:24:01,527 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 11:24:13,809 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-23 11:24:39,233 INFO :: Getting Binance trade size...
+2022-03-23 11:24:39,927 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.01932
+2022-03-23 11:24:39,931 INFO :: Long signal on LTCUSDT 1m
+2022-03-23 11:24:40,198 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f95f95bad90>>: 'status'
+2022-03-23 11:24:40,198 ERROR :: Binance connection error: 'status'
+2022-03-23 16:50:15,115 INFO :: Binance Spot Client successfully initialized
+2022-03-23 16:50:17,627 INFO :: Binance connection opened
+2022-03-23 16:50:17,630 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-23 16:50:18,868 INFO :: Bitmex Client successfully initialized
+2022-03-23 16:50:20,398 INFO :: Bitmex connection opened
+2022-03-23 16:50:32,582 INFO :: Binance Spot Client successfully initialized
+2022-03-23 16:50:34,617 INFO :: Binance connection opened
+2022-03-23 16:50:34,617 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-23 16:50:35,048 INFO :: Bitmex Client successfully initialized
+2022-03-23 16:50:36,696 INFO :: Bitmex connection opened
+2022-03-23 16:50:40,766 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-23 16:50:41,594 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-23 16:50:41,864 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-23 16:50:44,587 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-23 16:50:45,134 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-23 16:50:46,469 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-03-23 16:50:47,133 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-03-23 16:51:00,959 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 16:51:01,862 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-23 16:51:07,771 INFO :: Binance New candle for ETHUSDT 1m
