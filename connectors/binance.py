@@ -275,7 +275,6 @@ class BinanceClient:
         ''' come back to this part (quantity)'''
         # data['quantity'] = quantity
         data['quantity'] = round(int(quantity / contract.lot_size) * contract.lot_size, 8)  # int() to round down
-
         data['type'] = order_type.upper()
 
         if price is not None:
@@ -286,10 +285,31 @@ class BinanceClient:
             data['timeInForce'] = tif
 
         if self.futures:
-            order_status = self._send_signed_request('POST', '/fapi/v1/order', data)
+            data['timestamp'] = int(time.time() * 1000)
+            data['signature'] = self._generate_signature(data)
+            order_status = self._make_request('POST', '/fapi/v1/order', data)
+            print(order_status)
         else:
+            # rules to pass LOT_SIZE filter
+            '''
+            {
+                "filterType": "LOT_SIZE",
+                "minQty": "0.00100000",
+                "maxQty": "100000.00000000",
+                "stepSize": "0.00100000"
+              }
+            quantity >= minQty
+            quantity <= maxQty
+            (quantity - minQty) % stepSize == 0
+            '''
+            print(data['quantity'])
+            if data['quantity'] < contract.min_ls:
+                data['quantity'] = contract.min_ls
+            print(data['quantity'])
             order_status = self._send_signed_request('POST', '/api/v3/order', data)
+            print(order_status)
 
+        '''
         if order_status is not None:
             if not self.futures:
                 if order_status['status'] == 'FILLED':
@@ -298,9 +318,9 @@ class BinanceClient:
                     order_status['avgPrice'] = 0
 
             order_status = OrderStatus(order_status, self.platform)
-
+        
         return order_status
-
+        '''
     # cancel order when required
     # receives the Contract and the order id to cancel
     # returns an OrderStatus object
@@ -438,7 +458,6 @@ class BinanceClient:
                 # when to sell when on a position, and check for all ongoing trades as well
                 try:
                     for b_index, strat in self.strategies.items():
-
                         if strat.contract.symbol == symbol:
                             for trade in strat.trades:
                                 if trade.status == 'open' and trade.entry_price is not None:

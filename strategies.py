@@ -176,7 +176,7 @@ class Strategy:
 
             avg_fill_price = None
 
-            if order_status.status == "filled":
+            if order_status.status == "filled" or order_status.status == 'FILLED':
                 avg_fill_price = order_status.avg_price
             else:
                 t = Timer(2.0, lambda: self._check_order_status(order_status.order_id))

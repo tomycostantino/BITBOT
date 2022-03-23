@@ -6839,3 +6839,1942 @@
 2022-03-23 16:51:00,959 INFO :: Binance New candle for BTCUSDT 1m
 2022-03-23 16:51:01,862 INFO :: Binance New candle for XRPUSDT 1m
 2022-03-23 16:51:07,771 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 17:12:47,727 INFO :: Binance Spot Client successfully initialized
+2022-03-23 17:12:52,314 INFO :: Binance connection opened
+2022-03-23 17:12:52,317 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-23 17:12:53,717 INFO :: Bitmex Client successfully initialized
+2022-03-23 17:12:55,493 INFO :: Bitmex connection opened
+2022-03-23 17:13:09,411 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-23 17:13:10,433 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-23 17:13:11,464 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-23 17:13:15,221 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-23 17:13:19,321 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-03-23 17:13:21,310 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-23 17:13:22,558 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-03-23 17:13:55,772 INFO :: Getting Binance trade size...
+2022-03-23 17:13:56,399 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:13:56,401 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:13:56,933 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f831185bee0>>: 'status'
+2022-03-23 17:13:56,933 ERROR :: Binance connection error: 'status'
+2022-03-23 17:13:56,935 INFO :: Getting Binance trade size...
+2022-03-23 17:13:58,782 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:13:58,783 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:13:59,691 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f831185bee0>>: 'status'
+2022-03-23 17:13:59,692 ERROR :: Binance connection error: 'status'
+2022-03-23 17:13:59,695 WARNING :: Binance ETHUSDT: 4675 milliseconds of difference between the current time and the trade time
+2022-03-23 17:13:59,695 INFO :: Getting Binance trade size...
+2022-03-23 17:14:00,151 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:14:00,151 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:14:00,404 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f831185bee0>>: 'status'
+2022-03-23 17:14:00,404 ERROR :: Binance connection error: 'status'
+2022-03-23 17:14:00,406 WARNING :: Binance BTCUSDT: 5364 milliseconds of difference between the current time and the trade time
+2022-03-23 17:14:00,407 WARNING :: Binance BTCUSDT: 4601 milliseconds of difference between the current time and the trade time
+2022-03-23 17:14:00,408 WARNING :: Binance BTCUSDT: 4602 milliseconds of difference between the current time and the trade time
+2022-03-23 17:14:00,408 WARNING :: Binance BTCUSDT: 4586 milliseconds of difference between the current time and the trade time
+2022-03-23 17:14:00,409 WARNING :: Binance LTCUSDT: 4439 milliseconds of difference between the current time and the trade time
+2022-03-23 17:14:00,409 INFO :: Getting Binance trade size...
+2022-03-23 17:14:01,233 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.01995
+2022-03-23 17:14:01,233 INFO :: Long signal on LTCUSDT 1m
+2022-03-23 17:14:02,107 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f831185bee0>>: 'status'
+2022-03-23 17:14:02,107 ERROR :: Binance connection error: 'status'
+2022-03-23 17:14:02,108 WARNING :: Binance ETHUSDT: 6094 milliseconds of difference between the current time and the trade time
+2022-03-23 17:14:02,108 INFO :: Getting Binance trade size...
+2022-03-23 17:14:03,379 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:14:03,380 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:14:43,778 INFO :: Binance Spot Client successfully initialized
+2022-03-23 17:14:47,467 INFO :: Binance connection opened
+2022-03-23 17:14:47,469 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-23 17:14:48,289 INFO :: Bitmex Client successfully initialized
+2022-03-23 17:14:50,224 INFO :: Bitmex connection opened
+2022-03-23 17:14:53,794 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-23 17:14:54,323 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-23 17:14:54,878 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-23 17:15:01,891 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-23 17:15:05,167 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-03-23 17:15:07,678 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-23 17:15:11,687 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-03-23 17:15:17,444 INFO :: Binance New candle for LTCUSDT 1m
+2022-03-23 17:17:41,659 INFO :: Binance Spot Client successfully initialized
+2022-03-23 17:17:45,490 INFO :: Bitmex Client successfully initialized
+2022-03-23 17:17:45,677 INFO :: Binance connection opened
+2022-03-23 17:17:45,678 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-23 17:17:46,982 INFO :: Bitmex connection opened
+2022-03-23 17:17:50,364 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-23 17:17:51,964 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-23 17:17:52,555 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-23 17:18:11,078 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-23 17:18:13,858 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-23 17:18:14,729 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-03-23 17:18:16,840 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-03-23 17:18:22,174 WARNING :: Binance ETHUSDT: 2077 milliseconds of difference between the current time and the trade time
+2022-03-23 17:18:22,175 WARNING :: Binance ETHUSDT: 2079 milliseconds of difference between the current time and the trade time
+2022-03-23 17:19:00,754 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 17:19:02,884 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 17:19:20,235 INFO :: Binance New candle for LTCUSDT 1m
+2022-03-23 17:19:48,222 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-23 17:21:47,689 INFO :: Binance Spot Client successfully initialized
+2022-03-23 17:21:49,560 INFO :: Binance connection opened
+2022-03-23 17:21:49,561 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-23 17:21:49,879 INFO :: Bitmex Client successfully initialized
+2022-03-23 17:21:51,254 INFO :: Bitmex connection opened
+2022-03-23 17:21:56,025 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-23 17:21:56,778 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-23 17:21:57,264 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-23 17:22:01,654 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-23 17:22:01,927 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 17:22:03,101 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-23 17:22:04,344 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-03-23 17:22:05,640 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-03-23 17:22:21,225 INFO :: Getting Binance trade size...
+2022-03-23 17:22:21,756 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:22:21,758 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:22:21,760 INFO :: Getting Binance trade size...
+2022-03-23 17:22:22,272 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:22:22,272 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:22:22,273 INFO :: Getting Binance trade size...
+2022-03-23 17:22:22,535 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:22:22,536 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:22:22,540 INFO :: Getting Binance trade size...
+2022-03-23 17:22:23,020 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:22:23,021 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:22:23,022 INFO :: Getting Binance trade size...
+2022-03-23 17:22:23,501 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:22:23,501 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:22:25,775 INFO :: Getting Binance trade size...
+2022-03-23 17:22:26,016 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:22:26,017 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:22:26,018 INFO :: Getting Binance trade size...
+2022-03-23 17:22:26,254 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:22:26,255 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:22:42,237 INFO :: Getting Binance trade size...
+2022-03-23 17:22:42,732 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:22:42,733 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:22:42,733 INFO :: Getting Binance trade size...
+2022-03-23 17:22:43,472 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:22:43,472 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:22:43,473 INFO :: Getting Binance trade size...
+2022-03-23 17:22:43,751 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:22:43,752 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:22:43,752 INFO :: Getting Binance trade size...
+2022-03-23 17:22:44,243 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:22:44,243 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:22:55,459 INFO :: Getting Binance trade size...
+2022-03-23 17:22:55,948 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:22:55,948 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:22:55,950 INFO :: Getting Binance trade size...
+2022-03-23 17:22:56,985 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:22:56,985 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:22:56,985 INFO :: Getting Binance trade size...
+2022-03-23 17:22:57,461 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:22:57,461 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:22:57,461 INFO :: Getting Binance trade size...
+2022-03-23 17:22:58,827 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:22:58,828 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:22:58,828 WARNING :: Binance ETHUSDT: 2746 milliseconds of difference between the current time and the trade time
+2022-03-23 17:22:58,828 INFO :: Getting Binance trade size...
+2022-03-23 17:22:59,078 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:22:59,078 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:22:59,079 WARNING :: Binance ETHUSDT: 2984 milliseconds of difference between the current time and the trade time
+2022-03-23 17:22:59,079 INFO :: Getting Binance trade size...
+2022-03-23 17:22:59,321 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:22:59,322 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:22:59,323 WARNING :: Binance BTCUSDT: 2281 milliseconds of difference between the current time and the trade time
+2022-03-23 17:22:59,323 WARNING :: Binance ETHUSDT: 2028 milliseconds of difference between the current time and the trade time
+2022-03-23 17:22:59,323 INFO :: Getting Binance trade size...
+2022-03-23 17:22:59,581 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:22:59,581 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:22:59,581 WARNING :: Binance ETHUSDT: 2286 milliseconds of difference between the current time and the trade time
+2022-03-23 17:22:59,582 INFO :: Getting Binance trade size...
+2022-03-23 17:22:59,822 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:22:59,822 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:22:59,823 WARNING :: Binance ETHUSDT: 2514 milliseconds of difference between the current time and the trade time
+2022-03-23 17:22:59,824 INFO :: Getting Binance trade size...
+2022-03-23 17:23:00,058 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:00,058 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:00,059 WARNING :: Binance ETHUSDT: 2750 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:00,059 INFO :: Getting Binance trade size...
+2022-03-23 17:23:00,307 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:00,307 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:00,307 WARNING :: Binance ETHUSDT: 2330 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:00,307 INFO :: Getting Binance trade size...
+2022-03-23 17:23:00,563 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:00,564 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:00,565 INFO :: Getting Binance trade size...
+2022-03-23 17:23:00,803 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:00,803 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:00,803 INFO :: Getting Binance trade size...
+2022-03-23 17:23:01,040 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:01,041 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:01,042 INFO :: Getting Binance trade size...
+2022-03-23 17:23:01,267 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:01,267 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:01,268 WARNING :: Binance ETHUSDT: 2075 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:01,268 INFO :: Getting Binance trade size...
+2022-03-23 17:23:01,498 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:01,498 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:01,499 WARNING :: Binance BTCUSDT: 2057 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:01,502 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 17:23:01,502 INFO :: Getting Binance trade size...
+2022-03-23 17:23:01,753 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:01,753 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:01,754 INFO :: Getting Binance trade size...
+2022-03-23 17:23:01,996 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:01,996 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:01,997 INFO :: Getting Binance trade size...
+2022-03-23 17:23:02,251 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:02,251 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:02,252 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 17:23:02,252 INFO :: Getting Binance trade size...
+2022-03-23 17:23:02,514 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:02,514 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:02,517 INFO :: Getting Binance trade size...
+2022-03-23 17:23:02,789 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:02,789 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:02,790 INFO :: Getting Binance trade size...
+2022-03-23 17:23:03,037 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:03,037 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:03,038 INFO :: Getting Binance trade size...
+2022-03-23 17:23:03,287 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:03,287 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:03,288 INFO :: Getting Binance trade size...
+2022-03-23 17:23:03,540 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:03,541 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:03,541 INFO :: Getting Binance trade size...
+2022-03-23 17:23:03,796 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:03,796 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:03,796 INFO :: Getting Binance trade size...
+2022-03-23 17:23:04,019 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:04,020 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:04,020 INFO :: Getting Binance trade size...
+2022-03-23 17:23:04,256 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:04,256 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:05,904 INFO :: Getting Binance trade size...
+2022-03-23 17:23:06,216 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:06,216 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:07,122 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-23 17:23:07,123 INFO :: Getting Binance trade size...
+2022-03-23 17:23:07,621 INFO :: Binance current USDT balance = 239.9772124, trade size = 2.9
+2022-03-23 17:23:07,622 INFO :: Long signal on XRPUSDT 1m
+2022-03-23 17:23:08,176 INFO :: Getting Binance trade size...
+2022-03-23 17:23:08,429 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:08,430 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:08,934 INFO :: Getting Binance trade size...
+2022-03-23 17:23:09,187 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:09,187 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:09,188 INFO :: Getting Binance trade size...
+2022-03-23 17:23:09,428 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:09,428 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:09,428 INFO :: Getting Binance trade size...
+2022-03-23 17:23:10,205 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:10,211 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:10,576 INFO :: Getting Binance trade size...
+2022-03-23 17:23:10,854 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:10,855 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:12,976 INFO :: Getting Binance trade size...
+2022-03-23 17:23:13,577 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:13,578 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:14,801 INFO :: Getting Binance trade size...
+2022-03-23 17:23:15,059 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:15,060 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:15,061 INFO :: Getting Binance trade size...
+2022-03-23 17:23:15,536 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:15,536 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:15,537 INFO :: Getting Binance trade size...
+2022-03-23 17:23:15,776 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:15,777 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:15,778 INFO :: Getting Binance trade size...
+2022-03-23 17:23:16,027 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:16,027 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:16,028 INFO :: Getting Binance trade size...
+2022-03-23 17:23:16,287 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:16,288 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:16,289 INFO :: Getting Binance trade size...
+2022-03-23 17:23:16,565 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:16,566 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:16,566 INFO :: Getting Binance trade size...
+2022-03-23 17:23:16,819 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:16,820 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:16,821 INFO :: Getting Binance trade size...
+2022-03-23 17:23:17,128 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:17,129 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:17,132 INFO :: Getting Binance trade size...
+2022-03-23 17:23:17,611 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:17,612 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:17,614 INFO :: Getting Binance trade size...
+2022-03-23 17:23:17,875 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:17,876 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:17,877 INFO :: Getting Binance trade size...
+2022-03-23 17:23:18,174 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:18,175 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:18,176 WARNING :: Binance ETHUSDT: 2261 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:18,176 INFO :: Getting Binance trade size...
+2022-03-23 17:23:18,433 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:18,433 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:18,434 WARNING :: Binance ETHUSDT: 2519 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:18,434 INFO :: Getting Binance trade size...
+2022-03-23 17:23:18,678 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:18,678 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:18,678 WARNING :: Binance ETHUSDT: 2763 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:18,678 INFO :: Getting Binance trade size...
+2022-03-23 17:23:18,954 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:18,955 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:18,955 WARNING :: Binance ETHUSDT: 3040 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:18,955 INFO :: Getting Binance trade size...
+2022-03-23 17:23:19,220 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:19,221 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:19,221 WARNING :: Binance ETHUSDT: 3306 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:19,222 INFO :: Getting Binance trade size...
+2022-03-23 17:23:20,024 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:20,024 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:20,025 WARNING :: Binance ETHUSDT: 4110 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:20,025 INFO :: Getting Binance trade size...
+2022-03-23 17:23:20,335 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:20,335 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:20,336 WARNING :: Binance ETHUSDT: 4421 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:20,337 INFO :: Getting Binance trade size...
+2022-03-23 17:23:20,609 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:20,610 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:20,610 WARNING :: Binance ETHUSDT: 4695 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:20,611 INFO :: Getting Binance trade size...
+2022-03-23 17:23:20,898 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:20,899 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:20,900 WARNING :: Binance ETHUSDT: 4984 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:20,900 INFO :: Getting Binance trade size...
+2022-03-23 17:23:21,155 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:21,155 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:21,156 WARNING :: Binance ETHUSDT: 5241 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:21,156 INFO :: Getting Binance trade size...
+2022-03-23 17:23:21,433 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:21,433 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:21,434 WARNING :: Binance ETHUSDT: 5519 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:21,434 INFO :: Getting Binance trade size...
+2022-03-23 17:23:21,692 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:21,693 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:21,693 WARNING :: Binance ETHUSDT: 5778 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:21,694 INFO :: Getting Binance trade size...
+2022-03-23 17:23:21,972 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:21,973 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:21,974 WARNING :: Binance ETHUSDT: 6059 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:21,974 INFO :: Getting Binance trade size...
+2022-03-23 17:23:22,236 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:22,236 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:22,238 WARNING :: Binance ETHUSDT: 6323 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:22,238 INFO :: Getting Binance trade size...
+2022-03-23 17:23:22,513 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:22,513 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:22,513 WARNING :: Binance ETHUSDT: 6598 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:22,514 INFO :: Getting Binance trade size...
+2022-03-23 17:23:22,756 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:22,757 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:22,758 WARNING :: Binance ETHUSDT: 6843 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:22,758 INFO :: Getting Binance trade size...
+2022-03-23 17:23:23,007 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:23,007 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:23,007 WARNING :: Binance ETHUSDT: 7092 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:23,007 INFO :: Getting Binance trade size...
+2022-03-23 17:23:23,240 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:23,240 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:23,241 WARNING :: Binance ETHUSDT: 7326 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:23,241 INFO :: Getting Binance trade size...
+2022-03-23 17:23:23,493 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:23,494 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:23,494 WARNING :: Binance ETHUSDT: 7579 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:23,494 INFO :: Getting Binance trade size...
+2022-03-23 17:23:23,770 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:23,770 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:23,772 WARNING :: Binance ETHUSDT: 7857 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:23,772 INFO :: Getting Binance trade size...
+2022-03-23 17:23:24,033 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.0008
+2022-03-23 17:23:24,034 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:24,036 WARNING :: Binance ETHUSDT: 7841 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:24,037 INFO :: Getting Binance trade size...
+2022-03-23 17:23:24,282 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:24,282 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:24,283 WARNING :: Binance ETHUSDT: 8069 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:24,283 INFO :: Getting Binance trade size...
+2022-03-23 17:23:24,511 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:24,511 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:24,512 WARNING :: Binance ETHUSDT: 8102 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:24,512 INFO :: Getting Binance trade size...
+2022-03-23 17:23:24,754 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:24,754 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:24,756 WARNING :: Binance BTCUSDT: 7920 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:24,757 INFO :: Getting Binance trade size...
+2022-03-23 17:23:25,012 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:25,012 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:25,014 WARNING :: Binance BTCUSDT: 7571 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:25,014 INFO :: Getting Binance trade size...
+2022-03-23 17:23:25,269 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:25,270 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:25,271 WARNING :: Binance ETHUSDT: 5997 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:25,271 INFO :: Getting Binance trade size...
+2022-03-23 17:23:25,540 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:25,540 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:25,541 WARNING :: Binance BTCUSDT: 5698 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:25,542 INFO :: Getting Binance trade size...
+2022-03-23 17:23:25,797 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:25,798 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:25,800 WARNING :: Binance BTCUSDT: 3557 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:25,800 INFO :: Getting Binance trade size...
+2022-03-23 17:23:26,052 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:26,052 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:26,052 WARNING :: Binance BTCUSDT: 3678 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:26,052 INFO :: Getting Binance trade size...
+2022-03-23 17:23:26,319 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:26,320 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:26,321 INFO :: Getting Binance trade size...
+2022-03-23 17:23:26,573 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:26,573 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:26,979 INFO :: Getting Binance trade size...
+2022-03-23 17:23:27,292 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:27,293 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:30,172 INFO :: Getting Binance trade size...
+2022-03-23 17:23:30,453 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:30,454 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:32,003 INFO :: Getting Binance trade size...
+2022-03-23 17:23:32,624 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:32,624 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:34,184 INFO :: Getting Binance trade size...
+2022-03-23 17:23:34,669 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:34,670 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:36,614 INFO :: Getting Binance trade size...
+2022-03-23 17:23:36,892 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:36,893 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:36,893 INFO :: Getting Binance trade size...
+2022-03-23 17:23:37,539 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:37,540 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:39,083 INFO :: Getting Binance trade size...
+2022-03-23 17:23:39,690 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:39,691 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:39,691 INFO :: Getting Binance trade size...
+2022-03-23 17:23:39,992 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:39,993 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:40,236 INFO :: Getting Binance trade size...
+2022-03-23 17:23:40,498 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:40,498 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:41,527 INFO :: Getting Binance trade size...
+2022-03-23 17:23:41,786 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:41,786 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:43,989 INFO :: Getting Binance trade size...
+2022-03-23 17:23:44,604 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:44,605 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:46,441 INFO :: Getting Binance trade size...
+2022-03-23 17:23:46,745 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:46,745 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:48,593 INFO :: Getting Binance trade size...
+2022-03-23 17:23:48,846 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:48,847 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:48,894 INFO :: Getting Binance trade size...
+2022-03-23 17:23:49,133 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:49,134 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:49,135 INFO :: Getting Binance trade size...
+2022-03-23 17:23:49,413 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:49,414 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:51,052 INFO :: Getting Binance trade size...
+2022-03-23 17:23:51,554 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:51,554 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:52,278 INFO :: Getting Binance trade size...
+2022-03-23 17:23:52,536 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:52,537 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:53,491 INFO :: Getting Binance trade size...
+2022-03-23 17:23:53,744 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:53,745 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:55,985 INFO :: Getting Binance trade size...
+2022-03-23 17:23:56,493 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:56,493 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:56,495 INFO :: Getting Binance trade size...
+2022-03-23 17:23:57,209 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:57,210 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:57,211 INFO :: Getting Binance trade size...
+2022-03-23 17:23:57,817 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:57,818 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:57,819 INFO :: Getting Binance trade size...
+2022-03-23 17:23:58,083 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:58,083 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:58,084 WARNING :: Binance BTCUSDT: 2084 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:58,085 INFO :: Getting Binance trade size...
+2022-03-23 17:23:58,364 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:58,364 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:58,366 WARNING :: Binance BTCUSDT: 2365 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:58,366 INFO :: Getting Binance trade size...
+2022-03-23 17:23:58,638 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:58,639 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:58,642 WARNING :: Binance XRPUSDT: 2215 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:58,643 INFO :: Getting Binance trade size...
+2022-03-23 17:23:58,904 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:58,905 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:58,906 WARNING :: Binance BTCUSDT: 2045 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:58,907 INFO :: Getting Binance trade size...
+2022-03-23 17:23:59,156 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:59,157 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:59,157 WARNING :: Binance BTCUSDT: 2296 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:59,157 INFO :: Getting Binance trade size...
+2022-03-23 17:23:59,410 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:23:59,411 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:23:59,413 WARNING :: Binance ETHUSDT: 2524 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:59,413 INFO :: Getting Binance trade size...
+2022-03-23 17:23:59,714 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:59,714 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:59,716 WARNING :: Binance ETHUSDT: 2797 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:59,716 INFO :: Getting Binance trade size...
+2022-03-23 17:23:59,997 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:23:59,998 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:23:59,999 WARNING :: Binance ETHUSDT: 3080 milliseconds of difference between the current time and the trade time
+2022-03-23 17:23:59,999 INFO :: Getting Binance trade size...
+2022-03-23 17:24:00,280 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:24:00,280 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:24:00,280 WARNING :: Binance ETHUSDT: 3361 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:00,281 INFO :: Getting Binance trade size...
+2022-03-23 17:24:00,556 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:24:00,556 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:24:00,557 WARNING :: Binance ETHUSDT: 2736 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:00,557 INFO :: Getting Binance trade size...
+2022-03-23 17:24:00,823 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:24:00,824 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:24:00,826 WARNING :: Binance BTCUSDT: 2985 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:00,826 INFO :: Getting Binance trade size...
+2022-03-23 17:24:01,095 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:24:01,096 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:24:01,097 WARNING :: Binance BTCUSDT: 3256 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:01,097 INFO :: Getting Binance trade size...
+2022-03-23 17:24:01,364 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:24:01,365 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:24:01,366 WARNING :: Binance ETHUSDT: 3516 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:01,366 INFO :: Getting Binance trade size...
+2022-03-23 17:24:01,634 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:24:01,635 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:24:01,636 WARNING :: Binance BTCUSDT: 3781 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:01,636 INFO :: Getting Binance trade size...
+2022-03-23 17:24:01,895 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:24:01,896 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:24:01,897 WARNING :: Binance BTCUSDT: 4042 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:01,897 INFO :: Getting Binance trade size...
+2022-03-23 17:24:02,185 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:24:02,185 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:24:02,186 WARNING :: Binance BTCUSDT: 4331 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:02,186 INFO :: Getting Binance trade size...
+2022-03-23 17:24:02,436 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:24:02,436 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:24:02,438 WARNING :: Binance ETHUSDT: 4287 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:02,438 INFO :: Getting Binance trade size...
+2022-03-23 17:24:02,768 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:24:02,768 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:24:02,770 WARNING :: Binance ETHUSDT: 4605 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:02,770 INFO :: Getting Binance trade size...
+2022-03-23 17:24:03,045 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:24:03,046 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:24:03,047 WARNING :: Binance ETHUSDT: 4882 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:03,048 INFO :: Getting Binance trade size...
+2022-03-23 17:24:03,341 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:24:03,342 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:24:03,344 WARNING :: Binance BTCUSDT: 4500 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:03,344 INFO :: Getting Binance trade size...
+2022-03-23 17:24:03,609 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:24:03,609 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:24:03,610 WARNING :: Binance BTCUSDT: 4766 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:03,610 INFO :: Getting Binance trade size...
+2022-03-23 17:24:03,875 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:24:03,876 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:24:03,878 WARNING :: Binance BTCUSDT: 5019 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:03,878 INFO :: Getting Binance trade size...
+2022-03-23 17:24:04,158 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:24:04,159 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:24:04,160 WARNING :: Binance BTCUSDT: 5301 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:04,160 INFO :: Getting Binance trade size...
+2022-03-23 17:24:04,421 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:24:04,421 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:24:04,422 WARNING :: Binance ETHUSDT: 5223 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:04,423 INFO :: Getting Binance trade size...
+2022-03-23 17:24:04,686 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:24:04,687 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:24:04,688 WARNING :: Binance ETHUSDT: 5489 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:04,688 INFO :: Getting Binance trade size...
+2022-03-23 17:24:04,953 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:24:04,954 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:24:04,956 WARNING :: Binance ETHUSDT: 5744 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:04,956 INFO :: Getting Binance trade size...
+2022-03-23 17:24:05,212 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:24:05,213 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:24:05,214 WARNING :: Binance ETHUSDT: 6002 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:05,214 INFO :: Getting Binance trade size...
+2022-03-23 17:24:05,479 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:24:05,480 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:24:05,482 WARNING :: Binance XRPUSDT: 6069 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:05,482 INFO :: Getting Binance trade size...
+2022-03-23 17:24:05,744 INFO :: Binance current USDT balance = 239.9772124, trade size = 2.9
+2022-03-23 17:24:05,744 INFO :: Long signal on XRPUSDT 1m
+2022-03-23 17:24:05,745 WARNING :: Binance BTCUSDT: 5769 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:05,745 INFO :: Getting Binance trade size...
+2022-03-23 17:24:06,017 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:24:06,018 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:24:06,020 WARNING :: Binance ETHUSDT: 6038 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:06,021 INFO :: Getting Binance trade size...
+2022-03-23 17:24:06,264 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:24:06,265 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:24:06,265 WARNING :: Binance ETHUSDT: 6283 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:06,266 INFO :: Getting Binance trade size...
+2022-03-23 17:24:06,513 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:24:06,513 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:24:06,518 WARNING :: Binance BTCUSDT: 6273 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:06,518 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 17:24:06,519 INFO :: Getting Binance trade size...
+2022-03-23 17:24:06,778 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:24:06,779 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:24:06,781 WARNING :: Binance ETHUSDT: 5195 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:06,781 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 17:24:06,782 WARNING :: Binance ETHUSDT: 5164 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:06,782 WARNING :: Binance ETHUSDT: 5164 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:06,782 WARNING :: Binance ETHUSDT: 5164 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:06,783 WARNING :: Binance ETHUSDT: 4205 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:06,784 WARNING :: Binance ETHUSDT: 4206 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:06,784 WARNING :: Binance ETHUSDT: 4191 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:06,785 WARNING :: Binance ETHUSDT: 4192 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:06,785 WARNING :: Binance BTCUSDT: 4143 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:06,786 WARNING :: Binance ETHUSDT: 3413 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:06,786 WARNING :: Binance ETHUSDT: 3413 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:06,786 WARNING :: Binance ETHUSDT: 3397 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:06,787 WARNING :: Binance ETHUSDT: 3398 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:06,787 WARNING :: Binance ETHUSDT: 2356 milliseconds of difference between the current time and the trade time
+2022-03-23 17:24:06,788 WARNING :: Binance ETHUSDT: 2357 milliseconds of difference between the current time and the trade time
+2022-03-23 17:33:03,702 INFO :: Binance Spot Client successfully initialized
+2022-03-23 17:33:05,918 INFO :: Binance connection opened
+2022-03-23 17:33:05,919 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-23 17:33:06,473 INFO :: Bitmex Client successfully initialized
+2022-03-23 17:33:08,012 INFO :: Bitmex connection opened
+2022-03-23 17:33:11,327 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-23 17:33:11,878 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-23 17:33:12,124 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-23 17:33:17,627 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-23 17:33:18,835 INFO :: Getting Binance trade size...
+2022-03-23 17:33:18,920 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-23 17:33:19,312 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:33:19,315 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:33:19,783 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fc3f8061f10>>: 'status'
+2022-03-23 17:33:19,784 ERROR :: Binance connection error: 'status'
+2022-03-23 17:33:19,785 INFO :: Getting Binance trade size...
+2022-03-23 17:33:20,024 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:33:20,024 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:33:20,169 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-03-23 17:33:20,250 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fc3f8061f10>>: 'status'
+2022-03-23 17:33:20,250 ERROR :: Binance connection error: 'status'
+2022-03-23 17:33:20,250 INFO :: Getting Binance trade size...
+2022-03-23 17:33:20,699 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:33:20,699 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:33:20,921 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fc3f8061f10>>: 'status'
+2022-03-23 17:33:20,921 ERROR :: Binance connection error: 'status'
+2022-03-23 17:33:20,922 INFO :: Getting Binance trade size...
+2022-03-23 17:33:21,160 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:33:21,161 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:33:21,398 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fc3f8061f10>>: 'status'
+2022-03-23 17:33:21,398 ERROR :: Binance connection error: 'status'
+2022-03-23 17:33:21,399 INFO :: Getting Binance trade size...
+2022-03-23 17:33:21,645 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:33:21,645 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:33:21,888 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fc3f8061f10>>: 'status'
+2022-03-23 17:33:21,888 ERROR :: Binance connection error: 'status'
+2022-03-23 17:33:21,888 WARNING :: Binance BTCUSDT: 2019 milliseconds of difference between the current time and the trade time
+2022-03-23 17:33:21,889 INFO :: Getting Binance trade size...
+2022-03-23 17:33:22,140 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:33:22,140 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:33:22,368 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fc3f8061f10>>: 'status'
+2022-03-23 17:33:22,368 ERROR :: Binance connection error: 'status'
+2022-03-23 17:33:22,369 WARNING :: Binance BTCUSDT: 2491 milliseconds of difference between the current time and the trade time
+2022-03-23 17:33:22,369 INFO :: Getting Binance trade size...
+2022-03-23 17:33:22,618 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:33:22,619 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:33:22,840 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fc3f8061f10>>: 'status'
+2022-03-23 17:33:22,840 ERROR :: Binance connection error: 'status'
+2022-03-23 17:33:22,841 WARNING :: Binance BTCUSDT: 2963 milliseconds of difference between the current time and the trade time
+2022-03-23 17:33:22,841 INFO :: Getting Binance trade size...
+2022-03-23 17:33:23,094 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:33:23,094 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:33:23,342 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fc3f8061f10>>: 'status'
+2022-03-23 17:33:23,343 ERROR :: Binance connection error: 'status'
+2022-03-23 17:33:23,344 WARNING :: Binance BTCUSDT: 2427 milliseconds of difference between the current time and the trade time
+2022-03-23 17:33:23,344 INFO :: Getting Binance trade size...
+2022-03-23 17:33:23,577 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:33:23,578 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:33:23,794 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fc3f8061f10>>: 'status'
+2022-03-23 17:33:23,794 ERROR :: Binance connection error: 'status'
+2022-03-23 17:33:23,794 WARNING :: Binance BTCUSDT: 2877 milliseconds of difference between the current time and the trade time
+2022-03-23 17:33:23,794 INFO :: Getting Binance trade size...
+2022-03-23 17:33:24,026 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:33:24,027 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:33:24,289 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fc3f8061f10>>: 'status'
+2022-03-23 17:33:24,289 ERROR :: Binance connection error: 'status'
+2022-03-23 17:33:24,289 WARNING :: Binance BTCUSDT: 3362 milliseconds of difference between the current time and the trade time
+2022-03-23 17:33:24,289 INFO :: Getting Binance trade size...
+2022-03-23 17:33:24,522 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 17:33:24,523 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:33:24,772 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fc3f8061f10>>: 'status'
+2022-03-23 17:33:24,772 ERROR :: Binance connection error: 'status'
+2022-03-23 17:33:24,773 WARNING :: Binance BTCUSDT: 3846 milliseconds of difference between the current time and the trade time
+2022-03-23 17:33:24,773 INFO :: Getting Binance trade size...
+2022-03-23 17:48:40,524 INFO :: Binance Futures Client successfully initialized
+2022-03-23 17:48:44,815 INFO :: Bitmex Client successfully initialized
+2022-03-23 17:48:44,869 INFO :: Binance connection opened
+2022-03-23 17:48:44,870 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-23 17:48:46,550 INFO :: Bitmex connection opened
+2022-03-23 17:48:50,466 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-23 17:48:50,988 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-23 17:48:51,468 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-23 17:48:55,605 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-23 17:48:57,594 INFO :: Getting Binance trade size...
+2022-03-23 17:48:57,664 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-23 17:48:58,109 INFO :: Binance current USDT balance = 10534.93378825, trade size = 0.002
+2022-03-23 17:48:58,112 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:48:58,433 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-03-23 17:48:58,590 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fb480241c10>>: dictionary changed size during iteration
+2022-03-23 17:48:58,590 ERROR :: Binance connection error: dictionary changed size during iteration
+2022-03-23 17:48:58,591 INFO :: Getting Binance trade size...
+2022-03-23 17:48:58,831 INFO :: Binance current USDT balance = 10534.90004313, trade size = 0.036
+2022-03-23 17:48:58,831 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:48:59,076 INFO :: Getting Binance trade size...
+2022-03-23 17:48:59,315 INFO :: Binance current USDT balance = 10534.48829761, trade size = 0.036
+2022-03-23 17:48:59,315 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:48:59,554 INFO :: Getting Binance trade size...
+2022-03-23 17:49:00,050 INFO :: Binance current USDT balance = 10534.07223036, trade size = 0.002
+2022-03-23 17:49:00,050 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:49:00,298 INFO :: Getting Binance trade size...
+2022-03-23 17:49:00,550 INFO :: Binance current USDT balance = 10534.03847332, trade size = 0.002
+2022-03-23 17:49:00,551 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:49:00,821 INFO :: Getting Binance trade size...
+2022-03-23 17:49:01,296 INFO :: Binance current USDT balance = 10534.00471628, trade size = 0.002
+2022-03-23 17:49:01,297 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:49:01,563 WARNING :: Binance BTCUSDT: 2510 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:01,564 INFO :: Getting Binance trade size...
+2022-03-23 17:49:01,827 INFO :: Binance current USDT balance = 10533.97095924, trade size = 0.002
+2022-03-23 17:49:01,827 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:49:02,085 WARNING :: Binance BTCUSDT: 3032 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:02,085 INFO :: Getting Binance trade size...
+2022-03-23 17:49:02,394 INFO :: Binance current USDT balance = 10533.9372022, trade size = 0.002
+2022-03-23 17:49:02,395 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:49:02,642 WARNING :: Binance ETHUSDT: 3521 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:02,642 INFO :: Getting Binance trade size...
+2022-03-23 17:49:02,885 INFO :: Binance current USDT balance = 10533.90344516, trade size = 0.036
+2022-03-23 17:49:02,886 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:49:03,132 WARNING :: Binance ETHUSDT: 3577 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:03,133 INFO :: Getting Binance trade size...
+2022-03-23 17:49:03,412 INFO :: Binance current USDT balance = 10533.48557719, trade size = 0.036
+2022-03-23 17:49:03,413 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:49:03,668 WARNING :: Binance ETHUSDT: 4072 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:03,668 INFO :: Getting Binance trade size...
+2022-03-23 17:49:03,925 INFO :: Binance current USDT balance = 10533.06770922, trade size = 0.036
+2022-03-23 17:49:03,925 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:49:04,179 WARNING :: Binance LTCUSDT: 4409 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:04,180 WARNING :: Binance BTCUSDT: 4085 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:04,180 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 17:49:04,181 WARNING :: Binance ETHUSDT: 4128 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:04,181 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 17:49:04,181 WARNING :: Binance BTCUSDT: 4062 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:04,182 WARNING :: Binance BTCUSDT: 3836 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:04,182 WARNING :: Binance BTCUSDT: 3320 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:04,184 WARNING :: Binance BTCUSDT: 2578 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:04,184 WARNING :: Binance BTCUSDT: 2067 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:04,186 INFO :: Getting Binance trade size...
+2022-03-23 17:49:04,449 INFO :: Binance current USDT balance = 10532.60266239, trade size = 0.036
+2022-03-23 17:49:04,449 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:49:04,695 INFO :: Binance New candle for LTCUSDT 1m
+2022-03-23 17:49:04,696 INFO :: Getting Binance trade size...
+2022-03-23 17:49:05,173 INFO :: Binance current USDT balance = 10532.12861196, trade size = 0.876
+2022-03-23 17:49:05,174 INFO :: Long signal on LTCUSDT 1m
+2022-03-23 17:49:05,434 INFO :: Getting Binance trade size...
+2022-03-23 17:49:05,673 INFO :: Binance current USDT balance = 10530.60135161, trade size = 0.036
+2022-03-23 17:49:05,674 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:49:05,923 WARNING :: Binance ETHUSDT: 2196 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:05,923 INFO :: Getting Binance trade size...
+2022-03-23 17:49:06,307 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-03-23 17:49:06,403 INFO :: Binance current USDT balance = 10530.1381055, trade size = 0.036
+2022-03-23 17:49:06,403 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:49:06,651 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fb480241c10>>: dictionary changed size during iteration
+2022-03-23 17:49:06,651 ERROR :: Binance connection error: dictionary changed size during iteration
+2022-03-23 17:49:06,652 WARNING :: Binance ETHUSDT: 2925 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:06,652 INFO :: Getting Binance trade size...
+2022-03-23 17:49:06,898 INFO :: Binance current USDT balance = 10529.67485939, trade size = 0.036
+2022-03-23 17:49:06,898 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:49:07,135 WARNING :: Binance ETHUSDT: 3408 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:07,136 INFO :: Getting Binance trade size...
+2022-03-23 17:49:07,389 INFO :: Binance current USDT balance = 10529.21161328, trade size = 0.036
+2022-03-23 17:49:07,389 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:49:07,803 WARNING :: Binance ETHUSDT: 4076 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:07,803 INFO :: Getting Binance trade size...
+2022-03-23 17:49:08,046 INFO :: Binance current USDT balance = 10528.74836717, trade size = 0.036
+2022-03-23 17:49:08,047 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:49:08,312 WARNING :: Binance ETHUSDT: 4585 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:08,313 INFO :: Getting Binance trade size...
+2022-03-23 17:49:08,559 INFO :: Binance current USDT balance = 10528.28512106, trade size = 0.036
+2022-03-23 17:49:08,559 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:49:08,832 WARNING :: Binance ETHUSDT: 5105 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:08,832 INFO :: Getting Binance trade size...
+2022-03-23 17:49:09,097 INFO :: Binance current USDT balance = 10527.82187495, trade size = 0.036
+2022-03-23 17:49:09,098 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:49:09,370 WARNING :: Binance ETHUSDT: 5153 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:09,371 INFO :: Getting Binance trade size...
+2022-03-23 17:49:09,644 INFO :: Binance current USDT balance = 10527.42873147, trade size = 0.036
+2022-03-23 17:49:09,644 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:49:09,913 WARNING :: Binance ETHUSDT: 5186 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:09,914 INFO :: Getting Binance trade size...
+2022-03-23 17:49:10,154 INFO :: Binance current USDT balance = 10527.38609725, trade size = 0.036
+2022-03-23 17:49:10,154 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:49:10,408 WARNING :: Binance BTCUSDT: 5521 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:10,408 WARNING :: Binance BTCUSDT: 5521 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:10,409 WARNING :: Binance BTCUSDT: 5522 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:10,409 WARNING :: Binance BTCUSDT: 5522 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:10,409 INFO :: Getting Binance trade size...
+2022-03-23 17:49:10,668 INFO :: Binance current USDT balance = 10527.34346303, trade size = 0.002
+2022-03-23 17:49:10,669 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:49:10,894 WARNING :: Binance BTCUSDT: 6007 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:10,895 INFO :: Getting Binance trade size...
+2022-03-23 17:49:11,146 INFO :: Binance current USDT balance = 10527.30969376, trade size = 0.002
+2022-03-23 17:49:11,147 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:49:11,421 WARNING :: Binance LTCUSDT: 5952 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:11,421 INFO :: Getting Binance trade size...
+2022-03-23 17:49:11,659 INFO :: Binance current USDT balance = 10527.27591369, trade size = 0.875
+2022-03-23 17:49:11,659 INFO :: Long signal on LTCUSDT 1m
+2022-03-23 17:49:11,896 WARNING :: Binance ETHUSDT: 6262 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:11,896 INFO :: Getting Binance trade size...
+2022-03-23 17:49:12,145 INFO :: Binance current USDT balance = 10525.75039679, trade size = 0.036
+2022-03-23 17:49:12,146 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:49:12,390 WARNING :: Binance ETHUSDT: 6427 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:12,390 INFO :: Getting Binance trade size...
+2022-03-23 17:49:12,651 INFO :: Binance current USDT balance = 10525.70776214, trade size = 0.036
+2022-03-23 17:49:12,651 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:49:13,144 WARNING :: Binance ETHUSDT: 6460 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:13,144 INFO :: Getting Binance trade size...
+2022-03-23 17:49:13,437 INFO :: Binance current USDT balance = 10525.66512749, trade size = 0.036
+2022-03-23 17:49:13,437 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:49:13,699 WARNING :: Binance BTCUSDT: 6587 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:13,699 INFO :: Getting Binance trade size...
+2022-03-23 17:49:13,978 INFO :: Binance current USDT balance = 10525.62249327, trade size = 0.002
+2022-03-23 17:49:13,979 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:49:14,236 WARNING :: Binance BTCUSDT: 7124 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:14,236 INFO :: Getting Binance trade size...
+2022-03-23 17:49:14,473 INFO :: Binance current USDT balance = 10525.58870119, trade size = 0.002
+2022-03-23 17:49:14,473 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:49:14,727 WARNING :: Binance BTCUSDT: 7615 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:14,728 INFO :: Getting Binance trade size...
+2022-03-23 17:49:14,962 INFO :: Binance current USDT balance = 10525.55488519, trade size = 0.002
+2022-03-23 17:49:14,962 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 17:49:15,217 WARNING :: Binance ETHUSDT: 8042 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:15,218 INFO :: Getting Binance trade size...
+2022-03-23 17:49:15,473 INFO :: Binance current USDT balance = 10525.5210876, trade size = 0.036
+2022-03-23 17:49:15,473 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:49:15,722 WARNING :: Binance ETHUSDT: 8000 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:15,723 INFO :: Getting Binance trade size...
+2022-03-23 17:49:15,974 INFO :: Binance current USDT balance = 10525.4784541, trade size = 0.036
+2022-03-23 17:49:15,974 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:49:16,204 WARNING :: Binance ETHUSDT: 8360 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:16,204 INFO :: Getting Binance trade size...
+2022-03-23 17:49:16,471 INFO :: Binance current USDT balance = 10525.4358206, trade size = 0.036
+2022-03-23 17:49:16,471 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:49:16,717 WARNING :: Binance ETHUSDT: 8363 milliseconds of difference between the current time and the trade time
+2022-03-23 17:49:16,718 INFO :: Getting Binance trade size...
+2022-03-23 17:51:15,820 INFO :: Binance Futures Client successfully initialized
+2022-03-23 17:51:19,137 INFO :: Binance connection opened
+2022-03-23 17:51:19,140 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-23 17:51:20,764 INFO :: Bitmex Client successfully initialized
+2022-03-23 17:51:22,254 INFO :: Bitmex connection opened
+2022-03-23 17:51:40,908 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-23 17:51:41,645 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-23 17:51:42,263 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-23 17:51:44,156 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-23 17:51:44,760 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-23 17:51:50,000 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-03-23 17:51:51,187 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-03-23 17:51:52,024 INFO :: Getting Binance trade size...
+2022-03-23 17:51:52,502 INFO :: Binance current USDT balance = 10525.3931871, trade size = 0.877
+2022-03-23 17:51:52,504 INFO :: Short signal on LTCUSDT 1m
+2022-03-23 17:51:53,018 INFO :: Sell order placed on Binance | Status: new
+2022-03-23 17:51:53,018 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fd720502ee0>>: dictionary changed size during iteration
+2022-03-23 17:51:53,019 ERROR :: Binance connection error: dictionary changed size during iteration
+2022-03-23 17:51:53,936 INFO :: Getting Binance trade size...
+2022-03-23 17:51:54,228 INFO :: Binance current USDT balance = 10525.35110163, trade size = 0.036
+2022-03-23 17:51:54,228 INFO :: Short signal on ETHUSDT 1m
+2022-03-23 17:51:54,485 INFO :: Sell order placed on Binance | Status: new
+2022-03-23 17:51:55,774 INFO :: Binance order status: filled
+2022-03-23 17:51:57,002 INFO :: Getting Binance trade size...
+2022-03-23 17:51:57,007 INFO :: Binance order status: filled
+2022-03-23 17:51:57,492 INFO :: Binance current USDT balance = 10525.10502417, trade size = 126.3
+2022-03-23 17:51:57,493 INFO :: Long signal on XRPUSDT 1m
+2022-03-23 17:51:57,742 INFO :: Buy order placed on Binance | Status: new
+2022-03-23 17:52:00,393 INFO :: Binance order status: filled
+2022-03-23 17:52:03,514 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 17:52:04,063 INFO :: Binance New candle for LTCUSDT 1m
+2022-03-23 17:53:43,470 INFO :: Binance Futures Client successfully initialized
+2022-03-23 17:53:46,011 INFO :: Binance connection opened
+2022-03-23 17:53:46,012 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-23 17:53:47,294 INFO :: Bitmex Client successfully initialized
+2022-03-23 17:53:48,663 INFO :: Bitmex connection opened
+2022-03-23 17:53:51,739 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-23 17:53:52,308 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-23 17:53:52,670 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-23 17:53:55,321 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-23 17:53:57,198 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-23 17:53:58,370 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-03-23 17:53:59,753 INFO :: Getting Binance trade size...
+2022-03-23 17:54:00,070 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-03-23 17:54:00,293 INFO :: Binance current USDT balance = 10518.13993382, trade size = 0.036
+2022-03-23 17:54:00,295 INFO :: Short signal on ETHUSDT 1m
+2022-03-23 17:54:00,295 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fc2b1603ee0>>: _generate_signature() missing 1 required positional argument: 'data'
+2022-03-23 17:54:00,295 ERROR :: Binance connection error: _generate_signature() missing 1 required positional argument: 'data'
+2022-03-23 17:54:00,890 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 17:54:03,269 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-23 17:54:03,270 INFO :: Getting Binance trade size...
+2022-03-23 17:54:03,790 INFO :: Binance current USDT balance = 10518.13993382, trade size = 127.4
+2022-03-23 17:54:03,790 INFO :: Short signal on XRPUSDT 1m
+2022-03-23 17:54:03,791 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fc2b1603ee0>>: _generate_signature() missing 1 required positional argument: 'data'
+2022-03-23 17:54:03,791 ERROR :: Binance connection error: _generate_signature() missing 1 required positional argument: 'data'
+2022-03-23 17:54:03,791 INFO :: Getting Binance trade size...
+2022-03-23 17:54:04,097 INFO :: Binance current USDT balance = 10518.13993382, trade size = 127.5
+2022-03-23 17:54:04,097 INFO :: Short signal on XRPUSDT 1m
+2022-03-23 17:54:04,097 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fc2b1603ee0>>: _generate_signature() missing 1 required positional argument: 'data'
+2022-03-23 17:54:04,097 ERROR :: Binance connection error: _generate_signature() missing 1 required positional argument: 'data'
+2022-03-23 17:54:04,098 INFO :: Getting Binance trade size...
+2022-03-23 17:54:04,827 INFO :: Binance current USDT balance = 10518.13993382, trade size = 127.5
+2022-03-23 17:54:04,827 INFO :: Short signal on XRPUSDT 1m
+2022-03-23 17:54:04,827 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fc2b1603ee0>>: _generate_signature() missing 1 required positional argument: 'data'
+2022-03-23 17:54:04,827 ERROR :: Binance connection error: _generate_signature() missing 1 required positional argument: 'data'
+2022-03-23 17:54:04,828 WARNING :: Binance XRPUSDT: 2439 milliseconds of difference between the current time and the trade time
+2022-03-23 17:54:04,828 INFO :: Getting Binance trade size...
+2022-03-23 17:54:05,414 INFO :: Binance current USDT balance = 10518.13993382, trade size = 127.6
+2022-03-23 17:54:05,414 INFO :: Short signal on XRPUSDT 1m
+2022-03-23 17:54:05,414 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fc2b1603ee0>>: _generate_signature() missing 1 required positional argument: 'data'
+2022-03-23 17:54:05,414 ERROR :: Binance connection error: _generate_signature() missing 1 required positional argument: 'data'
+2022-03-23 17:54:05,415 WARNING :: Binance XRPUSDT: 3026 milliseconds of difference between the current time and the trade time
+2022-03-23 17:54:05,415 INFO :: Getting Binance trade size...
+2022-03-23 17:54:05,739 INFO :: Binance current USDT balance = 10518.13993382, trade size = 127.6
+2022-03-23 17:54:05,740 INFO :: Short signal on XRPUSDT 1m
+2022-03-23 17:54:05,740 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fc2b1603ee0>>: _generate_signature() missing 1 required positional argument: 'data'
+2022-03-23 17:54:05,741 ERROR :: Binance connection error: _generate_signature() missing 1 required positional argument: 'data'
+2022-03-23 17:54:05,743 WARNING :: Binance BTCUSDT: 2668 milliseconds of difference between the current time and the trade time
+2022-03-23 17:54:05,744 WARNING :: Binance BTCUSDT: 2669 milliseconds of difference between the current time and the trade time
+2022-03-23 17:54:05,746 WARNING :: Binance ETHUSDT: 2030 milliseconds of difference between the current time and the trade time
+2022-03-23 17:54:05,746 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 17:54:05,746 INFO :: Getting Binance trade size...
+2022-03-23 17:54:06,090 INFO :: Binance current USDT balance = 10518.13993382, trade size = 0.036
+2022-03-23 17:54:06,090 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:54:06,090 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fc2b1603ee0>>: _generate_signature() missing 1 required positional argument: 'data'
+2022-03-23 17:54:06,090 ERROR :: Binance connection error: _generate_signature() missing 1 required positional argument: 'data'
+2022-03-23 17:54:06,091 WARNING :: Binance ETHUSDT: 2238 milliseconds of difference between the current time and the trade time
+2022-03-23 17:54:06,091 INFO :: Getting Binance trade size...
+2022-03-23 17:54:06,469 INFO :: Binance current USDT balance = 10518.13993382, trade size = 0.036
+2022-03-23 17:54:06,469 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:54:06,469 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fc2b1603ee0>>: _generate_signature() missing 1 required positional argument: 'data'
+2022-03-23 17:54:06,470 ERROR :: Binance connection error: _generate_signature() missing 1 required positional argument: 'data'
+2022-03-23 17:54:07,094 INFO :: Binance New candle for LTCUSDT 1m
+2022-03-23 17:54:07,095 INFO :: Getting Binance trade size...
+2022-03-23 17:54:07,664 INFO :: Binance current USDT balance = 10518.13993382, trade size = 0.876
+2022-03-23 17:54:07,664 INFO :: Long signal on LTCUSDT 1m
+2022-03-23 17:54:07,664 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fc2b1603ee0>>: _generate_signature() missing 1 required positional argument: 'data'
+2022-03-23 17:54:07,664 ERROR :: Binance connection error: _generate_signature() missing 1 required positional argument: 'data'
+2022-03-23 17:55:43,254 INFO :: Binance Futures Client successfully initialized
+2022-03-23 17:55:45,840 INFO :: Binance connection opened
+2022-03-23 17:55:45,844 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-23 17:55:45,847 INFO :: Bitmex Client successfully initialized
+2022-03-23 17:55:47,717 INFO :: Bitmex connection opened
+2022-03-23 17:55:49,869 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-23 17:55:50,480 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-23 17:55:51,099 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-23 17:55:53,620 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-23 17:55:55,144 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-23 17:55:55,599 INFO :: Getting Binance trade size...
+2022-03-23 17:55:56,321 INFO :: Binance current USDT balance = 10518.13993382, trade size = 0.036
+2022-03-23 17:55:56,323 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:55:56,336 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-03-23 17:55:56,932 INFO :: Buy order placed on Binance | Status: new
+2022-03-23 17:55:56,933 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8f38102ee0>>: dictionary changed size during iteration
+2022-03-23 17:55:56,933 ERROR :: Binance connection error: dictionary changed size during iteration
+2022-03-23 17:55:57,555 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-03-23 17:55:59,695 INFO :: Binance order status: filled
+2022-03-23 17:56:03,364 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 17:56:14,211 INFO :: Binance New candle for LTCUSDT 1m
+2022-03-23 17:56:15,973 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 17:56:17,818 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-23 17:56:31,277 INFO :: Getting Binance trade size...
+2022-03-23 17:56:31,782 INFO :: Binance current USDT balance = 10518.09736325, trade size = 0.002
+2022-03-23 17:56:31,783 INFO :: Short signal on BTCUSDT 1m
+2022-03-23 17:56:32,568 INFO :: Sell order placed on Binance | Status: new
+2022-03-23 17:56:35,011 INFO :: Binance order status: filled
+2022-03-23 17:56:50,077 INFO :: Getting Binance trade size...
+2022-03-23 17:56:50,695 INFO :: Binance current USDT balance = 10518.07189762, trade size = 126.5
+2022-03-23 17:56:50,696 INFO :: Short signal on XRPUSDT 1m
+2022-03-23 17:56:51,308 INFO :: Sell order placed on Binance | Status: new
+2022-03-23 17:56:53,853 INFO :: Binance order status: filled
+2022-03-23 17:57:01,136 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 17:57:03,414 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 17:57:05,903 INFO :: Binance New candle for LTCUSDT 1m
+2022-03-23 17:57:09,843 INFO :: Getting Binance trade size...
+2022-03-23 17:57:10,435 INFO :: Binance current USDT balance = 10518.03018299, trade size = 0.876
+2022-03-23 17:57:10,435 INFO :: Short signal on LTCUSDT 1m
+2022-03-23 17:57:10,833 INFO :: Sell order placed on Binance | Status: new
+2022-03-23 17:57:13,424 INFO :: Binance order status: filled
+2022-03-23 17:57:23,109 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-23 17:57:25,093 INFO :: Stop loss for XRPUSDT 1m | Current Price = 0.834 (Entry price was 0.8244)
+2022-03-23 17:57:25,707 INFO :: Exit order on XRPUSDT 1m placed successfully
+2022-03-23 17:58:17,638 INFO :: Binance Spot Client successfully initialized
+2022-03-23 17:58:19,990 INFO :: Binance connection opened
+2022-03-23 17:58:19,992 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-23 17:58:20,248 INFO :: Bitmex Client successfully initialized
+2022-03-23 17:58:21,595 INFO :: Bitmex connection opened
+2022-03-23 17:58:23,688 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-23 17:58:24,312 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-23 17:58:25,144 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-23 17:58:27,162 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-23 17:58:28,491 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-23 17:58:29,513 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-03-23 17:58:31,081 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-03-23 17:58:58,176 INFO :: Getting Binance trade size...
+2022-03-23 17:58:58,808 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:58:58,811 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:58:59,332 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f7e501c2ee0>>: 'status'
+2022-03-23 17:58:59,333 ERROR :: Binance connection error: 'status'
+2022-03-23 17:58:59,335 INFO :: Getting Binance trade size...
+2022-03-23 17:59:00,025 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:59:00,026 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:59:00,294 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f7e501c2ee0>>: 'status'
+2022-03-23 17:59:00,295 ERROR :: Binance connection error: 'status'
+2022-03-23 17:59:00,296 WARNING :: Binance BTCUSDT: 2299 milliseconds of difference between the current time and the trade time
+2022-03-23 17:59:00,297 WARNING :: Binance BTCUSDT: 2300 milliseconds of difference between the current time and the trade time
+2022-03-23 17:59:01,260 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 17:59:01,261 INFO :: Getting Binance trade size...
+2022-03-23 17:59:01,527 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:59:01,528 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:59:01,788 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f7e501c2ee0>>: 'status'
+2022-03-23 17:59:01,788 ERROR :: Binance connection error: 'status'
+2022-03-23 17:59:01,789 INFO :: Getting Binance trade size...
+2022-03-23 17:59:02,058 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:59:02,059 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:59:02,308 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f7e501c2ee0>>: 'status'
+2022-03-23 17:59:02,309 ERROR :: Binance connection error: 'status'
+2022-03-23 17:59:02,309 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 17:59:02,312 INFO :: Getting Binance trade size...
+2022-03-23 17:59:02,568 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:59:02,568 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:59:02,865 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f7e501c2ee0>>: 'status'
+2022-03-23 17:59:02,865 ERROR :: Binance connection error: 'status'
+2022-03-23 17:59:02,866 INFO :: Getting Binance trade size...
+2022-03-23 17:59:03,123 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:59:03,123 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:59:03,383 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f7e501c2ee0>>: 'status'
+2022-03-23 17:59:03,383 ERROR :: Binance connection error: 'status'
+2022-03-23 17:59:03,384 WARNING :: Binance ETHUSDT: 2106 milliseconds of difference between the current time and the trade time
+2022-03-23 17:59:03,384 INFO :: Getting Binance trade size...
+2022-03-23 17:59:03,645 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:59:03,646 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:59:03,903 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f7e501c2ee0>>: 'status'
+2022-03-23 17:59:03,903 ERROR :: Binance connection error: 'status'
+2022-03-23 17:59:03,904 WARNING :: Binance ETHUSDT: 2626 milliseconds of difference between the current time and the trade time
+2022-03-23 17:59:03,905 WARNING :: Binance ETHUSDT: 2627 milliseconds of difference between the current time and the trade time
+2022-03-23 17:59:03,905 WARNING :: Binance ETHUSDT: 2627 milliseconds of difference between the current time and the trade time
+2022-03-23 17:59:03,905 WARNING :: Binance ETHUSDT: 2627 milliseconds of difference between the current time and the trade time
+2022-03-23 17:59:03,906 WARNING :: Binance ETHUSDT: 2628 milliseconds of difference between the current time and the trade time
+2022-03-23 17:59:03,906 WARNING :: Binance ETHUSDT: 2628 milliseconds of difference between the current time and the trade time
+2022-03-23 17:59:03,907 INFO :: Getting Binance trade size...
+2022-03-23 17:59:04,144 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:59:04,144 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:59:04,935 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f7e501c2ee0>>: 'status'
+2022-03-23 17:59:04,935 ERROR :: Binance connection error: 'status'
+2022-03-23 17:59:04,936 WARNING :: Binance ETHUSDT: 2712 milliseconds of difference between the current time and the trade time
+2022-03-23 17:59:04,936 INFO :: Getting Binance trade size...
+2022-03-23 17:59:05,206 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:59:05,206 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 17:59:05,473 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f7e501c2ee0>>: 'status'
+2022-03-23 17:59:05,473 ERROR :: Binance connection error: 'status'
+2022-03-23 17:59:05,474 WARNING :: Binance ETHUSDT: 2764 milliseconds of difference between the current time and the trade time
+2022-03-23 17:59:05,474 INFO :: Getting Binance trade size...
+2022-03-23 17:59:05,795 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 17:59:05,795 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 18:00:14,939 INFO :: Binance Futures Client successfully initialized
+2022-03-23 18:00:17,492 INFO :: Binance connection opened
+2022-03-23 18:00:17,493 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-23 18:00:17,830 INFO :: Bitmex Client successfully initialized
+2022-03-23 18:00:19,286 INFO :: Bitmex connection opened
+2022-03-23 18:00:21,448 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-23 18:00:21,912 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-23 18:00:22,674 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-23 18:00:27,334 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-23 18:00:29,154 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-23 18:00:30,032 INFO :: Getting Binance trade size...
+2022-03-23 18:00:30,395 INFO :: Binance current USDT balance = 10513.61267929, trade size = 0.036
+2022-03-23 18:00:30,397 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 18:00:30,954 INFO :: Buy order placed on Binance | Status: new
+2022-03-23 18:00:31,131 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-03-23 18:00:33,259 INFO :: Binance order status: filled
+2022-03-23 18:00:35,822 INFO :: Getting Binance trade size...
+2022-03-23 18:00:36,487 INFO :: Binance current USDT balance = 10513.5700959, trade size = 0.874
+2022-03-23 18:00:36,488 INFO :: Long signal on LTCUSDT 1m
+2022-03-23 18:00:36,758 INFO :: Buy order placed on Binance | Status: new
+2022-03-23 18:00:39,356 INFO :: Binance order status: filled
+2022-03-23 18:00:40,184 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-03-23 18:00:48,122 INFO :: Getting Binance trade size...
+2022-03-23 18:00:48,791 INFO :: Binance current USDT balance = 10512.3432633, trade size = 0.002
+2022-03-23 18:00:48,791 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 18:00:49,333 INFO :: Buy order placed on Binance | Status: new
+2022-03-23 18:00:51,849 INFO :: Binance order status: filled
+2022-03-23 18:01:01,057 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 18:01:01,062 INFO :: Take profit for BTCUSDT 1m | Current Price = 43410.8 (Entry price was 42249.5)
+2022-03-23 18:01:01,585 INFO :: Exit order on BTCUSDT 1m placed successfully
+2022-03-23 18:01:01,586 INFO :: Getting Binance trade size...
+2022-03-23 18:01:02,138 INFO :: Binance current USDT balance = 10512.31097479, trade size = 0.002
+2022-03-23 18:01:02,138 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 18:01:02,872 INFO :: Buy order placed on Binance | Status: new
+2022-03-23 18:01:04,037 INFO :: Binance New candle for LTCUSDT 1m
+2022-03-23 18:01:05,220 INFO :: Binance order status: filled
+2022-03-23 18:01:06,021 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 18:01:06,042 INFO :: Take profit for BTCUSDT 1m | Current Price = 53000.0 (Entry price was 42262.1)
+2022-03-23 18:01:06,900 INFO :: Exit order on BTCUSDT 1m placed successfully
+2022-03-23 18:01:06,900 INFO :: Getting Binance trade size...
+2022-03-23 18:01:07,185 INFO :: Binance current USDT balance = 10512.27055809, trade size = 0.002
+2022-03-23 18:01:07,185 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 18:01:07,678 INFO :: Buy order placed on Binance | Status: new
+2022-03-23 18:01:09,877 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-23 18:01:09,982 INFO :: Binance order status: filled
+2022-03-23 18:01:10,030 INFO :: Getting Binance trade size...
+2022-03-23 18:01:10,292 INFO :: Binance current USDT balance = 10512.23675265, trade size = 126.2
+2022-03-23 18:01:10,292 INFO :: Long signal on XRPUSDT 1m
+2022-03-23 18:01:10,557 INFO :: Buy order placed on Binance | Status: new
+2022-03-23 18:01:13,067 INFO :: Binance order status: filled
+2022-03-23 18:01:38,256 INFO :: Binance Spot Client successfully initialized
+2022-03-23 18:01:40,490 INFO :: Binance connection opened
+2022-03-23 18:01:40,491 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-23 18:01:41,002 INFO :: Bitmex Client successfully initialized
+2022-03-23 18:01:42,848 INFO :: Bitmex connection opened
+2022-03-23 18:01:44,469 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-23 18:01:45,149 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-23 18:01:45,723 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-23 18:01:47,672 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-23 18:01:49,662 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-23 18:01:51,761 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-03-23 18:01:52,479 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-03-23 18:01:59,980 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 18:02:08,332 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 18:02:08,388 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-23 18:03:01,199 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 18:03:09,326 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 18:03:17,340 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-23 18:04:00,223 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 18:04:00,719 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 18:04:17,047 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-23 18:04:47,674 INFO :: Binance missing 2 candles for LTCUSDT 1m (1648019087760 1648018860000)
+2022-03-23 18:05:00,047 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 18:05:00,059 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 18:05:00,904 INFO :: Getting Binance trade size...
+2022-03-23 18:05:01,527 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 18:05:01,533 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 18:05:02,010 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7faa48272ee0>>: 'dict' object has no attribute 'status'
+2022-03-23 18:05:02,010 ERROR :: Binance connection error: 'dict' object has no attribute 'status'
+2022-03-23 18:05:02,011 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-23 18:05:02,011 INFO :: Getting Binance trade size...
+2022-03-23 18:05:02,371 INFO :: Binance current USDT balance = 239.9772124, trade size = 2.9
+2022-03-23 18:05:02,372 INFO :: Long signal on XRPUSDT 1m
+2022-03-23 18:05:02,646 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7faa48272ee0>>: 'dict' object has no attribute 'status'
+2022-03-23 18:05:02,647 ERROR :: Binance connection error: 'dict' object has no attribute 'status'
+2022-03-23 18:05:02,650 INFO :: Getting Binance trade size...
+2022-03-23 18:05:03,171 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 18:05:03,172 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 18:05:03,442 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7faa48272ee0>>: 'dict' object has no attribute 'status'
+2022-03-23 18:05:03,442 ERROR :: Binance connection error: 'dict' object has no attribute 'status'
+2022-03-23 18:05:03,443 INFO :: Getting Binance trade size...
+2022-03-23 18:05:03,699 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 18:05:03,700 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 18:05:03,999 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7faa48272ee0>>: 'dict' object has no attribute 'status'
+2022-03-23 18:05:03,999 ERROR :: Binance connection error: 'dict' object has no attribute 'status'
+2022-03-23 18:05:04,000 INFO :: Getting Binance trade size...
+2022-03-23 18:05:04,291 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 18:05:04,291 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 18:05:04,868 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7faa48272ee0>>: 'dict' object has no attribute 'status'
+2022-03-23 18:05:04,869 ERROR :: Binance connection error: 'dict' object has no attribute 'status'
+2022-03-23 18:05:04,871 INFO :: Getting Binance trade size...
+2022-03-23 18:05:05,170 INFO :: Binance current USDT balance = 239.9772124, trade size = 2.9
+2022-03-23 18:05:05,171 INFO :: Long signal on XRPUSDT 1m
+2022-03-23 18:05:05,419 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7faa48272ee0>>: 'dict' object has no attribute 'status'
+2022-03-23 18:05:05,419 ERROR :: Binance connection error: 'dict' object has no attribute 'status'
+2022-03-23 18:05:05,420 WARNING :: Binance BTCUSDT: 2408 milliseconds of difference between the current time and the trade time
+2022-03-23 18:05:05,420 INFO :: Getting Binance trade size...
+2022-03-23 18:05:05,742 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 18:05:05,742 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 18:05:06,026 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7faa48272ee0>>: 'dict' object has no attribute 'status'
+2022-03-23 18:05:06,026 ERROR :: Binance connection error: 'dict' object has no attribute 'status'
+2022-03-23 18:05:06,027 WARNING :: Binance BTCUSDT: 3015 milliseconds of difference between the current time and the trade time
+2022-03-23 18:05:06,027 INFO :: Getting Binance trade size...
+2022-03-23 18:10:12,044 INFO :: Binance Spot Client successfully initialized
+2022-03-23 18:10:14,245 INFO :: Binance connection opened
+2022-03-23 18:10:14,247 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-23 18:10:16,082 INFO :: Bitmex Client successfully initialized
+2022-03-23 18:10:17,462 INFO :: Bitmex connection opened
+2022-03-23 18:10:20,250 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-23 18:10:21,732 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-23 18:10:22,249 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-23 18:10:24,402 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-23 18:10:25,506 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-23 18:10:27,003 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-03-23 18:10:27,889 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-03-23 18:11:00,259 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 18:11:01,240 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 18:11:09,119 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-23 18:11:15,144 INFO :: Binance New candle for LTCUSDT 1m
+2022-03-23 18:12:00,479 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 18:12:02,426 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-23 18:12:02,445 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 18:12:05,287 INFO :: Getting Binance trade size...
+2022-03-23 18:12:06,045 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 18:12:06,050 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 18:12:06,728 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f9cd81b2ee0>>: 'status'
+2022-03-23 18:12:06,729 ERROR :: Binance connection error: 'status'
+2022-03-23 18:12:06,729 INFO :: Getting Binance trade size...
+2022-03-23 18:12:07,358 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 18:12:07,359 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 18:12:07,813 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f9cd81b2ee0>>: 'status'
+2022-03-23 18:12:07,813 ERROR :: Binance connection error: 'status'
+2022-03-23 18:12:07,814 WARNING :: Binance ETHUSDT: 2490 milliseconds of difference between the current time and the trade time
+2022-03-23 18:12:07,814 INFO :: Getting Binance trade size...
+2022-03-23 18:12:08,290 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 18:12:08,291 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 18:12:08,669 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f9cd81b2ee0>>: 'status'
+2022-03-23 18:12:08,670 ERROR :: Binance connection error: 'status'
+2022-03-23 18:12:08,671 WARNING :: Binance ETHUSDT: 3348 milliseconds of difference between the current time and the trade time
+2022-03-23 18:12:08,671 INFO :: Getting Binance trade size...
+2022-03-23 18:12:08,965 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 18:12:08,966 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 18:12:09,261 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f9cd81b2ee0>>: 'status'
+2022-03-23 18:12:09,262 ERROR :: Binance connection error: 'status'
+2022-03-23 18:12:09,262 WARNING :: Binance ETHUSDT: 3939 milliseconds of difference between the current time and the trade time
+2022-03-23 18:12:09,262 INFO :: Getting Binance trade size...
+2022-03-23 18:12:10,321 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 18:12:10,323 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 18:12:11,268 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f9cd81b2ee0>>: 'status'
+2022-03-23 18:12:11,268 ERROR :: Binance connection error: 'status'
+2022-03-23 18:12:11,268 WARNING :: Binance ETHUSDT: 5945 milliseconds of difference between the current time and the trade time
+2022-03-23 18:12:11,268 INFO :: Getting Binance trade size...
+2022-03-23 18:12:11,779 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 18:12:11,779 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 18:12:12,185 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f9cd81b2ee0>>: 'status'
+2022-03-23 18:12:12,186 ERROR :: Binance connection error: 'status'
+2022-03-23 18:12:12,186 WARNING :: Binance ETHUSDT: 6863 milliseconds of difference between the current time and the trade time
+2022-03-23 18:12:12,187 INFO :: Getting Binance trade size...
+2022-03-23 18:12:12,509 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 18:12:12,509 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 18:12:12,846 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f9cd81b2ee0>>: 'status'
+2022-03-23 18:12:12,846 ERROR :: Binance connection error: 'status'
+2022-03-23 18:12:12,847 WARNING :: Binance ETHUSDT: 6750 milliseconds of difference between the current time and the trade time
+2022-03-23 18:12:12,848 WARNING :: Binance ETHUSDT: 6751 milliseconds of difference between the current time and the trade time
+2022-03-23 18:12:12,848 WARNING :: Binance ETHUSDT: 6733 milliseconds of difference between the current time and the trade time
+2022-03-23 18:12:12,849 WARNING :: Binance BTCUSDT: 6468 milliseconds of difference between the current time and the trade time
+2022-03-23 18:12:12,849 WARNING :: Binance ETHUSDT: 5720 milliseconds of difference between the current time and the trade time
+2022-03-23 18:12:12,849 WARNING :: Binance ETHUSDT: 5720 milliseconds of difference between the current time and the trade time
+2022-03-23 18:12:12,850 WARNING :: Binance ETHUSDT: 5721 milliseconds of difference between the current time and the trade time
+2022-03-23 18:12:12,850 WARNING :: Binance ETHUSDT: 5705 milliseconds of difference between the current time and the trade time
+2022-03-23 18:12:12,851 WARNING :: Binance ETHUSDT: 5508 milliseconds of difference between the current time and the trade time
+2022-03-23 18:12:12,851 WARNING :: Binance BTCUSDT: 4865 milliseconds of difference between the current time and the trade time
+2022-03-23 18:12:12,852 WARNING :: Binance BTCUSDT: 4069 milliseconds of difference between the current time and the trade time
+2022-03-23 18:12:17,733 INFO :: Binance New candle for LTCUSDT 1m
+2022-03-23 18:14:04,050 INFO :: Binance Spot Client successfully initialized
+2022-03-23 18:14:07,236 INFO :: Binance connection opened
+2022-03-23 18:14:07,239 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-23 18:14:08,033 INFO :: Bitmex Client successfully initialized
+2022-03-23 18:14:09,561 INFO :: Bitmex connection opened
+2022-03-23 18:14:11,438 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-23 18:14:12,792 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-23 18:14:15,424 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-23 18:14:23,302 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-23 18:14:26,631 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-03-23 18:14:27,355 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-23 18:14:29,250 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-03-23 18:15:00,269 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 18:15:03,370 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-23 18:15:08,368 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 18:15:33,162 INFO :: Getting Binance trade size...
+2022-03-23 18:15:34,195 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 18:15:34,199 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 18:15:36,065 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fd0283e2ee0>>: 'status'
+2022-03-23 18:15:36,066 ERROR :: Binance connection error: 'status'
+2022-03-23 18:15:36,067 WARNING :: Binance ETHUSDT: 2913 milliseconds of difference between the current time and the trade time
+2022-03-23 18:15:36,067 INFO :: Getting Binance trade size...
+2022-03-23 18:15:37,096 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 18:15:37,096 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 18:15:38,059 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fd0283e2ee0>>: 'status'
+2022-03-23 18:15:38,060 ERROR :: Binance connection error: 'status'
+2022-03-23 18:15:38,060 WARNING :: Binance ETHUSDT: 4890 milliseconds of difference between the current time and the trade time
+2022-03-23 18:15:38,060 INFO :: Getting Binance trade size...
+2022-03-23 18:15:38,332 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 18:15:38,333 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 18:22:18,167 INFO :: Binance Spot Client successfully initialized
+2022-03-23 18:22:20,469 INFO :: Binance connection opened
+2022-03-23 18:22:20,470 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-23 18:22:21,068 INFO :: Bitmex Client successfully initialized
+2022-03-23 18:22:22,612 INFO :: Bitmex connection opened
+2022-03-23 18:22:24,697 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-23 18:22:25,296 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-23 18:22:25,991 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-23 18:22:28,599 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-23 18:22:30,024 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-23 18:22:30,474 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-03-23 18:22:31,429 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-03-23 18:23:01,463 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 18:23:07,755 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 18:23:21,147 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-23 18:23:51,069 INFO :: Binance New candle for LTCUSDT 1m
+2022-03-23 18:24:00,657 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 18:24:04,892 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 18:24:04,986 INFO :: Getting Binance trade size...
+2022-03-23 18:24:05,560 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 18:24:05,564 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 18:24:05,877 INFO :: Getting Binance trade size...
+2022-03-23 18:24:07,054 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 18:24:07,054 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 18:24:08,059 WARNING :: Binance ETHUSDT: 2701 milliseconds of difference between the current time and the trade time
+2022-03-23 18:24:08,060 WARNING :: Binance ETHUSDT: 2702 milliseconds of difference between the current time and the trade time
+2022-03-23 18:24:08,060 WARNING :: Binance ETHUSDT: 2702 milliseconds of difference between the current time and the trade time
+2022-03-23 18:24:08,061 WARNING :: Binance ETHUSDT: 2703 milliseconds of difference between the current time and the trade time
+2022-03-23 18:24:08,061 WARNING :: Binance ETHUSDT: 2703 milliseconds of difference between the current time and the trade time
+2022-03-23 18:24:08,062 WARNING :: Binance ETHUSDT: 2703 milliseconds of difference between the current time and the trade time
+2022-03-23 18:24:08,062 WARNING :: Binance ETHUSDT: 2704 milliseconds of difference between the current time and the trade time
+2022-03-23 18:24:08,062 WARNING :: Binance ETHUSDT: 2704 milliseconds of difference between the current time and the trade time
+2022-03-23 18:24:08,063 WARNING :: Binance ETHUSDT: 2705 milliseconds of difference between the current time and the trade time
+2022-03-23 18:24:08,064 WARNING :: Binance BTCUSDT: 2454 milliseconds of difference between the current time and the trade time
+2022-03-23 18:24:08,064 INFO :: Getting Binance trade size...
+2022-03-23 18:24:09,474 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 18:24:09,474 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 18:24:11,063 WARNING :: Binance BTCUSDT: 5011 milliseconds of difference between the current time and the trade time
+2022-03-23 18:24:11,064 INFO :: Getting Binance trade size...
+2022-03-23 18:24:11,909 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 18:24:11,909 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 18:24:12,589 WARNING :: Binance BTCUSDT: 6537 milliseconds of difference between the current time and the trade time
+2022-03-23 18:24:12,590 INFO :: Getting Binance trade size...
+2022-03-23 18:34:27,517 INFO :: Binance Futures Client successfully initialized
+2022-03-23 18:34:32,479 INFO :: Binance connection opened
+2022-03-23 18:34:32,481 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-23 18:34:32,663 INFO :: Bitmex Client successfully initialized
+2022-03-23 18:34:34,273 INFO :: Bitmex connection opened
+2022-03-23 18:34:37,346 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-23 18:34:42,328 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-23 18:34:49,470 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-23 18:34:56,197 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-23 18:34:59,875 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-23 18:35:01,367 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 18:35:03,544 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 18:35:11,823 INFO :: Getting Binance trade size...
+2022-03-23 18:35:12,742 INFO :: Binance current USDT balance = 10507.95880934, trade size = 0.036
+2022-03-23 18:35:12,746 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 18:35:13,484 INFO :: Getting Binance trade size...
+2022-03-23 18:35:14,892 INFO :: Binance current USDT balance = 10507.91631811, trade size = 0.036
+2022-03-23 18:35:14,892 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 18:35:15,603 INFO :: Getting Binance trade size...
+2022-03-23 18:35:16,461 INFO :: Binance current USDT balance = 10507.87382962, trade size = 0.036
+2022-03-23 18:35:16,462 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 18:35:16,751 INFO :: Getting Binance trade size...
+2022-03-23 18:35:17,350 INFO :: Binance current USDT balance = 10507.83133796, trade size = 0.036
+2022-03-23 18:35:17,351 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 18:35:17,775 INFO :: Getting Binance trade size...
+2022-03-23 18:35:18,578 INFO :: Binance current USDT balance = 10507.78884515, trade size = 0.036
+2022-03-23 18:35:18,579 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 18:35:19,208 INFO :: Getting Binance trade size...
+2022-03-23 18:35:19,571 INFO :: Binance current USDT balance = 10507.74635234, trade size = 0.036
+2022-03-23 18:35:19,571 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 18:35:20,084 WARNING :: Binance ETHUSDT: 2264 milliseconds of difference between the current time and the trade time
+2022-03-23 18:35:20,085 INFO :: Getting Binance trade size...
+2022-03-23 18:35:21,009 INFO :: Binance current USDT balance = 10507.70385953, trade size = 0.036
+2022-03-23 18:35:21,010 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 18:35:21,285 INFO :: Getting Binance trade size...
+2022-03-23 18:35:21,669 INFO :: Binance current USDT balance = 10507.66136672, trade size = 0.036
+2022-03-23 18:35:21,669 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 18:35:22,099 INFO :: Getting Binance trade size...
+2022-03-23 18:35:22,754 INFO :: Binance current USDT balance = 10507.61887866, trade size = 0.036
+2022-03-23 18:35:22,755 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 18:35:23,632 WARNING :: Binance ETHUSDT: 2185 milliseconds of difference between the current time and the trade time
+2022-03-23 18:35:23,633 INFO :: Getting Binance trade size...
+2022-03-23 18:35:24,099 INFO :: Binance current USDT balance = 10507.5763906, trade size = 0.036
+2022-03-23 18:35:24,099 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 18:35:24,389 WARNING :: Binance ETHUSDT: 2136 milliseconds of difference between the current time and the trade time
+2022-03-23 18:36:01,093 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 18:36:05,901 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 18:36:51,651 INFO :: Getting Binance trade size...
+2022-03-23 18:36:52,859 INFO :: Binance current USDT balance = 10507.53390297, trade size = 0.036
+2022-03-23 18:36:52,859 INFO :: Short signal on ETHUSDT 1m
+2022-03-23 18:36:54,448 WARNING :: Binance ETHUSDT: 2868 milliseconds of difference between the current time and the trade time
+2022-03-23 18:36:54,449 INFO :: Getting Binance trade size...
+2022-03-23 18:36:55,284 INFO :: Binance current USDT balance = 10507.25683966, trade size = 0.036
+2022-03-23 18:36:55,287 INFO :: Short signal on ETHUSDT 1m
+2022-03-23 18:36:55,857 INFO :: Getting Binance trade size...
+2022-03-23 18:36:57,037 INFO :: Binance current USDT balance = 10506.98157563, trade size = 0.036
+2022-03-23 18:36:57,037 INFO :: Short signal on ETHUSDT 1m
+2022-03-23 18:36:57,803 INFO :: Getting Binance trade size...
+2022-03-23 18:36:58,300 INFO :: Binance current USDT balance = 10506.70451232, trade size = 0.036
+2022-03-23 18:36:58,300 INFO :: Short signal on ETHUSDT 1m
+2022-03-23 18:36:59,029 INFO :: Getting Binance trade size...
+2022-03-23 18:36:59,334 INFO :: Binance current USDT balance = 10506.42744901, trade size = 0.002
+2022-03-23 18:36:59,335 INFO :: Short signal on BTCUSDT 1m
+2022-03-23 18:37:00,359 WARNING :: Binance BTCUSDT: 3254 milliseconds of difference between the current time and the trade time
+2022-03-23 18:37:00,359 INFO :: Getting Binance trade size...
+2022-03-23 18:37:00,872 INFO :: Binance current USDT balance = 10506.05776826, trade size = 0.002
+2022-03-23 18:37:00,873 INFO :: Short signal on BTCUSDT 1m
+2022-03-23 18:37:01,423 WARNING :: Binance BTCUSDT: 4203 milliseconds of difference between the current time and the trade time
+2022-03-23 18:37:01,423 INFO :: Getting Binance trade size...
+2022-03-23 18:37:01,787 INFO :: Binance current USDT balance = 10505.68808751, trade size = 0.002
+2022-03-23 18:37:01,788 INFO :: Short signal on BTCUSDT 1m
+2022-03-23 18:37:02,407 WARNING :: Binance BTCUSDT: 5187 milliseconds of difference between the current time and the trade time
+2022-03-23 18:37:02,409 WARNING :: Binance ETHUSDT: 4547 milliseconds of difference between the current time and the trade time
+2022-03-23 18:37:02,409 INFO :: Getting Binance trade size...
+2022-03-23 18:37:03,502 INFO :: Binance current USDT balance = 10505.31840676, trade size = 0.036
+2022-03-23 18:37:03,503 INFO :: Short signal on ETHUSDT 1m
+2022-03-23 18:37:03,806 WARNING :: Binance ETHUSDT: 4752 milliseconds of difference between the current time and the trade time
+2022-03-23 18:37:03,807 INFO :: Getting Binance trade size...
+2022-03-23 18:37:04,075 INFO :: Binance current USDT balance = 10505.04206316, trade size = 0.036
+2022-03-23 18:37:04,075 INFO :: Short signal on ETHUSDT 1m
+2022-03-23 18:37:04,352 WARNING :: Binance BTCUSDT: 4056 milliseconds of difference between the current time and the trade time
+2022-03-23 18:37:04,353 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 18:37:04,354 WARNING :: Binance ETHUSDT: 2910 milliseconds of difference between the current time and the trade time
+2022-03-23 18:37:04,354 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 18:37:04,354 WARNING :: Binance ETHUSDT: 2898 milliseconds of difference between the current time and the trade time
+2022-03-23 18:37:04,355 WARNING :: Binance ETHUSDT: 2899 milliseconds of difference between the current time and the trade time
+2022-03-23 18:37:04,355 INFO :: Getting Binance trade size...
+2022-03-23 18:37:05,029 INFO :: Binance current USDT balance = 10504.76571956, trade size = 0.036
+2022-03-23 18:37:05,030 INFO :: Short signal on ETHUSDT 1m
+2022-03-23 18:37:05,340 WARNING :: Binance BTCUSDT: 3757 milliseconds of difference between the current time and the trade time
+2022-03-23 18:37:05,341 WARNING :: Binance ETHUSDT: 2923 milliseconds of difference between the current time and the trade time
+2022-03-23 18:37:05,341 INFO :: Getting Binance trade size...
+2022-03-23 18:37:05,837 INFO :: Binance current USDT balance = 10504.48937596, trade size = 0.036
+2022-03-23 18:37:05,837 INFO :: Short signal on ETHUSDT 1m
+2022-03-23 18:37:06,139 WARNING :: Binance ETHUSDT: 3721 milliseconds of difference between the current time and the trade time
+2022-03-23 18:37:06,140 INFO :: Getting Binance trade size...
+2022-03-23 18:37:06,410 INFO :: Binance current USDT balance = 10504.20259653, trade size = 0.036
+2022-03-23 18:37:06,410 INFO :: Short signal on ETHUSDT 1m
+2022-03-23 18:37:06,710 WARNING :: Binance BTCUSDT: 4278 milliseconds of difference between the current time and the trade time
+2022-03-23 18:37:06,713 WARNING :: Binance ETHUSDT: 2743 milliseconds of difference between the current time and the trade time
+2022-03-23 18:37:06,713 WARNING :: Binance ETHUSDT: 2207 milliseconds of difference between the current time and the trade time
+2022-03-23 18:37:06,715 INFO :: Getting Binance trade size...
+2022-03-23 18:37:07,027 INFO :: Binance current USDT balance = 10503.9158171, trade size = 0.036
+2022-03-23 18:37:07,028 INFO :: Short signal on ETHUSDT 1m
+2022-03-23 18:37:07,448 INFO :: Getting Binance trade size...
+2022-03-23 18:37:07,770 INFO :: Binance current USDT balance = 10503.62903767, trade size = 0.036
+2022-03-23 18:37:07,770 INFO :: Short signal on ETHUSDT 1m
+2022-03-23 18:37:08,096 INFO :: Getting Binance trade size...
+2022-03-23 18:37:08,404 INFO :: Binance current USDT balance = 10503.35269407, trade size = 0.036
+2022-03-23 18:37:08,404 INFO :: Short signal on ETHUSDT 1m
+2022-03-23 18:37:12,030 INFO :: Getting Binance trade size...
+2022-03-23 18:37:12,857 INFO :: Binance current USDT balance = 10503.07635047, trade size = 0.036
+2022-03-23 18:37:12,857 INFO :: Short signal on ETHUSDT 1m
+2022-03-23 18:37:13,381 INFO :: Getting Binance trade size...
+2022-03-23 18:37:13,738 INFO :: Binance current USDT balance = 10502.79029076, trade size = 0.036
+2022-03-23 18:37:13,738 INFO :: Short signal on ETHUSDT 1m
+2022-03-23 18:41:31,258 INFO :: Binance Spot Client successfully initialized
+2022-03-23 18:41:33,661 INFO :: Binance connection opened
+2022-03-23 18:41:33,662 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-23 18:41:33,964 INFO :: Bitmex Client successfully initialized
+2022-03-23 18:41:35,463 INFO :: Bitmex connection opened
+2022-03-23 18:41:51,125 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-23 18:41:51,634 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-23 18:41:52,374 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-23 18:41:54,782 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-23 18:41:55,895 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-23 18:41:57,299 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-03-23 18:41:58,009 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-03-23 18:41:59,919 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 18:42:08,083 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 18:42:55,143 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-23 18:43:00,920 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 18:43:09,217 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 18:43:12,291 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-23 18:43:12,292 INFO :: Getting Binance trade size...
+2022-03-23 18:43:13,032 INFO :: Binance current USDT balance = 239.9772124, trade size = 2.9
+2022-03-23 18:43:13,035 INFO :: Long signal on XRPUSDT 1m
+2022-03-23 18:43:13,561 INFO :: Getting Binance trade size...
+2022-03-23 18:43:14,259 INFO :: Binance current USDT balance = 239.9772124, trade size = 2.9
+2022-03-23 18:43:14,263 INFO :: Long signal on XRPUSDT 1m
+2022-03-23 18:44:01,548 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 18:44:05,738 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-23 18:44:09,094 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 18:44:44,753 INFO :: Binance missing 2 candles for LTCUSDT 1m (1648021484731 1648021260000)
+2022-03-23 18:45:00,113 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 18:45:08,108 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-23 18:45:09,022 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 18:45:09,141 INFO :: Getting Binance trade size...
+2022-03-23 18:45:10,023 INFO :: Binance current USDT balance = 239.9772124, trade size = 2.9
+2022-03-23 18:45:10,024 INFO :: Long signal on XRPUSDT 1m
+2022-03-23 18:45:28,682 INFO :: Getting Binance trade size...
+2022-03-23 18:45:29,303 INFO :: Binance current USDT balance = 239.9772124, trade size = 2.9
+2022-03-23 18:45:29,304 INFO :: Long signal on XRPUSDT 1m
+2022-03-23 18:59:19,111 INFO :: Binance Spot Client successfully initialized
+2022-03-23 18:59:21,954 INFO :: Binance connection opened
+2022-03-23 18:59:21,957 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-23 18:59:24,898 INFO :: Bitmex Client successfully initialized
+2022-03-23 18:59:26,400 INFO :: Bitmex connection opened
+2022-03-23 18:59:28,775 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-23 18:59:30,006 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-23 18:59:33,450 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-23 18:59:40,358 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-23 18:59:41,010 INFO :: Getting Binance trade size...
+2022-03-23 18:59:41,267 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 18:59:41,269 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 18:59:42,106 INFO :: Getting Binance trade size...
+2022-03-23 18:59:42,150 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-23 18:59:43,323 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 18:59:43,324 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 18:59:43,614 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fcc59492ee0>>: dictionary changed size during iteration
+2022-03-23 18:59:43,614 ERROR :: Binance connection error: dictionary changed size during iteration
+2022-03-23 18:59:43,615 INFO :: Getting Binance trade size...
+2022-03-23 18:59:44,398 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 18:59:44,399 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 18:59:45,085 WARNING :: Binance BTCUSDT: 2838 milliseconds of difference between the current time and the trade time
+2022-03-23 18:59:45,085 INFO :: Getting Binance trade size...
+2022-03-23 18:59:45,682 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 18:59:45,683 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 18:59:46,087 WARNING :: Binance ETHUSDT: 3232 milliseconds of difference between the current time and the trade time
+2022-03-23 18:59:46,088 INFO :: Getting Binance trade size...
+2022-03-23 18:59:46,419 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 18:59:46,419 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 18:59:46,738 WARNING :: Binance ETHUSDT: 3883 milliseconds of difference between the current time and the trade time
+2022-03-23 18:59:46,738 INFO :: Getting Binance trade size...
+2022-03-23 18:59:47,076 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 18:59:47,076 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 19:00:31,096 INFO :: Binance Spot Client successfully initialized
+2022-03-23 19:00:34,999 INFO :: Binance connection opened
+2022-03-23 19:00:35,002 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-23 19:00:35,834 INFO :: Bitmex Client successfully initialized
+2022-03-23 19:00:37,376 INFO :: Bitmex connection opened
+2022-03-23 19:00:40,721 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-23 19:00:41,830 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-23 19:00:42,916 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-23 19:00:46,609 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-23 19:00:47,197 INFO :: Getting Binance trade size...
+2022-03-23 19:00:47,789 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 19:00:47,792 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 19:00:48,207 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-23 19:00:48,367 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f854856cee0>>: dictionary changed size during iteration
+2022-03-23 19:00:48,368 ERROR :: Binance connection error: dictionary changed size during iteration
+2022-03-23 19:00:48,368 INFO :: Getting Binance trade size...
+2022-03-23 19:00:48,615 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 19:00:48,615 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 19:00:49,257 INFO :: Getting Binance trade size...
+2022-03-23 19:00:49,623 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 19:00:49,623 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 19:00:50,096 INFO :: Getting Binance trade size...
+2022-03-23 19:00:50,529 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 19:00:50,529 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 19:00:51,077 WARNING :: Binance BTCUSDT: 2899 milliseconds of difference between the current time and the trade time
+2022-03-23 19:00:51,078 INFO :: Getting Binance trade size...
+2022-03-23 19:00:51,436 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 19:00:51,436 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 19:00:52,030 WARNING :: Binance BTCUSDT: 3841 milliseconds of difference between the current time and the trade time
+2022-03-23 19:00:52,031 INFO :: Getting Binance trade size...
+2022-03-23 19:00:52,492 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 19:00:52,493 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 19:00:53,029 WARNING :: Binance ETHUSDT: 4161 milliseconds of difference between the current time and the trade time
+2022-03-23 19:00:53,029 INFO :: Getting Binance trade size...
+2022-03-23 19:00:53,297 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 19:00:53,298 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 19:00:53,621 WARNING :: Binance ETHUSDT: 4738 milliseconds of difference between the current time and the trade time
+2022-03-23 19:00:53,621 INFO :: Getting Binance trade size...
+2022-03-23 19:00:53,915 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 19:00:53,915 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 19:00:54,205 WARNING :: Binance ETHUSDT: 5322 milliseconds of difference between the current time and the trade time
+2022-03-23 19:00:54,205 INFO :: Getting Binance trade size...
+2022-03-23 19:00:54,882 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 19:00:54,883 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 19:00:55,349 WARNING :: Binance ETHUSDT: 5726 milliseconds of difference between the current time and the trade time
+2022-03-23 19:00:55,349 INFO :: Getting Binance trade size...
+2022-03-23 19:02:16,870 INFO :: Binance Spot Client successfully initialized
+2022-03-23 19:02:21,486 INFO :: Binance connection opened
+2022-03-23 19:02:21,488 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-23 19:02:22,720 INFO :: Bitmex Client successfully initialized
+2022-03-23 19:02:24,256 INFO :: Bitmex connection opened
+2022-03-23 19:02:26,439 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-23 19:02:27,582 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-23 19:02:28,293 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-23 19:02:34,302 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-23 19:02:35,908 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-23 19:02:37,906 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-03-23 19:02:38,745 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-03-23 19:03:00,195 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 19:03:02,693 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 19:03:59,090 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-23 19:04:00,714 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 19:04:02,291 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 19:04:12,074 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-23 19:04:23,262 INFO :: Binance missing 1 candles for LTCUSDT 1m (1648022663398 1648022520000)
+2022-03-23 19:04:40,414 INFO :: Getting Binance trade size...
+2022-03-23 19:04:41,267 INFO :: Binance current USDT balance = 239.9772124, trade size = 2.9
+2022-03-23 19:04:41,270 INFO :: Long signal on XRPUSDT 1m
+2022-03-23 19:04:46,052 INFO :: Getting Binance trade size...
+2022-03-23 19:04:46,665 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 19:04:46,666 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 19:04:47,588 INFO :: Getting Binance trade size...
+2022-03-23 19:04:48,340 INFO :: Binance current USDT balance = 239.9772124, trade size = 2.9
+2022-03-23 19:04:48,340 INFO :: Long signal on XRPUSDT 1m
+2022-03-23 19:04:49,091 WARNING :: Binance XRPUSDT: 2437 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:49,092 INFO :: Getting Binance trade size...
+2022-03-23 19:04:49,400 INFO :: Binance current USDT balance = 239.9772124, trade size = 2.9
+2022-03-23 19:04:49,401 INFO :: Long signal on XRPUSDT 1m
+2022-03-23 19:04:49,716 WARNING :: Binance BTCUSDT: 2531 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:49,717 WARNING :: Binance BTCUSDT: 2532 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:49,718 WARNING :: Binance BTCUSDT: 2522 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:49,719 WARNING :: Binance BTCUSDT: 2523 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:49,719 WARNING :: Binance BTCUSDT: 2523 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:49,720 WARNING :: Binance BTCUSDT: 2453 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:49,721 WARNING :: Binance ETHUSDT: 2387 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:49,721 INFO :: Getting Binance trade size...
+2022-03-23 19:04:50,027 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 19:04:50,028 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 19:04:50,310 WARNING :: Binance ETHUSDT: 2962 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:50,310 INFO :: Getting Binance trade size...
+2022-03-23 19:04:50,605 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 19:04:50,605 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 19:04:51,189 WARNING :: Binance ETHUSDT: 3841 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:51,190 INFO :: Getting Binance trade size...
+2022-03-23 19:04:51,523 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 19:04:51,524 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 19:04:51,936 WARNING :: Binance BTCUSDT: 3745 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:51,937 WARNING :: Binance BTCUSDT: 3746 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:51,937 WARNING :: Binance BTCUSDT: 3732 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:51,938 WARNING :: Binance BTCUSDT: 3733 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:51,938 WARNING :: Binance ETHUSDT: 3614 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:51,938 INFO :: Getting Binance trade size...
+2022-03-23 19:04:52,512 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 19:04:52,513 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 19:04:52,912 WARNING :: Binance ETHUSDT: 4588 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:52,913 INFO :: Getting Binance trade size...
+2022-03-23 19:04:53,220 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 19:04:53,220 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 19:04:53,564 WARNING :: Binance ETHUSDT: 5230 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:53,564 INFO :: Getting Binance trade size...
+2022-03-23 19:04:53,965 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 19:04:53,966 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 19:04:54,313 WARNING :: Binance BTCUSDT: 5129 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:54,313 WARNING :: Binance BTCUSDT: 5129 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:54,314 WARNING :: Binance BTCUSDT: 5119 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:54,314 WARNING :: Binance BTCUSDT: 5119 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:54,314 WARNING :: Binance ETHUSDT: 5045 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:54,314 INFO :: Getting Binance trade size...
+2022-03-23 19:04:54,970 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 19:04:54,971 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 19:04:55,538 WARNING :: Binance BTCUSDT: 5871 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:55,540 WARNING :: Binance BTCUSDT: 5321 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:55,540 WARNING :: Binance BTCUSDT: 5321 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:55,541 WARNING :: Binance BTCUSDT: 5312 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:55,541 WARNING :: Binance BTCUSDT: 5312 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:55,542 WARNING :: Binance BTCUSDT: 4346 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:55,542 WARNING :: Binance BTCUSDT: 4346 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:55,543 WARNING :: Binance BTCUSDT: 4335 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:55,543 WARNING :: Binance BTCUSDT: 4335 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:55,544 WARNING :: Binance BTCUSDT: 3477 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:55,545 WARNING :: Binance BTCUSDT: 3334 milliseconds of difference between the current time and the trade time
+2022-03-23 19:04:55,630 INFO :: Getting Binance trade size...
+2022-03-23 19:04:56,034 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00081
+2022-03-23 19:04:56,035 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 19:04:56,385 INFO :: Getting Binance trade size...
+2022-03-23 19:11:33,157 INFO :: Binance Spot Client successfully initialized
+2022-03-23 19:11:35,973 INFO :: Binance connection opened
+2022-03-23 19:11:35,976 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-23 19:11:36,384 INFO :: Bitmex Client successfully initialized
+2022-03-23 19:11:38,742 INFO :: Bitmex connection opened
+2022-03-23 19:11:40,692 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-23 19:11:41,411 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-23 19:11:44,582 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-23 19:11:53,072 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-23 19:11:54,684 INFO :: Getting Binance trade size...
+2022-03-23 19:11:55,365 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-23 19:11:55,467 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 19:11:55,470 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 19:11:55,789 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fa59977aee0>>: dictionary changed size during iteration
+2022-03-23 19:11:55,789 ERROR :: Binance connection error: dictionary changed size during iteration
+2022-03-23 19:11:56,861 INFO :: Getting Binance trade size...
+2022-03-23 19:11:57,315 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 19:11:57,316 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 19:11:59,060 INFO :: Getting Binance trade size...
+2022-03-23 19:11:59,632 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 19:11:59,633 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 19:12:01,161 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 19:12:07,924 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 19:12:07,925 INFO :: Getting Binance trade size...
+2022-03-23 19:12:08,847 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00082
+2022-03-23 19:12:08,848 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 19:12:09,192 INFO :: Getting Binance trade size...
+2022-03-23 19:12:10,078 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00082
+2022-03-23 19:12:10,078 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 19:12:10,908 WARNING :: Binance ETHUSDT: 3099 milliseconds of difference between the current time and the trade time
+2022-03-23 19:12:10,909 INFO :: Getting Binance trade size...
+2022-03-23 19:12:11,321 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00082
+2022-03-23 19:12:11,321 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 19:12:11,754 WARNING :: Binance ETHUSDT: 3945 milliseconds of difference between the current time and the trade time
+2022-03-23 19:12:11,754 INFO :: Getting Binance trade size...
+2022-03-23 19:12:12,529 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00082
+2022-03-23 19:12:12,529 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 19:12:12,972 WARNING :: Binance ETHUSDT: 5163 milliseconds of difference between the current time and the trade time
+2022-03-23 19:12:12,973 INFO :: Getting Binance trade size...
+2022-03-23 19:14:37,836 INFO :: Binance Spot Client successfully initialized
+2022-03-23 19:14:40,662 INFO :: Binance connection opened
+2022-03-23 19:14:40,663 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-23 19:14:42,450 INFO :: Bitmex Client successfully initialized
+2022-03-23 19:14:44,290 INFO :: Bitmex connection opened
+2022-03-23 19:14:46,454 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-23 19:14:47,163 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-23 19:14:47,692 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-23 19:14:54,901 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-23 19:14:55,855 INFO :: Getting Binance trade size...
+2022-03-23 19:14:56,319 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-23 19:14:56,510 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 19:14:56,513 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 19:14:56,940 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fa3a1463ee0>>: dictionary changed size during iteration
+2022-03-23 19:14:56,941 ERROR :: Binance connection error: dictionary changed size during iteration
+2022-03-23 19:14:56,943 INFO :: Getting Binance trade size...
+2022-03-23 19:14:57,444 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 19:14:57,444 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 19:14:57,636 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-03-23 19:14:57,816 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fa3a1463ee0>>: dictionary changed size during iteration
+2022-03-23 19:14:57,817 ERROR :: Binance connection error: dictionary changed size during iteration
+2022-03-23 19:14:57,817 INFO :: Getting Binance trade size...
+2022-03-23 19:14:58,071 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 19:14:58,071 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 19:14:58,390 INFO :: Getting Binance trade size...
+2022-03-23 19:14:58,788 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 19:14:58,789 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 19:14:59,041 WARNING :: Binance BTCUSDT: 2647 milliseconds of difference between the current time and the trade time
+2022-03-23 19:14:59,041 INFO :: Getting Binance trade size...
+2022-03-23 19:14:59,298 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 19:14:59,298 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 19:14:59,692 WARNING :: Binance BTCUSDT: 3298 milliseconds of difference between the current time and the trade time
+2022-03-23 19:14:59,692 INFO :: Getting Binance trade size...
+2022-03-23 19:15:00,187 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 19:15:00,187 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 19:15:01,203 WARNING :: Binance BTCUSDT: 3912 milliseconds of difference between the current time and the trade time
+2022-03-23 19:15:01,203 INFO :: Getting Binance trade size...
+2022-03-23 19:15:02,471 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-23 19:15:02,472 INFO :: Long signal on BTCUSDT 1m
+2022-03-23 19:18:36,443 INFO :: Binance Spot Client successfully initialized
+2022-03-23 19:18:41,147 INFO :: Binance connection opened
+2022-03-23 19:18:41,149 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-23 19:18:42,377 INFO :: Bitmex Client successfully initialized
+2022-03-23 19:18:43,952 INFO :: Bitmex connection opened
+2022-03-23 19:18:50,278 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-23 19:18:50,976 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-23 19:18:51,472 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-23 19:18:55,449 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-23 19:18:57,531 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-23 19:18:58,508 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-03-23 19:19:00,154 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 19:19:00,327 INFO :: Binance New candle for LTCUSDT 1m
+2022-03-23 19:19:00,640 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-03-23 19:19:00,808 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 19:19:16,398 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-23 19:20:00,663 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-23 19:20:02,281 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-23 19:20:02,620 INFO :: Getting Binance trade size...
+2022-03-23 19:20:03,475 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00082
+2022-03-23 19:20:03,478 INFO :: Long signal on ETHUSDT 1m
+2022-03-23 19:20:07,811 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-23 19:20:08,566 INFO :: Binance New candle for LTCUSDT 1m
+2022-03-23 19:20:10,026 INFO :: Getting Binance trade size...
+2022-03-23 19:20:10,930 INFO :: Binance current USDT balance = 239.9772124, trade size = 2.9
+2022-03-23 19:20:10,931 INFO :: Long signal on XRPUSDT 1m
+2022-03-23 19:20:13,505 INFO :: Getting Binance trade size...
+2022-03-23 19:20:14,284 INFO :: Binance current USDT balance = 239.9772124, trade size = 2.9
+2022-03-23 19:20:14,285 INFO :: Long signal on XRPUSDT 1m
+2022-03-24 10:15:29,850 INFO :: Binance Spot Client successfully initialized
+2022-03-24 10:15:32,151 INFO :: Binance connection opened
+2022-03-24 10:15:32,152 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-24 10:15:32,374 INFO :: Bitmex Client successfully initialized
+2022-03-24 10:15:33,730 INFO :: Bitmex connection opened
+2022-03-24 10:15:35,896 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-24 10:15:36,550 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-24 10:15:37,139 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-24 10:15:40,534 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-24 10:15:41,672 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-24 10:15:43,490 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-03-24 10:15:44,348 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-03-24 10:16:07,913 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-24 10:16:09,454 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-24 10:16:17,050 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-24 10:16:17,052 INFO :: Getting Binance trade size...
+2022-03-24 10:16:17,750 INFO :: Binance current USDT balance = 239.9772124, trade size = 2.9
+2022-03-24 10:16:17,754 INFO :: Long signal on XRPUSDT 1m
+2022-03-24 10:16:18,278 INFO :: Getting Binance trade size...
+2022-03-24 10:16:18,876 INFO :: Binance current USDT balance = 239.9772124, trade size = 2.9
+2022-03-24 10:16:18,877 INFO :: Long signal on XRPUSDT 1m
+2022-03-24 10:16:19,263 WARNING :: Binance ETHUSDT: 2111 milliseconds of difference between the current time and the trade time
+2022-03-24 10:16:19,264 WARNING :: Binance ETHUSDT: 2112 milliseconds of difference between the current time and the trade time
+2022-03-24 10:16:19,265 WARNING :: Binance ETHUSDT: 2103 milliseconds of difference between the current time and the trade time
+2022-03-24 10:16:19,265 WARNING :: Binance ETHUSDT: 2103 milliseconds of difference between the current time and the trade time
+2022-03-24 10:17:03,418 INFO :: Binance Spot Client successfully initialized
+2022-03-24 10:17:05,975 INFO :: Binance connection opened
+2022-03-24 10:17:05,976 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-24 10:17:06,395 INFO :: Bitmex Client successfully initialized
+2022-03-24 10:17:08,027 INFO :: Bitmex connection opened
+2022-03-24 10:17:11,607 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-24 10:17:12,495 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-24 10:17:13,971 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-24 10:17:16,488 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-24 10:17:17,027 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-24 10:17:18,554 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-03-24 10:17:20,100 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-03-24 10:17:22,657 INFO :: Getting Binance trade size...
+2022-03-24 10:17:22,966 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.0008
+2022-03-24 10:17:22,968 INFO :: Long signal on ETHUSDT 1m
+2022-03-24 10:17:23,550 INFO :: Getting Binance trade size...
+2022-03-24 10:17:24,113 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.0008
+2022-03-24 10:17:24,113 INFO :: Long signal on ETHUSDT 1m
+2022-03-24 10:17:24,780 WARNING :: Binance ETHUSDT: 2110 milliseconds of difference between the current time and the trade time
+2022-03-24 10:17:24,780 INFO :: Getting Binance trade size...
+2022-03-24 10:17:25,141 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.0008
+2022-03-24 10:17:25,142 INFO :: Long signal on ETHUSDT 1m
+2022-03-24 10:17:25,602 WARNING :: Binance ETHUSDT: 2932 milliseconds of difference between the current time and the trade time
+2022-03-24 10:17:25,603 INFO :: Getting Binance trade size...
+2022-03-24 10:17:25,888 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.0008
+2022-03-24 10:17:25,889 INFO :: Long signal on ETHUSDT 1m
+2022-03-24 10:17:26,167 WARNING :: Binance ETHUSDT: 3497 milliseconds of difference between the current time and the trade time
+2022-03-24 10:17:26,168 INFO :: Getting Binance trade size...
+2022-03-24 10:17:26,503 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.0008
+2022-03-24 10:17:26,504 INFO :: Long signal on ETHUSDT 1m
+2022-03-24 10:17:26,915 WARNING :: Binance ETHUSDT: 4244 milliseconds of difference between the current time and the trade time
+2022-03-24 10:17:26,915 INFO :: Getting Binance trade size...
+2022-03-24 10:17:27,322 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.0008
+2022-03-24 10:17:27,323 INFO :: Long signal on ETHUSDT 1m
+2022-03-24 10:17:27,569 WARNING :: Binance ETHUSDT: 4899 milliseconds of difference between the current time and the trade time
+2022-03-24 10:17:27,569 INFO :: Getting Binance trade size...
+2022-03-24 10:17:27,855 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.00078
+2022-03-24 10:17:27,855 INFO :: Long signal on ETHUSDT 1m
+2022-03-24 10:17:28,387 WARNING :: Binance BTCUSDT: 5133 milliseconds of difference between the current time and the trade time
+2022-03-24 10:17:28,388 WARNING :: Binance BTCUSDT: 5134 milliseconds of difference between the current time and the trade time
+2022-03-24 10:17:28,390 WARNING :: Binance ETHUSDT: 4988 milliseconds of difference between the current time and the trade time
+2022-03-24 10:17:28,391 WARNING :: Binance BTCUSDT: 4138 milliseconds of difference between the current time and the trade time
+2022-03-24 10:17:28,391 WARNING :: Binance ETHUSDT: 3876 milliseconds of difference between the current time and the trade time
+2022-03-24 10:17:28,392 WARNING :: Binance ETHUSDT: 3865 milliseconds of difference between the current time and the trade time
+2022-03-24 10:17:28,393 WARNING :: Binance ETHUSDT: 3112 milliseconds of difference between the current time and the trade time
+2022-03-24 10:17:28,393 WARNING :: Binance ETHUSDT: 3105 milliseconds of difference between the current time and the trade time
+2022-03-24 10:20:10,038 INFO :: Binance Spot Client successfully initialized
+2022-03-24 10:20:12,197 INFO :: Binance connection opened
+2022-03-24 10:20:12,198 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-24 10:20:12,664 INFO :: Bitmex Client successfully initialized
+2022-03-24 10:20:14,190 INFO :: Bitmex connection opened
+2022-03-24 10:20:16,878 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-24 10:20:17,132 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-24 10:20:17,775 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-24 10:20:19,714 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-24 10:20:20,879 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-24 10:20:21,789 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-03-24 10:20:23,176 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-03-24 10:20:35,325 INFO :: Getting Binance trade size...
+2022-03-24 10:20:35,841 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-24 10:20:35,844 INFO :: Long signal on BTCUSDT 1m
+2022-03-24 10:20:36,360 INFO :: Getting Binance trade size...
+2022-03-24 10:20:36,635 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-24 10:20:36,635 INFO :: Long signal on BTCUSDT 1m
+2022-03-24 10:20:37,231 INFO :: Getting Binance trade size...
+2022-03-24 10:20:39,044 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-24 10:20:39,045 INFO :: Long signal on BTCUSDT 1m
+2022-03-24 10:20:39,606 WARNING :: Binance BTCUSDT: 4308 milliseconds of difference between the current time and the trade time
+2022-03-24 10:20:39,607 INFO :: Getting Binance trade size...
+2022-03-24 10:20:39,854 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-24 10:20:39,854 INFO :: Long signal on BTCUSDT 1m
+2022-03-24 10:20:40,199 WARNING :: Binance BTCUSDT: 3934 milliseconds of difference between the current time and the trade time
+2022-03-24 10:20:40,199 INFO :: Getting Binance trade size...
+2022-03-24 10:20:40,817 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-24 10:20:40,818 INFO :: Long signal on BTCUSDT 1m
+2022-03-24 10:20:41,151 WARNING :: Binance BTCUSDT: 4886 milliseconds of difference between the current time and the trade time
+2022-03-24 10:20:41,151 INFO :: Getting Binance trade size...
+2022-03-24 10:20:41,390 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-24 10:20:41,391 INFO :: Long signal on BTCUSDT 1m
+2022-03-24 10:20:41,621 WARNING :: Binance ETHUSDT: 4969 milliseconds of difference between the current time and the trade time
+2022-03-24 10:20:41,622 INFO :: Getting Binance trade size...
+2022-03-24 10:20:41,915 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.0008
+2022-03-24 10:20:41,916 INFO :: Long signal on ETHUSDT 1m
+2022-03-24 10:20:42,306 WARNING :: Binance ETHUSDT: 5654 milliseconds of difference between the current time and the trade time
+2022-03-24 10:20:42,306 INFO :: Getting Binance trade size...
+2022-03-24 10:20:42,558 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.0008
+2022-03-24 10:20:42,558 INFO :: Long signal on ETHUSDT 1m
+2022-03-24 10:20:42,943 WARNING :: Binance ETHUSDT: 6266 milliseconds of difference between the current time and the trade time
+2022-03-24 10:20:42,944 INFO :: Getting Binance trade size...
+2022-03-24 10:20:43,408 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.0008
+2022-03-24 10:20:43,409 INFO :: Long signal on ETHUSDT 1m
+2022-03-24 10:20:43,699 WARNING :: Binance ETHUSDT: 7022 milliseconds of difference between the current time and the trade time
+2022-03-24 10:20:43,699 INFO :: Getting Binance trade size...
+2022-03-24 10:20:44,203 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.0008
+2022-03-24 10:20:44,204 INFO :: Long signal on ETHUSDT 1m
+2022-03-24 10:20:44,541 WARNING :: Binance BTCUSDT: 7309 milliseconds of difference between the current time and the trade time
+2022-03-24 10:20:44,541 INFO :: Getting Binance trade size...
+2022-03-24 10:20:44,769 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-24 10:20:44,770 INFO :: Long signal on BTCUSDT 1m
+2022-03-24 10:20:45,181 WARNING :: Binance ETHUSDT: 7711 milliseconds of difference between the current time and the trade time
+2022-03-24 10:20:45,182 INFO :: Getting Binance trade size...
+2022-03-24 10:20:45,482 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.0008
+2022-03-24 10:20:45,482 INFO :: Long signal on ETHUSDT 1m
+2022-03-24 10:20:45,747 WARNING :: Binance ETHUSDT: 8264 milliseconds of difference between the current time and the trade time
+2022-03-24 10:20:45,748 INFO :: Getting Binance trade size...
+2022-03-24 10:20:46,087 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.0008
+2022-03-24 10:20:46,088 INFO :: Long signal on ETHUSDT 1m
+2022-03-24 10:20:46,322 WARNING :: Binance ETHUSDT: 8839 milliseconds of difference between the current time and the trade time
+2022-03-24 10:20:46,322 INFO :: Getting Binance trade size...
+2022-03-24 10:20:46,735 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.0008
+2022-03-24 10:20:46,735 INFO :: Long signal on ETHUSDT 1m
+2022-03-24 10:20:47,177 WARNING :: Binance ETHUSDT: 9694 milliseconds of difference between the current time and the trade time
+2022-03-24 10:20:47,177 INFO :: Getting Binance trade size...
+2022-03-24 10:20:47,453 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.0008
+2022-03-24 10:20:47,453 INFO :: Long signal on ETHUSDT 1m
+2022-03-24 10:20:47,738 WARNING :: Binance ETHUSDT: 9209 milliseconds of difference between the current time and the trade time
+2022-03-24 10:20:47,738 INFO :: Getting Binance trade size...
+2022-03-24 10:20:48,122 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.0008
+2022-03-24 10:20:48,124 INFO :: Long signal on ETHUSDT 1m
+2022-03-24 10:20:48,372 WARNING :: Binance ETHUSDT: 9830 milliseconds of difference between the current time and the trade time
+2022-03-24 10:20:48,373 INFO :: Getting Binance trade size...
+2022-03-24 10:20:48,819 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.0008
+2022-03-24 10:20:48,819 INFO :: Long signal on ETHUSDT 1m
+2022-03-24 10:20:49,171 WARNING :: Binance ETHUSDT: 10629 milliseconds of difference between the current time and the trade time
+2022-03-24 10:20:49,172 INFO :: Getting Binance trade size...
+2022-03-24 10:20:49,417 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.0008
+2022-03-24 10:20:49,417 INFO :: Long signal on ETHUSDT 1m
+2022-03-24 10:20:49,856 WARNING :: Binance BTCUSDT: 6372 milliseconds of difference between the current time and the trade time
+2022-03-24 10:20:49,856 INFO :: Getting Binance trade size...
+2022-03-24 10:20:50,150 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-24 10:20:50,150 INFO :: Long signal on BTCUSDT 1m
+2022-03-24 10:22:36,982 INFO :: Binance Spot Client successfully initialized
+2022-03-24 10:22:39,594 INFO :: Binance connection opened
+2022-03-24 10:22:39,597 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-03-24 10:22:40,520 INFO :: Bitmex Client successfully initialized
+2022-03-24 10:22:41,954 INFO :: Bitmex connection opened
+2022-03-24 10:22:46,664 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-03-24 10:22:47,173 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-03-24 10:22:47,520 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-03-24 10:22:52,828 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-03-24 10:22:54,161 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-03-24 10:22:54,851 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-03-24 10:22:57,529 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-03-24 10:23:01,506 INFO :: Binance New candle for BTCUSDT 1m
+2022-03-24 10:23:10,317 INFO :: Getting Binance trade size...
+2022-03-24 10:23:10,933 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-24 10:23:10,937 INFO :: Long signal on BTCUSDT 1m
+2022-03-24 10:23:11,431 INFO :: Getting Binance trade size...
+2022-03-24 10:23:11,754 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-24 10:23:11,754 INFO :: Long signal on BTCUSDT 1m
+2022-03-24 10:23:12,367 WARNING :: Binance BTCUSDT: 2058 milliseconds of difference between the current time and the trade time
+2022-03-24 10:23:12,368 INFO :: Getting Binance trade size...
+2022-03-24 10:23:12,728 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-24 10:23:12,729 INFO :: Long signal on BTCUSDT 1m
+2022-03-24 10:23:13,015 WARNING :: Binance ETHUSDT: 2520 milliseconds of difference between the current time and the trade time
+2022-03-24 10:23:13,016 INFO :: Binance New candle for ETHUSDT 1m
+2022-03-24 10:23:13,016 INFO :: Getting Binance trade size...
+2022-03-24 10:23:13,348 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.0008
+2022-03-24 10:23:13,348 INFO :: Long signal on ETHUSDT 1m
+2022-03-24 10:23:13,882 WARNING :: Binance ETHUSDT: 3372 milliseconds of difference between the current time and the trade time
+2022-03-24 10:23:13,883 INFO :: Getting Binance trade size...
+2022-03-24 10:23:14,281 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.0008
+2022-03-24 10:23:14,282 INFO :: Long signal on ETHUSDT 1m
+2022-03-24 10:23:14,551 WARNING :: Binance ETHUSDT: 4041 milliseconds of difference between the current time and the trade time
+2022-03-24 10:23:14,551 INFO :: Getting Binance trade size...
+2022-03-24 10:23:14,831 INFO :: Binance current USDT balance = 239.9772124, trade size = 0.0008
+2022-03-24 10:23:14,831 INFO :: Long signal on ETHUSDT 1m
+2022-03-24 10:23:15,115 WARNING :: Binance XRPUSDT: 4013 milliseconds of difference between the current time and the trade time
+2022-03-24 10:23:15,115 INFO :: Binance New candle for XRPUSDT 1m
+2022-03-24 10:23:15,115 INFO :: Getting Binance trade size...
+2022-03-24 10:23:15,435 INFO :: Binance current USDT balance = 239.9772124, trade size = 2.9
+2022-03-24 10:23:15,435 INFO :: Long signal on XRPUSDT 1m
+2022-03-24 10:23:15,670 WARNING :: Binance XRPUSDT: 4568 milliseconds of difference between the current time and the trade time
+2022-03-24 10:23:15,670 INFO :: Getting Binance trade size...
+2022-03-24 10:23:15,954 INFO :: Binance current USDT balance = 239.9772124, trade size = 2.9
+2022-03-24 10:23:15,954 INFO :: Long signal on XRPUSDT 1m
+2022-03-24 10:23:16,207 WARNING :: Binance BTCUSDT: 4932 milliseconds of difference between the current time and the trade time
+2022-03-24 10:23:16,208 INFO :: Getting Binance trade size...
+2022-03-24 10:23:16,459 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-24 10:23:16,460 INFO :: Long signal on BTCUSDT 1m
+2022-03-24 10:23:16,788 WARNING :: Binance BTCUSDT: 5498 milliseconds of difference between the current time and the trade time
+2022-03-24 10:23:16,789 INFO :: Getting Binance trade size...
+2022-03-24 10:23:17,033 INFO :: Binance current USDT balance = 239.9772124, trade size = 5.7e-05
+2022-03-24 10:23:17,033 INFO :: Long signal on BTCUSDT 1m

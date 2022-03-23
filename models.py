@@ -94,6 +94,10 @@ class Contract:
                 if b_filter['filterType'] == 'LOT_SIZE':
                     self.lot_size = float(b_filter['stepSize'])
                     self.quantity_decimals = tick_to_decimals(float(b_filter['stepSize']))
+                    self.min_ls = float(b_filter['minQty'])
+                    self.max_ls = float(b_filter['maxQty'])
+                if b_filter['filterType'] == 'MIN_NOTIONAL':
+                    self.minNotional = float(b_filter['minNotional'])
 
         elif exchange == "bitmex":
             self.symbol = contract_info['symbol']
