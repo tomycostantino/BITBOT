@@ -7,8 +7,10 @@ import hashlib
 import websocket
 import threading
 import json
+import prices
 
 from urllib.parse import urlencode
+
 from models import *
 from strategies import TechnicalStrategy, BreakoutStrategy
 
@@ -302,9 +304,35 @@ class BinanceClient:
             quantity <= maxQty
             (quantity - minQty) % stepSize == 0
             '''
+
+
+            #if data['quantity'] < contract.min_ls:
+            #    data['quantity'] = contract.min_ls
+
+            #print(contract.minNotional)
+            '''
+            print(contract.min_ls)
+            order_price = data['quantity'] * prices.prices[contract.symbol]
+            print(order_price)
+            if order_price < contract.minNotional:
+                data['quantity'] = round(contract.minNotional / prices.prices[contract.symbol], 6)
+
             print(data['quantity'])
-            if data['quantity'] < contract.min_ls:
-                data['quantity'] = contract.min_ls
+            '''
+            order_price = float(data['quantity'] * prices.prices[contract.symbol])
+
+            if float(contract.minNotional) > float(order_price) and float(contract.min_ls) > float(data['quantity']):
+                print('if')
+                while True:
+                    print('ilop')
+                    data['quantity'] += float((round(contract.min_ls * 0.5, 8)))
+                    order_price = float(data['quantity'] * prices.prices[contract.symbol])
+                    if contract.minNotional <= order_price and contract.min_ls <= data['quantity']:
+                        break
+            else:
+                print('noloop')
+
+            print(order_price)
             print(data['quantity'])
             order_status = self._send_signed_request('POST', '/api/v3/order', data)
             print(order_status)
@@ -474,6 +502,7 @@ class BinanceClient:
 
                 for key, strat in self.strategies.items():
                     if strat.contract.symbol == symbol:
+                        prices.prices[symbol] = float(data['p'])
                         res = strat.parse_trades(float(data['p']), float(data['q']), data['T'])
                         strat.check_trade(res)
 
