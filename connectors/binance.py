@@ -290,6 +290,7 @@ class BinanceClient:
             order_status = self._send_signed_request('POST', '/fapi/v1/order', data)
             print(order_status)
         else:
+            data['quantity'] = self._check_for_filters(contract, data['quantity'], self.prices[contract.symbol]['ask'])
             order_status = self._send_signed_request('POST', '/api/v3/order', data)
             print(order_status)
 
@@ -535,18 +536,22 @@ class BinanceClient:
         '''
 
         new_quantity: float = 0.0
-
+        print('Contract: %s, Qty: %f, minimum: %', str(contract.symbol), qty_to_order, contract.min_ls)
         if qty_to_order <= contract.min_ls:
             print('Not passed, qty wanted: %s qty expected: %s', qty_to_order, contract.min_ls)
             while True:
-                new_quantity += round(float((abs(contract.min_ls - qty_to_order) * (new_quantity * 0.5))), 8)
+                new_quantity += round(float(abs(contract.min_ls - qty_to_order) * 0.5, 8))
                 if new_quantity % contract.lot_size == 0:
                     print('New quantity: ', new_quantity)
                     break
 
-        trade_price = calculate_trade_value(qty_to_order, new_quantity)
+        trade_price = calculate_trade_value(qty_to_order, self.prices[contract.symbol]['ask'])
+        print('Actual trade price calculated: %f', trade_price)
 
         if trade_price <= contract.minNotional:
-            print('Not passed, min Notional: %s qty expected: %s', contract.minNotional, trade_price)
+            print('Not passed, min Notional: %s price now: %f', str(contract.minNotional), trade_price)
+            diff: float = contract.min_ls - trade_price
+            new_quantity += round(diff / self.prices[contract.symbol]['ask'], 8)
+            print('New quantity: ', new_quantity)
 
         return new_quantity
