@@ -13,6 +13,7 @@ from urllib.parse import urlencode
 
 from models import *
 from strategies import TechnicalStrategy, BreakoutStrategy
+from utils import *
 
 logger = logging.getLogger()
 
@@ -273,9 +274,6 @@ class BinanceClient:
         data = dict()
         data['symbol'] = contract.symbol
         data['side'] = side.upper()
-
-        ''' come back to this part (quantity)'''
-        # data['quantity'] = quantity
         data['quantity'] = round(int(quantity / contract.lot_size) * contract.lot_size, 8)  # int() to round down
         data['type'] = order_type.upper()
 
@@ -287,53 +285,11 @@ class BinanceClient:
             data['timeInForce'] = tif
 
         if self.futures:
-            data['timestamp'] = int(time.time() * 1000)
-            data['signature'] = self._generate_signature(data)
-            order_status = self._make_request('POST', '/fapi/v1/order', data)
+            # data['timestamp'] = int(time.time() * 1000)
+            # data['signature'] = self._generate_signature(data)
+            order_status = self._send_signed_request('POST', '/fapi/v1/order', data)
             print(order_status)
         else:
-            # rules to pass LOT_SIZE filter
-            '''
-            {
-                "filterType": "LOT_SIZE",
-                "minQty": "0.00100000",
-                "maxQty": "100000.00000000",
-                "stepSize": "0.00100000"
-              }
-            quantity >= minQty
-            quantity <= maxQty
-            (quantity - minQty) % stepSize == 0
-            '''
-
-
-            #if data['quantity'] < contract.min_ls:
-            #    data['quantity'] = contract.min_ls
-
-            #print(contract.minNotional)
-            '''
-            print(contract.min_ls)
-            order_price = data['quantity'] * prices.prices[contract.symbol]
-            print(order_price)
-            if order_price < contract.minNotional:
-                data['quantity'] = round(contract.minNotional / prices.prices[contract.symbol], 6)
-
-            print(data['quantity'])
-            '''
-            order_price = float(data['quantity'] * prices.prices[contract.symbol])
-
-            if float(contract.minNotional) > float(order_price) and float(contract.min_ls) > float(data['quantity']):
-                print('if')
-                while True:
-                    print('ilop')
-                    data['quantity'] += float((round(contract.min_ls * 0.5, 8)))
-                    order_price = float(data['quantity'] * prices.prices[contract.symbol])
-                    if contract.minNotional <= order_price and contract.min_ls <= data['quantity']:
-                        break
-            else:
-                print('noloop')
-
-            print(order_price)
-            print(data['quantity'])
             order_status = self._send_signed_request('POST', '/api/v3/order', data)
             print(order_status)
 
@@ -563,3 +519,34 @@ class BinanceClient:
         logger.info('Binance current %s balance = %s, trade size = %s', contract.quote_asset, balance, trade_size)
 
         return trade_size
+
+    def _check_for_filters(self, contract: Contract, qty_to_order: float, asset_price: float) -> float:
+        # rules to pass LOT_SIZE filter
+        '''
+        {
+            "filterType": "LOT_SIZE",
+            "minQty": "0.00100000",
+            "maxQty": "100000.00000000",
+            "stepSize": "0.00100000"
+          }
+        quantity >= minQty
+        quantity <= maxQty
+        (quantity - minQty) % stepSize == 0
+        '''
+
+        new_quantity: float = 0.0
+
+        if qty_to_order <= contract.min_ls:
+            print('Not passed, qty wanted: %s qty expected: %s', qty_to_order, contract.min_ls)
+            while True:
+                new_quantity += round(float((abs(contract.min_ls - qty_to_order) * (new_quantity * 0.5))), 8)
+                if new_quantity % contract.lot_size == 0:
+                    print('New quantity: ', new_quantity)
+                    break
+
+        trade_price = calculate_trade_value(qty_to_order, new_quantity)
+
+        if trade_price <= contract.minNotional:
+            print('Not passed, min Notional: %s qty expected: %s', contract.minNotional, trade_price)
+
+        return new_quantity

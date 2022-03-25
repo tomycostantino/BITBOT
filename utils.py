@@ -26,3 +26,7 @@ def check_float_format(text: str):
             return False
     else:
         return False
+
+
+def calculate_trade_value(asset_quantity: float, lot_size: float) -> float:
+    return float(asset_quantity * lot_size)
