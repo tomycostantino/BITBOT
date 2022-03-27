@@ -3,6 +3,7 @@ import requests
 import time
 import typing
 import hmac
+import math
 import hashlib
 import websocket
 import threading
@@ -536,22 +537,11 @@ class BinanceClient:
         '''
 
         new_quantity: float = 0.0
-        print('Contract: %s, Qty: %f, minimum: %', str(contract.symbol), qty_to_order, contract.min_ls)
-        if qty_to_order <= contract.min_ls:
-            print('Not passed, qty wanted: %s qty expected: %s', qty_to_order, contract.min_ls)
-            while True:
-                new_quantity += round(float(abs(contract.min_ls - qty_to_order) * 0.5, 8))
-                if new_quantity % contract.lot_size == 0:
-                    print('New quantity: ', new_quantity)
-                    break
 
         trade_price = calculate_trade_value(qty_to_order, self.prices[contract.symbol]['ask'])
         print('Actual trade price calculated: %f', trade_price)
 
-        if trade_price <= contract.minNotional:
-            print('Not passed, min Notional: %s price now: %f', str(contract.minNotional), trade_price)
-            diff: float = contract.min_ls - trade_price
-            new_quantity += round(diff / self.prices[contract.symbol]['ask'], 8)
-            print('New quantity: ', new_quantity)
+        if trade_price <= contract.minNotional or contract.min_ls > qty_to_order:
+            print('Contract: %s%, Qty: %f%, minimum: %s%', contract.symbol, qty_to_order, contract.min_ls)
 
         return new_quantity
