@@ -539,15 +539,21 @@ class BinanceClient:
         new_quantity: float = 0.0
 
         trade_price = calculate_trade_value(qty_to_order, self.prices[contract.symbol]['ask'])
-        print('Actual trade price calculated: %f', trade_price)
+        print(f'Actual trade price calculated: %f', trade_price)
 
         if trade_price <= contract.minNotional or contract.min_ls >= qty_to_order:
-            # print('Contract: %s, Qty: %f, minimum: %s', contract.symbol, qty_to_order, contract.min_ls)
-            new_quantity = round(contract.minNotional / self.prices[contract.symbol]['ask'], 8)
+            print(f'Contract: %s, Qty: %f, min_ls: %s, minNot', contract.symbol, qty_to_order, contract.min_ls, contract.minNotional)
+            new_quantity = round((contract.minNotional / self.prices[contract.symbol]['ask']) + ((contract.minNotional / self.prices[contract.symbol]['ask']) * 0.1), 8)
+            if contract.lot_size > new_quantity:
+                new_quantity = contract.lot_size
+            elif contract.min_ls > new_quantity:
+                new_quantity = contract.min_ls
+
             # new_quantity = round(minNotional_qty * contract.min_ls / min(qty_to_order, contract.min_ls), 8)
             ntp = calculate_trade_value(new_quantity, self.prices[contract.symbol]['ask'])
             print('New trade price: ', ntp)
             print('New quantity: ', new_quantity)
+
 
         else:
             new_quantity = qty_to_order
