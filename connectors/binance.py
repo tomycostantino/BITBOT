@@ -3,7 +3,7 @@ import requests
 import time
 import typing
 import hmac
-import math
+import numpy as np
 import hashlib
 import websocket
 import threading
@@ -77,7 +77,6 @@ class BinanceClient:
         # start threading for ws manager
         t = threading.Thread(target=self.start_ws)
         t.start()
-
 
     def _hashing(self, query_string: str):
         return hmac.new(
@@ -292,10 +291,15 @@ class BinanceClient:
             print(order_status)
         else:
             data['quantity'] = self._check_for_filters(contract, data['quantity'], self.prices[contract.symbol]['ask'])
+            print(contract.symbol[:3])
+            print(float(self.balances[contract.symbol[:3]].free))
+            if data['quantity'] > float(self.balances[contract.symbol[:3]].free):
+                logger.error('Quantity higher than free')
+                return
+
             order_status = self._send_signed_request('POST', '/api/v3/order', data)
             print(order_status)
 
-        '''
         if order_status is not None:
             if not self.futures:
                 if order_status['status'] == 'FILLED':
@@ -306,7 +310,7 @@ class BinanceClient:
             order_status = OrderStatus(order_status, self.platform)
         
         return order_status
-        '''
+
     # cancel order when required
     # receives the Contract and the order id to cancel
     # returns an OrderStatus object
@@ -543,7 +547,7 @@ class BinanceClient:
 
         if trade_price <= contract.minNotional or contract.min_ls >= qty_to_order:
             print(f'Contract: %s, Qty: %f, min_ls: %s, minNot', contract.symbol, qty_to_order, contract.min_ls, contract.minNotional)
-            new_quantity = round((contract.minNotional / self.prices[contract.symbol]['ask']) + ((contract.minNotional / self.prices[contract.symbol]['ask']) * 0.1), 8)
+            new_quantity = round((contract.minNotional / self.prices[contract.symbol]['ask']) * 1.1, 8)
             if contract.lot_size > new_quantity:
                 new_quantity = contract.lot_size
             elif contract.min_ls > new_quantity:
@@ -554,8 +558,7 @@ class BinanceClient:
             print('New trade price: ', ntp)
             print('New quantity: ', new_quantity)
 
-
         else:
             new_quantity = qty_to_order
 
-        return new_quantity
+        return np.ceil(new_quantity)
