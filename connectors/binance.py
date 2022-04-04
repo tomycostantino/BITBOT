@@ -296,6 +296,9 @@ class BinanceClient:
             if data['quantity'] > float(self.balances[contract.symbol[:3]].free):
                 logger.error('Quantity higher than free')
                 return
+            else:
+                print('qty to order: ', data['quantity'])
+                print('qty available: ', self.balances[contract.symbol[:3]].free)
 
             order_status = self._send_signed_request('POST', '/api/v3/order', data)
             print(order_status)
@@ -558,7 +561,11 @@ class BinanceClient:
             print('New trade price: ', ntp)
             print('New quantity: ', new_quantity)
 
+            new_quantity_round = new_quantity * 10000
+            new_quantity_round = np.ceil(new_quantity_round)
+            new_quantity = new_quantity_round / 10000
+
         else:
             new_quantity = qty_to_order
 
-        return np.ceil(new_quantity)
+        return new_quantity

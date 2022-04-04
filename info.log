@@ -12903,3 +12903,574 @@
 2022-04-01 22:31:22,468 ERROR :: Binance connection error: 'status'
 2022-04-01 22:32:00,909 INFO :: Binance New candle for BTCUSDT 1m
 2022-04-01 22:33:01,034 INFO :: Binance New candle for BTCUSDT 1m
+2022-04-04 22:39:22,091 INFO :: Binance Spot Client successfully initialized
+2022-04-04 22:39:24,295 INFO :: Binance connection opened
+2022-04-04 22:39:24,297 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-04-04 22:39:25,842 INFO :: Bitmex Client successfully initialized
+2022-04-04 22:39:27,374 INFO :: Bitmex connection opened
+2022-04-04 22:39:35,142 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-04-04 22:39:35,633 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-04-04 22:39:36,099 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-04-04 22:39:41,559 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-04-04 22:39:42,738 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-04-04 22:39:43,601 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-04-04 22:39:44,976 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-04-04 22:40:00,512 INFO :: Binance New candle for BTCUSDT 1m
+2022-04-04 22:40:34,025 WARNING :: Binance BTCUSDT: 4485 milliseconds of difference between the current time and the trade time
+2022-04-04 22:40:34,027 WARNING :: Binance BTCUSDT: 4487 milliseconds of difference between the current time and the trade time
+2022-04-04 22:40:34,027 WARNING :: Binance BTCUSDT: 4473 milliseconds of difference between the current time and the trade time
+2022-04-04 22:40:34,028 WARNING :: Binance BTCUSDT: 4474 milliseconds of difference between the current time and the trade time
+2022-04-04 22:40:34,059 WARNING :: Binance BTCUSDT: 3520 milliseconds of difference between the current time and the trade time
+2022-04-04 22:40:34,060 WARNING :: Binance BTCUSDT: 3521 milliseconds of difference between the current time and the trade time
+2022-04-04 22:40:34,061 WARNING :: Binance BTCUSDT: 3507 milliseconds of difference between the current time and the trade time
+2022-04-04 22:40:34,061 WARNING :: Binance BTCUSDT: 3507 milliseconds of difference between the current time and the trade time
+2022-04-04 22:40:34,062 WARNING :: Binance BTCUSDT: 2524 milliseconds of difference between the current time and the trade time
+2022-04-04 22:40:34,063 WARNING :: Binance BTCUSDT: 2511 milliseconds of difference between the current time and the trade time
+2022-04-04 22:40:42,629 INFO :: Getting Binance trade size...
+2022-04-04 22:40:43,251 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:40:43,255 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:40:43,543 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f96e00c2df0>>: 'status'
+2022-04-04 22:40:43,543 ERROR :: Binance connection error: 'status'
+2022-04-04 22:40:43,543 INFO :: Getting Binance trade size...
+2022-04-04 22:40:44,476 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:40:44,477 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:40:44,832 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f96e00c2df0>>: 'status'
+2022-04-04 22:40:44,833 ERROR :: Binance connection error: 'status'
+2022-04-04 22:40:44,834 WARNING :: Binance BTCUSDT: 2276 milliseconds of difference between the current time and the trade time
+2022-04-04 22:40:44,834 INFO :: Getting Binance trade size...
+2022-04-04 22:40:45,168 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:40:45,168 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:40:45,653 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f96e00c2df0>>: 'status'
+2022-04-04 22:40:45,653 ERROR :: Binance connection error: 'status'
+2022-04-04 22:40:45,654 WARNING :: Binance BTCUSDT: 3096 milliseconds of difference between the current time and the trade time
+2022-04-04 22:40:45,654 INFO :: Getting Binance trade size...
+2022-04-04 22:40:45,945 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:40:45,945 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:40:46,227 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f96e00c2df0>>: 'status'
+2022-04-04 22:40:46,227 ERROR :: Binance connection error: 'status'
+2022-04-04 22:40:46,228 WARNING :: Binance ETHUSDT: 3666 milliseconds of difference between the current time and the trade time
+2022-04-04 22:40:46,228 INFO :: Binance New candle for ETHUSDT 1m
+2022-04-04 22:40:46,229 WARNING :: Binance BTCUSDT: 2641 milliseconds of difference between the current time and the trade time
+2022-04-04 22:40:46,229 INFO :: Getting Binance trade size...
+2022-04-04 22:40:46,527 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:40:46,527 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:40:46,846 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f96e00c2df0>>: 'status'
+2022-04-04 22:40:46,846 ERROR :: Binance connection error: 'status'
+2022-04-04 22:40:46,846 WARNING :: Binance BTCUSDT: 3258 milliseconds of difference between the current time and the trade time
+2022-04-04 22:40:46,846 INFO :: Getting Binance trade size...
+2022-04-04 22:40:47,155 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:40:47,156 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:40:47,860 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f96e00c2df0>>: 'status'
+2022-04-04 22:40:47,860 ERROR :: Binance connection error: 'status'
+2022-04-04 22:40:47,862 WARNING :: Binance BTCUSDT: 4260 milliseconds of difference between the current time and the trade time
+2022-04-04 22:40:47,862 INFO :: Getting Binance trade size...
+2022-04-04 22:40:48,149 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:40:48,149 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:49:44,628 INFO :: Binance Spot Client successfully initialized
+2022-04-04 22:49:46,898 INFO :: Binance connection opened
+2022-04-04 22:49:46,899 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-04-04 22:49:48,218 INFO :: Bitmex Client successfully initialized
+2022-04-04 22:49:49,770 INFO :: Bitmex connection opened
+2022-04-04 22:49:52,599 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-04-04 22:49:53,078 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-04-04 22:49:53,337 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-04-04 22:49:55,878 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-04-04 22:49:56,479 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-04-04 22:49:57,384 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-04-04 22:49:58,672 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-04-04 22:50:00,409 INFO :: Binance New candle for BTCUSDT 1m
+2022-04-04 22:51:00,406 INFO :: Binance New candle for BTCUSDT 1m
+2022-04-04 22:51:14,501 INFO :: Getting Binance trade size...
+2022-04-04 22:51:15,150 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:15,154 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:15,640 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:15,640 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:15,642 INFO :: Getting Binance trade size...
+2022-04-04 22:51:15,896 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:15,897 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:16,155 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:16,155 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:16,156 INFO :: Getting Binance trade size...
+2022-04-04 22:51:16,434 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:16,434 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:16,704 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:16,705 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:16,705 INFO :: Getting Binance trade size...
+2022-04-04 22:51:16,958 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:16,959 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:17,235 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:17,235 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:17,235 INFO :: Getting Binance trade size...
+2022-04-04 22:51:17,724 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:17,724 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:18,194 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:18,194 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:18,195 WARNING :: Binance BTCUSDT: 2605 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:18,196 INFO :: Getting Binance trade size...
+2022-04-04 22:51:18,453 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:18,453 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:18,707 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:18,707 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:18,707 WARNING :: Binance BTCUSDT: 3117 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:18,707 INFO :: Getting Binance trade size...
+2022-04-04 22:51:18,971 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:18,971 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:19,233 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:19,234 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:19,234 WARNING :: Binance BTCUSDT: 2669 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:19,234 INFO :: Getting Binance trade size...
+2022-04-04 22:51:19,514 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:19,515 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:19,775 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:19,775 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:19,776 WARNING :: Binance BTCUSDT: 3195 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:19,776 INFO :: Getting Binance trade size...
+2022-04-04 22:51:20,054 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:20,054 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:20,342 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:20,343 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:20,343 WARNING :: Binance BTCUSDT: 3762 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:20,343 INFO :: Getting Binance trade size...
+2022-04-04 22:51:20,598 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:20,598 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:20,849 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:20,849 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:20,850 WARNING :: Binance BTCUSDT: 3260 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:20,850 INFO :: Getting Binance trade size...
+2022-04-04 22:51:21,106 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:21,106 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:21,367 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:21,367 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:21,368 WARNING :: Binance BTCUSDT: 3778 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:21,368 INFO :: Getting Binance trade size...
+2022-04-04 22:51:21,623 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:21,623 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:21,932 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:21,932 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:21,933 WARNING :: Binance BTCUSDT: 4329 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:21,933 INFO :: Getting Binance trade size...
+2022-04-04 22:51:22,188 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:22,188 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:22,467 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:22,467 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:22,468 WARNING :: Binance BTCUSDT: 4864 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:22,468 INFO :: Getting Binance trade size...
+2022-04-04 22:51:22,719 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:22,719 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:22,995 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:22,995 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:22,996 WARNING :: Binance BTCUSDT: 4413 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:22,996 INFO :: Getting Binance trade size...
+2022-04-04 22:51:23,282 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:23,282 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:24,060 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:24,060 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:24,061 WARNING :: Binance BTCUSDT: 5478 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:24,061 INFO :: Getting Binance trade size...
+2022-04-04 22:51:24,347 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:24,348 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:24,602 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:24,602 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:24,603 WARNING :: Binance BTCUSDT: 6007 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:24,604 INFO :: Getting Binance trade size...
+2022-04-04 22:51:24,882 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:24,883 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:25,149 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:25,149 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:25,150 WARNING :: Binance BTCUSDT: 5573 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:25,150 INFO :: Getting Binance trade size...
+2022-04-04 22:51:25,426 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:25,426 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:25,694 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:25,694 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:25,695 WARNING :: Binance BTCUSDT: 6118 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:25,695 INFO :: Getting Binance trade size...
+2022-04-04 22:51:25,978 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:25,978 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:26,258 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:26,258 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:26,258 WARNING :: Binance BTCUSDT: 6681 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:26,258 INFO :: Getting Binance trade size...
+2022-04-04 22:51:26,514 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:26,516 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:26,770 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:26,770 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:26,771 WARNING :: Binance BTCUSDT: 7180 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:26,771 INFO :: Getting Binance trade size...
+2022-04-04 22:51:27,064 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:27,065 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:27,338 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:27,339 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:27,339 WARNING :: Binance BTCUSDT: 7748 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:27,339 INFO :: Getting Binance trade size...
+2022-04-04 22:51:27,602 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:27,602 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:27,876 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:27,876 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:27,877 WARNING :: Binance BTCUSDT: 7251 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:27,877 INFO :: Getting Binance trade size...
+2022-04-04 22:51:28,133 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:28,134 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:28,417 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:28,417 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:28,418 WARNING :: Binance BTCUSDT: 7792 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:28,418 INFO :: Getting Binance trade size...
+2022-04-04 22:51:28,696 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:28,696 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:28,973 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:28,973 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:28,974 WARNING :: Binance BTCUSDT: 8333 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:28,974 INFO :: Getting Binance trade size...
+2022-04-04 22:51:29,234 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:29,235 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:29,485 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:29,486 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:29,486 WARNING :: Binance BTCUSDT: 8845 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:29,486 INFO :: Getting Binance trade size...
+2022-04-04 22:51:29,752 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:29,752 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:30,009 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:30,009 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:30,010 WARNING :: Binance BTCUSDT: 9369 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:30,010 INFO :: Getting Binance trade size...
+2022-04-04 22:51:30,272 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:30,272 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:30,540 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:30,540 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:30,541 WARNING :: Binance BTCUSDT: 8947 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:30,541 INFO :: Getting Binance trade size...
+2022-04-04 22:51:30,804 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:30,804 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:31,058 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:31,058 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:31,059 WARNING :: Binance BTCUSDT: 9465 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:31,059 INFO :: Getting Binance trade size...
+2022-04-04 22:51:31,322 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:31,322 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:31,596 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:31,596 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:31,597 WARNING :: Binance BTCUSDT: 9989 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:31,598 INFO :: Getting Binance trade size...
+2022-04-04 22:51:31,867 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:31,868 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:32,353 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:32,354 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:32,355 WARNING :: Binance BTCUSDT: 10747 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:32,355 INFO :: Getting Binance trade size...
+2022-04-04 22:51:32,625 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:32,625 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:32,896 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:32,896 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:32,897 WARNING :: Binance BTCUSDT: 10329 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:32,897 INFO :: Getting Binance trade size...
+2022-04-04 22:51:33,162 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:33,163 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:33,455 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:33,456 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:33,457 WARNING :: Binance BTCUSDT: 10889 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:33,457 INFO :: Getting Binance trade size...
+2022-04-04 22:51:33,720 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:33,721 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:33,988 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:33,988 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:33,989 WARNING :: Binance BTCUSDT: 11409 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:33,989 INFO :: Getting Binance trade size...
+2022-04-04 22:51:34,253 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:34,254 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:34,507 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:34,508 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:34,509 WARNING :: Binance BTCUSDT: 11929 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:34,509 INFO :: Getting Binance trade size...
+2022-04-04 22:51:34,781 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:34,782 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:35,053 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:35,053 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:35,054 WARNING :: Binance BTCUSDT: 12474 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:35,054 INFO :: Getting Binance trade size...
+2022-04-04 22:51:35,323 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:35,324 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:35,595 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:35,596 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:35,597 WARNING :: Binance BTCUSDT: 12030 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:35,597 INFO :: Getting Binance trade size...
+2022-04-04 22:51:35,863 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:35,863 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:36,143 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:36,143 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:36,144 WARNING :: Binance BTCUSDT: 12563 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:36,144 INFO :: Getting Binance trade size...
+2022-04-04 22:51:36,426 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:36,426 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:36,681 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:36,681 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:36,682 WARNING :: Binance BTCUSDT: 12884 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:36,682 INFO :: Getting Binance trade size...
+2022-04-04 22:51:36,932 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:36,932 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:37,198 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:37,198 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:37,199 WARNING :: Binance BTCUSDT: 13218 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:37,199 INFO :: Getting Binance trade size...
+2022-04-04 22:51:37,462 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:37,462 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:37,715 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:37,715 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:37,716 WARNING :: Binance BTCUSDT: 13681 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:37,716 INFO :: Getting Binance trade size...
+2022-04-04 22:51:37,979 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:37,979 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:38,242 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:38,242 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:38,243 WARNING :: Binance BTCUSDT: 11675 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:38,243 INFO :: Getting Binance trade size...
+2022-04-04 22:51:38,489 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:38,490 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:38,764 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:38,764 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:38,765 WARNING :: Binance BTCUSDT: 12182 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:38,765 INFO :: Getting Binance trade size...
+2022-04-04 22:51:39,024 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:39,025 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:39,289 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:39,290 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:39,290 WARNING :: Binance BTCUSDT: 12707 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:39,290 INFO :: Getting Binance trade size...
+2022-04-04 22:51:39,551 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:39,551 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:39,824 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:39,825 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:39,826 WARNING :: Binance BTCUSDT: 12994 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:39,826 INFO :: Getting Binance trade size...
+2022-04-04 22:51:40,080 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:40,080 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:40,337 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:40,337 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:40,338 WARNING :: Binance BTCUSDT: 12769 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:40,338 INFO :: Getting Binance trade size...
+2022-04-04 22:51:40,958 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:40,962 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:41,283 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:41,283 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:41,284 WARNING :: Binance BTCUSDT: 11713 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:41,284 INFO :: Getting Binance trade size...
+2022-04-04 22:51:41,535 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:41,536 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:41,798 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:41,798 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:41,799 WARNING :: Binance BTCUSDT: 12215 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:41,799 INFO :: Getting Binance trade size...
+2022-04-04 22:51:42,048 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:42,048 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:42,301 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:42,302 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:42,302 WARNING :: Binance BTCUSDT: 12718 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:42,303 INFO :: Getting Binance trade size...
+2022-04-04 22:51:42,556 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:42,557 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:42,810 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:42,811 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:42,811 WARNING :: Binance BTCUSDT: 12179 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:42,811 INFO :: Getting Binance trade size...
+2022-04-04 22:51:43,066 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:43,066 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:43,322 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:43,323 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:43,323 WARNING :: Binance BTCUSDT: 12691 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:43,323 INFO :: Getting Binance trade size...
+2022-04-04 22:51:43,589 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:43,590 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:43,852 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:43,853 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:43,853 WARNING :: Binance BTCUSDT: 13221 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:43,853 INFO :: Getting Binance trade size...
+2022-04-04 22:51:44,130 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:44,130 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:44,403 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:44,403 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:44,404 WARNING :: Binance BTCUSDT: 13759 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:44,404 INFO :: Getting Binance trade size...
+2022-04-04 22:51:44,670 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:44,671 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:44,930 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:44,930 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:44,931 WARNING :: Binance BTCUSDT: 14286 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:44,931 INFO :: Getting Binance trade size...
+2022-04-04 22:51:45,185 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:45,188 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:45,456 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:45,457 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:45,457 WARNING :: Binance BTCUSDT: 13890 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:45,458 INFO :: Getting Binance trade size...
+2022-04-04 22:51:45,724 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:45,724 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:45,983 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:45,983 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:45,984 WARNING :: Binance BTCUSDT: 14417 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:45,984 INFO :: Getting Binance trade size...
+2022-04-04 22:51:46,265 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:46,266 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:46,537 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:46,537 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:46,538 WARNING :: Binance BTCUSDT: 14956 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:46,538 INFO :: Getting Binance trade size...
+2022-04-04 22:51:46,799 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:46,799 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:47,046 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:47,046 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:47,047 WARNING :: Binance BTCUSDT: 15465 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:47,047 INFO :: Getting Binance trade size...
+2022-04-04 22:51:47,312 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:47,312 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:47,584 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:47,584 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:47,585 WARNING :: Binance BTCUSDT: 15016 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:47,585 INFO :: Getting Binance trade size...
+2022-04-04 22:51:47,889 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:47,890 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:48,154 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:48,154 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:48,155 WARNING :: Binance BTCUSDT: 15586 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:48,155 INFO :: Getting Binance trade size...
+2022-04-04 22:51:48,418 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:48,418 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:48,689 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:48,690 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:48,691 WARNING :: Binance BTCUSDT: 15126 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:48,691 INFO :: Getting Binance trade size...
+2022-04-04 22:51:48,953 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:48,954 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:49,203 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:49,204 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:49,204 WARNING :: Binance BTCUSDT: 15639 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:49,204 INFO :: Getting Binance trade size...
+2022-04-04 22:51:49,486 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:49,486 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:49,744 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:49,745 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:49,746 WARNING :: Binance BTCUSDT: 16168 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:49,746 INFO :: Getting Binance trade size...
+2022-04-04 22:51:50,038 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:50,039 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:50,289 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:50,289 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:50,289 WARNING :: Binance BTCUSDT: 13724 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:50,289 INFO :: Getting Binance trade size...
+2022-04-04 22:51:50,548 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:50,549 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:50,813 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:50,813 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:50,813 WARNING :: Binance BTCUSDT: 14248 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:50,813 INFO :: Getting Binance trade size...
+2022-04-04 22:51:51,061 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:51,062 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:51,330 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:51,331 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:51,331 WARNING :: Binance BTCUSDT: 14751 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:51,331 INFO :: Getting Binance trade size...
+2022-04-04 22:51:51,594 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:51,595 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:51,846 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:51,846 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:51,846 WARNING :: Binance BTCUSDT: 15266 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:51,847 INFO :: Getting Binance trade size...
+2022-04-04 22:51:52,104 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:52,104 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:52,373 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:52,373 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:52,374 WARNING :: Binance BTCUSDT: 14690 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:52,374 INFO :: Getting Binance trade size...
+2022-04-04 22:51:52,670 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:52,671 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:52,946 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:52,946 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:54,775 INFO :: Getting Binance trade size...
+2022-04-04 22:51:55,063 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:55,063 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:55,338 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:55,338 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:55,339 INFO :: Getting Binance trade size...
+2022-04-04 22:51:55,611 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:55,611 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:55,879 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:55,879 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:55,880 INFO :: Getting Binance trade size...
+2022-04-04 22:51:56,138 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:56,139 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:56,411 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:56,412 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:56,412 INFO :: Getting Binance trade size...
+2022-04-04 22:51:56,680 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:56,680 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:56,949 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:56,950 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:56,951 INFO :: Getting Binance trade size...
+2022-04-04 22:51:57,217 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:57,218 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:57,499 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:57,500 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:57,500 INFO :: Getting Binance trade size...
+2022-04-04 22:51:57,771 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:57,771 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:58,038 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:58,038 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:58,039 WARNING :: Binance BTCUSDT: 2374 milliseconds of difference between the current time and the trade time
+2022-04-04 22:51:58,039 INFO :: Getting Binance trade size...
+2022-04-04 22:51:58,298 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:58,299 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:58,557 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:58,557 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:58,558 INFO :: Getting Binance trade size...
+2022-04-04 22:51:58,823 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:58,824 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:59,093 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:59,093 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:59,094 INFO :: Getting Binance trade size...
+2022-04-04 22:51:59,346 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:59,346 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:51:59,642 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:51:59,642 ERROR :: Binance connection error: 'status'
+2022-04-04 22:51:59,642 INFO :: Getting Binance trade size...
+2022-04-04 22:51:59,897 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:51:59,898 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:52:00,181 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:52:00,181 ERROR :: Binance connection error: 'status'
+2022-04-04 22:52:00,182 WARNING :: Binance BTCUSDT: 2364 milliseconds of difference between the current time and the trade time
+2022-04-04 22:52:00,182 INFO :: Getting Binance trade size...
+2022-04-04 22:52:00,449 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:52:00,449 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:52:00,704 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:52:00,704 ERROR :: Binance connection error: 'status'
+2022-04-04 22:52:00,705 WARNING :: Binance BTCUSDT: 2037 milliseconds of difference between the current time and the trade time
+2022-04-04 22:52:00,705 INFO :: Getting Binance trade size...
+2022-04-04 22:52:00,950 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:52:00,950 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:52:01,199 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:52:01,199 ERROR :: Binance connection error: 'status'
+2022-04-04 22:52:01,200 WARNING :: Binance BTCUSDT: 2518 milliseconds of difference between the current time and the trade time
+2022-04-04 22:52:01,200 INFO :: Getting Binance trade size...
+2022-04-04 22:52:01,463 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:52:01,463 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:52:01,717 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:52:01,717 ERROR :: Binance connection error: 'status'
+2022-04-04 22:52:01,718 WARNING :: Binance BTCUSDT: 3036 milliseconds of difference between the current time and the trade time
+2022-04-04 22:52:01,718 INFO :: Getting Binance trade size...
+2022-04-04 22:52:02,021 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:52:02,022 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:52:02,272 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:52:02,272 ERROR :: Binance connection error: 'status'
+2022-04-04 22:52:02,272 WARNING :: Binance BTCUSDT: 2677 milliseconds of difference between the current time and the trade time
+2022-04-04 22:52:02,273 INFO :: Getting Binance trade size...
+2022-04-04 22:52:02,544 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:52:02,544 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:52:02,828 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:52:02,828 ERROR :: Binance connection error: 'status'
+2022-04-04 22:52:02,828 WARNING :: Binance BTCUSDT: 3233 milliseconds of difference between the current time and the trade time
+2022-04-04 22:52:02,828 INFO :: Getting Binance trade size...
+2022-04-04 22:52:03,097 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:52:03,097 INFO :: Long signal on BTCUSDT 1m
+2022-04-04 22:52:03,360 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8bb95badf0>>: 'status'
+2022-04-04 22:52:03,361 ERROR :: Binance connection error: 'status'
+2022-04-04 22:52:03,361 WARNING :: Binance BTCUSDT: 3754 milliseconds of difference between the current time and the trade time
+2022-04-04 22:52:03,361 INFO :: Getting Binance trade size...
+2022-04-04 22:52:03,613 INFO :: Binance current USDT balance = 5.7159124, trade size = 1e-06
+2022-04-04 22:52:03,613 INFO :: Long signal on BTCUSDT 1m
