@@ -8,7 +8,6 @@ import hashlib
 import websocket
 import threading
 import json
-import prices
 
 from urllib.parse import urlencode
 
@@ -290,16 +289,9 @@ class BinanceClient:
             order_status = self._send_signed_request('POST', '/fapi/v1/order', data)
             print(order_status)
         else:
-            data['quantity'] = self._check_for_filters(contract, data['quantity'], self.prices[contract.symbol]['ask'])
-            print(contract.symbol[:3])
-            print(float(self.balances[contract.symbol[:3]].free))
-            if data['quantity'] > float(self.balances[contract.symbol[:3]].free):
-                logger.error('Quantity higher than free')
+            data['quantity'] = self._check_for_filters(contract, data['quantity'], float(self.prices[contract.symbol]['ask']))
+            if data['quantity'] is None:
                 return
-            else:
-                print('qty to order: ', data['quantity'])
-                print('qty available: ', self.balances[contract.symbol[:3]].free)
-
             order_status = self._send_signed_request('POST', '/api/v3/order', data)
             print(order_status)
 
@@ -529,7 +521,7 @@ class BinanceClient:
 
         return trade_size
 
-    def _check_for_filters(self, contract: Contract, qty_to_order: float, asset_price: float) -> float:
+    def _check_for_filters(self, contract: Contract, qty_to_order: float, asset_price: float) -> typing.Union[float, None]:
         # rules to pass LOT_SIZE filter
         '''
         {
@@ -543,21 +535,27 @@ class BinanceClient:
         (quantity - minQty) % stepSize == 0
         '''
 
+        asset_balance = float(self.balances[contract.base_asset].free)
+
+        if qty_to_order > asset_balance:
+            logger.error(f'Quantity passed is higher than free on {time.time()}')
+            return None
+
         new_quantity: float = 0.0
 
-        trade_price = calculate_trade_value(qty_to_order, self.prices[contract.symbol]['ask'])
-        print(f'Actual trade price calculated: %f', trade_price)
+        trade_price = calculate_trade_value(qty_to_order, asset_price)
+        logger.info(f'{contract.symbol} trade price calculated: {trade_price} on {time.time()}')
 
-        if trade_price <= contract.minNotional or contract.min_ls >= qty_to_order:
-            print(f'Contract: %s, Qty: %f, min_ls: %s, minNot', contract.symbol, qty_to_order, contract.min_ls, contract.minNotional)
-            new_quantity = round((contract.minNotional / self.prices[contract.symbol]['ask']) * 1.1, 8)
-            if contract.lot_size > new_quantity:
+        if contract.minNotional >= trade_price or contract.min_ls >= qty_to_order:
+            print(f'Contract: {contract.symbol}, Qty:{qty_to_order}, min_ls: {contract.min_ls}, minNot: {contract.minNotional}')
+            new_quantity = round((contract.minNotional / asset_price) * 1.1, 8)
+            if contract.lot_size >= new_quantity:
                 new_quantity = contract.lot_size
             elif contract.min_ls > new_quantity:
                 new_quantity = contract.min_ls
 
             # new_quantity = round(minNotional_qty * contract.min_ls / min(qty_to_order, contract.min_ls), 8)
-            ntp = calculate_trade_value(new_quantity, self.prices[contract.symbol]['ask'])
+            ntp = calculate_trade_value(new_quantity, asset_price)
             print('New trade price: ', ntp)
             print('New quantity: ', new_quantity)
 
@@ -568,4 +566,10 @@ class BinanceClient:
         else:
             new_quantity = qty_to_order
 
-        return new_quantity
+        print(type(asset_balance))
+        logger.info(f'Balance available: {asset_balance}')
+        if asset_balance >= new_quantity:
+            return new_quantity
+
+        else:
+            return None
