@@ -8,12 +8,12 @@ from utils import *
 from connectors.binance import BinanceClient
 from connectors.bitmex import BitmexClient
 from interface.scrollable_frame import ScrollableFrame
-from database import WorkspaceData
+from database.database import WorkspaceData
 
 from strategies import TechnicalStrategy, BreakoutStrategy
 
 if typing.TYPE_CHECKING:
-    from interface.root_components import Root
+    pass
 
 
 class StrategyEditor(tk.Frame):

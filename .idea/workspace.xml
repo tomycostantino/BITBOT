@@ -5,9 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b6e2309-d3ee-46f4-8e4d-8daac01e26b6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/analysis/regressor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client_test.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/connectors/binance.py" beforeDir="false" afterPath="$PROJECT_DIR$/connectors/binance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.db" beforeDir="false" afterPath="$PROJECT_DIR$/database/database.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/database.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/strategy_components.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/strategy_components.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/watchlist_components.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/watchlist_components.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tradingbot" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +70,7 @@
       <recent name="$PROJECT_DIR$/backtesting" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/database" />
       <recent name="$PROJECT_DIR$/" />
       <recent name="$PROJECT_DIR$/backtesting" />
       <recent name="$PROJECT_DIR$/backtesing" />
@@ -137,5 +145,15 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/database/database.py</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -572,7 +572,7 @@ class BinanceClient:
             logger.info('Quantity: ', new_quantity)
 
         logger.info(f'Balance available: {asset_balance}')
-        
+
         if asset_balance >= new_quantity:
             return new_quantity
 

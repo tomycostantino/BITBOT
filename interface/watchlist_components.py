@@ -5,7 +5,7 @@ import typing
 from interface.autocomplete_widget import Autocomplete
 from interface.scrollable_frame import ScrollableFrame
 from interface.styling import *
-from database import WorkspaceData
+from database.database import WorkspaceData
 
 from models import *
 
