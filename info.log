@@ -16786,3 +16786,75 @@
 2022-04-06 17:27:57,207 INFO :: Bitmex connection opened
 2022-04-06 17:28:08,420 INFO :: Binance Spot Client successfully initialized
 2022-04-06 17:29:49,203 INFO :: Binance Spot Client successfully initialized
+2022-04-13 19:53:39,186 INFO :: Binance Spot Client successfully initialized
+2022-04-13 19:53:44,563 INFO :: Binance connection opened
+2022-04-13 19:53:44,564 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-04-13 19:53:45,379 INFO :: Bitmex Client successfully initialized
+2022-04-13 19:53:46,936 INFO :: Bitmex connection opened
+2022-04-13 19:54:27,450 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-04-13 19:54:28,103 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-04-13 19:54:28,699 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-04-13 19:54:34,980 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-04-13 19:54:35,777 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-04-13 19:54:37,419 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-04-13 19:54:42,529 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-04-13 19:54:43,784 INFO :: Binance: subscribing to: bnbusdt@aggTrade
+2022-04-13 19:55:02,194 INFO :: Binance New candle for BTCUSDT 1m
+2022-04-13 19:56:00,607 INFO :: Binance New candle for BTCUSDT 1m
+2022-04-13 19:56:46,635 INFO :: Binance missing 1 candles for BNBUSDT 1m (1649843806723 1649843640000)
+2022-04-13 19:57:00,986 INFO :: Binance New candle for BTCUSDT 1m
+2022-04-13 20:49:52,319 INFO :: Binance Spot Client successfully initialized
+2022-04-13 20:49:54,354 INFO :: Binance connection opened
+2022-04-13 20:49:54,355 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-04-13 20:49:54,685 INFO :: Bitmex Client successfully initialized
+2022-04-13 20:49:56,147 INFO :: Bitmex connection opened
+2022-04-13 20:49:58,616 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-04-13 20:49:59,191 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-04-13 20:50:00,035 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-04-13 20:50:55,702 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-04-13 20:50:56,323 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-04-13 20:50:57,737 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-04-13 20:50:58,325 INFO :: Binance: subscribing to: bnbusdt@aggTrade
+2022-04-13 20:51:00,352 INFO :: Binance New candle for BTCUSDT 1m
+2022-04-13 20:51:01,694 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-04-13 20:51:05,955 INFO :: Binance New candle for BNBUSDT 1m
+2022-04-13 20:52:00,911 INFO :: Binance New candle for BTCUSDT 1m
+2022-04-13 20:52:10,835 INFO :: Binance New candle for BNBUSDT 1m
+2022-04-13 20:53:00,777 INFO :: Binance New candle for BTCUSDT 1m
+2022-04-13 20:53:02,242 INFO :: Binance New candle for BNBUSDT 1m
+2022-04-13 20:53:11,018 INFO :: Getting Binance trade size...
+2022-04-13 20:53:11,726 INFO :: Binance current USDT balance = 10000.0, trade size = 0.002512
+2022-04-13 20:53:11,730 INFO :: Long signal on BTCUSDT 1m
+2022-04-13 20:53:11,730 INFO :: BTCUSDT trade price calculated: 99.99021023999998 on 1649847191.730688
+2022-04-13 20:53:11,730 INFO :: Balance available: 1.0
+2022-04-13 20:53:12,522 INFO :: Buy order placed on Binance | Status: filled
+2022-04-13 20:54:00,327 INFO :: Binance New candle for BTCUSDT 1m
+2022-04-13 20:54:14,749 INFO :: Binance New candle for BNBUSDT 1m
+2022-04-13 20:55:02,220 INFO :: Binance New candle for BTCUSDT 1m
+2022-04-13 20:55:08,845 INFO :: Binance New candle for BNBUSDT 1m
+2022-04-13 20:55:27,013 INFO :: Getting Binance trade size...
+2022-04-13 20:55:27,734 INFO :: Binance current USDT balance = 9900.00629808, trade size = 0.24
+2022-04-13 20:55:27,735 INFO :: Long signal on BNBUSDT 1m
+2022-04-13 20:55:27,735 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fedb81f2580>>: 'BNBUSDT'
+2022-04-13 20:55:27,735 ERROR :: Binance connection error: 'BNBUSDT'
+2022-04-13 20:55:35,940 INFO :: Getting Binance trade size...
+2022-04-13 20:55:36,597 INFO :: Binance current USDT balance = 9900.00629808, trade size = 0.24
+2022-04-13 20:55:36,598 INFO :: Long signal on BNBUSDT 1m
+2022-04-13 20:55:36,598 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fedb81f2580>>: 'BNBUSDT'
+2022-04-13 20:55:36,598 ERROR :: Binance connection error: 'BNBUSDT'
+2022-04-13 20:55:36,599 INFO :: Getting Binance trade size...
+2022-04-13 20:55:37,257 INFO :: Binance current USDT balance = 9900.00629808, trade size = 0.24
+2022-04-13 20:55:37,259 INFO :: Long signal on BNBUSDT 1m
+2022-04-13 20:55:37,260 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fedb81f2580>>: 'BNBUSDT'
+2022-04-13 20:55:37,260 ERROR :: Binance connection error: 'BNBUSDT'
+2022-04-13 20:56:00,214 INFO :: Binance New candle for BTCUSDT 1m
+2022-04-13 20:56:01,536 INFO :: Binance New candle for BNBUSDT 1m
+2022-04-13 20:57:00,911 INFO :: Binance New candle for BTCUSDT 1m
+2022-04-13 20:57:59,504 INFO :: Binance missing 6 candles for ETHUSDT 1m (1649847479548 1649847000000)
+2022-04-13 20:58:02,220 INFO :: Binance New candle for BTCUSDT 1m
+2022-04-13 20:58:03,922 INFO :: Binance missing 7 candles for LTCUSDT 1m (1649847483977 1649847000000)
+2022-04-13 20:58:06,741 INFO :: Binance: subscribing to: btcbusd@aggTrade
+2022-04-13 20:59:01,059 INFO :: Binance New candle for BTCUSDT 1m
+2022-04-13 20:59:04,031 INFO :: Binance New candle for LTCUSDT 1m
+2022-04-13 21:00:01,034 INFO :: Binance New candle for BTCUSDT 1m
+2022-04-13 21:00:02,925 INFO :: Binance New candle for LTCUSDT 1m

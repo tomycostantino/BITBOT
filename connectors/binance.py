@@ -459,7 +459,6 @@ class BinanceClient:
 
                 for key, strat in self.strategies.items():
                     if strat.contract.symbol == symbol:
-                        prices.prices[symbol] = float(data['p'])
                         res = strat.parse_trades(float(data['p']), float(data['q']), data['T'])
                         strat.check_trade(res)
 
@@ -522,8 +521,8 @@ class BinanceClient:
         return trade_size
 
     def _check_for_filters(self, contract: Contract, qty_to_order: float, asset_price: float) -> typing.Union[float, None]:
-        # rules to pass LOT_SIZE filter
         '''
+        rules to pass LOT_SIZE filter
         {
             "filterType": "LOT_SIZE",
             "minQty": "0.00100000",
@@ -547,27 +546,33 @@ class BinanceClient:
         logger.info(f'{contract.symbol} trade price calculated: {trade_price} on {time.time()}')
 
         if contract.minNotional >= trade_price or contract.min_ls >= qty_to_order:
-            print(f'Contract: {contract.symbol}, Qty:{qty_to_order}, min_ls: {contract.min_ls}, minNot: {contract.minNotional}')
+            logger.info(f'Contract: {contract.symbol}, Qty:{qty_to_order}, min_ls: {contract.min_ls}, minNot: {contract.minNotional}')
             new_quantity = round((contract.minNotional / asset_price) * 1.1, 8)
             if contract.lot_size >= new_quantity:
                 new_quantity = contract.lot_size
             elif contract.min_ls > new_quantity:
                 new_quantity = contract.min_ls
 
-            # new_quantity = round(minNotional_qty * contract.min_ls / min(qty_to_order, contract.min_ls), 8)
-            ntp = calculate_trade_value(new_quantity, asset_price)
-            print('New trade price: ', ntp)
-            print('New quantity: ', new_quantity)
-
             new_quantity_round = new_quantity * 10000
             new_quantity_round = np.ceil(new_quantity_round)
             new_quantity = new_quantity_round / 10000
 
+            ntp = calculate_trade_value(new_quantity, asset_price)
+            logger.info('New trade price: ', ntp)
+            logger.info('New quantity: ', new_quantity)
+
         else:
             new_quantity = qty_to_order
+            new_quantity_round = new_quantity * 10000
+            new_quantity_round = np.ceil(new_quantity_round)
+            new_quantity = new_quantity_round / 10000
 
-        print(type(asset_balance))
+            ntp = calculate_trade_value(new_quantity, asset_price)
+            logger.info('Trade price: ', ntp)
+            logger.info('Quantity: ', new_quantity)
+
         logger.info(f'Balance available: {asset_balance}')
+        
         if asset_balance >= new_quantity:
             return new_quantity
 
