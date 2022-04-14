@@ -196,11 +196,14 @@ class BinanceClient:
     # manages to get the historical candlestick, up to 1000
     # receives the contract and the time interval, 1m, 5m, 15m and so on
     # returns a list of Candle
-    def get_historical_candles(self, contract: Contract, interval: str) -> typing.List[Candle]:
+    def get_historical_candles(self, contract: Contract, interval: str, start_time: str) -> typing.List[Candle]:
         data = dict()
         data['symbol'] = contract.symbol
         data['interval'] = interval
         data['limit'] = 1000
+
+        if start_time is not None:
+            data['startTime'] = start_time
 
         if self.futures:
             raw_candles = self._make_request('GET', '/fapi/v1/klines', data)
