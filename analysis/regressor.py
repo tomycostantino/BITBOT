@@ -15,7 +15,10 @@ from sklearn.metrics import mean_squared_error, r2_score
 df = get_candlesticks('BTCUSDT', '30m', None)
 
 sns.set(font_scale=1.5)
-plt.figure(figsize=(12,10))
+plt.figure(figsize=(12, 10))
 sns.regplot(x=df.index, y='close', data=df, ci=None, color='r')
 
-print(df.head(50))
+
+plt.show()
+
+# print(df.head(50))

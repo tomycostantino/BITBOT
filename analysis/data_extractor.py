@@ -40,7 +40,7 @@ def get_candlesticks(symbol: str, interval: str, start_time: str):
             del c[6:]
 
     df = pd.DataFrame(raw_candles, columns=['date', 'open', 'high', 'low', 'close', 'volume'])
-    df['date'] = pd.to_datetime(df['date'], unit='ms')
-    df.set_index('date', inplace=True)
+    for idx in df.columns[1:]:
+        df[idx] = df[idx].astype(float)
 
     return df
