@@ -537,7 +537,7 @@ class BinanceClient:
         asset_balance = float(self.balances[contract.base_asset].free)
 
         if qty_to_order > asset_balance:
-            logger.error(f'Quantity passed is higher than free on {time.time()}')
+            logger.error(f'Quantity passed is higher than free at {time.time()}')
             return None
 
         new_quantity: float = 0.0

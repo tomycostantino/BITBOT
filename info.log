@@ -16960,3 +16960,23 @@
 2022-04-14 18:06:00,308 INFO :: Binance New candle for BTCUSDT 1m
 2022-04-14 18:07:00,154 INFO :: Binance New candle for BTCUSDT 1m
 2022-04-14 18:08:02,201 INFO :: Binance New candle for BTCUSDT 1m
+2022-04-30 13:36:35,643 INFO :: Binance Spot Client successfully initialized
+2022-04-30 13:36:39,975 INFO :: Bitmex Client successfully initialized
+2022-04-30 13:36:40,349 INFO :: Binance connection opened
+2022-04-30 13:36:40,349 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-04-30 13:36:41,027 INFO :: Bitmex connection opened
+2022-04-30 13:37:16,463 WARNING :: Websocket connection closed
+2022-04-30 13:37:16,877 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x7f7950b96310>>: _on_close() takes 2 positional arguments but 4 were given
+2022-04-30 13:37:16,878 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-05-17 12:38:34,396 INFO :: Binance Spot Client successfully initialized
+2022-05-17 12:38:37,397 INFO :: Bitmex Client successfully initialized
+2022-05-17 12:38:37,608 INFO :: Binance connection opened
+2022-05-17 12:38:37,614 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-05-17 12:38:38,533 INFO :: Bitmex connection opened
+2022-05-17 12:38:48,139 INFO :: Binance: subscribing to: bnbbusd@bookTicker
+2022-05-17 12:38:49,200 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-05-17 12:38:50,262 INFO :: Binance: subscribing to: xrpbtc@bookTicker
+2022-05-17 12:38:51,327 INFO :: Binance: subscribing to: ethbusd@bookTicker
+2022-05-17 12:38:51,825 INFO :: Binance: subscribing to: trxusdt@bookTicker
+2022-05-17 12:38:52,353 INFO :: Binance: subscribing to: ltcbnb@bookTicker
+2022-05-17 12:39:48,511 INFO :: Binance: subscribing to: ethusdt@bookTicker
