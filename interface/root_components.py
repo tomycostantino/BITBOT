@@ -21,8 +21,8 @@ class Root(tk.Tk):
     def __init__(self):
         super().__init__()
 
-        self.binance = variables.binance
-        self.bitmex = variables.bitmex
+        self._binance = variables.binance
+        self._bitmex = variables.bitmex
 
         self.title('Trading Bot')
 
@@ -41,14 +41,6 @@ class Root(tk.Tk):
         self._workspace_menu.add_command(label="Save workspace", command=self._save_workspace)
         self._workspace_menu.add_command(label="Load workspace", command=self._load_workspace)
 
-        '''
-        # sub menu to restart client with new settings
-        self._reset_client_menu = tk.Menu(self._main_menu, tearoff=False)
-        self._main_menu.add_cascade(label='Testnet & Spot', menu=self._reset_client_menu)
-        self._reset_client_menu.add_command(label='Testnet', command=lambda: self._reset_client('testnet'))
-        self._reset_client_menu.add_command(label='Spot', command=lambda: self._reset_client('spot'))
-        '''
-
         self._restart = tk.Menu(self._main_menu, tearoff=False)
         self._main_menu.add_cascade(label='Restart', menu=self._restart)
         self._restart.add_cascade(label='Restart program', command=self._restart_code)
@@ -62,7 +54,7 @@ class Root(tk.Tk):
         self._right_frame.pack(side=tk.LEFT)
 
         # create watchlist component
-        self._watchlist_frame = Watchlist(self.binance.contracts, self.bitmex.contracts, self._left_frame, bg=BG_COLOR_2)
+        self._watchlist_frame = Watchlist(self._binance.contracts, self._bitmex.contracts, self._left_frame, bg=BG_COLOR_2)
         self._watchlist_frame.pack(side=tk.TOP, padx=10)
 
         # create logging frame under watchlist
@@ -70,7 +62,7 @@ class Root(tk.Tk):
         self.logging_frame.pack(side=tk.TOP, pady=15)
 
         # create the strategy component
-        self._strategy_frame = StrategyEditor(self, self.binance, self.bitmex, self._right_frame, bg=BG_COLOR)
+        self._strategy_frame = StrategyEditor(self, self._binance, self._bitmex, self._right_frame, bg=BG_COLOR)
         self._strategy_frame.pack(side=tk.TOP)
 
         # create the trade component under strategy
@@ -83,10 +75,10 @@ class Root(tk.Tk):
         result = askquestion('Confirmation', 'Do you really want to exit the application?')
         if result == 'yes':
             variables.restart = False
-            self.binance.reconnect = False
-            self.bitmex.reconnect = False
-            self.binance.ws.close()
-            self.bitmex.ws.close()
+            self._binance.reconnect = False
+            self._bitmex.reconnect = False
+            self._binance.ws.close()
+            self._bitmex.ws.close()
 
             self.destroy()
 
@@ -101,19 +93,19 @@ class Root(tk.Tk):
 
         # Logs
 
-        for log in self.bitmex.logs:
+        for log in self._bitmex.logs:
             if not log['displayed']:
                 self.logging_frame.add_log(log['log'])
                 log['displayed'] = True
 
-        for log in self.binance.logs:
+        for log in self._binance.logs:
             if not log['displayed']:
                 self.logging_frame.add_log(log['log'])
                 log['displayed'] = True
 
         # Trades and Logs
 
-        for client in [self.binance, self.bitmex]:
+        for client in [self._binance, self._bitmex]:
 
             try:  # try...except statement to handle the case when a dictionary is updated during the following loops
 
@@ -151,30 +143,30 @@ class Root(tk.Tk):
                 exchange = self._watchlist_frame.body_widgets['exchange'][key].cget("text")
 
                 if exchange == "Binance":
-                    if symbol not in self.binance.contracts:
+                    if symbol not in self._binance.contracts:
                         continue
 
-                    if symbol not in self.binance.ws_subscriptions["bookTicker"] and self.binance.ws_connected:
-                        self.binance.subscribe_channel([self.binance.contracts[symbol]], "bookTicker")
+                    if symbol not in self._binance.ws_subscriptions["bookTicker"] and self._binance.ws_connected:
+                        self._binance.subscribe_channel([self._binance.contracts[symbol]], "bookTicker")
 
-                    if symbol not in self.binance.prices:
-                        self.binance.get_bid_ask(self.binance.contracts[symbol])
+                    if symbol not in self._binance.prices:
+                        self._binance.get_bid_ask(self._binance.contracts[symbol])
                         continue
 
-                    precision = self.binance.contracts[symbol].price_decimals
+                    precision = self._binance.contracts[symbol].price_decimals
 
-                    prices = self.binance.prices[symbol]
+                    prices = self._binance.prices[symbol]
 
                 elif exchange == "Bitmex":
-                    if symbol not in self.bitmex.contracts:
+                    if symbol not in self._bitmex.contracts:
                         continue
 
-                    if symbol not in self.bitmex.prices:
+                    if symbol not in self._bitmex.prices:
                         continue
 
-                    precision = self.bitmex.contracts[symbol].price_decimals
+                    precision = self._bitmex.contracts[symbol].price_decimals
 
-                    prices = self.bitmex.prices[symbol]
+                    prices = self._bitmex.prices[symbol]
 
                 else:
                     continue

@@ -89,7 +89,7 @@ class Database:
         self._conn.commit()
 
     def add_new_trade(self, trade: Trade):
-        pass
+        self._cursor.execute(f'INSERT INTO trades')
 
     def get_workspace_data(self, table: str):
         pass

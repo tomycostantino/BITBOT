@@ -16980,3 +16980,55 @@
 2022-05-17 12:38:51,825 INFO :: Binance: subscribing to: trxusdt@bookTicker
 2022-05-17 12:38:52,353 INFO :: Binance: subscribing to: ltcbnb@bookTicker
 2022-05-17 12:39:48,511 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-05-19 18:17:14,280 INFO :: Binance Spot Client successfully initialized
+2022-05-19 18:17:17,022 ERROR :: Error while making GET request to /api/v1/instrument/active: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2022-05-19 18:17:17,476 ERROR :: Error while making GET request to /api/v1/user/margin: {'error': {'message': 'Invalid API Key.', 'name': 'HTTPError'}} (error code 401)
+2022-05-19 18:17:17,477 INFO :: Bitmex Client successfully initialized
+2022-05-19 18:17:18,032 INFO :: Binance connection opened
+2022-05-19 18:17:18,036 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-05-19 18:17:18,559 INFO :: Bitmex connection opened
+2022-05-19 18:17:38,980 INFO :: Binance Spot Client successfully initialized
+2022-05-19 18:17:42,017 INFO :: Bitmex Client successfully initialized
+2022-05-19 18:17:42,162 INFO :: Binance connection opened
+2022-05-19 18:17:42,162 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-05-19 18:17:43,130 INFO :: Bitmex connection opened
+2022-05-19 18:18:45,880 INFO :: Binance Spot Client successfully initialized
+2022-05-19 18:18:50,308 INFO :: Bitmex Client successfully initialized
+2022-05-19 18:18:50,309 INFO :: Binance connection opened
+2022-05-19 18:18:50,309 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-05-19 18:18:51,424 INFO :: Bitmex connection opened
+2022-05-19 18:19:06,269 WARNING :: Websocket connection closed
+2022-05-19 18:19:06,284 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x7fcf88461460>>: _on_close() takes 2 positional arguments but 4 were given
+2022-05-19 18:19:06,286 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-05-19 18:19:44,295 INFO :: Binance Futures Client successfully initialized
+2022-05-19 18:19:47,855 INFO :: Bitmex Client successfully initialized
+2022-05-19 18:19:48,149 INFO :: Binance connection opened
+2022-05-19 18:19:48,150 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-05-19 18:19:49,000 INFO :: Bitmex connection opened
+2022-05-19 18:20:03,207 WARNING :: Websocket connection closed
+2022-05-19 18:20:03,512 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x7fb9204cfc40>>: _on_close() takes 2 positional arguments but 4 were given
+2022-05-19 18:20:03,514 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-05-19 18:20:27,843 INFO :: Binance Spot Client successfully initialized
+2022-05-19 18:20:31,071 INFO :: Binance connection opened
+2022-05-19 18:20:31,073 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-05-19 18:20:31,180 INFO :: Bitmex Client successfully initialized
+2022-05-19 18:20:32,246 INFO :: Bitmex connection opened
+2022-05-19 18:20:37,376 INFO :: Binance: subscribing to: bnbbusd@bookTicker
+2022-05-19 18:20:38,535 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-05-19 18:20:39,011 INFO :: Binance: subscribing to: xrpbtc@bookTicker
+2022-05-19 18:20:39,492 INFO :: Binance: subscribing to: ethbusd@bookTicker
+2022-05-19 18:20:40,532 INFO :: Binance: subscribing to: trxusdt@bookTicker
+2022-05-19 18:20:41,001 INFO :: Binance: subscribing to: ltcbnb@bookTicker
+2022-05-19 18:20:54,471 INFO :: Binance Spot Client successfully initialized
+2022-05-19 18:20:57,786 INFO :: Bitmex Client successfully initialized
+2022-05-19 18:20:58,353 INFO :: Binance connection opened
+2022-05-19 18:20:58,355 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-05-19 18:20:58,874 INFO :: Bitmex connection opened
+2022-05-19 18:21:08,473 WARNING :: Websocket connection closed
+2022-05-19 18:21:08,727 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x7fe6c9181460>>: _on_close() takes 2 positional arguments but 4 were given
+2022-05-19 18:21:08,729 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-05-19 18:26:30,766 INFO :: Binance Spot Client successfully initialized
+2022-05-19 18:26:33,577 INFO :: Bitmex Client successfully initialized
+2022-05-19 18:26:34,064 INFO :: Binance connection opened
+2022-05-19 18:26:34,065 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-05-19 18:26:34,648 INFO :: Bitmex connection opened
