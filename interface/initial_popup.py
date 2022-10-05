@@ -2,7 +2,7 @@ import tkinter as tk
 import tkmacosx as tkmac
 from interface.styling import *
 from connectors.binance import BinanceClient
-from api_keys import *
+from keys import *
 from connectors.bitmex import BitmexClient
 import variables
 

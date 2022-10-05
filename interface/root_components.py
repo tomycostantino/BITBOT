@@ -1,6 +1,6 @@
 import typing
 
-from api_keys import *
+from keys import *
 import tkinter as tk
 import json
 from connectors.binance import BinanceClient

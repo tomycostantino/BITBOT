@@ -1,7 +1,8 @@
 import logging
-from typing import *
 import time
 
+from database.database import Database
+from typing import *
 from threading import Timer
 
 import pandas as pd
@@ -186,6 +187,9 @@ class Strategy:
                                "contract": self.contract, "strategy": self.strat_name, "side": position_side,
                                "status": "open", "pnl": 0, "quantity": order_status.executed_qty, "entry_id": order_status.order_id})
             self.trades.append(new_trade)
+
+            db = Database()
+            db.add_new_trade(new_trade)
 
     def _check_tp_sl(self, trade: Trade):
 

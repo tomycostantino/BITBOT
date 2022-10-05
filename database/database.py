@@ -58,7 +58,7 @@ class WorkspaceData:
 
 class Database:
     def __init__(self):
-        self._conn = sqlite3.connect('database.db')
+        self._conn = sqlite3.connect('new_database.db')
         self._conn.row_factory = sqlite3.Row  # Makes the data retrieved from the database accessible by their column name
         self._cursor = self._conn.cursor()
 
@@ -120,7 +120,14 @@ class Database:
         Get all the rows recorded for the table.
         :return:
         '''
-        
+
         self._cursor.execute(f"SELECT * FROM trades")
         data = self._cursor.fetchall()
         return data
+
+    def close(self):
+        '''
+        Close the database connection
+        :return:
+        '''
+        self._conn.close()
