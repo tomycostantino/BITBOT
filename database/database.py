@@ -65,12 +65,18 @@ class Database:
         self._cursor.execute("CREATE TABLE IF NOT EXISTS watchlist (symbol TEXT, exchange TEXT)")
         self._cursor.execute("CREATE TABLE IF NOT EXISTS strategies (strategy_type TEXT, contract TEXT, "
                              "timeframe TEXT, balance_pct REAL, take_profit REAL, stop_loss REAL, extra_params TEXT)")
-        self._cursor.execute("CREATE TABLE IF NOT EXISTS trades (asset TEXT, buyOrSell TEXT, quantity REAL, "
-                             "assetPrice REAL, trade price REAL, position TEXT)")
+        self._cursor.execute("CREATE TABLE IF NOT EXISTS trades (time TEXT, contract TEXT, strategy TEXT, side TEXT, "
+                             "entryPrice TEXT, status TEXT, pnl TEXT, quantity TEXT, entryId TEXT)")
         self._conn.commit()  # Saves the changes
         # self._conn.close() # Close connection
 
     def save_workspace_data(self, table: str, data: typing.List[typing.Tuple]):
+        '''
+        Erase the previous table content and record new data to it.
+        :param table:
+        :param data:
+        :return:
+        '''
 
         if table == 'watchlist':
             self._cursor.execute(f"DELETE FROM watchlist")
@@ -89,10 +95,32 @@ class Database:
         self._conn.commit()
 
     def add_new_trade(self, trade: Trade):
-        self._cursor.execute(f'INSERT INTO trades')
+        '''
+        Add a new trade to the database
+        :param trade:
+        :return:
+        '''
+        self._cursor.execute(f'INSERT INTO trades VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)', (trade.time,
+                             trade.contract.symbol, trade.strategy, trade.side, str(trade.entry_price), trade.status,
+                             str(trade.pnl), trade.quantity, trade.entry_id))
 
     def get_workspace_data(self, table: str):
-        pass
+        '''
+        Get all the rows recorded for the table.
+        :param table:
+        :return:
+        '''
+
+        self._cursor.execute(f"SELECT * FROM {table}")
+        data = self._cursor.fetchall()
+        return data
 
     def get_trades_data(self):
-        pass
+        '''
+        Get all the rows recorded for the table.
+        :return:
+        '''
+        
+        self._cursor.execute(f"SELECT * FROM trades")
+        data = self._cursor.fetchall()
+        return data

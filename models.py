@@ -72,7 +72,7 @@ def tick_to_decimals(tick_size: float) -> int:
 class Contract:
     def __init__(self, contract_info, exchange):
         if exchange == "binance_futures":
-            self.symbol = contract_info['symbol']
+            self.symbol = str(contract_info['symbol'])
             self.base_asset = contract_info['baseAsset']
             self.quote_asset = contract_info['quoteAsset']
             self.price_decimals = contract_info['pricePrecision']
@@ -139,6 +139,7 @@ class OrderStatus:
 
 
 class Trade:
+
     def __init__(self, trade_info):
         self.time: int = trade_info['time']
         self.contract: Contract = trade_info['contract']
@@ -147,5 +148,5 @@ class Trade:
         self.entry_price: float = trade_info['entry_price']
         self.status: str = trade_info['status']
         self.pnl: float = trade_info['pnl']
-        self.quantity = trade_info['quantity']
-        self.entry_id = trade_info['entry_id']
+        self.quantity: str = trade_info['quantity']
+        self.entry_id: str = trade_info['entry_id']

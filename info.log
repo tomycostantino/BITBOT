@@ -17032,3 +17032,27 @@
 2022-05-19 18:26:34,064 INFO :: Binance connection opened
 2022-05-19 18:26:34,065 INFO :: Binance: subscribing to: btcusdt@bookTicker
 2022-05-19 18:26:34,648 INFO :: Bitmex connection opened
+2022-08-03 11:03:44,124 INFO :: Binance Futures Client successfully initialized
+2022-08-03 11:03:47,917 INFO :: Binance connection opened
+2022-08-03 11:03:47,919 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-08-03 11:03:48,147 INFO :: Bitmex Client successfully initialized
+2022-08-03 11:03:49,768 INFO :: Bitmex connection opened
+2022-08-03 11:03:55,883 INFO :: Binance: subscribing to: bnbbusd@bookTicker
+2022-08-03 11:03:56,586 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-08-03 11:03:57,345 INFO :: Binance: subscribing to: ethbusd@bookTicker
+2022-08-03 11:03:58,165 ERROR :: Error while making GET request to /fapi/v1/ticker/bookTicker: {'code': -4108, 'msg': 'Symbol is on delivering or delivered or settling or closed or pre-trading.'} (error code 400)
+2022-08-03 11:03:58,167 INFO :: Binance: subscribing to: trxusdt@bookTicker
+2022-08-03 11:04:01,029 ERROR :: Error while making GET request to /fapi/v1/ticker/bookTicker: {'code': -4108, 'msg': 'Symbol is on delivering or delivered or settling or closed or pre-trading.'} (error code 400)
+2022-08-03 11:04:03,180 ERROR :: Error while making GET request to /fapi/v1/ticker/bookTicker: {'code': -4108, 'msg': 'Symbol is on delivering or delivered or settling or closed or pre-trading.'} (error code 400)
+2022-08-03 11:04:05,433 ERROR :: Error while making GET request to /fapi/v1/ticker/bookTicker: {'code': -4108, 'msg': 'Symbol is on delivering or delivered or settling or closed or pre-trading.'} (error code 400)
+2022-08-03 11:04:07,693 ERROR :: Error while making GET request to /fapi/v1/ticker/bookTicker: {'code': -4108, 'msg': 'Symbol is on delivering or delivered or settling or closed or pre-trading.'} (error code 400)
+2022-08-03 11:04:09,866 ERROR :: Error while making GET request to /fapi/v1/ticker/bookTicker: {'code': -4108, 'msg': 'Symbol is on delivering or delivered or settling or closed or pre-trading.'} (error code 400)
+2022-08-03 11:04:11,842 ERROR :: Error while making GET request to /fapi/v1/ticker/bookTicker: {'code': -4108, 'msg': 'Symbol is on delivering or delivered or settling or closed or pre-trading.'} (error code 400)
+2022-08-03 11:04:22,937 WARNING :: Websocket connection closed
+2022-08-03 11:04:23,338 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x7fc9b00303a0>>: _on_close() takes 2 positional arguments but 4 were given
+2022-08-03 11:04:23,339 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-09-01 20:35:25,274 INFO :: Binance Futures Client successfully initialized
+2022-09-01 20:35:30,644 INFO :: Binance connection opened
+2022-09-01 20:35:30,645 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-09-01 20:35:31,014 INFO :: Bitmex Client successfully initialized
+2022-09-01 20:35:32,633 INFO :: Bitmex connection opened
