@@ -18,7 +18,7 @@ class Watchlist(tk.Frame):
                  *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        self.db = WorkspaceData()
+        self.db = Database()
 
         self.binance_symbols = list(binance_contracts.keys())
         self.bitmex_symbols = list(bitmex_contracts.keys())
@@ -126,7 +126,7 @@ class Watchlist(tk.Frame):
 
     def load_workspace(self):
         # Loads the Watchlist symbols saved to the database during a previous session
-        saved_symbols = self.db.get("watchlist")
+        saved_symbols = self.db.get_workspace_data("watchlist")
 
         for s in saved_symbols:
             self._add_symbol(s['symbol'], s['exchange'])

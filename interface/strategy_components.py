@@ -9,6 +9,7 @@ from connectors.binance import BinanceClient
 from connectors.bitmex import BitmexClient
 from interface.scrollable_frame import ScrollableFrame
 from database.database import WorkspaceData
+from database.database import Database
 
 from strategies import TechnicalStrategy, BreakoutStrategy
 
@@ -22,7 +23,7 @@ class StrategyEditor(tk.Frame):
 
         self.root = root
 
-        self.db = WorkspaceData()
+        self.db = Database()
 
         self._valid_integer = self.register(check_integer_format)
         self._valid_float = self.register(check_float_format)
@@ -311,7 +312,7 @@ class StrategyEditor(tk.Frame):
         :return:
         """
 
-        data = self.db.get("strategies")
+        data = self.db.get_workspace_data("strategies")
 
         for row in data:
             self._add_strategy_row()

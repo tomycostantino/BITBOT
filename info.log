@@ -17283,3 +17283,12 @@
 2022-10-05 22:04:41,325 WARNING :: Binance BTCUSDT: 2067 milliseconds of difference between the current time and the trade time
 2022-10-05 22:04:42,608 INFO :: Binance order status: filled
 2022-10-05 22:04:44,088 INFO :: Binance order status: filled
+2022-10-06 06:51:30,208 INFO :: Binance Futures Client successfully initialized
+2022-10-06 06:51:39,253 INFO :: Binance connection opened
+2022-10-06 06:51:39,256 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-06 06:51:47,763 INFO :: Bitmex Client successfully initialized
+2022-10-06 06:51:49,883 INFO :: Bitmex connection opened
+2022-10-06 06:52:04,425 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-10-06 06:52:09,097 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-10-06 06:52:29,075 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-10-06 06:52:35,928 WARNING :: Binance BTCUSDT: 3414 milliseconds of difference between the current time and the trade time
