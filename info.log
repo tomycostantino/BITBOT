@@ -17292,3 +17292,778 @@
 2022-10-06 06:52:09,097 INFO :: Binance: subscribing to: xrpusdt@bookTicker
 2022-10-06 06:52:29,075 INFO :: Binance: subscribing to: btcusdt@aggTrade
 2022-10-06 06:52:35,928 WARNING :: Binance BTCUSDT: 3414 milliseconds of difference between the current time and the trade time
+2022-10-06 20:07:23,074 INFO :: Binance Futures Client successfully initialized
+2022-10-06 20:07:27,286 INFO :: Binance connection opened
+2022-10-06 20:07:27,287 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-06 20:07:29,925 INFO :: Bitmex Client successfully initialized
+2022-10-06 20:07:31,473 INFO :: Bitmex connection opened
+2022-10-06 20:08:02,342 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-10-06 20:08:03,114 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-10-06 20:08:29,559 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-10-06 20:08:32,875 INFO :: Getting Binance trade size...
+2022-10-06 20:08:33,566 INFO :: Binance current USDT balance = 3441.69673172, trade size = 0.002
+2022-10-06 20:08:33,567 INFO :: Long signal on BTCUSDT 1m
+2022-10-06 20:08:34,076 INFO :: Buy order placed on Binance | Status: new
+2022-10-06 20:08:36,678 INFO :: Binance order status: filled
+2022-10-06 20:08:57,930 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-10-06 20:09:01,070 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:09:03,835 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:09:14,771 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-10-06 20:09:28,779 INFO :: Binance: subscribing to: bnbusdt@aggTrade
+2022-10-06 20:09:30,832 INFO :: Getting Binance trade size...
+2022-10-06 20:09:31,567 INFO :: Binance current USDT balance = 3441.68059716, trade size = 0.12
+2022-10-06 20:09:31,567 INFO :: Long signal on BNBUSDT 1m
+2022-10-06 20:09:32,134 INFO :: Buy order placed on Binance | Status: new
+2022-10-06 20:09:33,470 INFO :: Getting Binance trade size...
+2022-10-06 20:09:34,237 INFO :: Binance current USDT balance = 3451.86497989, trade size = 0.635
+2022-10-06 20:09:34,237 INFO :: Long signal on LTCUSDT 1m
+2022-10-06 20:09:34,822 INFO :: Buy order placed on Binance | Status: new
+2022-10-06 20:09:34,837 INFO :: Binance order status: filled
+2022-10-06 20:09:37,319 INFO :: Binance order status: filled
+2022-10-06 20:09:49,273 INFO :: Getting Binance trade size...
+2022-10-06 20:09:50,042 INFO :: Binance current USDT balance = 3451.85116229, trade size = 0.025
+2022-10-06 20:09:50,042 INFO :: Short signal on ETHUSDT 1m
+2022-10-06 20:09:50,754 INFO :: Sell order placed on Binance | Status: new
+2022-10-06 20:09:50,756 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f8b4900c5e0>>: dictionary changed size during iteration
+2022-10-06 20:09:50,756 ERROR :: Binance connection error: dictionary changed size during iteration
+2022-10-06 20:09:53,202 INFO :: Binance order status: filled
+2022-10-06 20:10:01,554 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:10:01,554 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:10:01,611 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:10:01,669 INFO :: Binance New candle for BNBUSDT 1m
+2022-10-06 20:10:05,232 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:10:11,602 INFO :: Binance: subscribing to: bnbusdt@bookTicker
+2022-10-06 20:10:25,911 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-10-06 20:10:55,743 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-10-06 20:11:01,165 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:11:01,950 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:11:01,951 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:11:02,033 INFO :: Binance New candle for BNBUSDT 1m
+2022-10-06 20:11:03,200 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:11:13,431 INFO :: Binance New candle for XRPUSDT 1m
+2022-10-06 20:11:13,434 INFO :: Getting Binance trade size...
+2022-10-06 20:11:14,164 INFO :: Binance current USDT balance = 3410.63862279, trade size = 68.6
+2022-10-06 20:11:14,164 INFO :: Long signal on XRPUSDT 1m
+2022-10-06 20:11:14,892 INFO :: Buy order placed on Binance | Status: new
+2022-10-06 20:11:17,634 INFO :: Binance order status: filled
+2022-10-06 20:12:01,515 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:12:02,709 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:12:02,709 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:12:05,317 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:12:08,549 INFO :: Binance New candle for BNBUSDT 1m
+2022-10-06 20:12:14,317 INFO :: Binance New candle for XRPUSDT 1m
+2022-10-06 20:12:41,150 INFO :: Getting Binance trade size...
+2022-10-06 20:12:41,960 INFO :: Binance current USDT balance = 3410.62497759, trade size = 0.628
+2022-10-06 20:12:41,960 INFO :: Short signal on LTCUSDT 1m
+2022-10-06 20:12:42,797 INFO :: Sell order placed on Binance | Status: new
+2022-10-06 20:12:45,680 INFO :: Binance order status: filled
+2022-10-06 20:12:46,710 INFO :: Getting Binance trade size...
+2022-10-06 20:12:47,438 INFO :: Binance current USDT balance = 3410.54225995, trade size = 0.002
+2022-10-06 20:12:47,438 INFO :: Short signal on BTCUSDT 1m
+2022-10-06 20:12:47,962 INFO :: Sell order placed on Binance | Status: new
+2022-10-06 20:12:50,715 INFO :: Binance order status: filled
+2022-10-06 20:13:01,191 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:13:01,192 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:13:02,750 INFO :: Binance New candle for BNBUSDT 1m
+2022-10-06 20:13:05,076 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:13:06,359 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:13:06,359 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:13:06,366 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:13:15,715 INFO :: Binance New candle for XRPUSDT 1m
+2022-10-06 20:14:00,712 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:14:00,712 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:14:00,722 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:14:00,722 INFO :: Binance New candle for BNBUSDT 1m
+2022-10-06 20:14:01,036 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:14:01,036 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:14:01,111 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:14:18,429 INFO :: Binance New candle for XRPUSDT 1m
+2022-10-06 20:15:00,833 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:15:00,833 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:15:00,839 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:15:01,389 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:15:01,390 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:15:01,390 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:15:04,416 INFO :: Binance New candle for XRPUSDT 1m
+2022-10-06 20:15:04,670 INFO :: Stop loss for XRPUSDT 1m | Current Price = 0.4909 (Entry price was 0.498)
+2022-10-06 20:15:05,683 INFO :: Exit order on XRPUSDT 1m placed successfully
+2022-10-06 20:15:05,683 INFO :: Getting Binance trade size...
+2022-10-06 20:15:06,874 INFO :: Binance current USDT balance = 3410.67305674, trade size = 69.5
+2022-10-06 20:15:06,874 INFO :: Short signal on XRPUSDT 1m
+2022-10-06 20:15:08,156 INFO :: Sell order placed on Binance | Status: new
+2022-10-06 20:15:08,162 WARNING :: Binance ETHUSDT: 3039 milliseconds of difference between the current time and the trade time
+2022-10-06 20:15:08,162 WARNING :: Binance ETHUSDT: 3039 milliseconds of difference between the current time and the trade time
+2022-10-06 20:15:08,164 WARNING :: Binance ETHUSDT: 3040 milliseconds of difference between the current time and the trade time
+2022-10-06 20:15:08,164 WARNING :: Binance XRPUSDT: 2581 milliseconds of difference between the current time and the trade time
+2022-10-06 20:15:08,165 WARNING :: Binance ETHUSDT: 2089 milliseconds of difference between the current time and the trade time
+2022-10-06 20:15:09,029 INFO :: Binance New candle for BNBUSDT 1m
+2022-10-06 20:15:10,711 INFO :: Binance order status: filled
+2022-10-06 20:15:54,079 INFO :: Stop loss for XRPUSDT 1m | Current Price = 0.4983 (Entry price was 0.49312)
+2022-10-06 20:15:54,992 INFO :: Exit order on XRPUSDT 1m placed successfully
+2022-10-06 20:15:54,993 INFO :: Getting Binance trade size...
+2022-10-06 20:15:55,719 INFO :: Binance current USDT balance = 3411.0037309, trade size = 68.4
+2022-10-06 20:15:55,719 INFO :: Long signal on XRPUSDT 1m
+2022-10-06 20:15:56,553 INFO :: Buy order placed on Binance | Status: new
+2022-10-06 20:15:59,350 INFO :: Binance order status: filled
+2022-10-06 20:16:00,910 INFO :: Binance New candle for XRPUSDT 1m
+2022-10-06 20:16:02,474 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:16:02,474 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:16:02,484 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:16:02,869 INFO :: Binance New candle for BNBUSDT 1m
+2022-10-06 20:16:03,191 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:16:03,191 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:16:03,191 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:16:36,279 INFO :: Stop loss for XRPUSDT 1m | Current Price = 0.4909 (Entry price was 0.4988)
+2022-10-06 20:16:37,164 INFO :: Exit order on XRPUSDT 1m placed successfully
+2022-10-06 20:16:37,164 INFO :: Getting Binance trade size...
+2022-10-06 20:16:37,801 INFO :: Binance current USDT balance = 3408.5805349, trade size = 69.4
+2022-10-06 20:16:37,801 INFO :: Short signal on XRPUSDT 1m
+2022-10-06 20:16:38,565 INFO :: Sell order placed on Binance | Status: new
+2022-10-06 20:16:38,568 WARNING :: Binance XRPUSDT: 2367 milliseconds of difference between the current time and the trade time
+2022-10-06 20:16:38,568 WARNING :: Binance XRPUSDT: 2367 milliseconds of difference between the current time and the trade time
+2022-10-06 20:16:38,568 WARNING :: Binance XRPUSDT: 2367 milliseconds of difference between the current time and the trade time
+2022-10-06 20:16:38,568 WARNING :: Binance XRPUSDT: 2367 milliseconds of difference between the current time and the trade time
+2022-10-06 20:16:38,568 WARNING :: Binance XRPUSDT: 2367 milliseconds of difference between the current time and the trade time
+2022-10-06 20:16:38,569 WARNING :: Binance XRPUSDT: 2368 milliseconds of difference between the current time and the trade time
+2022-10-06 20:16:38,569 WARNING :: Binance XRPUSDT: 2368 milliseconds of difference between the current time and the trade time
+2022-10-06 20:16:38,569 WARNING :: Binance XRPUSDT: 2368 milliseconds of difference between the current time and the trade time
+2022-10-06 20:16:38,569 WARNING :: Binance XRPUSDT: 2368 milliseconds of difference between the current time and the trade time
+2022-10-06 20:16:38,569 WARNING :: Binance XRPUSDT: 2368 milliseconds of difference between the current time and the trade time
+2022-10-06 20:16:38,569 WARNING :: Binance XRPUSDT: 2368 milliseconds of difference between the current time and the trade time
+2022-10-06 20:16:38,570 WARNING :: Binance BTCUSDT: 2153 milliseconds of difference between the current time and the trade time
+2022-10-06 20:16:38,570 WARNING :: Binance BTCUSDT: 2153 milliseconds of difference between the current time and the trade time
+2022-10-06 20:16:38,570 WARNING :: Binance BTCUSDT: 2153 milliseconds of difference between the current time and the trade time
+2022-10-06 20:16:38,570 WARNING :: Binance BTCUSDT: 2153 milliseconds of difference between the current time and the trade time
+2022-10-06 20:16:38,570 WARNING :: Binance BTCUSDT: 2153 milliseconds of difference between the current time and the trade time
+2022-10-06 20:16:38,570 WARNING :: Binance BTCUSDT: 2153 milliseconds of difference between the current time and the trade time
+2022-10-06 20:16:38,570 WARNING :: Binance BTCUSDT: 2153 milliseconds of difference between the current time and the trade time
+2022-10-06 20:16:38,570 WARNING :: Binance BTCUSDT: 2153 milliseconds of difference between the current time and the trade time
+2022-10-06 20:16:38,570 WARNING :: Binance BTCUSDT: 2153 milliseconds of difference between the current time and the trade time
+2022-10-06 20:16:41,191 INFO :: Binance order status: filled
+2022-10-06 20:16:56,310 INFO :: Stop loss for XRPUSDT 1m | Current Price = 0.4978 (Entry price was 0.49201)
+2022-10-06 20:16:57,173 INFO :: Exit order on XRPUSDT 1m placed successfully
+2022-10-06 20:17:01,309 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:17:02,724 INFO :: Binance New candle for BNBUSDT 1m
+2022-10-06 20:17:03,428 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:17:03,429 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:17:03,470 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:17:03,471 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:17:03,476 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:17:15,044 INFO :: Binance New candle for XRPUSDT 1m
+2022-10-06 20:17:57,722 INFO :: Getting Binance trade size...
+2022-10-06 20:17:58,516 INFO :: Binance current USDT balance = 3408.34272283, trade size = 68.4
+2022-10-06 20:17:58,516 INFO :: Long signal on XRPUSDT 1m
+2022-10-06 20:17:59,278 INFO :: Buy order placed on Binance | Status: new
+2022-10-06 20:18:01,469 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:18:01,469 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:18:02,113 INFO :: Binance order status: filled
+2022-10-06 20:18:03,029 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:18:03,030 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:18:03,053 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:18:03,879 INFO :: Binance New candle for XRPUSDT 1m
+2022-10-06 20:18:04,236 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:18:05,513 INFO :: Binance New candle for BNBUSDT 1m
+2022-10-06 20:19:00,320 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:19:00,330 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:19:01,486 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:19:03,557 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:19:03,558 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:19:03,593 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:19:04,790 INFO :: Binance New candle for BNBUSDT 1m
+2022-10-06 20:19:29,615 INFO :: Binance New candle for XRPUSDT 1m
+2022-10-06 20:20:01,237 INFO :: Binance New candle for XRPUSDT 1m
+2022-10-06 20:20:02,908 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:20:02,909 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:20:03,750 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:20:03,750 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:20:03,785 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:20:09,151 INFO :: Binance New candle for BNBUSDT 1m
+2022-10-06 20:20:09,154 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:20:28,652 INFO :: Stop loss for XRPUSDT 1m | Current Price = 0.4896 (Entry price was 0.4988)
+2022-10-06 20:20:29,479 INFO :: Exit order on XRPUSDT 1m placed successfully
+2022-10-06 20:20:29,479 INFO :: Getting Binance trade size...
+2022-10-06 20:20:30,419 INFO :: Binance current USDT balance = 3405.76753361, trade size = 69.6
+2022-10-06 20:20:30,420 INFO :: Short signal on XRPUSDT 1m
+2022-10-06 20:20:31,200 INFO :: Sell order placed on Binance | Status: new
+2022-10-06 20:20:31,214 WARNING :: Binance XRPUSDT: 2573 milliseconds of difference between the current time and the trade time
+2022-10-06 20:20:31,214 WARNING :: Binance XRPUSDT: 2573 milliseconds of difference between the current time and the trade time
+2022-10-06 20:20:31,214 WARNING :: Binance XRPUSDT: 2573 milliseconds of difference between the current time and the trade time
+2022-10-06 20:20:31,214 WARNING :: Binance XRPUSDT: 2573 milliseconds of difference between the current time and the trade time
+2022-10-06 20:20:31,214 WARNING :: Binance XRPUSDT: 2573 milliseconds of difference between the current time and the trade time
+2022-10-06 20:20:31,214 WARNING :: Binance XRPUSDT: 2573 milliseconds of difference between the current time and the trade time
+2022-10-06 20:20:31,214 WARNING :: Binance XRPUSDT: 2573 milliseconds of difference between the current time and the trade time
+2022-10-06 20:20:31,214 WARNING :: Binance XRPUSDT: 2573 milliseconds of difference between the current time and the trade time
+2022-10-06 20:20:31,215 WARNING :: Binance XRPUSDT: 2574 milliseconds of difference between the current time and the trade time
+2022-10-06 20:20:31,215 WARNING :: Binance XRPUSDT: 2574 milliseconds of difference between the current time and the trade time
+2022-10-06 20:20:31,215 WARNING :: Binance XRPUSDT: 2574 milliseconds of difference between the current time and the trade time
+2022-10-06 20:20:31,215 WARNING :: Binance XRPUSDT: 2574 milliseconds of difference between the current time and the trade time
+2022-10-06 20:20:31,215 WARNING :: Binance XRPUSDT: 2574 milliseconds of difference between the current time and the trade time
+2022-10-06 20:20:31,215 WARNING :: Binance LTCUSDT: 2058 milliseconds of difference between the current time and the trade time
+2022-10-06 20:20:31,215 WARNING :: Binance LTCUSDT: 2058 milliseconds of difference between the current time and the trade time
+2022-10-06 20:20:31,216 WARNING :: Binance ETHUSDT: 2201 milliseconds of difference between the current time and the trade time
+2022-10-06 20:20:31,216 WARNING :: Binance LTCUSDT: 2059 milliseconds of difference between the current time and the trade time
+2022-10-06 20:20:31,216 WARNING :: Binance LTCUSDT: 2059 milliseconds of difference between the current time and the trade time
+2022-10-06 20:20:33,695 INFO :: Binance order status: filled
+2022-10-06 20:20:39,410 INFO :: Stop loss for XRPUSDT 1m | Current Price = 0.4975 (Entry price was 0.47622)
+2022-10-06 20:20:40,078 INFO :: Exit order on XRPUSDT 1m placed successfully
+2022-10-06 20:20:40,078 INFO :: Getting Binance trade size...
+2022-10-06 20:20:40,724 INFO :: Binance current USDT balance = 3404.27754922, trade size = 68.4
+2022-10-06 20:20:40,724 INFO :: Long signal on XRPUSDT 1m
+2022-10-06 20:20:41,651 INFO :: Buy order placed on Binance | Status: new
+2022-10-06 20:20:44,512 INFO :: Binance order status: filled
+2022-10-06 20:20:54,310 INFO :: Getting Binance trade size...
+2022-10-06 20:20:55,182 INFO :: Binance current USDT balance = 3404.26397046, trade size = 0.002
+2022-10-06 20:20:55,182 INFO :: Long signal on BTCUSDT 1m
+2022-10-06 20:20:56,010 INFO :: Buy order placed on Binance | Status: new
+2022-10-06 20:20:58,436 INFO :: Binance order status: filled
+2022-10-06 20:21:00,511 INFO :: Binance New candle for BNBUSDT 1m
+2022-10-06 20:21:00,715 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:21:00,715 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:21:00,728 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:21:00,952 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:21:03,510 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:21:03,511 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:21:04,207 INFO :: Binance New candle for XRPUSDT 1m
+2022-10-06 20:21:44,039 INFO :: Take profit for LTCUSDT 1m | Current Price = 54.95 (Entry price was 54.4)
+2022-10-06 20:21:44,966 INFO :: Exit order on LTCUSDT 1m placed successfully
+2022-10-06 20:21:44,966 INFO :: Getting Binance trade size...
+2022-10-06 20:21:45,759 INFO :: Binance current USDT balance = 3404.23362434, trade size = 0.62
+2022-10-06 20:21:45,759 INFO :: Long signal on LTCUSDT 1m
+2022-10-06 20:21:46,351 INFO :: Buy order placed on Binance | Status: new
+2022-10-06 20:21:46,354 WARNING :: Binance LTCUSDT: 2505 milliseconds of difference between the current time and the trade time
+2022-10-06 20:21:46,354 INFO :: Stop loss for LTCUSDT 1m | Current Price = 54.95 (Entry price was 54.29)
+2022-10-06 20:21:46,780 INFO :: Exit order on LTCUSDT 1m placed successfully
+2022-10-06 20:21:46,780 INFO :: Getting Binance trade size...
+2022-10-06 20:21:47,138 INFO :: Binance current USDT balance = 3404.18135785, trade size = 0.62
+2022-10-06 20:21:47,138 INFO :: Long signal on LTCUSDT 1m
+2022-10-06 20:21:47,776 INFO :: Buy order placed on Binance | Status: new
+2022-10-06 20:21:47,779 WARNING :: Binance LTCUSDT: 3930 milliseconds of difference between the current time and the trade time
+2022-10-06 20:21:47,780 WARNING :: Binance LTCUSDT: 3931 milliseconds of difference between the current time and the trade time
+2022-10-06 20:21:47,780 WARNING :: Binance LTCUSDT: 3931 milliseconds of difference between the current time and the trade time
+2022-10-06 20:21:47,780 WARNING :: Binance LTCUSDT: 3931 milliseconds of difference between the current time and the trade time
+2022-10-06 20:21:47,781 WARNING :: Binance LTCUSDT: 3932 milliseconds of difference between the current time and the trade time
+2022-10-06 20:21:47,781 WARNING :: Binance LTCUSDT: 3932 milliseconds of difference between the current time and the trade time
+2022-10-06 20:21:47,781 WARNING :: Binance LTCUSDT: 3932 milliseconds of difference between the current time and the trade time
+2022-10-06 20:21:47,781 WARNING :: Binance LTCUSDT: 3932 milliseconds of difference between the current time and the trade time
+2022-10-06 20:21:47,781 WARNING :: Binance LTCUSDT: 3932 milliseconds of difference between the current time and the trade time
+2022-10-06 20:21:47,781 WARNING :: Binance LTCUSDT: 3932 milliseconds of difference between the current time and the trade time
+2022-10-06 20:21:47,781 WARNING :: Binance LTCUSDT: 3932 milliseconds of difference between the current time and the trade time
+2022-10-06 20:21:47,781 WARNING :: Binance LTCUSDT: 3932 milliseconds of difference between the current time and the trade time
+2022-10-06 20:21:47,782 WARNING :: Binance BTCUSDT: 3641 milliseconds of difference between the current time and the trade time
+2022-10-06 20:21:47,782 WARNING :: Binance BTCUSDT: 3641 milliseconds of difference between the current time and the trade time
+2022-10-06 20:21:47,782 WARNING :: Binance BTCUSDT: 3641 milliseconds of difference between the current time and the trade time
+2022-10-06 20:21:47,782 WARNING :: Binance LTCUSDT: 2995 milliseconds of difference between the current time and the trade time
+2022-10-06 20:21:47,782 WARNING :: Binance LTCUSDT: 2995 milliseconds of difference between the current time and the trade time
+2022-10-06 20:21:49,262 INFO :: Binance order status: filled
+2022-10-06 20:21:50,217 INFO :: Binance order status: filled
+2022-10-06 20:22:03,248 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:22:03,249 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:22:04,624 INFO :: Binance New candle for BNBUSDT 1m
+2022-10-06 20:22:05,091 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:22:05,243 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:22:05,244 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:22:05,256 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:22:11,481 INFO :: Binance New candle for XRPUSDT 1m
+2022-10-06 20:23:01,143 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:23:02,374 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:23:02,374 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:23:02,385 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:23:07,626 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:23:07,626 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:23:12,564 INFO :: Binance New candle for BNBUSDT 1m
+2022-10-06 20:23:13,916 INFO :: Binance New candle for XRPUSDT 1m
+2022-10-06 20:24:00,763 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:24:00,764 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:24:00,776 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:24:01,520 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:24:01,520 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:24:08,469 INFO :: Binance New candle for BNBUSDT 1m
+2022-10-06 20:24:09,404 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:24:15,040 INFO :: Binance New candle for XRPUSDT 1m
+2022-10-06 20:25:00,527 INFO :: Binance New candle for BNBUSDT 1m
+2022-10-06 20:25:00,947 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:25:00,947 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:25:00,957 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:25:03,264 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:25:03,268 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:25:03,268 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:25:16,676 INFO :: Binance New candle for XRPUSDT 1m
+2022-10-06 20:26:01,263 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:26:02,694 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:26:02,694 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:26:02,704 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:26:02,837 INFO :: Binance New candle for BNBUSDT 1m
+2022-10-06 20:26:13,490 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:26:13,490 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:26:19,353 INFO :: Binance New candle for XRPUSDT 1m
+2022-10-06 20:27:01,247 INFO :: Binance New candle for BNBUSDT 1m
+2022-10-06 20:27:01,257 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:27:04,304 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:27:04,305 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:27:04,336 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:27:05,282 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:27:05,282 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:27:21,158 INFO :: Binance New candle for XRPUSDT 1m
+2022-10-06 20:28:01,082 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:28:03,279 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:28:03,280 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:28:03,294 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:28:05,498 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:28:05,499 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:28:07,488 INFO :: Binance New candle for BNBUSDT 1m
+2022-10-06 20:28:33,135 INFO :: Binance New candle for XRPUSDT 1m
+2022-10-06 20:29:02,251 INFO :: Binance New candle for BNBUSDT 1m
+2022-10-06 20:29:02,708 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:29:02,709 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:29:02,718 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:29:05,028 INFO :: Binance New candle for XRPUSDT 1m
+2022-10-06 20:29:05,584 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:29:05,584 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:29:05,872 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:30:00,789 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:30:01,819 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:30:01,820 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:30:01,828 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:30:04,576 INFO :: Binance New candle for BNBUSDT 1m
+2022-10-06 20:30:06,461 INFO :: Binance New candle for XRPUSDT 1m
+2022-10-06 20:30:11,605 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:30:11,605 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:31:01,286 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:31:03,287 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:31:03,287 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:31:03,293 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:31:03,786 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:31:03,786 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:31:04,356 INFO :: Binance New candle for BNBUSDT 1m
+2022-10-06 20:31:07,514 INFO :: Binance New candle for XRPUSDT 1m
+2022-10-06 20:32:01,023 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:32:02,375 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:32:02,375 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:32:02,385 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:32:02,723 INFO :: Binance New candle for XRPUSDT 1m
+2022-10-06 20:32:03,342 INFO :: Binance New candle for BNBUSDT 1m
+2022-10-06 20:32:05,418 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:32:05,418 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:33:03,306 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:33:03,309 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:33:03,323 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:33:03,867 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:33:04,047 INFO :: Binance New candle for BNBUSDT 1m
+2022-10-06 20:33:11,298 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:33:11,298 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:33:17,195 INFO :: Binance New candle for XRPUSDT 1m
+2022-10-06 20:34:00,462 INFO :: Binance New candle for BNBUSDT 1m
+2022-10-06 20:34:01,090 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:34:01,529 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:34:01,529 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:34:01,542 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:34:03,225 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:34:03,226 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:34:18,287 INFO :: Binance New candle for XRPUSDT 1m
+2022-10-06 20:35:01,220 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:35:02,985 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:35:02,985 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:35:02,996 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:35:04,235 INFO :: Binance New candle for XRPUSDT 1m
+2022-10-06 20:35:08,749 INFO :: Binance New candle for BNBUSDT 1m
+2022-10-06 20:35:13,304 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:35:13,305 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:35:27,928 INFO :: Stop loss for XRPUSDT 1m | Current Price = 0.4913 (Entry price was 0.4963)
+2022-10-06 20:35:29,165 INFO :: Exit order on XRPUSDT 1m placed successfully
+2022-10-06 20:35:29,166 INFO :: Getting Binance trade size...
+2022-10-06 20:35:29,872 INFO :: Binance current USDT balance = 3401.64946257, trade size = 69.2
+2022-10-06 20:35:29,873 INFO :: Short signal on XRPUSDT 1m
+2022-10-06 20:35:30,530 INFO :: Sell order placed on Binance | Status: new
+2022-10-06 20:35:30,534 WARNING :: Binance XRPUSDT: 2761 milliseconds of difference between the current time and the trade time
+2022-10-06 20:35:30,534 WARNING :: Binance XRPUSDT: 2761 milliseconds of difference between the current time and the trade time
+2022-10-06 20:35:30,534 WARNING :: Binance XRPUSDT: 2761 milliseconds of difference between the current time and the trade time
+2022-10-06 20:35:30,534 WARNING :: Binance XRPUSDT: 2761 milliseconds of difference between the current time and the trade time
+2022-10-06 20:35:30,534 WARNING :: Binance XRPUSDT: 2761 milliseconds of difference between the current time and the trade time
+2022-10-06 20:35:30,534 WARNING :: Binance XRPUSDT: 2761 milliseconds of difference between the current time and the trade time
+2022-10-06 20:35:30,534 WARNING :: Binance XRPUSDT: 2761 milliseconds of difference between the current time and the trade time
+2022-10-06 20:35:30,535 WARNING :: Binance XRPUSDT: 2762 milliseconds of difference between the current time and the trade time
+2022-10-06 20:35:30,535 WARNING :: Binance XRPUSDT: 2762 milliseconds of difference between the current time and the trade time
+2022-10-06 20:35:30,535 WARNING :: Binance XRPUSDT: 2762 milliseconds of difference between the current time and the trade time
+2022-10-06 20:35:30,535 WARNING :: Binance XRPUSDT: 2762 milliseconds of difference between the current time and the trade time
+2022-10-06 20:35:30,535 WARNING :: Binance XRPUSDT: 2762 milliseconds of difference between the current time and the trade time
+2022-10-06 20:35:30,535 WARNING :: Binance BNBUSDT: 2236 milliseconds of difference between the current time and the trade time
+2022-10-06 20:35:33,232 INFO :: Binance order status: filled
+2022-10-06 20:35:55,882 INFO :: Stop loss for XRPUSDT 1m | Current Price = 0.4963 (Entry price was 0.47633)
+2022-10-06 20:35:56,508 INFO :: Exit order on XRPUSDT 1m placed successfully
+2022-10-06 20:36:00,800 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:36:00,801 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:36:00,816 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:36:00,918 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:36:06,782 INFO :: Binance New candle for BNBUSDT 1m
+2022-10-06 20:36:07,098 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:36:07,098 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:36:26,391 INFO :: Binance New candle for XRPUSDT 1m
+2022-10-06 20:36:47,096 INFO :: Binance Futures Client successfully initialized
+2022-10-06 20:36:50,023 INFO :: Binance connection opened
+2022-10-06 20:36:50,024 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-06 20:36:50,572 INFO :: Bitmex Client successfully initialized
+2022-10-06 20:36:52,185 INFO :: Bitmex connection opened
+2022-10-06 20:36:56,824 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-10-06 20:36:57,793 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-10-06 20:36:58,504 INFO :: Binance: subscribing to: bnbusdt@bookTicker
+2022-10-06 20:36:59,489 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-10-06 20:37:02,777 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-10-06 20:37:06,136 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-10-06 20:37:07,199 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-10-06 20:37:09,007 INFO :: Binance: subscribing to: bnbusdt@aggTrade
+2022-10-06 20:37:10,044 INFO :: Getting Binance trade size...
+2022-10-06 20:37:10,511 INFO :: Binance current USDT balance = 3400.2175923, trade size = 0.002
+2022-10-06 20:37:10,512 INFO :: Short signal on BTCUSDT 1m
+2022-10-06 20:37:11,457 INFO :: Sell order placed on Binance | Status: new
+2022-10-06 20:37:11,478 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fa658ace5e0>>: dictionary changed size during iteration
+2022-10-06 20:37:11,479 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-10-06 20:37:11,479 ERROR :: Binance connection error: dictionary changed size during iteration
+2022-10-06 20:37:13,954 INFO :: Binance order status: filled
+2022-10-06 20:37:23,048 WARNING :: Websocket connection closed
+2022-10-06 20:37:23,790 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x7fa67862e580>>: _on_close() takes 2 positional arguments but 4 were given
+2022-10-06 20:37:23,791 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-10-06 20:38:38,533 INFO :: Binance Futures Client successfully initialized
+2022-10-06 20:38:44,568 INFO :: Binance connection opened
+2022-10-06 20:38:44,569 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-06 20:38:44,890 INFO :: Bitmex Client successfully initialized
+2022-10-06 20:38:46,281 INFO :: Bitmex connection opened
+2022-10-06 20:38:48,631 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-10-06 20:38:49,466 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-10-06 20:38:50,450 INFO :: Binance: subscribing to: bnbusdt@bookTicker
+2022-10-06 20:38:51,371 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-10-06 20:38:54,306 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-10-06 20:38:54,749 INFO :: Getting Binance trade size...
+2022-10-06 20:38:55,135 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-10-06 20:38:55,395 INFO :: Binance current USDT balance = 3400.19547094, trade size = 0.002
+2022-10-06 20:38:55,397 INFO :: Long signal on BTCUSDT 1m
+2022-10-06 20:38:55,751 INFO :: Binance: subscribing to: bnbusdt@aggTrade
+2022-10-06 20:38:56,067 INFO :: Buy order placed on Binance | Status: new
+2022-10-06 20:38:56,070 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fcf209455e0>>: dictionary changed size during iteration
+2022-10-06 20:38:56,070 ERROR :: Binance connection error: dictionary changed size during iteration
+2022-10-06 20:38:56,393 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-10-06 20:38:56,547 INFO :: Getting Binance trade size...
+2022-10-06 20:38:56,977 INFO :: Binance current USDT balance = 3400.17933762, trade size = 0.12
+2022-10-06 20:38:56,977 INFO :: Long signal on BNBUSDT 1m
+2022-10-06 20:38:57,309 INFO :: Buy order placed on Binance | Status: new
+2022-10-06 20:38:58,526 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-10-06 20:38:58,845 INFO :: Binance order status: filled
+2022-10-06 20:38:59,849 INFO :: Getting Binance trade size...
+2022-10-06 20:38:59,982 INFO :: Binance order status: filled
+2022-10-06 20:39:00,231 INFO :: Binance current USDT balance = 3400.16519145, trade size = 0.002
+2022-10-06 20:39:00,232 INFO :: Long signal on BTCUSDT 1m
+2022-10-06 20:39:00,829 INFO :: Buy order placed on Binance | Status: new
+2022-10-06 20:39:00,830 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fcf209455e0>>: dictionary changed size during iteration
+2022-10-06 20:39:00,830 ERROR :: Binance connection error: dictionary changed size during iteration
+2022-10-06 20:39:00,832 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:39:00,832 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:39:00,840 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:39:03,041 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:39:03,208 INFO :: Binance order status: filled
+2022-10-06 20:39:03,295 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:39:03,295 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:39:03,774 INFO :: Binance New candle for XRPUSDT 1m
+2022-10-06 20:39:05,460 INFO :: Binance New candle for BNBUSDT 1m
+2022-10-06 20:39:09,753 WARNING :: Websocket connection closed
+2022-10-06 20:39:10,264 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x7fcf10166580>>: _on_close() takes 2 positional arguments but 4 were given
+2022-10-06 20:39:10,265 ERROR :: Bitmex connection error: _on_close() takes 2 positional arguments but 4 were given
+2022-10-06 20:41:56,314 INFO :: Binance Futures Client successfully initialized
+2022-10-06 20:41:59,588 INFO :: Binance connection opened
+2022-10-06 20:41:59,588 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-06 20:42:00,295 INFO :: Bitmex Client successfully initialized
+2022-10-06 20:42:01,831 INFO :: Bitmex connection opened
+2022-10-06 20:42:05,578 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-10-06 20:42:06,370 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-10-06 20:42:07,156 INFO :: Binance: subscribing to: bnbusdt@bookTicker
+2022-10-06 20:42:07,976 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-10-06 20:42:10,164 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-10-06 20:42:11,503 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-10-06 20:42:12,595 INFO :: Binance: subscribing to: bnbusdt@aggTrade
+2022-10-06 20:42:13,211 INFO :: Getting Binance trade size...
+2022-10-06 20:42:13,414 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-10-06 20:42:13,937 INFO :: Binance current USDT balance = 3400.14905569, trade size = 0.12
+2022-10-06 20:42:13,937 INFO :: Short signal on BNBUSDT 1m
+2022-10-06 20:42:14,737 INFO :: Sell order placed on Binance | Status: new
+2022-10-06 20:42:14,738 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fe858ece6a0>>: dictionary changed size during iteration
+2022-10-06 20:42:14,738 ERROR :: Binance connection error: dictionary changed size during iteration
+2022-10-06 20:42:16,590 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-10-06 20:42:17,317 INFO :: Binance order status: filled
+2022-10-06 20:42:30,177 INFO :: Getting Binance trade size...
+2022-10-06 20:42:31,025 INFO :: Binance current USDT balance = 3400.12942323, trade size = 0.623
+2022-10-06 20:42:31,027 INFO :: Short signal on LTCUSDT 1m
+2022-10-06 20:42:31,720 INFO :: Sell order placed on Binance | Status: new
+2022-10-06 20:42:31,720 INFO :: Getting Binance trade size...
+2022-10-06 20:42:32,495 INFO :: Binance current USDT balance = 3400.22173688, trade size = 0.623
+2022-10-06 20:42:32,495 INFO :: Short signal on LTCUSDT 1m
+2022-10-06 20:42:33,175 INFO :: Sell order placed on Binance | Status: new
+2022-10-06 20:42:33,178 WARNING :: Binance BTCUSDT: 2446 milliseconds of difference between the current time and the trade time
+2022-10-06 20:42:33,179 WARNING :: Binance BTCUSDT: 2447 milliseconds of difference between the current time and the trade time
+2022-10-06 20:42:33,179 WARNING :: Binance BTCUSDT: 2447 milliseconds of difference between the current time and the trade time
+2022-10-06 20:42:33,180 WARNING :: Binance XRPUSDT: 2292 milliseconds of difference between the current time and the trade time
+2022-10-06 20:42:35,014 INFO :: Binance order status: filled
+2022-10-06 20:42:35,698 INFO :: Binance order status: filled
+2022-10-06 20:42:56,728 INFO :: Getting Binance trade size...
+2022-10-06 20:42:57,349 INFO :: Binance current USDT balance = 3400.31303053, trade size = 69.7
+2022-10-06 20:42:57,349 INFO :: Short signal on XRPUSDT 1m
+2022-10-06 20:42:58,414 INFO :: Sell order placed on Binance | Status: new
+2022-10-06 20:43:00,480 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:43:00,484 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:43:00,499 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:43:00,815 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:43:01,032 INFO :: Binance order status: filled
+2022-10-06 20:43:06,651 INFO :: Binance New candle for BNBUSDT 1m
+2022-10-06 20:43:07,263 INFO :: Binance New candle for XRPUSDT 1m
+2022-10-06 20:43:07,363 INFO :: Stop loss for XRPUSDT 1m | Current Price = 0.4911 (Entry price was 0.46)
+2022-10-06 20:43:08,504 INFO :: Exit order on XRPUSDT 1m placed successfully
+2022-10-06 20:43:08,506 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:43:08,506 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:43:25,610 INFO :: Getting Binance trade size...
+2022-10-06 20:43:26,280 INFO :: Binance current USDT balance = 3397.69352118, trade size = 0.002
+2022-10-06 20:43:26,280 INFO :: Long signal on BTCUSDT 1m
+2022-10-06 20:43:27,062 INFO :: Buy order placed on Binance | Status: new
+2022-10-06 20:43:27,063 INFO :: Getting Binance trade size...
+2022-10-06 20:43:27,548 INFO :: Binance current USDT balance = 3397.67738367, trade size = 0.002
+2022-10-06 20:43:27,548 INFO :: Long signal on BTCUSDT 1m
+2022-10-06 20:43:27,924 INFO :: Buy order placed on Binance | Status: new
+2022-10-06 20:43:27,924 WARNING :: Binance BTCUSDT: 2402 milliseconds of difference between the current time and the trade time
+2022-10-06 20:43:27,924 WARNING :: Binance BTCUSDT: 2402 milliseconds of difference between the current time and the trade time
+2022-10-06 20:43:27,924 WARNING :: Binance BTCUSDT: 2402 milliseconds of difference between the current time and the trade time
+2022-10-06 20:43:27,925 WARNING :: Binance XRPUSDT: 2206 milliseconds of difference between the current time and the trade time
+2022-10-06 20:43:27,925 WARNING :: Binance XRPUSDT: 2206 milliseconds of difference between the current time and the trade time
+2022-10-06 20:43:27,925 WARNING :: Binance XRPUSDT: 2206 milliseconds of difference between the current time and the trade time
+2022-10-06 20:43:27,925 WARNING :: Binance XRPUSDT: 2206 milliseconds of difference between the current time and the trade time
+2022-10-06 20:43:27,925 WARNING :: Binance XRPUSDT: 2206 milliseconds of difference between the current time and the trade time
+2022-10-06 20:43:27,925 WARNING :: Binance XRPUSDT: 2206 milliseconds of difference between the current time and the trade time
+2022-10-06 20:43:27,926 INFO :: Getting Binance trade size...
+2022-10-06 20:43:29,080 INFO :: Binance current USDT balance = 3397.66124496, trade size = 0.025
+2022-10-06 20:43:29,080 INFO :: Long signal on ETHUSDT 1m
+2022-10-06 20:43:29,548 INFO :: Binance order status: filled
+2022-10-06 20:43:29,969 INFO :: Buy order placed on Binance | Status: new
+2022-10-06 20:43:29,970 WARNING :: Binance BNBUSDT: 3769 milliseconds of difference between the current time and the trade time
+2022-10-06 20:43:29,971 WARNING :: Binance BTCUSDT: 3046 milliseconds of difference between the current time and the trade time
+2022-10-06 20:43:29,971 WARNING :: Binance BTCUSDT: 3046 milliseconds of difference between the current time and the trade time
+2022-10-06 20:43:29,971 WARNING :: Binance BTCUSDT: 3046 milliseconds of difference between the current time and the trade time
+2022-10-06 20:43:29,972 WARNING :: Binance BTCUSDT: 3047 milliseconds of difference between the current time and the trade time
+2022-10-06 20:43:29,973 WARNING :: Binance BTCUSDT: 3048 milliseconds of difference between the current time and the trade time
+2022-10-06 20:43:29,973 WARNING :: Binance BTCUSDT: 3048 milliseconds of difference between the current time and the trade time
+2022-10-06 20:43:29,975 WARNING :: Binance BTCUSDT: 2518 milliseconds of difference between the current time and the trade time
+2022-10-06 20:43:29,976 WARNING :: Binance BTCUSDT: 2518 milliseconds of difference between the current time and the trade time
+2022-10-06 20:43:29,976 WARNING :: Binance BTCUSDT: 2519 milliseconds of difference between the current time and the trade time
+2022-10-06 20:43:29,978 WARNING :: Binance BTCUSDT: 2072 milliseconds of difference between the current time and the trade time
+2022-10-06 20:43:29,978 WARNING :: Binance BTCUSDT: 2072 milliseconds of difference between the current time and the trade time
+2022-10-06 20:43:29,978 WARNING :: Binance BTCUSDT: 2072 milliseconds of difference between the current time and the trade time
+2022-10-06 20:43:30,438 INFO :: Binance order status: filled
+2022-10-06 20:43:32,385 INFO :: Binance order status: filled
+2022-10-06 20:43:51,066 INFO :: Getting Binance trade size...
+2022-10-06 20:43:51,808 INFO :: Binance current USDT balance = 3397.64762226, trade size = 68.1
+2022-10-06 20:43:51,808 INFO :: Long signal on XRPUSDT 1m
+2022-10-06 20:43:52,424 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fe858ece6a0>>: 'orderId'
+2022-10-06 20:43:52,424 ERROR :: Binance connection error: 'orderId'
+2022-10-06 20:43:52,424 INFO :: Getting Binance trade size...
+2022-10-06 20:43:53,085 INFO :: Binance current USDT balance = 3397.64762226, trade size = 68.1
+2022-10-06 20:43:53,085 INFO :: Long signal on XRPUSDT 1m
+2022-10-06 20:43:53,957 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fe858ece6a0>>: 'orderId'
+2022-10-06 20:43:53,957 ERROR :: Binance connection error: 'orderId'
+2022-10-06 20:43:53,957 WARNING :: Binance XRPUSDT: 2927 milliseconds of difference between the current time and the trade time
+2022-10-06 20:43:53,957 INFO :: Getting Binance trade size...
+2022-10-06 20:43:54,445 INFO :: Binance current USDT balance = 3397.64762226, trade size = 68.1
+2022-10-06 20:43:54,445 INFO :: Long signal on XRPUSDT 1m
+2022-10-06 20:43:55,187 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fe858ece6a0>>: 'orderId'
+2022-10-06 20:43:55,187 ERROR :: Binance connection error: 'orderId'
+2022-10-06 20:43:55,188 WARNING :: Binance XRPUSDT: 4158 milliseconds of difference between the current time and the trade time
+2022-10-06 20:43:55,188 INFO :: Getting Binance trade size...
+2022-10-06 20:43:55,855 INFO :: Binance current USDT balance = 3397.64762226, trade size = 68.1
+2022-10-06 20:43:55,855 INFO :: Long signal on XRPUSDT 1m
+2022-10-06 20:43:56,489 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fe858ece6a0>>: 'orderId'
+2022-10-06 20:43:56,494 ERROR :: Binance connection error: 'orderId'
+2022-10-06 20:43:56,495 WARNING :: Binance XRPUSDT: 5465 milliseconds of difference between the current time and the trade time
+2022-10-06 20:43:56,495 INFO :: Getting Binance trade size...
+2022-10-06 20:43:56,892 INFO :: Binance current USDT balance = 3397.64762226, trade size = 67.9
+2022-10-06 20:43:56,892 INFO :: Long signal on XRPUSDT 1m
+2022-10-06 20:43:57,251 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fe858ece6a0>>: 'orderId'
+2022-10-06 20:43:57,251 ERROR :: Binance connection error: 'orderId'
+2022-10-06 20:43:57,252 WARNING :: Binance XRPUSDT: 6222 milliseconds of difference between the current time and the trade time
+2022-10-06 20:43:57,252 INFO :: Getting Binance trade size...
+2022-10-06 20:43:58,144 INFO :: Binance current USDT balance = 3397.64762226, trade size = 67.9
+2022-10-06 20:43:58,144 INFO :: Long signal on XRPUSDT 1m
+2022-10-06 20:43:58,555 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fe858ece6a0>>: 'orderId'
+2022-10-06 20:43:58,556 ERROR :: Binance connection error: 'orderId'
+2022-10-06 20:43:58,557 WARNING :: Binance XRPUSDT: 7526 milliseconds of difference between the current time and the trade time
+2022-10-06 20:43:58,557 INFO :: Getting Binance trade size...
+2022-10-06 20:43:58,930 INFO :: Binance current USDT balance = 3397.64762226, trade size = 67.9
+2022-10-06 20:43:58,930 INFO :: Long signal on XRPUSDT 1m
+2022-10-06 20:43:59,264 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fe858ece6a0>>: 'orderId'
+2022-10-06 20:43:59,264 ERROR :: Binance connection error: 'orderId'
+2022-10-06 20:43:59,264 WARNING :: Binance XRPUSDT: 8234 milliseconds of difference between the current time and the trade time
+2022-10-06 20:43:59,264 INFO :: Getting Binance trade size...
+2022-10-06 20:44:00,179 INFO :: Binance current USDT balance = 3397.64762226, trade size = 67.7
+2022-10-06 20:44:00,179 INFO :: Long signal on XRPUSDT 1m
+2022-10-06 20:44:00,538 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fe858ece6a0>>: 'orderId'
+2022-10-06 20:44:00,538 ERROR :: Binance connection error: 'orderId'
+2022-10-06 20:44:00,540 WARNING :: Binance XRPUSDT: 9509 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:00,540 INFO :: Getting Binance trade size...
+2022-10-06 20:44:01,053 INFO :: Binance current USDT balance = 3397.64762226, trade size = 67.6
+2022-10-06 20:44:01,054 INFO :: Long signal on XRPUSDT 1m
+2022-10-06 20:44:02,032 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fe858ece6a0>>: 'orderId'
+2022-10-06 20:44:02,032 ERROR :: Binance connection error: 'orderId'
+2022-10-06 20:44:02,034 WARNING :: Binance ETHUSDT: 10860 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:02,035 WARNING :: Binance BTCUSDT: 9795 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:02,035 WARNING :: Binance BTCUSDT: 9795 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:02,035 WARNING :: Binance BTCUSDT: 9795 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:02,036 WARNING :: Binance BTCUSDT: 9796 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:02,036 WARNING :: Binance BTCUSDT: 9796 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:02,036 WARNING :: Binance BTCUSDT: 9796 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:02,036 WARNING :: Binance BTCUSDT: 9575 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:02,036 WARNING :: Binance BTCUSDT: 9575 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:02,036 WARNING :: Binance BTCUSDT: 9575 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:02,037 WARNING :: Binance ETHUSDT: 9247 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:02,037 WARNING :: Binance ETHUSDT: 9235 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:02,038 WARNING :: Binance ETHUSDT: 9236 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:02,039 WARNING :: Binance LTCUSDT: 8843 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:02,039 WARNING :: Binance LTCUSDT: 8843 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:02,040 WARNING :: Binance XRPUSDT: 7678 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:02,041 INFO :: Getting Binance trade size...
+2022-10-06 20:44:02,894 INFO :: Binance current USDT balance = 3397.64762226, trade size = 67.7
+2022-10-06 20:44:02,894 INFO :: Long signal on XRPUSDT 1m
+2022-10-06 20:44:03,222 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fe858ece6a0>>: 'orderId'
+2022-10-06 20:44:03,222 ERROR :: Binance connection error: 'orderId'
+2022-10-06 20:44:03,222 WARNING :: Binance XRPUSDT: 8860 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:03,222 WARNING :: Binance XRPUSDT: 8860 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:03,223 WARNING :: Binance XRPUSDT: 7452 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:03,223 INFO :: Getting Binance trade size...
+2022-10-06 20:44:04,200 INFO :: Binance current USDT balance = 3397.64762226, trade size = 67.9
+2022-10-06 20:44:04,201 INFO :: Long signal on XRPUSDT 1m
+2022-10-06 20:44:04,790 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fe858ece6a0>>: 'orderId'
+2022-10-06 20:44:04,791 ERROR :: Binance connection error: 'orderId'
+2022-10-06 20:44:04,792 WARNING :: Binance BTCUSDT: 8281 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,792 WARNING :: Binance BTCUSDT: 8281 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,792 WARNING :: Binance BTCUSDT: 8281 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,792 WARNING :: Binance BNBUSDT: 8196 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,793 WARNING :: Binance BTCUSDT: 8282 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,793 WARNING :: Binance BTCUSDT: 8282 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,793 WARNING :: Binance BTCUSDT: 8282 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,793 WARNING :: Binance ETHUSDT: 8242 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,793 WARNING :: Binance BNBUSDT: 8197 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,794 WARNING :: Binance BTCUSDT: 7336 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,794 WARNING :: Binance BTCUSDT: 7336 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,794 WARNING :: Binance BTCUSDT: 7336 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,794 WARNING :: Binance BTCUSDT: 6491 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,794 WARNING :: Binance BTCUSDT: 6491 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,794 WARNING :: Binance BTCUSDT: 6491 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,795 WARNING :: Binance BTCUSDT: 6492 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,795 WARNING :: Binance BTCUSDT: 6492 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,795 WARNING :: Binance BTCUSDT: 6492 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,795 WARNING :: Binance ETHUSDT: 6389 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,795 WARNING :: Binance XRPUSDT: 5986 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,795 WARNING :: Binance XRPUSDT: 5986 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,795 WARNING :: Binance XRPUSDT: 5986 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,795 WARNING :: Binance XRPUSDT: 5986 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,796 WARNING :: Binance XRPUSDT: 5987 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,796 WARNING :: Binance XRPUSDT: 5987 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,796 WARNING :: Binance ETHUSDT: 5780 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,796 WARNING :: Binance ETHUSDT: 5748 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,798 WARNING :: Binance ETHUSDT: 3701 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,798 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:44:04,799 WARNING :: Binance ETHUSDT: 3702 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,799 WARNING :: Binance LTCUSDT: 3587 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,799 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:44:04,799 WARNING :: Binance LTCUSDT: 3587 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,800 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:44:04,801 WARNING :: Binance BTCUSDT: 2340 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,801 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:44:04,801 WARNING :: Binance BTCUSDT: 2340 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,801 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:44:04,811 WARNING :: Binance BTCUSDT: 2350 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,811 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:44:04,812 WARNING :: Binance BNBUSDT: 2114 milliseconds of difference between the current time and the trade time
+2022-10-06 20:44:04,812 INFO :: Binance New candle for BNBUSDT 1m
+2022-10-06 20:44:06,860 INFO :: Binance New candle for XRPUSDT 1m
+2022-10-06 20:45:01,719 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:45:01,722 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:45:01,738 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:45:03,403 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:45:03,404 INFO :: Binance New candle for XRPUSDT 1m
+2022-10-06 20:45:03,511 INFO :: Binance New candle for BNBUSDT 1m
+2022-10-06 20:45:14,158 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:45:14,159 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:45:18,713 INFO :: Getting Binance trade size...
+2022-10-06 20:45:19,676 INFO :: Binance current USDT balance = 3397.64762226, trade size = 69.2
+2022-10-06 20:45:19,676 INFO :: Short signal on XRPUSDT 1m
+2022-10-06 20:45:20,341 INFO :: Sell order placed on Binance | Status: new
+2022-10-06 20:45:23,360 INFO :: Binance order status: filled
+2022-10-06 20:45:26,950 INFO :: Stop loss for XRPUSDT 1m | Current Price = 0.4972 (Entry price was 0.47646)
+2022-10-06 20:45:27,563 INFO :: Exit order on XRPUSDT 1m placed successfully
+2022-10-06 20:46:00,815 INFO :: Binance New candle for BNBUSDT 1m
+2022-10-06 20:46:01,026 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-06 20:46:02,494 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:46:02,494 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:46:02,505 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-06 20:46:11,766 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:46:11,766 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-06 20:46:29,884 INFO :: Binance New candle for XRPUSDT 1m
+2022-10-06 20:46:43,394 INFO :: Getting Binance trade size...
+2022-10-06 20:46:44,490 INFO :: Binance current USDT balance = 3396.19205464, trade size = 68.2
+2022-10-06 20:46:44,490 INFO :: Long signal on XRPUSDT 1m
+2022-10-06 20:46:44,965 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fe858ece6a0>>: 'orderId'
+2022-10-06 20:46:44,966 ERROR :: Binance connection error: 'orderId'
+2022-10-06 20:46:44,966 INFO :: Getting Binance trade size...
+2022-10-06 20:46:45,610 INFO :: Binance current USDT balance = 3396.19205464, trade size = 68.2
+2022-10-06 20:46:45,610 INFO :: Long signal on XRPUSDT 1m
+2022-10-06 20:46:46,609 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fe858ece6a0>>: 'orderId'
+2022-10-06 20:46:46,609 ERROR :: Binance connection error: 'orderId'
+2022-10-06 20:46:46,610 WARNING :: Binance XRPUSDT: 3237 milliseconds of difference between the current time and the trade time
+2022-10-06 20:46:46,610 INFO :: Getting Binance trade size...
+2022-10-06 20:46:47,397 INFO :: Binance current USDT balance = 3396.19205464, trade size = 68.1
+2022-10-06 20:46:47,398 INFO :: Long signal on XRPUSDT 1m
+2022-10-06 20:46:47,855 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7fe858ece6a0>>: 'orderId'
+2022-10-06 20:46:47,856 ERROR :: Binance connection error: 'orderId'
+2022-10-06 20:46:47,856 WARNING :: Binance XRPUSDT: 4483 milliseconds of difference between the current time and the trade time
+2022-10-06 20:46:47,856 INFO :: Getting Binance trade size...
+2022-10-06 20:46:48,456 INFO :: Binance current USDT balance = 3396.19205464, trade size = 68.1
+2022-10-06 20:46:48,457 INFO :: Long signal on XRPUSDT 1m
+2022-10-06 20:46:49,232 INFO :: Buy order placed on Binance | Status: new
+2022-10-06 20:46:49,233 WARNING :: Binance XRPUSDT: 5860 milliseconds of difference between the current time and the trade time
+2022-10-06 20:46:49,233 WARNING :: Binance XRPUSDT: 5860 milliseconds of difference between the current time and the trade time
+2022-10-06 20:46:49,233 WARNING :: Binance XRPUSDT: 5860 milliseconds of difference between the current time and the trade time
+2022-10-06 20:46:49,233 WARNING :: Binance XRPUSDT: 5860 milliseconds of difference between the current time and the trade time
+2022-10-06 20:46:49,233 WARNING :: Binance XRPUSDT: 5860 milliseconds of difference between the current time and the trade time
+2022-10-06 20:46:49,234 WARNING :: Binance XRPUSDT: 5861 milliseconds of difference between the current time and the trade time
+2022-10-06 20:46:49,234 WARNING :: Binance LTCUSDT: 5947 milliseconds of difference between the current time and the trade time
+2022-10-06 20:46:49,234 WARNING :: Binance LTCUSDT: 5947 milliseconds of difference between the current time and the trade time
+2022-10-06 20:46:49,234 WARNING :: Binance XRPUSDT: 5861 milliseconds of difference between the current time and the trade time
+2022-10-06 20:46:49,236 WARNING :: Binance BTCUSDT: 3953 milliseconds of difference between the current time and the trade time
+2022-10-06 20:46:49,236 WARNING :: Binance BTCUSDT: 3953 milliseconds of difference between the current time and the trade time
+2022-10-06 20:46:49,236 WARNING :: Binance BTCUSDT: 3953 milliseconds of difference between the current time and the trade time
+2022-10-06 20:46:49,236 WARNING :: Binance ETHUSDT: 3918 milliseconds of difference between the current time and the trade time
+2022-10-06 20:46:49,236 WARNING :: Binance BNBUSDT: 3875 milliseconds of difference between the current time and the trade time
+2022-10-06 20:46:49,236 WARNING :: Binance LTCUSDT: 3527 milliseconds of difference between the current time and the trade time
+2022-10-06 20:46:49,236 WARNING :: Binance LTCUSDT: 3527 milliseconds of difference between the current time and the trade time
+2022-10-06 20:46:49,237 WARNING :: Binance LTCUSDT: 3528 milliseconds of difference between the current time and the trade time
+2022-10-06 20:46:49,237 WARNING :: Binance LTCUSDT: 3528 milliseconds of difference between the current time and the trade time
+2022-10-06 20:46:49,237 WARNING :: Binance ETHUSDT: 2538 milliseconds of difference between the current time and the trade time
+2022-10-06 20:46:52,136 INFO :: Binance order status: filled
+2022-10-06 20:47:21,829 INFO :: Binance Futures Client successfully initialized
+2022-10-06 20:47:24,504 INFO :: Binance connection opened
+2022-10-06 20:47:24,505 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-06 20:47:25,304 INFO :: Bitmex Client successfully initialized
+2022-10-06 20:47:27,163 INFO :: Bitmex connection opened
+2022-10-06 20:47:29,180 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-10-06 20:47:29,800 INFO :: Binance: subscribing to: xrpusdt@bookTicker
+2022-10-06 20:47:30,580 INFO :: Binance: subscribing to: bnbusdt@bookTicker
+2022-10-06 20:47:31,462 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-10-06 20:47:34,606 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-10-06 20:47:35,302 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-10-06 20:47:36,479 INFO :: Getting Binance trade size...
+2022-10-06 20:47:36,575 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-10-06 20:47:36,977 INFO :: Binance: subscribing to: bnbusdt@aggTrade
+2022-10-06 20:47:37,089 INFO :: Binance current USDT balance = 3396.1785716, trade size = 0.002
+2022-10-06 20:47:37,089 INFO :: Short signal on BTCUSDT 1m
+2022-10-06 20:47:37,400 INFO :: Sell order placed on Binance | Status: new
+2022-10-06 20:47:37,401 ERROR :: error from callback <bound method BinanceClient._on_message of <connectors.binance.BinanceClient object at 0x7f87891fd6d0>>: dictionary changed size during iteration
+2022-10-06 20:47:37,401 ERROR :: Binance connection error: dictionary changed size during iteration
+2022-10-06 20:47:38,842 INFO :: Binance: subscribing to: xrpusdt@aggTrade
+2022-10-06 20:47:39,848 INFO :: Binance order status: filled
+2022-10-06 20:47:46,069 INFO :: Getting Binance trade size...
+2022-10-06 20:47:46,826 INFO :: Binance current USDT balance = 3396.13062301, trade size = 0.12
+2022-10-06 20:47:46,827 INFO :: Short signal on BNBUSDT 1m
+2022-10-06 20:47:47,533 INFO :: Sell order placed on Binance | Status: new
+2022-10-06 20:47:50,193 INFO :: Binance order status: filled

@@ -1,4 +1,5 @@
 import logging
+import threading
 import time
 
 from database.database import Database
@@ -141,6 +142,7 @@ class Strategy:
                     if trade.entry_id == order_id:
                         trade.entry_price = order_status.avg_price
                         trade.quantity = order_status.executed_qty
+                        threading.Thread(target=self._add_trade_to_database, args=(trade,)).start()
                         break
                 return
 
@@ -187,9 +189,6 @@ class Strategy:
                                "contract": self.contract, "strategy": self.strat_name, "side": position_side,
                                "status": "open", "pnl": 0, "quantity": order_status.executed_qty, "entry_id": order_status.order_id})
             self.trades.append(new_trade)
-
-            db = Database()
-            db.add_new_trade(new_trade)
 
     def _check_tp_sl(self, trade: Trade):
 
@@ -240,6 +239,11 @@ class Strategy:
                 self._add_log(f"Exit order on {self.contract.symbol} {self.tf} placed successfully")
                 trade.status = "closed"
                 self.ongoing_position = False
+
+    def _add_trade_to_database(self, trade):
+        db = Database()
+        db.add_new_trade(trade)
+        db.close()
 
 
 class TechnicalStrategy(Strategy):

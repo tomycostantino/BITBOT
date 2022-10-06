@@ -100,9 +100,11 @@ class Database:
         :param trade:
         :return:
         '''
-        self._cursor.execute(f'INSERT INTO trades VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)', (trade.time,
-                             trade.contract.symbol, trade.strategy, trade.side, str(trade.entry_price), trade.status,
-                             str(trade.pnl), trade.quantity, trade.entry_id))
+
+        self._cursor.execute(f'INSERT INTO trades VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)', (str(trade.time),
+                             trade.contract.symbol, str(trade.strategy), trade.side, str(trade.entry_price), trade.status,
+                             str(trade.pnl), str(trade.quantity), str(trade.entry_id)))
+        self._conn.commit()
 
     def get_workspace_data(self, table: str):
         '''
