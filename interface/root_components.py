@@ -46,8 +46,8 @@ class Root(tk.Tk):
         self._restart.add_cascade(label='Restart program', command=self._restart_code)
 
         # create left frame
-        self._left_frame = tk.Frame(self, bg=BG_COLOR)
-        self._left_frame.pack(side=tk.LEFT)
+        self._left_frame = tk.Frame(self, bg=BG_COLOR, borderwidth=2, relief=tk.RAISED)
+        self._left_frame.pack(side=tk.LEFT, expand=True, fill=tk.Y)
 
         # create right frame
         self._right_frame = tk.Frame(self, bg=BG_COLOR)
@@ -55,19 +55,20 @@ class Root(tk.Tk):
 
         # create watchlist component
         self._watchlist_frame = Watchlist(self._binance.contracts, self._bitmex.contracts, self._left_frame,
-                                          bg=BG_COLOR_2)
-        self._watchlist_frame.grid(row=0, column=0, sticky='n', pady=15)
+                                          bg=BG_COLOR, borderwidth=1, relief=tk.RAISED)
+        self._watchlist_frame.pack(side=tk.TOP, fill=tk.BOTH, expand=True)
 
         # create logging frame under watchlist
-        self.logging_frame = Logging(self._left_frame, bg=BG_COLOR)
-        self.logging_frame.grid(row=1, column=0, sticky='s', pady=15)
+        self.logging_frame = Logging(self._left_frame, bg=BG_COLOR, borderwidth=1, relief=tk.RAISED)
+        self.logging_frame.pack(side=tk.TOP, fill=tk.BOTH, expand=True)
 
         # create the strategy component
-        self._strategy_frame = StrategyEditor(self, self._binance, self._bitmex, self._right_frame, bg=BG_COLOR)
+        self._strategy_frame = StrategyEditor(self, self._binance, self._bitmex, self._right_frame, bg=BG_COLOR,
+                                              borderwidth=1, relief=tk.RAISED)
         self._strategy_frame.pack(side=tk.TOP)
 
         # create the trade component under strategy
-        self._trades_frame = TradesWatch(self._right_frame, bg=BG_COLOR)
+        self._trades_frame = TradesWatch(self._right_frame, bg=BG_COLOR, borderwidth=1, relief=tk.RAISED)
         self._trades_frame.pack(side=tk.TOP)
 
         self._update_ui()

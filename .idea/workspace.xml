@@ -7,8 +7,12 @@
     <list default="true" id="6b6e2309-d3ee-46f4-8e4d-8daac01e26b6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/logging_component.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/logging_component.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interface/root_components.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/root_components.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/strategy_components.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/strategy_components.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/styling.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/styling.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interface/watchlist_components.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/watchlist_components.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_database.db" beforeDir="false" afterPath="$PROJECT_DIR$/new_database.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +38,8 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/connectors/binance.py" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/main.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/database/database.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/connectors/binance.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/analysis/regressor.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/analysis/data_extractor.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/variables.py" root0="FORCE_HIGHLIGHTING" />
@@ -45,6 +48,7 @@
     <setting file="file://$PROJECT_DIR$/requirements.txt" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/interface/scrollable_frame.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/interface/strategy_components.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/main.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/interface/initial_popup.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">

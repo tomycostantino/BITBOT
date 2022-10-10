@@ -45,7 +45,7 @@ class StrategyEditor(tk.Frame):
         self._table_frame.pack(side=tk.TOP, expand=False)
 
         self._add_button = tkmac.Button(self._commands_frame, text='Add Strategy', font=GLOBAL_FONT,
-                                        command=self._add_strategy_row, bg=BG_COLOR_2, fg=FG_COLOR, borderless=True)
+                                        command=self._add_strategy_row, bg=BG_COLOR_3, fg=FG_COLOR, borderless=True)
         self._add_button.pack(side=tk.TOP)
 
         self._headers_frame = tk.Frame(self._table_frame, height=20, width=950, bg=BG_COLOR)
