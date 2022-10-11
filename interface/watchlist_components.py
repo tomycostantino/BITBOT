@@ -58,7 +58,7 @@ class Watchlist(tk.Frame):
         self._col_width = 11
 
         for idx, h in enumerate(self._headers):
-            header = tk.Label(self._headers_frame, text=h.capitalize() if h != 'remove' else '', bg=BG_COLOR, fg=FG_COLOR,
+            header = tk.Label(self._headers_frame, text=h.capitalize() if h != 'remove' else '', bg=BG_COLOR, fg=FG_COLOR_2,
                               font=GLOBAL_FONT, width=self._col_width if h != 'remove' else 4)
             header.grid(row=0, column=idx)
 
@@ -100,24 +100,24 @@ class Watchlist(tk.Frame):
 
         b_index = self._body_index
 
-        self.body_widgets['symbol'][b_index] = tk.Label(self._body_frame.sub_frame, text=symbol, bg=BG_COLOR_2, fg=FG_COLOR_2,
+        self.body_widgets['symbol'][b_index] = tk.Label(self._body_frame.sub_frame, text=symbol, bg=BG_COLOR_2, fg=FG_COLOR,
                                                         font=GLOBAL_FONT, width=self._col_width)
         self.body_widgets['symbol'][b_index].grid(row=b_index, column=0)
 
-        self.body_widgets['exchange'][b_index] = tk.Label(self._body_frame.sub_frame, text=exchange, bg=BG_COLOR_2, fg=FG_COLOR_2,
+        self.body_widgets['exchange'][b_index] = tk.Label(self._body_frame.sub_frame, text=exchange, bg=BG_COLOR_2, fg=FG_COLOR,
                                                           font=GLOBAL_FONT, width=self._col_width)
         self.body_widgets['exchange'][b_index].grid(row=b_index, column=1)
 
         self.body_widgets['bid_var'][b_index] = tk.StringVar()
         self.body_widgets['bid'][b_index] = tk.Label(self._body_frame.sub_frame,
                                                      textvariable=self.body_widgets['bid_var'][b_index], bg=BG_COLOR_2,
-                                                     fg=FG_COLOR_2, font=GLOBAL_FONT, width=self._col_width)
+                                                     fg=FG_COLOR, font=GLOBAL_FONT, width=self._col_width)
         self.body_widgets['bid'][b_index].grid(row=b_index, column=2)
 
         self.body_widgets['ask_var'][b_index] = tk.StringVar()
         self.body_widgets['ask'][b_index] = tk.Label(self._body_frame.sub_frame,
                                                      textvariable=self.body_widgets['ask_var'][b_index], bg=BG_COLOR_2,
-                                                     fg=FG_COLOR_2, font=GLOBAL_FONT, width=self._col_width)
+                                                     fg=FG_COLOR, font=GLOBAL_FONT, width=self._col_width)
         self.body_widgets['ask'][b_index].grid(row=b_index, column=3)
 
         self.body_widgets['remove'][b_index] = tkmac.Button(self._body_frame.sub_frame, text='X', bg='red', fg=FG_COLOR,

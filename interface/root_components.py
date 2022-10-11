@@ -246,40 +246,6 @@ class Root(tk.Tk):
         self._watchlist_frame.load_workspace()
         self._strategy_frame.load_workspace()
         self.logging_frame.add_log('Workspace loaded')
-    '''
-    def _reset_client(self, mode: str):
-
-        if mode == 'testnet':
-            if not self.binance.testnet:
-                self.binance = BinanceClient(binance_testnet_api_key, binance_testnet_api_secret, True,
-                                             self.binance.futures)
-                self.logging_frame.add_log('Binance client initialized on Testnet')
-            else:
-                self.logging_frame.add_log('Binance client already on Testnet')
-
-            if not self.bitmex.testnet:
-                self.bitmex = BitmexClient(bitmex_api_key, bitmex_api_secret, testnet=True)
-                self.logging_frame.add_log('Bitmex client initialized on Testnet')
-            else:
-                self.logging_frame.add_log('Bitmex client already on Testnet')
-
-        elif mode == 'spot':
-            if self.binance.testnet:
-                self.binance.ws_connected = False
-                self.binance.reconnect = False
-                self.binance = BinanceClient(binance_api_key, binance_api_secret, False,
-                                             self.binance.futures)
-                self.logging_frame.add_log('Binance client initialized on Spot')
-            else:
-                self.logging_frame.add_log('Binance client already on Spot')
-
-            if self.bitmex.testnet:
-                self.bitmex.ws_connected = False
-                self.bitmex.reconnect = False
-                self.bitmex = BitmexClient(bitmex_api_key, bitmex_api_secret, testnet=False)
-            else:
-                self.logging_frame.add_log('Bitmex client already on Spot')
-    '''
 
     def _restart_code(self):
         result = askquestion('Confirmation', 'Do you really want to restart the application?')

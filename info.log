@@ -18906,3 +18906,112 @@
 2022-10-11 12:10:01,073 INFO :: Binance New candle for LTCUSDT 1m
 2022-10-11 12:10:01,148 INFO :: Binance New candle for BTCUSDT 1m
 2022-10-11 12:10:01,148 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 12:11:00,818 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-11 12:11:02,877 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-11 12:11:15,138 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 12:11:15,139 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 12:11:40,938 INFO :: Getting Binance trade size...
+2022-10-11 12:11:41,656 INFO :: Binance current USDT balance = 3350.8794652, trade size = 0.002
+2022-10-11 12:11:41,656 INFO :: Long signal on BTCUSDT 1m
+2022-10-11 12:11:41,976 INFO :: Buy order placed on Binance | Status: new
+2022-10-11 12:11:44,566 INFO :: Binance order status: filled
+2022-10-11 12:12:03,382 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 12:12:03,382 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 12:12:05,003 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-11 12:12:28,936 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-11 12:13:02,041 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 12:13:02,041 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 12:13:02,100 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-11 12:13:02,361 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-11 12:13:19,176 INFO :: Binance Futures Client successfully initialized
+2022-10-11 12:13:22,115 INFO :: Binance connection opened
+2022-10-11 12:13:22,116 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 12:13:22,117 WARNING :: websocket connected
+2022-10-11 12:13:22,244 INFO :: Bitmex Client successfully initialized
+2022-10-11 12:13:23,857 INFO :: Bitmex connection opened
+2022-10-11 12:13:23,858 WARNING :: websocket connected
+2022-10-11 12:13:28,401 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-10-11 12:13:29,390 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-10-11 12:13:47,109 INFO :: Binance Futures Client successfully initialized
+2022-10-11 12:13:49,670 INFO :: Binance connection opened
+2022-10-11 12:13:49,671 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 12:13:49,671 WARNING :: websocket connected
+2022-10-11 12:13:49,983 INFO :: Bitmex Client successfully initialized
+2022-10-11 12:13:51,418 INFO :: Bitmex connection opened
+2022-10-11 12:13:51,420 WARNING :: websocket connected
+2022-10-11 12:13:55,505 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-10-11 12:13:56,425 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-10-11 12:14:43,958 INFO :: Binance: subscribing to: bnbbusd@bookTicker
+2022-10-11 12:14:55,491 INFO :: Binance: subscribing to: bnbusdt@bookTicker
+2022-10-11 12:15:35,343 ERROR :: Error while making GET request to /api/v1/trade/bucketed: {'error': {'message': 'Signature not valid.', 'name': 'HTTPError'}} (error code 401)
+2022-10-11 12:19:09,606 INFO :: Binance Futures Client successfully initialized
+2022-10-11 12:19:12,570 INFO :: Binance connection opened
+2022-10-11 12:19:12,572 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 12:19:12,573 WARNING :: websocket connected
+2022-10-11 12:19:13,169 INFO :: Bitmex Client successfully initialized
+2022-10-11 12:19:14,676 INFO :: Bitmex connection opened
+2022-10-11 12:19:14,677 WARNING :: websocket connected
+2022-10-11 12:19:19,677 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-10-11 12:19:20,529 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-10-11 12:19:21,150 INFO :: Binance: subscribing to: bnbusdt@bookTicker
+2022-10-11 12:19:23,917 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-10-11 12:19:29,787 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-10-11 12:20:00,794 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-11 12:20:15,512 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 12:20:21,973 INFO :: Getting Binance trade size...
+2022-10-11 12:20:22,633 INFO :: Binance current USDT balance = 3350.86421344, trade size = 0.002
+2022-10-11 12:20:22,634 INFO :: Long signal on BTCUSDT 1m
+2022-10-11 12:20:23,207 INFO :: Buy order placed on Binance | Status: new
+2022-10-11 12:20:26,257 INFO :: Binance order status: filled
+2022-10-11 12:20:32,506 INFO :: Binance Futures Client successfully initialized
+2022-10-11 12:20:34,883 INFO :: Binance connection opened
+2022-10-11 12:20:34,884 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 12:20:34,884 WARNING :: websocket connected
+2022-10-11 12:20:35,656 INFO :: Bitmex Client successfully initialized
+2022-10-11 12:20:37,016 INFO :: Bitmex connection opened
+2022-10-11 12:20:37,017 WARNING :: websocket connected
+2022-10-11 12:20:41,801 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-10-11 12:20:42,501 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-10-11 12:20:43,155 INFO :: Binance: subscribing to: bnbusdt@bookTicker
+2022-10-11 12:20:44,423 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-10-11 12:20:46,733 INFO :: Getting Binance trade size...
+2022-10-11 12:20:47,003 INFO :: Binance current USDT balance = 3350.84896208, trade size = 0.026
+2022-10-11 12:20:47,003 INFO :: Short signal on ETHUSDT 1m
+2022-10-11 12:20:47,762 INFO :: Sell order placed on Binance | Status: new
+2022-10-11 12:20:47,781 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-10-11 12:20:50,216 INFO :: Binance order status: filled
+2022-10-11 12:20:50,550 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-10-11 12:20:50,683 INFO :: Getting Binance trade size...
+2022-10-11 12:20:50,998 INFO :: Binance current USDT balance = 3316.18923903, trade size = 0.002
+2022-10-11 12:20:50,999 INFO :: Long signal on BTCUSDT 1m
+2022-10-11 12:20:51,578 INFO :: Buy order placed on Binance | Status: new
+2022-10-11 12:20:53,603 INFO :: Getting Binance trade size...
+2022-10-11 12:20:54,374 INFO :: Binance order status: filled
+2022-10-11 12:20:54,376 INFO :: Binance current USDT balance = 3316.17398575, trade size = 0.002
+2022-10-11 12:20:54,377 INFO :: Long signal on BTCUSDT 1m
+2022-10-11 12:20:54,893 INFO :: Buy order placed on Binance | Status: new
+2022-10-11 12:20:57,901 INFO :: Binance order status: filled
+2022-10-11 12:21:02,940 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-11 12:21:10,922 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 12:21:10,922 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 12:21:14,859 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-11 12:21:21,095 INFO :: Getting Binance trade size...
+2022-10-11 12:21:21,897 INFO :: Binance current USDT balance = 3316.15871967, trade size = 0.002
+2022-10-11 12:21:21,897 INFO :: Short signal on BTCUSDT 1m
+2022-10-11 12:21:22,217 INFO :: Sell order placed on Binance | Status: new
+2022-10-11 12:21:25,244 INFO :: Binance order status: filled
+2022-10-11 12:21:37,094 INFO :: Getting Binance trade size...
+2022-10-11 12:21:37,839 INFO :: Binance current USDT balance = 3315.63606993, trade size = 0.64
+2022-10-11 12:21:37,839 INFO :: Short signal on LTCUSDT 1m
+2022-10-11 12:21:38,184 INFO :: Sell order placed on Binance | Status: new
+2022-10-11 12:21:41,219 INFO :: Binance order status: filled
+2022-10-11 12:22:00,977 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-11 12:22:00,995 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-11 12:22:02,947 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 12:22:02,948 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 12:22:02,948 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 12:23:03,891 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 12:23:03,893 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 12:23:03,893 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 12:23:06,902 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-11 12:23:06,951 INFO :: Binance New candle for LTCUSDT 1m

@@ -299,7 +299,7 @@ class StrategyEditor(tk.Frame):
 
                 self.body_widgets['activation'][b_index].config(bg='green', text='ON')
 
-                self.root.logging_frame.add_log(f'{strat_selected} strategy on {symbol} / {timeframe} started')
+            self.root.logging_frame.add_log(f'{strat_selected} strategy on {symbol} / {timeframe} started')
 
         else:
 
@@ -313,7 +313,7 @@ class StrategyEditor(tk.Frame):
 
                 self.body_widgets['activation'][b_index].config(bg='RED', text='OFF')
 
-                self.root.logging_frame.add_log(f'{strat_selected} strategy on {symbol} / {timeframe} stopped')
+            self.root.logging_frame.add_log(f'{strat_selected} strategy on {symbol} / {timeframe} stopped')
 
     def load_workspace(self):
 
