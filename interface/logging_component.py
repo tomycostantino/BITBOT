@@ -10,8 +10,8 @@ class Logging(tk.Frame):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        header = tk.Label(self, text='Event logging', bg=BG_COLOR_3, fg=FG_COLOR, font=BOLD_FONT_2)
-        header.pack(side=tk.TOP, fill=tk.X)
+        header = tk.Label(self, text='Event logging', bg=BG_COLOR, fg=FG_COLOR, font=BOLD_FONT_2)
+        header.pack(side=tk.TOP, fill=tk.X, expand=True, ipady=5)
 
         # create the text display
         self._logging_text = tk.Text(self, width=60, state=tk.DISABLED, bg=BG_COLOR_2, fg=FG_COLOR,

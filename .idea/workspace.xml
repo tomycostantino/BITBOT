@@ -11,6 +11,7 @@
       <change beforePath="$PROJECT_DIR$/interface/root_components.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/root_components.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interface/strategy_components.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/strategy_components.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interface/styling.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/styling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/trades_component.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/trades_component.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interface/watchlist_components.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/watchlist_components.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/new_database.db" beforeDir="false" afterPath="$PROJECT_DIR$/new_database.db" afterDir="false" />
     </list>

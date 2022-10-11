@@ -18513,3 +18513,396 @@
 2022-10-10 17:50:22,163 INFO :: Bitmex Client successfully initialized
 2022-10-10 17:50:23,736 INFO :: Bitmex connection opened
 2022-10-10 17:50:23,737 WARNING :: websocket connected
+2022-10-10 20:34:50,863 INFO :: Binance Futures Client successfully initialized
+2022-10-10 20:34:59,870 INFO :: Binance connection opened
+2022-10-10 20:34:59,871 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-10 20:34:59,872 WARNING :: websocket connected
+2022-10-10 20:35:00,523 INFO :: Bitmex Client successfully initialized
+2022-10-10 20:35:02,021 INFO :: Bitmex connection opened
+2022-10-10 20:35:02,022 WARNING :: websocket connected
+2022-10-11 09:53:57,451 WARNING :: Websocket connection closed
+2022-10-11 09:58:48,631 INFO :: Binance Futures Client successfully initialized
+2022-10-11 09:58:53,087 INFO :: Binance connection opened
+2022-10-11 09:58:53,088 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 09:58:53,089 WARNING :: websocket connected
+2022-10-11 09:58:53,266 INFO :: Bitmex Client successfully initialized
+2022-10-11 09:58:54,871 INFO :: Bitmex connection opened
+2022-10-11 09:58:54,873 WARNING :: websocket connected
+2022-10-11 10:00:01,453 INFO :: Binance Futures Client successfully initialized
+2022-10-11 10:00:03,739 INFO :: Binance connection opened
+2022-10-11 10:00:03,740 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 10:00:03,740 WARNING :: websocket connected
+2022-10-11 10:00:03,991 INFO :: Bitmex Client successfully initialized
+2022-10-11 10:00:05,529 INFO :: Bitmex connection opened
+2022-10-11 10:00:05,529 WARNING :: websocket connected
+2022-10-11 10:00:47,468 INFO :: Binance Futures Client successfully initialized
+2022-10-11 10:00:50,846 INFO :: Binance connection opened
+2022-10-11 10:00:50,848 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 10:00:50,848 WARNING :: websocket connected
+2022-10-11 10:00:51,020 INFO :: Bitmex Client successfully initialized
+2022-10-11 10:00:52,357 INFO :: Bitmex connection opened
+2022-10-11 10:00:52,358 WARNING :: websocket connected
+2022-10-11 10:01:34,930 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-10-11 10:01:35,203 INFO :: Getting Binance trade size...
+2022-10-11 10:01:36,180 INFO :: Binance current USDT balance = 3354.0824241, trade size = 0.002
+2022-10-11 10:01:36,181 INFO :: Long signal on BTCUSDT 1m
+2022-10-11 10:01:37,380 INFO :: Buy order placed on Binance | Status: new
+2022-10-11 10:01:40,142 INFO :: Binance order status: filled
+2022-10-11 10:02:01,336 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 10:03:01,546 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 10:03:01,547 INFO :: Getting Binance trade size...
+2022-10-11 10:03:02,476 INFO :: Binance current USDT balance = 3354.06710162, trade size = 0.002
+2022-10-11 10:03:02,476 INFO :: Long signal on BTCUSDT 5m
+2022-10-11 10:03:03,397 INFO :: Buy order placed on Binance | Status: new
+2022-10-11 10:03:05,898 INFO :: Binance order status: filled
+2022-10-11 10:04:04,331 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 10:05:04,430 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 10:05:04,432 INFO :: Binance New candle for BTCUSDT 5m
+2022-10-11 10:06:03,485 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 10:07:02,603 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 10:07:55,249 INFO :: Binance Futures Client successfully initialized
+2022-10-11 10:07:58,119 INFO :: Binance connection opened
+2022-10-11 10:07:58,120 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 10:07:58,121 WARNING :: websocket connected
+2022-10-11 10:07:58,268 INFO :: Bitmex Client successfully initialized
+2022-10-11 10:07:59,631 INFO :: Bitmex connection opened
+2022-10-11 10:07:59,632 WARNING :: websocket connected
+2022-10-11 10:10:01,770 INFO :: Binance Futures Client successfully initialized
+2022-10-11 10:10:03,718 INFO :: Binance connection opened
+2022-10-11 10:10:03,720 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 10:10:03,720 WARNING :: websocket connected
+2022-10-11 10:10:03,903 INFO :: Bitmex Client successfully initialized
+2022-10-11 10:10:05,246 INFO :: Bitmex connection opened
+2022-10-11 10:10:05,247 WARNING :: websocket connected
+2022-10-11 10:11:02,071 INFO :: Binance Futures Client successfully initialized
+2022-10-11 10:11:04,412 INFO :: Binance connection opened
+2022-10-11 10:11:04,413 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 10:11:04,413 WARNING :: websocket connected
+2022-10-11 10:11:04,669 INFO :: Bitmex Client successfully initialized
+2022-10-11 10:11:06,629 INFO :: Bitmex connection opened
+2022-10-11 10:11:06,630 WARNING :: websocket connected
+2022-10-11 10:11:36,688 INFO :: Binance Futures Client successfully initialized
+2022-10-11 10:11:39,432 INFO :: Binance connection opened
+2022-10-11 10:11:39,434 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 10:11:39,434 WARNING :: websocket connected
+2022-10-11 10:11:40,728 INFO :: Bitmex Client successfully initialized
+2022-10-11 10:11:42,282 INFO :: Bitmex connection opened
+2022-10-11 10:11:42,283 WARNING :: websocket connected
+2022-10-11 10:11:53,487 INFO :: Binance Futures Client successfully initialized
+2022-10-11 10:11:56,523 INFO :: Binance connection opened
+2022-10-11 10:11:56,524 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 10:11:56,524 WARNING :: websocket connected
+2022-10-11 10:11:56,898 INFO :: Bitmex Client successfully initialized
+2022-10-11 10:11:58,236 INFO :: Bitmex connection opened
+2022-10-11 10:11:58,237 WARNING :: websocket connected
+2022-10-11 10:12:15,520 INFO :: Binance Futures Client successfully initialized
+2022-10-11 10:12:17,765 INFO :: Binance connection opened
+2022-10-11 10:12:17,767 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 10:12:17,767 WARNING :: websocket connected
+2022-10-11 10:12:18,014 INFO :: Bitmex Client successfully initialized
+2022-10-11 10:12:19,433 INFO :: Bitmex connection opened
+2022-10-11 10:12:19,434 WARNING :: websocket connected
+2022-10-11 10:13:47,203 INFO :: Binance Futures Client successfully initialized
+2022-10-11 10:13:49,420 INFO :: Binance connection opened
+2022-10-11 10:13:49,420 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 10:13:49,420 WARNING :: websocket connected
+2022-10-11 10:13:50,982 INFO :: Bitmex Client successfully initialized
+2022-10-11 10:13:52,348 INFO :: Bitmex connection opened
+2022-10-11 10:13:52,349 WARNING :: websocket connected
+2022-10-11 10:15:02,536 INFO :: Binance Futures Client successfully initialized
+2022-10-11 10:15:04,952 INFO :: Binance connection opened
+2022-10-11 10:15:04,954 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 10:15:04,954 WARNING :: websocket connected
+2022-10-11 10:15:06,859 INFO :: Bitmex Client successfully initialized
+2022-10-11 10:15:08,197 INFO :: Bitmex connection opened
+2022-10-11 10:15:08,198 WARNING :: websocket connected
+2022-10-11 10:17:42,035 INFO :: Binance Futures Client successfully initialized
+2022-10-11 10:17:44,614 INFO :: Binance connection opened
+2022-10-11 10:17:44,616 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 10:17:44,616 WARNING :: websocket connected
+2022-10-11 10:17:45,433 INFO :: Bitmex Client successfully initialized
+2022-10-11 10:17:46,912 INFO :: Bitmex connection opened
+2022-10-11 10:17:46,913 WARNING :: websocket connected
+2022-10-11 10:20:04,268 INFO :: Binance Futures Client successfully initialized
+2022-10-11 10:20:06,858 INFO :: Binance connection opened
+2022-10-11 10:20:06,858 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 10:20:06,858 WARNING :: websocket connected
+2022-10-11 10:20:07,269 INFO :: Bitmex Client successfully initialized
+2022-10-11 10:20:08,835 INFO :: Bitmex connection opened
+2022-10-11 10:20:08,836 WARNING :: websocket connected
+2022-10-11 10:57:13,435 INFO :: Binance Futures Client successfully initialized
+2022-10-11 10:57:16,747 INFO :: Binance connection opened
+2022-10-11 10:57:16,748 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 10:57:16,752 WARNING :: websocket connected
+2022-10-11 10:57:16,753 INFO :: Bitmex Client successfully initialized
+2022-10-11 10:57:18,288 INFO :: Bitmex connection opened
+2022-10-11 10:57:18,289 WARNING :: websocket connected
+2022-10-11 10:58:44,364 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-10-11 10:59:04,261 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 10:59:04,263 INFO :: Getting Binance trade size...
+2022-10-11 10:59:05,334 INFO :: Binance current USDT balance = 3354.05177674, trade size = 0.002
+2022-10-11 10:59:05,335 INFO :: Short signal on BTCUSDT 1m
+2022-10-11 10:59:05,804 INFO :: Sell order placed on Binance | Status: new
+2022-10-11 10:59:08,568 INFO :: Binance order status: filled
+2022-10-11 11:00:00,791 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 11:01:02,532 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 11:02:00,289 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 11:03:00,637 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 11:04:00,373 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 11:05:05,191 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 11:06:01,302 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 11:07:06,840 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 11:08:03,365 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 11:09:00,509 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 11:10:03,175 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 11:11:00,787 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 11:12:01,444 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 11:12:22,341 INFO :: Take profit for BTCUSDT 1m | Current Price = 18934.1 (Entry price was 19131.1)
+2022-10-11 11:12:24,326 INFO :: Exit order on BTCUSDT 1m placed successfully
+2022-10-11 11:12:24,327 INFO :: Getting Binance trade size...
+2022-10-11 11:12:25,107 INFO :: Binance current USDT balance = 3352.72678574, trade size = 0.002
+2022-10-11 11:12:25,107 INFO :: Short signal on BTCUSDT 1m
+2022-10-11 11:12:25,897 INFO :: Sell order placed on Binance | Status: new
+2022-10-11 11:12:25,898 WARNING :: Binance BTCUSDT: 3859 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:25,899 WARNING :: Binance BTCUSDT: 3860 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:25,899 WARNING :: Binance BTCUSDT: 3860 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:25,899 WARNING :: Binance BTCUSDT: 3860 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:25,900 WARNING :: Binance BTCUSDT: 3861 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:25,900 WARNING :: Binance BTCUSDT: 3861 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:25,901 WARNING :: Binance BTCUSDT: 3862 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:25,901 WARNING :: Binance BTCUSDT: 3862 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:25,901 WARNING :: Binance BTCUSDT: 3862 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:25,901 WARNING :: Binance BTCUSDT: 3862 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:25,902 WARNING :: Binance BTCUSDT: 3863 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:25,903 WARNING :: Binance BTCUSDT: 3864 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:25,903 WARNING :: Binance BTCUSDT: 3864 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:25,904 WARNING :: Binance BTCUSDT: 3865 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:25,904 WARNING :: Binance BTCUSDT: 3865 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:25,904 WARNING :: Binance BTCUSDT: 3865 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:25,904 WARNING :: Binance BTCUSDT: 3865 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:25,905 WARNING :: Binance BTCUSDT: 3865 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:25,905 WARNING :: Binance BTCUSDT: 3856 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:25,905 WARNING :: Binance BTCUSDT: 3816 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:25,907 WARNING :: Binance BTCUSDT: 3818 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:25,908 WARNING :: Binance BTCUSDT: 3608 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:25,908 WARNING :: Binance BTCUSDT: 3608 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:25,912 WARNING :: Binance BTCUSDT: 3180 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:25,913 WARNING :: Binance BTCUSDT: 2927 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:25,913 WARNING :: Binance BTCUSDT: 2894 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:25,913 WARNING :: Binance BTCUSDT: 2894 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:25,914 WARNING :: Binance BTCUSDT: 2895 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:25,918 WARNING :: Binance BTCUSDT: 2436 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:25,920 WARNING :: Binance BTCUSDT: 2198 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:25,920 WARNING :: Binance BTCUSDT: 2168 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:25,921 WARNING :: Binance BTCUSDT: 2114 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:25,921 WARNING :: Binance BTCUSDT: 2114 milliseconds of difference between the current time and the trade time
+2022-10-11 11:12:28,481 INFO :: Binance order status: filled
+2022-10-11 11:13:00,429 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 11:14:05,125 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 11:15:01,998 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 11:16:00,164 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 11:16:18,345 INFO :: Binance Futures Client successfully initialized
+2022-10-11 11:16:21,643 INFO :: Binance connection opened
+2022-10-11 11:16:21,644 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 11:16:21,644 WARNING :: websocket connected
+2022-10-11 11:16:21,956 INFO :: Bitmex Client successfully initialized
+2022-10-11 11:16:23,796 INFO :: Bitmex connection opened
+2022-10-11 11:16:23,797 WARNING :: websocket connected
+2022-10-11 11:20:29,265 INFO :: Binance Futures Client successfully initialized
+2022-10-11 11:20:32,400 INFO :: Binance connection opened
+2022-10-11 11:20:32,401 INFO :: Bitmex Client successfully initialized
+2022-10-11 11:20:32,402 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 11:20:32,402 WARNING :: websocket connected
+2022-10-11 11:20:33,864 INFO :: Bitmex connection opened
+2022-10-11 11:20:33,864 WARNING :: websocket connected
+2022-10-11 11:22:09,464 INFO :: Binance Futures Client successfully initialized
+2022-10-11 11:22:12,059 INFO :: Binance connection opened
+2022-10-11 11:22:12,060 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 11:22:12,060 WARNING :: websocket connected
+2022-10-11 11:22:12,587 INFO :: Bitmex Client successfully initialized
+2022-10-11 11:22:14,317 INFO :: Bitmex connection opened
+2022-10-11 11:22:14,318 WARNING :: websocket connected
+2022-10-11 11:23:08,431 INFO :: Binance Futures Client successfully initialized
+2022-10-11 11:23:11,363 INFO :: Binance connection opened
+2022-10-11 11:23:11,365 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 11:23:11,365 WARNING :: websocket connected
+2022-10-11 11:23:12,073 INFO :: Bitmex Client successfully initialized
+2022-10-11 11:23:13,607 INFO :: Bitmex connection opened
+2022-10-11 11:23:13,608 WARNING :: websocket connected
+2022-10-11 11:24:05,364 INFO :: Binance Futures Client successfully initialized
+2022-10-11 11:24:08,543 INFO :: Binance connection opened
+2022-10-11 11:24:08,543 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 11:24:08,543 WARNING :: websocket connected
+2022-10-11 11:24:08,905 INFO :: Bitmex Client successfully initialized
+2022-10-11 11:24:10,436 INFO :: Bitmex connection opened
+2022-10-11 11:24:10,438 WARNING :: websocket connected
+2022-10-11 11:26:24,911 INFO :: Binance Futures Client successfully initialized
+2022-10-11 11:26:27,073 INFO :: Binance connection opened
+2022-10-11 11:26:27,074 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 11:26:27,074 WARNING :: websocket connected
+2022-10-11 11:26:27,367 INFO :: Bitmex Client successfully initialized
+2022-10-11 11:26:28,788 INFO :: Bitmex connection opened
+2022-10-11 11:26:28,789 WARNING :: websocket connected
+2022-10-11 11:27:01,745 INFO :: Binance Futures Client successfully initialized
+2022-10-11 11:27:04,620 INFO :: Binance connection opened
+2022-10-11 11:27:04,624 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 11:27:04,625 WARNING :: websocket connected
+2022-10-11 11:27:04,625 INFO :: Bitmex Client successfully initialized
+2022-10-11 11:27:06,045 INFO :: Bitmex connection opened
+2022-10-11 11:27:06,046 WARNING :: websocket connected
+2022-10-11 11:27:45,762 INFO :: Binance Futures Client successfully initialized
+2022-10-11 11:27:50,907 INFO :: Binance connection opened
+2022-10-11 11:27:50,907 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 11:27:50,907 WARNING :: websocket connected
+2022-10-11 11:27:51,629 INFO :: Bitmex Client successfully initialized
+2022-10-11 11:27:53,119 INFO :: Bitmex connection opened
+2022-10-11 11:27:53,120 WARNING :: websocket connected
+2022-10-11 11:28:24,806 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-10-11 11:29:43,401 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-10-11 11:29:46,710 INFO :: Getting Binance trade size...
+2022-10-11 11:29:47,439 INFO :: Binance current USDT balance = 3351.41440793, trade size = 0.002
+2022-10-11 11:29:47,440 INFO :: Long signal on BTCUSDT 1m
+2022-10-11 11:29:48,325 INFO :: Buy order placed on Binance | Status: new
+2022-10-11 11:29:50,877 INFO :: Binance order status: filled
+2022-10-11 11:30:02,112 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 11:31:00,794 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 11:32:01,066 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 11:33:01,664 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 11:34:06,706 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 11:35:02,867 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 11:36:01,288 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 11:37:01,955 INFO :: Binance Futures Client successfully initialized
+2022-10-11 11:37:04,752 INFO :: Binance connection opened
+2022-10-11 11:37:04,753 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 11:37:04,753 WARNING :: websocket connected
+2022-10-11 11:37:05,070 INFO :: Bitmex Client successfully initialized
+2022-10-11 11:37:06,486 INFO :: Bitmex connection opened
+2022-10-11 11:37:06,487 WARNING :: websocket connected
+2022-10-11 11:41:38,204 INFO :: Binance Futures Client successfully initialized
+2022-10-11 11:41:41,468 INFO :: Binance connection opened
+2022-10-11 11:41:41,469 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 11:41:41,469 WARNING :: websocket connected
+2022-10-11 11:41:42,246 INFO :: Bitmex Client successfully initialized
+2022-10-11 11:41:43,790 INFO :: Bitmex connection opened
+2022-10-11 11:41:43,791 WARNING :: websocket connected
+2022-10-11 11:43:53,283 INFO :: Binance Futures Client successfully initialized
+2022-10-11 11:43:59,256 INFO :: Binance connection opened
+2022-10-11 11:43:59,256 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 11:43:59,256 WARNING :: websocket connected
+2022-10-11 11:44:01,126 INFO :: Bitmex Client successfully initialized
+2022-10-11 11:44:02,949 INFO :: Bitmex connection opened
+2022-10-11 11:44:02,950 WARNING :: websocket connected
+2022-10-11 11:44:33,800 INFO :: Binance Futures Client successfully initialized
+2022-10-11 11:44:36,903 INFO :: Binance connection opened
+2022-10-11 11:44:36,903 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 11:44:36,903 WARNING :: websocket connected
+2022-10-11 11:44:37,359 INFO :: Bitmex Client successfully initialized
+2022-10-11 11:44:38,915 INFO :: Bitmex connection opened
+2022-10-11 11:44:38,917 WARNING :: websocket connected
+2022-10-11 11:46:11,250 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-10-11 11:46:16,880 INFO :: Getting Binance trade size...
+2022-10-11 11:46:17,496 INFO :: Binance current USDT balance = 3351.39917473, trade size = 0.002
+2022-10-11 11:46:17,496 INFO :: Short signal on BTCUSDT 1m
+2022-10-11 11:46:18,420 INFO :: Sell order placed on Binance | Status: new
+2022-10-11 11:46:21,185 INFO :: Binance order status: filled
+2022-10-11 11:47:01,122 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 11:47:33,962 INFO :: Binance Futures Client successfully initialized
+2022-10-11 11:47:37,063 INFO :: Binance connection opened
+2022-10-11 11:47:37,064 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 11:47:37,068 WARNING :: websocket connected
+2022-10-11 11:47:37,069 INFO :: Bitmex Client successfully initialized
+2022-10-11 11:47:38,602 INFO :: Bitmex connection opened
+2022-10-11 11:47:38,603 WARNING :: websocket connected
+2022-10-11 11:51:04,190 INFO :: Binance Futures Client successfully initialized
+2022-10-11 11:51:07,182 INFO :: Binance connection opened
+2022-10-11 11:51:07,183 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 11:51:07,184 WARNING :: websocket connected
+2022-10-11 11:51:08,726 INFO :: Bitmex Client successfully initialized
+2022-10-11 11:51:10,310 INFO :: Bitmex connection opened
+2022-10-11 11:51:10,311 WARNING :: websocket connected
+2022-10-11 11:51:35,842 INFO :: Binance Futures Client successfully initialized
+2022-10-11 11:51:38,903 INFO :: Binance connection opened
+2022-10-11 11:51:38,905 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 11:51:38,905 WARNING :: websocket connected
+2022-10-11 11:51:39,893 INFO :: Bitmex Client successfully initialized
+2022-10-11 11:51:41,237 INFO :: Bitmex connection opened
+2022-10-11 11:51:41,238 WARNING :: websocket connected
+2022-10-11 11:52:57,755 INFO :: Binance Futures Client successfully initialized
+2022-10-11 11:53:00,284 INFO :: Binance connection opened
+2022-10-11 11:53:00,285 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 11:53:00,286 WARNING :: websocket connected
+2022-10-11 11:53:00,540 INFO :: Bitmex Client successfully initialized
+2022-10-11 11:53:02,128 INFO :: Bitmex connection opened
+2022-10-11 11:53:02,129 WARNING :: websocket connected
+2022-10-11 11:53:22,857 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-10-11 11:54:00,689 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 11:54:06,286 INFO :: Binance Futures Client successfully initialized
+2022-10-11 11:54:09,142 INFO :: Binance connection opened
+2022-10-11 11:54:09,144 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 11:54:09,144 WARNING :: websocket connected
+2022-10-11 11:54:09,215 INFO :: Bitmex Client successfully initialized
+2022-10-11 11:54:10,586 INFO :: Bitmex connection opened
+2022-10-11 11:54:10,586 WARNING :: websocket connected
+2022-10-11 11:54:38,320 INFO :: Binance Futures Client successfully initialized
+2022-10-11 11:54:40,991 INFO :: Binance connection opened
+2022-10-11 11:54:40,993 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 11:54:40,993 WARNING :: websocket connected
+2022-10-11 11:54:41,028 INFO :: Bitmex Client successfully initialized
+2022-10-11 11:54:42,439 INFO :: Bitmex connection opened
+2022-10-11 11:54:42,440 WARNING :: websocket connected
+2022-10-11 11:56:44,015 INFO :: Binance Futures Client successfully initialized
+2022-10-11 11:56:48,818 INFO :: Binance connection opened
+2022-10-11 11:56:48,819 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 11:56:48,820 WARNING :: websocket connected
+2022-10-11 11:56:48,954 INFO :: Bitmex Client successfully initialized
+2022-10-11 11:56:50,630 INFO :: Bitmex connection opened
+2022-10-11 11:56:50,631 WARNING :: websocket connected
+2022-10-11 12:05:09,578 INFO :: Binance Futures Client successfully initialized
+2022-10-11 12:05:12,298 INFO :: Binance connection opened
+2022-10-11 12:05:12,299 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 12:05:12,301 WARNING :: websocket connected
+2022-10-11 12:05:12,302 INFO :: Bitmex Client successfully initialized
+2022-10-11 12:05:13,873 INFO :: Bitmex connection opened
+2022-10-11 12:05:13,873 WARNING :: websocket connected
+2022-10-11 12:06:23,895 INFO :: Binance Futures Client successfully initialized
+2022-10-11 12:06:26,976 INFO :: Binance connection opened
+2022-10-11 12:06:26,978 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-10-11 12:06:26,978 WARNING :: websocket connected
+2022-10-11 12:06:27,753 INFO :: Bitmex Client successfully initialized
+2022-10-11 12:06:29,440 INFO :: Bitmex connection opened
+2022-10-11 12:06:29,441 WARNING :: websocket connected
+2022-10-11 12:07:16,171 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-10-11 12:07:18,622 INFO :: Getting Binance trade size...
+2022-10-11 12:07:19,215 INFO :: Binance current USDT balance = 3350.35744057, trade size = 0.002
+2022-10-11 12:07:19,215 INFO :: Long signal on BTCUSDT 1m
+2022-10-11 12:07:19,825 INFO :: Buy order placed on Binance | Status: new
+2022-10-11 12:07:22,591 INFO :: Binance order status: filled
+2022-10-11 12:07:30,928 INFO :: Binance: subscribing to: ethusdt@aggTrade
+2022-10-11 12:08:00,853 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-11 12:08:01,290 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 12:08:01,292 INFO :: Getting Binance trade size...
+2022-10-11 12:08:01,840 INFO :: Binance current USDT balance = 3350.34218721, trade size = 0.002
+2022-10-11 12:08:01,840 INFO :: Short signal on BTCUSDT 1m
+2022-10-11 12:08:02,528 INFO :: Sell order placed on Binance | Status: new
+2022-10-11 12:08:04,875 INFO :: Binance order status: filled
+2022-10-11 12:08:33,878 INFO :: Binance: subscribing to: ltcusdt@aggTrade
+2022-10-11 12:08:34,829 INFO :: Getting Binance trade size...
+2022-10-11 12:08:35,442 INFO :: Binance current USDT balance = 3349.47371109, trade size = 0.026
+2022-10-11 12:08:35,442 INFO :: Long signal on ETHUSDT 1m
+2022-10-11 12:08:36,154 INFO :: Buy order placed on Binance | Status: new
+2022-10-11 12:08:38,773 INFO :: Binance order status: filled
+2022-10-11 12:08:41,163 INFO :: Getting Binance trade size...
+2022-10-11 12:08:41,852 INFO :: Binance current USDT balance = 3349.46039972, trade size = 0.646
+2022-10-11 12:08:41,852 INFO :: Long signal on LTCUSDT 1m
+2022-10-11 12:08:42,457 INFO :: Buy order placed on Binance | Status: new
+2022-10-11 12:08:44,758 INFO :: Binance order status: filled
+2022-10-11 12:09:06,441 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 12:09:06,443 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 12:09:06,479 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-11 12:09:21,315 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-11 12:09:33,731 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-10-11 12:09:38,808 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-10-11 12:10:00,928 INFO :: Binance New candle for ETHUSDT 1m
+2022-10-11 12:10:01,073 INFO :: Binance New candle for LTCUSDT 1m
+2022-10-11 12:10:01,148 INFO :: Binance New candle for BTCUSDT 1m
+2022-10-11 12:10:01,148 INFO :: Binance New candle for BTCUSDT 1m

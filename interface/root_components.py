@@ -47,11 +47,11 @@ class Root(tk.Tk):
 
         # create left frame
         self._left_frame = tk.Frame(self, bg=BG_COLOR, borderwidth=2, relief=tk.RAISED)
-        self._left_frame.pack(side=tk.LEFT, expand=True, fill=tk.Y)
+        self._left_frame.pack(side=tk.LEFT, fill=tk.Y)
 
         # create right frame
         self._right_frame = tk.Frame(self, bg=BG_COLOR)
-        self._right_frame.pack(side=tk.LEFT)
+        self._right_frame.pack(side=tk.LEFT, fill=tk.Y)
 
         # create watchlist component
         self._watchlist_frame = Watchlist(self._binance.contracts, self._bitmex.contracts, self._left_frame,
@@ -65,11 +65,11 @@ class Root(tk.Tk):
         # create the strategy component
         self._strategy_frame = StrategyEditor(self, self._binance, self._bitmex, self._right_frame, bg=BG_COLOR,
                                               borderwidth=1, relief=tk.RAISED)
-        self._strategy_frame.pack(side=tk.TOP)
+        self._strategy_frame.pack(side=tk.TOP, fill=tk.BOTH, expand=True)
 
         # create the trade component under strategy
         self._trades_frame = TradesWatch(self._right_frame, bg=BG_COLOR, borderwidth=1, relief=tk.RAISED)
-        self._trades_frame.pack(side=tk.TOP)
+        self._trades_frame.pack(side=tk.TOP, fill=tk.BOTH, expand=True)
 
         self._update_ui()
 

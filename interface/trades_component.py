@@ -19,6 +19,9 @@ class TradesWatch(tk.Frame):
         self._table_frame.grid_propagate(0)
         self._table_frame.pack(side=tk.TOP)
 
+        header = tk.Label(self._table_frame, text="Trades", bg=BG_COLOR, fg=FG_COLOR, font=BOLD_FONT_2)
+        header.pack(side=tk.TOP, fill=tk.X, expand=True)
+
         self._headers_frame = tk.Frame(self._table_frame, bg=BG_COLOR)
 
         self._col_width = 11

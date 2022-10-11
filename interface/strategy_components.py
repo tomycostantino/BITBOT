@@ -44,8 +44,11 @@ class StrategyEditor(tk.Frame):
         self._table_frame.grid_propagate(0)
         self._table_frame.pack(side=tk.TOP, expand=False)
 
+        header = tk.Label(self._commands_frame, text='Strategy Editor', bg=BG_COLOR, fg=FG_COLOR, font=BOLD_FONT_2)
+        header.pack(side=tk.TOP, fill=tk.X, expand=True)
+
         self._add_button = tkmac.Button(self._commands_frame, text='Add Strategy', font=GLOBAL_FONT,
-                                        command=self._add_strategy_row, bg=BG_COLOR_3, fg=FG_COLOR, borderless=True)
+                                        command=self._add_strategy_row, bg=BG_COLOR_2, fg=FG_COLOR, borderless=True)
         self._add_button.pack(side=tk.TOP)
 
         self._headers_frame = tk.Frame(self._table_frame, height=20, width=950, bg=BG_COLOR)
@@ -54,26 +57,31 @@ class StrategyEditor(tk.Frame):
 
         self._extra_input = dict()
 
+        self._entrybox_col_width = 16
+        self._textentry_col_width = 8
+
         self._base_params = [
             {'code_name': 'strategy_type', 'widget': tk.OptionMenu, 'data_type': str,
-             'values': ['Technical', 'Breakout'], 'width': 12, 'header': 'Strategy', 'padx': 10},
+             'values': ['Technical', 'Breakout'], 'width': 12, 'header': 'Strategy'},
 
             {'code_name': 'contract', 'widget': tk.OptionMenu, 'data_type': str, 'values': self._all_contracts,
-             'width': 18, 'header': 'Contract', 'padx': 13},
+             'width': 16, 'header': 'Contract'},
 
             {'code_name': 'timeframe', 'widget': tk.OptionMenu, 'data_type': str, 'values': self._all_timeframes,
-             'width': 10, 'header': 'Timeframe', 'padx': 10},
+             'width': 10, 'header': 'Timeframe'},
 
-            {'code_name': 'balance_pct', 'widget': tk.Entry, 'data_type': float, 'width': 10, 'header': 'Balance %',
-             'padx': 10},
-            {'code_name': 'take_profit', 'widget': tk.Entry, 'data_type': float, 'width': 10, 'header': 'TP %',
-             'padx': 10},
-            {'code_name': 'stop_loss', 'widget': tk.Entry, 'data_type': float, 'width': 10, 'header': 'SL %',
-             'padx': 10},
+            {'code_name': 'balance_pct', 'widget': tk.Entry, 'data_type': float, 'width': 11, 'header': 'Balance %'},
+
+            {'code_name': 'take_profit', 'widget': tk.Entry, 'data_type': float, 'width': 11, 'header': 'TP %'},
+
+            {'code_name': 'stop_loss', 'widget': tk.Entry, 'data_type': float, 'width': 11, 'header': 'SL %'},
+
             {'code_name': 'parameters', 'widget': tk.Button, 'data_type': float, 'text': 'Parameters',
              'bg': BG_COLOR_2, 'command': self._show_popup, 'header': '', 'width': 50},
+
             {'code_name': 'activation', 'widget': tk.Button, 'data_type': float, 'text': 'OFF',
              'bg': 'darkred', 'command': self._switch_strategy, 'header': '', 'width': 25},
+
             {'code_name': 'delete', 'widget': tk.Button, 'data_type': float, 'text': 'X',
              'bg': 'darkred', 'command': self._delete_row, 'header': '', 'width': 15}
 
@@ -95,15 +103,16 @@ class StrategyEditor(tk.Frame):
 
         for idx, h in enumerate(self._base_params):
             header = tk.Label(self._headers_frame, text=h['header'], bg=BG_COLOR, fg=FG_COLOR, font=GLOBAL_FONT,
-                              width=h['width'], bd=1, relief=tk.FLAT)
-            header.grid(row=0, column=idx, padx=11)
+                              width=self._entrybox_col_width if h['widget'] == tk.OptionMenu else self._textentry_col_width,
+                              bd=1, relief=tk.FLAT)
+            header.grid(row=0, column=idx)
 
-        header = tk.Label(self._headers_frame, text='', bg=BG_COLOR, fg=FG_COLOR, font=GLOBAL_FONT,
+        remove = tk.Label(self._headers_frame, text='', bg=BG_COLOR, fg=FG_COLOR, font=GLOBAL_FONT,
                           width=0, bd=0, relief=tk.FLAT)
-        header.grid(row=0, column=len(self._base_params))
+        remove.grid(row=0, column=len(self._base_params))
 
         self._headers_frame.grid_propagate(0)
-        self._headers_frame.pack(side=tk.TOP, anchor='nw')
+        self._headers_frame.pack(side=tk.TOP, anchor=tk.CENTER, fill=tk.X, expand=True)
 
         self._body_frame = ScrollableFrame(self._table_frame, height=350, width=950, bg=BG_COLOR)
         self._body_frame.grid_propagate(0)
@@ -128,7 +137,8 @@ class StrategyEditor(tk.Frame):
                                                                       self.body_widgets[code_name + '_var'][b_index],
                                                                       *base_param['values'])
                 self.body_widgets[code_name][b_index].config(width=base_param['width'], highlightthickness=False,
-                                                             font=GLOBAL_FONT, bd=0, indicatoron=0)
+                                                             font=GLOBAL_FONT, bd=0, indicatoron=0, bg=BG_COLOR_3,
+                                                             fg='black')
 
             elif base_param['widget'] == tk.Entry:
                 self.body_widgets[code_name][b_index] = tk.Entry(self._body_frame.sub_frame, justify=tk.CENTER,

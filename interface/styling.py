@@ -1,6 +1,6 @@
-BG_COLOR = "gray50"
+BG_COLOR = "gray12"
 #BG_COLOR_2 = "#1c2c5c"
-BG_COLOR_2 = "grey70"
+BG_COLOR_2 = "royal blue"
 BG_COLOR_3 = "grey20"
 FG_COLOR = "white"
 FG_COLOR_2 = "SteelBlue1"
