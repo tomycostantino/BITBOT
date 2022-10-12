@@ -11,9 +11,9 @@ import json
 
 from urllib.parse import urlencode
 
-from models import *
-from strategies import TechnicalStrategy, BreakoutStrategy
-from utils import *
+from Trading.models import *
+from Trading.strategies import TechnicalStrategy, BreakoutStrategy
+from Trading.utils import *
 
 logger = logging.getLogger()
 
@@ -78,14 +78,31 @@ class BinanceClient:
         t.start()
 
     def _hashing(self, query_string: str):
+        '''
+        Hashes the query string
+        :param query_string:
+        :return: hashed string
+        '''
+
         return hmac.new(
             self._secret_key.encode('utf-8'), query_string.encode('utf-8'), hashlib.sha256
         ).hexdigest()
 
-    def _get_timestamp(self):
+    def _get_current_timestamp(self) -> int:
+        '''
+        Returns the current timestamp in milliseconds
+        :return:
+        '''
+
         return int(time.time() * 1000)
 
     def _dispatch_request(self, http_method: str):
+        '''
+        Dispatches the request to the correct method
+        :param http_method:
+        :return:
+        '''
+
         session = requests.Session()
         session.headers.update(
             {"Content-Type": "application/json;charset=utf-8", "X-MBX-APIKEY": self._public_key}
@@ -97,13 +114,21 @@ class BinanceClient:
             "POST": session.post,
         }.get(http_method, "GET")
 
-    # for signed endpoints
-    def _send_signed_request(self, http_method: str, url_path: str, payload={}):
+    ''' Private endpoints '''
+    def _send_signed_request(self, http_method: str, url_path: str, payload={}) -> typing.Dict:
+        '''
+        Sends a signed request to the exchange
+        :param http_method:
+        :param url_path:
+        :param payload:
+        :return:
+        '''
+
         query_string = urlencode(payload, True)
         if query_string:
-            query_string = "{}&timestamp={}".format(query_string, self._get_timestamp())
+            query_string = "{}&timestamp={}".format(query_string, self._get_current_timestamp())
         else:
-            query_string = "timestamp={}".format(self._get_timestamp())
+            query_string = "timestamp={}".format(self._get_current_timestamp())
 
         url = (
             self._base_url + url_path + "?" + query_string + "&signature=" + self._hashing(query_string)
@@ -114,8 +139,15 @@ class BinanceClient:
         response = self._dispatch_request(http_method)(**params)
         return response.json()
 
-    # for public endpoints
-    def _send_public_request(self, url_path: str, payload={}):
+    ''' Public endpoints '''
+    def _send_public_request(self, url_path: str, payload={}) -> typing.Dict:
+        '''
+        Sends a public request to the exchange
+        :param url_path:
+        :param payload:
+        :return:
+        '''
+
         query_string = urlencode(payload, True)
         url = self._base_url + url_path
         if query_string:
@@ -124,21 +156,35 @@ class BinanceClient:
         response = self._dispatch_request('GET')(url=url)
         return response.json()
 
-    # the signature is required when getting balances, place and cancel orders, and know order status
-    # returns the signature
     def _generate_signature(self, data: typing.Dict) -> str:
+        '''
+        Generates a signature for the data
+        :param data:
+        :return:
+        '''
+
         return hmac.new(self._secret_key.encode(), urlencode(data).encode(), hashlib.sha256).hexdigest()
 
-    # logger to document what happens when using the program
-    # it appends the logs to the list created previously, does not return anything
     def _add_log(self, msg: str):
+        '''
+        Logger to document what happens when using the program
+        it appends the logs to the list created previously, does not return anything
+        :param msg:
+        :return:
+        '''
+
         logger.info('%s', msg)
         self.logs.append({'log': msg, 'displayed': False})
 
-    # this function will communicate with the Binance API
-    # it permits requesting, sending and deleting info when interacting with the API
-    # returns the response in a JSON format, which would be a dictionary
-    def _make_request(self, method: str, endpoint: str, data: typing.Dict):
+    def _make_request(self, method: str, endpoint: str, data: typing.Dict) -> typing.Union[typing.Dict, None]:
+        '''
+        Makes a request to the exchange
+        :param method:
+        :param endpoint:
+        :param data:
+        :return:
+        '''
+
         if method == 'GET':
             try:
                 response = requests.get(self._base_url + endpoint, params=data, headers=self._headers)

@@ -1,6 +1,6 @@
 import sqlite3
 import typing
-from models import Trade
+from Trading.models import Trade
 
 
 class WorkspaceData:

@@ -16,9 +16,9 @@ import dateutil.parser
 
 import threading
 
-from models import *
+from Trading.models import *
 
-from strategies import TechnicalStrategy, BreakoutStrategy
+from Trading.strategies import TechnicalStrategy, BreakoutStrategy
 
 
 logger = logging.getLogger()
