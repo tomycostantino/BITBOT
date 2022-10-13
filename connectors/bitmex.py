@@ -319,7 +319,7 @@ class BitmexClient:
         else:
             return None
 
-        xbt_size = balance * balance_pct / 100
+        xbt_size = balance * (balance_pct / 100)
 
         # The trade size calculation depends on the type of contract
         # https://www.bitmex.com/app/perpetualContractsGuide

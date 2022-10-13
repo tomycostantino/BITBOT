@@ -189,6 +189,9 @@ class Strategy:
                                "status": "open", "pnl": 0, "quantity": order_status.executed_qty, "entry_id": order_status.order_id})
             self.trades.append(new_trade)
 
+        else:
+            self._add_log(f"Order not placed due to quantity filtering on {self.exchange}")
+
     def _check_tp_sl(self, trade: Trade):
 
         """
@@ -239,6 +242,8 @@ class Strategy:
                 trade.status = "closed"
                 self.ongoing_position = False
                 threading.Thread(target=self._add_trade_to_database, args=(trade,)).start()
+            else:
+                self._add_log(f"Order not placed due to quantity filtering on {self.exchange}")
 
     @staticmethod
     def _add_trade_to_database(trade):

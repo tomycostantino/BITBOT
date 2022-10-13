@@ -314,7 +314,7 @@ class BinanceClient:
     # gets the contract, the type: MARKET, the quantity, and the side: buy or sell
     # return the status of the order
     def place_order(self, contract: Contract, order_type: str, quantity: float, side: str, price=None, tif=None) -> \
-            OrderStatus:
+            typing.Union[OrderStatus, None]:
 
         data = dict()
         data['symbol'] = contract.symbol
@@ -337,7 +337,8 @@ class BinanceClient:
         else:
             data['quantity'] = self._check_for_filters(contract, data['quantity'], float(self.prices[contract.symbol]['ask']))
             if data['quantity'] is None:
-                return
+                return None
+
             order_status = self._send_signed_request('POST', '/api/v3/order', data)
             print(order_status)
 
@@ -349,6 +350,8 @@ class BinanceClient:
                     order_status['avgPrice'] = 0
 
             order_status = OrderStatus(order_status, self.platform)
+
+            self.balances = self.get_balances()
         
         return order_status
 
@@ -568,7 +571,16 @@ class BinanceClient:
 
     def _check_for_filters(self, contract: Contract, qty_to_order: float, asset_price: float) -> typing.Union[float, None]:
         '''
-        rules to pass LOT_SIZE filter
+        Check if the order is compliant with the filters of the contract
+        :param contract:
+        :param qty_to_order:
+        :param asset_price:
+        :return:
+        '''
+
+        '''
+        ONLY FOR BINANCE SPOT
+        Values to pass filters
         {
             "filterType": "LOT_SIZE",
             "minQty": "0.00100000",
@@ -580,47 +592,48 @@ class BinanceClient:
         (quantity - minQty) % stepSize == 0
         '''
 
-        asset_balance = float(self.balances[contract.base_asset].free)
-
-        if qty_to_order > asset_balance:
-            logger.error(f'Quantity passed is higher than free at {time.time()}')
+        if qty_to_order > float(self.balances[contract.base_asset].free):
+            logger.error(f'Quantity to order is higher than available, at {time.time()}')
             return None
 
-        new_quantity: float = 0.0
+        new_quantity = 0.0
 
-        trade_price = calculate_trade_value(qty_to_order, asset_price)
-        logger.info(f'{contract.symbol} trade price calculated: {trade_price} on {time.time()}')
+        trade_value = calculate_trade_value(qty_to_order, asset_price)
+        logger.info(f'{contract.symbol} trade value calculated: {trade_value}, at {time.time()}')
 
-        if contract.minNotional >= trade_price or contract.min_ls >= qty_to_order:
+        ''' Check if the values are compliant with the filters '''
+        if contract.minNotional >= trade_value or contract.min_ls >= qty_to_order:
             logger.info(f'Contract: {contract.symbol}, Qty:{qty_to_order}, min_ls: {contract.min_ls}, minNot: {contract.minNotional}')
             new_quantity = round((contract.minNotional / asset_price) * 1.1, 8)
-            if contract.lot_size >= new_quantity:
-                new_quantity = contract.lot_size
-            elif contract.min_ls > new_quantity:
-                new_quantity = contract.min_ls
 
-            new_quantity_round = new_quantity * 10000
-            new_quantity_round = np.ceil(new_quantity_round)
-            new_quantity = new_quantity_round / 10000
+            new_quantity = contract.lot_size if contract.lot_size > new_quantity else new_quantity
 
-            ntp = calculate_trade_value(new_quantity, asset_price)
-            logger.info('New trade price: ', ntp)
+            new_quantity = contract.min_ls if contract.min_ls > new_quantity else new_quantity
+
+            ''' Leave just a copuple of decimals '''
+            new_quantity = np.ceil(new_quantity * 10000) / 10000
+
+            ntv = calculate_trade_value(new_quantity, asset_price)
             logger.info('New quantity: ', new_quantity)
+            logger.info('New trade value: ', ntv)
 
         else:
-            new_quantity = qty_to_order
-            new_quantity_round = new_quantity * 10000
-            new_quantity_round = np.ceil(new_quantity_round)
-            new_quantity = new_quantity_round / 10000
+            new_quantity = np.ceil(qty_to_order * 10000) / 10000
 
             ntp = calculate_trade_value(new_quantity, asset_price)
             logger.info('Trade price: ', ntp)
             logger.info('Quantity: ', new_quantity)
 
-        logger.info(f'Balance available: {asset_balance}')
+        logger.info(f'Balance available: {self.balances[contract.base_asset].free}, at {time.time()}')
 
-        if asset_balance >= new_quantity:
-            return new_quantity
+    def balances_to_display(self) -> typing.List[typing.Tuple]:
+        '''
+        Return the balances to be displayed in UI
+        :return:
+        '''
 
+        if self.futures:
+            return [(k, v.initial_margin) for k, v in self.get_balances().items()]
         else:
-            return None
+            return [(k, v.free) for k, v in self.get_balances().items() if v.free > 0]
+

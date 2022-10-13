@@ -9,6 +9,7 @@ from Trading.interface.logging_component import Logging
 from Trading.interface.watchlist_components import Watchlist
 from Trading.interface.trades_component import TradesWatch
 from Trading.interface.strategy_components import StrategyEditor
+from Trading.interface.scrollable_frame import ScrollableFrame
 logger = logging.getLogger()
 
 
@@ -30,6 +31,10 @@ class Root(tk.Tk):
         self._main_menu = tk.Menu(self)
         self.configure(menu=self._main_menu)
 
+        self._balance_menu = tk.Menu(self._main_menu, tearoff=False)
+        self._main_menu.add_cascade(label='Balance', menu=self._balance_menu)
+        self._balance_menu.add_command(label="Balances", command=self._display_balances)
+
         # sub menu to save and load workspace on database
         self._workspace_menu = tk.Menu(self._main_menu, tearoff=False)
         self._main_menu.add_cascade(label="Workspace", menu=self._workspace_menu)
@@ -38,7 +43,7 @@ class Root(tk.Tk):
 
         self._restart = tk.Menu(self._main_menu, tearoff=False)
         self._main_menu.add_cascade(label='Restart', menu=self._restart)
-        self._restart.add_cascade(label='Restart program', command=self._restart_code)
+        self._restart.add_command(label='Restart program', command=self._restart_code)
 
         # create left frame
         self._left_frame = tk.Frame(self, bg=BG_COLOR, borderwidth=2, relief=tk.RAISED)
@@ -247,3 +252,19 @@ class Root(tk.Tk):
         if result == 'yes':
             variables.restart = True
             self.destroy()
+
+    def _display_balances(self):
+        balance_window = tk.Toplevel(self)
+        balance_window.title("Balances")
+        balance_window.geometry("200x400")
+        balance_window.resizable(False, False)
+
+        frame = tk.Frame(balance_window)
+        frame.pack(fill="both", expand=True)
+
+        for idx, balance in enumerate(self._binance.balances_to_display()):
+            tk.Label(frame, text=balance[0], font=("Helvetica", 12), foreground='black').grid(row=idx, column=0, sticky="w")
+            tk.Label(frame, text=balance[1], font=("Helvetica", 12), foreground='black').grid(row=idx, column=1, sticky="w")
+
+
+
