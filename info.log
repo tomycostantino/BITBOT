@@ -1759,3 +1759,13 @@
 2022-10-12 19:29:00,020 INFO :: Binance New candle for BTCUSDT 1m
 2022-10-12 19:29:00,020 INFO :: Binance New candle for BTCUSDT 1m
 2022-10-12 19:29:07,537 INFO :: Binance New candle for ETHUSDT 1m
+2022-11-11 22:27:17,621 INFO :: Binance Futures Client successfully initialized
+2022-11-11 22:27:25,777 INFO :: Binance connection opened
+2022-11-11 22:27:25,779 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-11-11 22:27:25,780 WARNING :: websocket connected
+2022-11-11 22:27:26,059 INFO :: Bitmex Client successfully initialized
+2022-11-11 22:27:27,973 INFO :: Bitmex connection opened
+2022-11-11 22:27:27,974 WARNING :: websocket connected
+2022-11-11 22:27:33,838 WARNING :: Websocket connection closed
+2022-11-11 22:27:33,892 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x16221bdc0>>: BitmexClient._on_close() takes 2 positional arguments but 4 were given
+2022-11-11 22:27:33,893 ERROR :: Bitmex connection error: BitmexClient._on_close() takes 2 positional arguments but 4 were given

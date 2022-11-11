@@ -314,7 +314,7 @@ class TechnicalStrategy(Strategy):
 
         return macd_line.iloc[-2], macd_signal.iloc[-2]
 
-    def _check_signal(self):
+    def _check_signal(self) -> int:
 
         """
         Compute technical indicators and compare their value to some predefined levels to know whether to go Long,

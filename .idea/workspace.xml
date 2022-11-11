@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b6e2309-d3ee-46f4-8e4d-8daac01e26b6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Trading/interface/login_component.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Trading/login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trading/interface/root_components.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading/interface/root_components.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Trading/strategies.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading/strategies.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connectors/binance.py" beforeDir="false" afterPath="$PROJECT_DIR$/connectors/binance.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connectors/bitmex.py" beforeDir="false" afterPath="$PROJECT_DIR$/connectors/bitmex.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/info.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_database.db" beforeDir="false" afterPath="$PROJECT_DIR$/new_database.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

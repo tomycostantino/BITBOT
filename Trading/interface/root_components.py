@@ -9,6 +9,7 @@ from Trading.interface.logging_component import Logging
 from Trading.interface.watchlist_components import Watchlist
 from Trading.interface.trades_component import TradesWatch
 from Trading.interface.strategy_components import StrategyEditor
+from Trading.interface.login_component import Login
 from Trading.interface.scrollable_frame import ScrollableFrame
 logger = logging.getLogger()
 
@@ -19,6 +20,8 @@ class Root(tk.Tk):
 
         self._binance = variables.binance
         self._bitmex = variables.bitmex
+
+        login = Login(self)
 
         self.title('Trading Bot')
 
