@@ -1769,3 +1769,30 @@
 2022-11-11 22:27:33,838 WARNING :: Websocket connection closed
 2022-11-11 22:27:33,892 ERROR :: error from callback <bound method BitmexClient._on_close of <connectors.bitmex.BitmexClient object at 0x16221bdc0>>: BitmexClient._on_close() takes 2 positional arguments but 4 were given
 2022-11-11 22:27:33,893 ERROR :: Bitmex connection error: BitmexClient._on_close() takes 2 positional arguments but 4 were given
+2022-11-16 15:15:13,663 INFO :: Binance Futures Client successfully initialized
+2022-11-16 15:15:17,812 INFO :: Binance connection opened
+2022-11-16 15:15:17,814 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-11-16 15:15:17,815 WARNING :: websocket connected
+2022-11-16 15:15:18,818 INFO :: Bitmex Client successfully initialized
+2022-11-16 15:15:20,321 INFO :: Bitmex connection opened
+2022-11-16 15:15:20,323 WARNING :: websocket connected
+2022-11-16 23:16:05,637 INFO :: Binance Futures Client successfully initialized
+2022-11-16 23:16:09,556 INFO :: Binance connection opened
+2022-11-16 23:16:09,559 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-11-16 23:16:09,560 WARNING :: websocket connected
+2022-11-16 23:18:41,042 INFO :: Binance Futures Client successfully initialized
+2022-11-16 23:18:43,476 INFO :: Binance connection opened
+2022-11-16 23:18:43,477 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-11-16 23:18:43,477 WARNING :: websocket connected
+2022-11-16 23:22:03,170 INFO :: Binance Futures Client successfully initialized
+2022-11-16 23:22:05,419 INFO :: Binance connection opened
+2022-11-16 23:22:05,419 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-11-16 23:22:05,419 WARNING :: websocket connected
+2022-11-16 23:23:53,382 INFO :: Binance Futures Client successfully initialized
+2022-11-16 23:23:55,951 INFO :: Binance connection opened
+2022-11-16 23:23:55,953 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-11-16 23:23:55,954 WARNING :: websocket connected
+2022-11-16 23:24:43,463 INFO :: Binance Futures Client successfully initialized
+2022-11-16 23:24:45,876 INFO :: Binance connection opened
+2022-11-16 23:24:45,877 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-11-16 23:24:45,877 WARNING :: websocket connected

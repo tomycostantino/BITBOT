@@ -1,4 +1,4 @@
-from binance_client import BinanceClient
+from connectors.binance import BinanceClient
 
 
 class Login:
@@ -7,9 +7,8 @@ class Login:
 
     def __init__(self, api_key, api_secret, testnet, futures):
         self._binance = BinanceClient(api_key, api_secret, testnet, futures)
-        self._return_client()
 
-    def _return_client(self):
+    def return_client(self):
         '''
         Returns the BinanceClient object
         :return:

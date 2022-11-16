@@ -30,7 +30,9 @@ logger.addHandler(stream_handler)
 logger.addHandler(file_handler)
 
 if __name__ == '__main__':
-
+    root = Root()
+    root.mainloop()
+    '''
     while True:
         if variables.restart:
             popup = InitialPopup()
@@ -41,3 +43,4 @@ if __name__ == '__main__':
             root.mainloop()
         else:
             break
+    '''
