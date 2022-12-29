@@ -5,7 +5,7 @@ import typing
 from Trading.interface.autocomplete_widget import Autocomplete
 from Trading.interface.scrollable_frame import ScrollableFrame
 from Trading.interface.styling import *
-from database.database import Database
+from database.workspace_database import WorkspaceDatabase
 
 from Trading.models import *
 
@@ -17,7 +17,7 @@ class Watchlist(tk.Frame):
                  *args, **kwargs):
         super().__init__(*args, **kwargs)
 
-        self.db = Database()
+        self.db = WorkspaceDatabase()
 
         self.binance_symbols = list(binance_contracts.keys())
         self.bitmex_symbols = list(bitmex_contracts.keys())
@@ -129,7 +129,7 @@ class Watchlist(tk.Frame):
 
     def load_workspace(self):
         # Loads the Watchlist symbols saved to the database during a previous session
-        saved_symbols = self.db.get_workspace_data("watchlist")
+        saved_symbols = self.db.get_workspace_data('watchlist')
 
         for s in saved_symbols:
             self._add_symbol(s['symbol'], s['exchange'])

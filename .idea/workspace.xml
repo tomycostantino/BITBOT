@@ -5,9 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b6e2309-d3ee-46f4-8e4d-8daac01e26b6" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Trading/login_database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/trades_database.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/database/workspace_database.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trading/binance_client.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trading/interface/root_components.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading/interface/root_components.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trading/interface/strategy_components.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading/interface/strategy_components.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trading/interface/watchlist_components.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading/interface/watchlist_components.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trading/login_database.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading/login_database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trading/strategies.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading/strategies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/database.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/new_database.db" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,7 +42,7 @@
     </file-type-list>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/database/database.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/database/trades_database.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/connectors/binance.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/analysis/regressor.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/analysis/data_extractor.py" root0="FORCE_HIGHLIGHTING" />
@@ -66,9 +75,9 @@
       <recent name="$PROJECT_DIR$/backtesting" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/database" />
       <recent name="$PROJECT_DIR$/trading" />
       <recent name="$PROJECT_DIR$/backtesting" />
-      <recent name="$PROJECT_DIR$/database" />
       <recent name="$PROJECT_DIR$/" />
       <recent name="$PROJECT_DIR$/backtesing" />
     </key>

@@ -213,7 +213,7 @@ class Root(tk.Tk):
 
             watchlist_symbols.append((symbol, exchange,))
 
-        self._watchlist_frame.db.save_workspace_data("watchlist", watchlist_symbols)
+        self._watchlist_frame.db.save_workspace_data('watchlist', watchlist_symbols)
 
         # Strategies
 
@@ -242,7 +242,7 @@ class Root(tk.Tk):
             strategies.append((strategy_type, contract, timeframe, balance_pct, take_profit, stop_loss,
                                json.dumps(extra_params),))
 
-        self._strategy_frame.db.save_workspace_data("strategies", strategies)
+        self._strategy_frame.db.save_workspace_data('strategies', strategies)
 
         self.logging_frame.add_log("Workspace saved")
 

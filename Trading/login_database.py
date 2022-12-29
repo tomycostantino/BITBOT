@@ -10,11 +10,12 @@ class LoginDatabase:
         self._create_tables()
 
     def _create_tables(self):
-        self._cursor.execute("CREATE TABLE IF NOT EXISTS users (userID INT, username TEXT NOT NULL, "
-                             "password TEXT NOT NULL, PRIMARY KEY(userID AUTOINCREMENT))")
+        self._cursor.execute("CREATE TABLE IF NOT EXISTS users (username TEXT NOT NULL, password TEXT NOT NULL, "
+                             "PRIMARY KEY(username))")
 
-        self._cursor.execute("CREATE TABLE IF NOT EXISTS keys (keyID INT, key_type TEXT NOT NULL, "
-                             "api_key TEXT NOT NULL, api_secret TEXT NOT NULL, PRIMARY KEY(keyID AUTOINCREMENT))")
+        self._cursor.execute("CREATE TABLE IF NOT EXISTS keys (key_type TEXT NOT NULL, api_key TEXT NOT NULL, "
+                             "api_secret TEXT NOT NULL, user TEXT NOT NULL, PRIMARY KEY(key_type), "
+                             "FOREIGN KEY(user) REFERENCES users(username))")
 
         self._cursor.execute("CREATE TABLE IF NOT EXISTS login (loginID INT, userID INT, keyID INT, "
                              "PRIMARY KEY(loginID AUTOINCREMENT), FOREIGN KEY(userID) REFERENCES users(userID), "
@@ -30,9 +31,10 @@ class LoginDatabase:
         self._cursor.execute(f"INSERT INTO keys VALUES (NULL, ?, ?)", (api_key, api_secret))
         self._conn.commit()
 
-    def create_new_login(self, username: str, password: str, api_key: str, api_secret: str):
+    def save_login(self, username: str, password: str, api_key: str, api_secret: str):
         self._save_user(username, password)
         self._save_keys(api_key, api_secret)
+
         self._cursor.execute(f"INSERT INTO login VALUES (NULL, ?, ?)", (username, password, api_key, api_secret))
         self._conn.commit()
 

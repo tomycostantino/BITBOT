@@ -1796,3 +1796,25 @@
 2022-11-16 23:24:45,876 INFO :: Binance connection opened
 2022-11-16 23:24:45,877 INFO :: Binance: subscribing to: btcusdt@bookTicker
 2022-11-16 23:24:45,877 WARNING :: websocket connected
+2022-12-29 22:09:13,849 INFO :: Binance Futures Client successfully initialized
+2022-12-29 22:10:03,899 INFO :: Binance Futures Client successfully initialized
+2022-12-29 22:10:06,733 INFO :: Binance connection opened
+2022-12-29 22:10:06,735 INFO :: Binance: subscribing to: btcusdt@bookTicker
+2022-12-29 22:10:06,735 WARNING :: websocket connected
+2022-12-29 22:11:26,717 INFO :: Binance: subscribing to: ethusdt@bookTicker
+2022-12-29 22:11:31,463 INFO :: Binance: subscribing to: ltcusdt@bookTicker
+2022-12-29 22:11:39,654 INFO :: Binance: subscribing to: sxpusdt@bookTicker
+2022-12-29 22:11:54,580 INFO :: Binance: subscribing to: btcusdt@aggTrade
+2022-12-29 22:12:00,926 INFO :: Binance New candle for BTCUSDT 1m
+2022-12-29 22:12:02,150 INFO :: Getting Binance trade size...
+2022-12-29 22:12:02,869 INFO :: Binance current USDT balance = 3102.93408729, trade size = 0.002
+2022-12-29 22:12:02,870 INFO :: Short signal on BTCUSDT 1m
+2022-12-29 22:12:04,604 INFO :: Sell order placed on Binance | Status: new
+2022-12-29 22:12:07,006 INFO :: Binance order status: filled
+2022-12-29 22:13:06,415 INFO :: Binance New candle for BTCUSDT 1m
+2022-12-29 22:14:00,724 INFO :: Binance New candle for BTCUSDT 1m
+2022-12-29 22:15:01,140 INFO :: Binance New candle for BTCUSDT 1m
+2022-12-29 22:16:02,900 INFO :: Binance New candle for BTCUSDT 1m
+2022-12-29 22:17:07,097 INFO :: Binance New candle for BTCUSDT 1m
+2022-12-29 22:17:56,352 WARNING :: Binance BTCUSDT: 3376 milliseconds of difference between the current time and the trade time
+2022-12-29 22:18:05,091 INFO :: Binance New candle for BTCUSDT 1m

@@ -2,7 +2,7 @@ import logging
 import threading
 import time
 
-from database.database import Database
+from database.trades_database import TradesDatabase
 from typing import *
 from threading import Timer
 
@@ -247,7 +247,7 @@ class Strategy:
 
     @staticmethod
     def _add_trade_to_database(trade):
-        db = Database()
+        db = TradesDatabase()
         db.add_new_trade(trade)
         db.close()
 
