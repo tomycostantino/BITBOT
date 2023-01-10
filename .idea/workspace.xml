@@ -6,12 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="6b6e2309-d3ee-46f4-8e4d-8daac01e26b6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Binance Client Code snippets.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trading/database.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trading/draft.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trading/info.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trading/login_database.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/login_database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trading/new_database.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/database.db" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/workspace.db" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ChangesViewManager" show_ignored="true" />
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -140,5 +149,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
   </component>
 </project>
