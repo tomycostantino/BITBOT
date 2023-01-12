@@ -7,8 +7,26 @@
     <list default="true" id="6b6e2309-d3ee-46f4-8e4d-8daac01e26b6" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis/data_extractor.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/analysis/regressor.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trading/interface/login_component.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading/interface/login_component.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trading/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading/login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtesting/Optimisation Algorithm.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtesting/backtester.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtesting/backtesting_component.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtesting/data/binance.h5" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtesting/data/binance.h5 copy" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtesting/data_collector.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtesting/database.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtesting/exchanges/binance.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtesting/exchanges/ftx.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtesting/interface.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtesting/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtesting/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtesting/optimizer.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtesting/strategies/ichimoku.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtesting/strategies/obv.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtesting/strategies/suport_resistance.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backtesting/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/login_database.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/login_database.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,6 +160,36 @@
             <State />
           </value>
         </entry>
+        <entry key="a3663bbf-117a-4cc6-9ca9-dd58f4ddee85">
+          <value>
+            <State>
+              <option name="SHOW_ONLY_AFFECTED_CHANGES" value="true" />
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                  <entry key="structure">
+                    <value>
+                      <list>
+                        <option value="dir:/Users/tomasc/PycharmProjects/TradingBot/connectors" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="OPEN_GENERIC_TABS">
+      <map>
+        <entry key="a3663bbf-117a-4cc6-9ca9-dd58f4ddee85" value="TOOL_WINDOW" />
       </map>
     </option>
   </component>

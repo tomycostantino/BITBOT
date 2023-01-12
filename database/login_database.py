@@ -13,30 +13,36 @@ class LoginDatabase:
         self._cursor.execute("CREATE TABLE IF NOT EXISTS users (username TEXT NOT NULL, password TEXT NOT NULL, "
                              "PRIMARY KEY(username))")
 
-        self._cursor.execute("CREATE TABLE IF NOT EXISTS keys (key_type TEXT NOT NULL, api_key TEXT NOT NULL, "
-                             "api_secret TEXT NOT NULL, user TEXT NOT NULL, PRIMARY KEY(key_type), "
-                             "FOREIGN KEY(user) REFERENCES users(username))")
-
-        self._cursor.execute("CREATE TABLE IF NOT EXISTS login (loginID INT, userID INT, keyID INT, "
-                             "PRIMARY KEY(loginID AUTOINCREMENT), FOREIGN KEY(userID) REFERENCES users(userID), "
-                             "FOREIGN KEY(keyID) REFERENCES keys(keyID))")
+        self._cursor.execute("CREATE TABLE IF NOT EXISTS keys (username TEXT NOT NULL, testnet BOOL, futures BOOL, "
+                             "api_key TEXT NOT NULL, api_secret TEXT NOT NULL, FOREIGN KEY(username) REFERENCES "
+                             "users(username))")
 
         self._conn.commit()
 
     def _save_user(self, username: str, password: str):
-        self._cursor.execute(f"INSERT INTO users VALUES (NULL, ?, ?)", (username, password))
+        self._cursor.execute(f"INSERT INTO users VALUES (?, ?)", (username, password))
         self._conn.commit()
 
-    def _save_keys(self, api_key: str, api_secret: str):
-        self._cursor.execute(f"INSERT INTO keys VALUES (NULL, ?, ?)", (api_key, api_secret))
+    def _save_keys(self, username: str, testnet: bool, futures: bool, api_key: str, api_secret: str):
+        # self._cursor.execute(f"INSERT INTO keys VALUES (?, ?, ?, ?)", ('testnet', api_key, api_secret, 'tomi'))
+        '''
+        self._cursor.execute(f"INSERT OR IGNORE INTO keys (key_type, api_key, api_secret, user) VALUES (?, ?, ?, ?)",
+                             ('testnet', api_key, api_secret, 'tomi'))
+        '''
+        self._cursor.execute(f"INSERT INTO keys (username, testnet, futures, api_key, api_secret) VALUES (?, ?, ?, ?, "
+                             f"?)", (username, testnet, futures, api_key, api_secret))
         self._conn.commit()
 
-    def save_login(self, username: str, password: str, api_key: str, api_secret: str):
+    def create_user(self, username: str, password: str, testnet: bool, futures: bool, api_key: str, api_secret: str):
         self._save_user(username, password)
-        self._save_keys(api_key, api_secret)
-
-        self._cursor.execute(f"INSERT INTO login VALUES (NULL, ?, ?)", (username, password, api_key, api_secret))
-        self._conn.commit()
+        self._save_keys(username, testnet, futures, api_key, api_secret)
 
     def get_keys_by_user(self):
         pass
+
+    def user_exists(self, username: str):
+        self._cursor.execute("SELECT COUNT(*) FROM users WHERE username=?", (username,))
+        result = self._cursor.fetchone()
+        if result[0] == 1:
+            return True
+        return False
