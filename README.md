@@ -8,7 +8,17 @@ The bot works by constantly monitoring the market and analyzing trends to identi
 
 In addition to automating trades, the bot also provides a user-friendly interface that allows you to view your current trades, and other key information in real-time.
 
-To run the bot, you will need to have Python 3.6 or higher installed on your computer. The bot can be run from the command line as it follows:
+To run the bot, you will need to have Python 3.6 or higher installed on your computer. 
+
+Previous to running the code, your own API keys must be inserted in the 'client_setup.py' file, along with the choice to run the bot, which can be:
+- Testnet Spot
+- Testnet Futures
+- Spot
+- Futures
+
+All those options are managed on the same file.
+
+The command line as it follows:
 
     #!/bin/bash
 
