@@ -1,7 +1,7 @@
 import tkinter as tk
 
-from Trading.interface.styling import *
-from Trading.interface.scrollable_frame import ScrollableFrame
+from interface.styling import *
+from interface.scrollable_frame import ScrollableFrame
 from Trading.models import *
 
 

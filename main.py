@@ -7,9 +7,7 @@
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
 import logging
 
-from Trading.interface.root_components import Root
-from Trading.interface.initial_popup import InitialPopup
-from Trading import variables
+from interface.root_components import Root
 
 # Create logger
 logger = logging.getLogger()
@@ -32,15 +30,3 @@ logger.addHandler(file_handler)
 if __name__ == '__main__':
     root = Root()
     root.mainloop()
-    '''
-    while True:
-        if variables.restart:
-            popup = InitialPopup()
-            popup.mainloop()
-            if variables.binance is None:
-                break
-            root = Root()
-            root.mainloop()
-        else:
-            break
-    '''

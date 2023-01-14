@@ -2,9 +2,9 @@ import tkinter as tk
 import tkmacosx as tkmac
 import typing
 
-from Trading.interface.autocomplete_widget import Autocomplete
-from Trading.interface.scrollable_frame import ScrollableFrame
-from Trading.interface.styling import *
+from interface.autocomplete_widget import Autocomplete
+from interface.scrollable_frame import ScrollableFrame
+from interface.styling import *
 from database.workspace_database import WorkspaceDatabase
 
 from Trading.models import *

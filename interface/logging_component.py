@@ -1,6 +1,6 @@
 import tkinter as tk
 
-from Trading.interface.styling import *
+from interface.styling import *
 from datetime import datetime
 
 

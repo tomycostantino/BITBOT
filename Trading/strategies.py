@@ -8,7 +8,7 @@ from threading import Timer
 
 import pandas as pd
 
-from models import *
+from Trading.models import *
 
 if TYPE_CHECKING:  # Import the connector class names only for typing purpose (the classes aren't actually imported)
     from connectors.bitmex import BitmexClient

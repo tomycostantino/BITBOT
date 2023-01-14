@@ -1,7 +1,7 @@
 import tkinter as tk
 import tkmacosx as tkmac
 from connectors.binance import BinanceClient
-from Trading.keys import *
+from keys import *
 from connectors.bitmex import BitmexClient
 from Trading import variables
 

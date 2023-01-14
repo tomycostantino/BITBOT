@@ -5,28 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6b6e2309-d3ee-46f4-8e4d-8daac01e26b6" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/client_setup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading/interface/login_component.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading/interface/login_component.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Trading/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading/login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backtesting/Optimisation Algorithm.docx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backtesting/backtester.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backtesting/backtesting_component.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backtesting/data/binance.h5" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backtesting/data/binance.h5 copy" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backtesting/data_collector.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backtesting/database.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backtesting/exchanges/binance.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backtesting/exchanges/ftx.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backtesting/interface.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backtesting/main.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backtesting/models.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backtesting/optimizer.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backtesting/strategies/ichimoku.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backtesting/strategies/obv.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backtesting/strategies/suport_resistance.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backtesting/utils.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/login_database.py" beforeDir="false" afterPath="$PROJECT_DIR$/database/login_database.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trading/interface/autocomplete_widget.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/autocomplete_widget.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trading/interface/initial_popup.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/initial_popup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trading/interface/logging_component.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/logging_component.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trading/interface/login_component.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/login_component.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trading/interface/root_components.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/root_components.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trading/interface/scrollable_frame.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/scrollable_frame.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trading/interface/strategy_components.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/strategy_components.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trading/interface/styling.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/styling.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trading/interface/trades_component.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/trades_component.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trading/interface/watchlist_components.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/watchlist_components.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trading/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Trading/strategies.py" beforeDir="false" afterPath="$PROJECT_DIR$/Trading/strategies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/info.log" beforeDir="false" afterPath="$PROJECT_DIR$/info.log" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,13 +52,13 @@
     <setting file="file://$PROJECT_DIR$/analysis/regressor.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/analysis/data_extractor.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Trading/variables.py" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Trading/interface/root_components.py" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Trading/interface/styling.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/interface/root_components.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/interface/styling.py" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/requirements.txt" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Trading/interface/scrollable_frame.py" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Trading/interface/strategy_components.py" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Trading/main.py" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Trading/interface/initial_popup.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/interface/scrollable_frame.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/interface/strategy_components.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/main.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/interface/initial_popup.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -86,11 +80,11 @@
       <recent name="$PROJECT_DIR$/backtesting" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/database" />
       <recent name="$PROJECT_DIR$/trading" />
       <recent name="$PROJECT_DIR$/backtesting" />
       <recent name="$PROJECT_DIR$/" />
-      <recent name="$PROJECT_DIR$/backtesing" />
     </key>
   </component>
   <component name="RunManager" selected="Python.main">
@@ -106,7 +100,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Trading/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />

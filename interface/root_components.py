@@ -4,13 +4,15 @@ import json
 import logging
 from Trading import variables
 from tkinter.messagebox import askquestion
-from Trading.interface.styling import *
-from Trading.interface.logging_component import Logging
-from Trading.interface.watchlist_components import Watchlist
-from Trading.interface.trades_component import TradesWatch
-from Trading.interface.strategy_components import StrategyEditor
-from Trading.interface.login_component import LoginComponent
-from Trading.interface.scrollable_frame import ScrollableFrame
+from interface.styling import *
+from interface.logging_component import Logging
+from interface.watchlist_components import Watchlist
+from interface.trades_component import TradesWatch
+from interface.strategy_components import StrategyEditor
+from connectors.binance import BinanceClient
+from connectors.bitmex import BitmexClient
+import client_setup
+
 logger = logging.getLogger()
 
 
@@ -18,16 +20,18 @@ class Root(tk.Tk):
     def __init__(self):
         super().__init__()
 
-        # self._binance = variables.binance
-        # self._bitmex = variables.bitmex
+        try:
+            self._binance = BinanceClient(client_setup.binance_api_key, client_setup.binance_api_secret,
+                                          client_setup.testnet, client_setup.binance_futures)
+        except Exception as e:
+            print('Binance client could not be created')
 
-        login = LoginComponent(self)
+        try:
+            self._bitmex = BitmexClient(client_setup.bitmex_api_key, client_setup.bitmex_api_secret,
+                                        client_setup.testnet)
 
-        while not login.is_logged():
-            self.update()
-
-        self._binance = login.get_client()
-        self._bitmex = login.get_client()
+        except Exception as e:
+            print('Bitmex client could not be created')
 
         self.title('Trading Bot')
 
@@ -247,11 +251,6 @@ class Root(tk.Tk):
         self.logging_frame.add_log("Workspace saved")
 
     def _load_workspace(self):
-        # filename = filedialog.askopenfilename() # Returns the name of the file
-        # print(filename)
-        # self._watchlist_frame.db.open_file(self.db)
-        # self._strategy_frame.db.open_file(self.db)
-
         self._watchlist_frame.load_workspace()
         self._strategy_frame.load_workspace()
         self.logging_frame.add_log('Workspace loaded')

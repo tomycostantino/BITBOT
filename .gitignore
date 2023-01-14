@@ -1,6 +1,7 @@
-/Trading/keys.py
 /workspace.db
 /new_database.db
 /database.db
 /analysis/
 /login_database.db
+/keys.py
+/info.log

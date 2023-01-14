@@ -2,12 +2,12 @@ import tkinter as tk
 import tkmacosx as tkmac
 import json
 import typing
-from Trading.interface.styling import *
+from interface.styling import *
 from Trading.utils import *
 
 from connectors.binance import BinanceClient
 from connectors.bitmex import BitmexClient
-from Trading.interface.scrollable_frame import ScrollableFrame
+from interface.scrollable_frame import ScrollableFrame
 from database.workspace_database import WorkspaceDatabase
 
 from Trading.strategies import TechnicalStrategy, BreakoutStrategy
