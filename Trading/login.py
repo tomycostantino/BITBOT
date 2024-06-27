@@ -26,5 +26,4 @@ class Login:
             return True
 
     def login(self, username: str, password: str):
-        pass
         self._binance = BinanceClient(api_key, api_secret, testnet, futures)
